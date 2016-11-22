@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>搜索</title>
+  <!-- Set render engine for 360 browser -->
+  <meta name="renderer" content="webkit">
+
+  <!-- No Baidu Siteapp-->
+  <meta http-equiv="Cache-Control" content="no-siteapp"/>
+
+  <link rel="icon" type="image/png" href="#">
+
+  <!-- Add to homescreen for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="icon" sizes="192x192" href="#">
+
+  <!-- Add to homescreen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Amaze UI"/>
+
+  <link rel="stylesheet" href="css/amazeui.css"/>
+  <link rel="stylesheet" href="css/app.css">
+  <style type="text/css">
+  #nav ul{
+      height: 100%;
+      background:#00bcd4;
+  }
+  #nav a{
+      color: white;
+      height: 100%;
+  }
+  #nav h2{
+      color:white;
+      margin-top:8%;
+      margin-left:35%;
+  }
+  .form{
+    width:100%;
+    height:50px;
+    background-color:#63B8FF;
+  }
+  .form form{
+    background-color:#63B8FF;
+    padding-top:10px;
+    padding-left:7px;
+    padding-right:7px;
+  }
+  .am-form-group input{
+    background-color:#3BB4F2;
+    color:white;
+  }
+  .am-form-group i{
+    color:#00bcd4;
+  }
+  .badge{
+    background-color:#F4F4F4;
+    width:100%;
+    height:120px;
+  }
+  .badge p{
+    padding-top:10px;
+    padding-left:10px;
+    color:#969696;
+    font-size:15px;
+    font-weight:bold;
+  }
+  .badge_content{
+    margin-top:-10px;
+    margin-left:10px;
+  }
+  .badge i{
+    color:red;
+  }
+  </style>
+
+</head>
+<body>
+<!--工具栏-->
+<div style="height:50px;" id="nav">
+      <ul class="am-nav am-nav-pills am-nav-justify">
+        <li><a href="#" class="am-icon-chevron-left
+ am-icon-sm" style="margin-left:-50%;"></a></li>
+        <li><h2 class="am-serif">搜索</h2></li>
+        <li><a href="#" class="am-icon-refresh am-icon-sm" style="margin-left:45%;"></a></li>
+      </ul>
+</div>
+<!--搜索框-->
+<div class="form">
+<form action="" class="am-form">
+<div class="am-form-group am-form-icon">
+    <i class="am-icon-search"></i>
+    <input type="text" class="am-form-field am-round am-input-sm" placeholder="请输入..." >
+</div>
+</form>
+
+</div>
+<!--搜索标签-->
+<div class="badge">
+  <p class="am-serif"><i class="am-icon-fire"></i>热门搜索</p>
+  <div class="badge_content">
+  <span class="am-badge am-badge-danger am-round am-text-sm">火锅</span>
+  <span class="am-badge am-badge-danger am-round am-text-sm">盖饭</span>
+  <span class="am-badge am-badge-primary am-round am-text-sm">蛋挞</span>
+  <span class="am-badge am-badge-warning am-round am-text-sm">金枪鱼寿司</span>
+  <span class="am-badge am-badge-secondary am-round am-text-sm">必胜客</span>
+  <span class="am-badge am-badge-secondary am-round am-text-sm">水饺</span>
+  <span class="am-badge am-badge-success am-round am-text-sm">奶油蘑菇汤</span>
+  <span class="am-badge am-badge-success am-round am-text-sm">芝士火腿披萨</span>
+  </div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/amazeui.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>《碎评》-发现</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/amazeui.css"/>
+    <link rel="stylesheet" href="css/amazeui.min.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/amazeui.min.js"></script>
+	<!-- 样式 -->
+	<style type="text/css">
+	    #nav ul{
+	    	height: 100%;
+	    	background: #00bcd4;
+	    }
+		#nav a{
+			color: white;
+			height: 100%;
+		}
+		#food_list{
+			width: 92%;
+		}
+		#food_list img{
+			width: 110%;
+			float:left;
+		}
+		#food_list p{
+			font-size: 16px;
+			text-align:center;
+			color:gray;
+		}
+        #life-list{
+            width: 92%;
+        }
+        #life-ul p{
+            font-size: 14px;
+            color: gray;
+            font-weight: bold;
+            text-align: right;
+        }
+        #need_list img{
+            width: 100%;
+            float:left;
+        }
+        #need_list p{
+            font-size: 14px;
+            text-align:left;
+            color:gray;
+        }
+        .am-panel{
+            width: 110%;
+            height: 200px;
+            background: #f0f0f0;
+        }
+	</style>
+</head>
+<body>
+     <!-- 导航 -->
+     <div class="am-topbar am-topbar-fixed-top">
+      <div style="height:50px" id="nav">
+     	<ul class="am-nav am-nav-pills am-nav-justify">
+     		<li><a href="" class="am-icon-home am-icon-sm"></a></li>
+     		<li></li>
+     		<li><img src="images/logo2.png" style="height:55px;"></li>
+     		<li><a href="" class="am-icon-bars am-icon-sm"></a></li>
+     	</ul>
+      </div> 
+     </div>   
+    <!-- 轮播图 -->
+     <div class="am-slider am-slider-default am-slider-carousel" data-am-flexslider="{controlNav:'thumbnails'}">
+        <ul class="am-slides">
+            <li data-thumb="">
+                <img src="images/find_index/banner1.jpg"/>
+            </li>
+            <li data-thumb="">
+                <img src="images/find_index/banner2.jpg"/>
+            </li>
+            <li data-thumb="">
+                <img src="images/find_index/banner3.jpg"/>
+            </li>
+        </ul>
+    </div>
+    <!-- 食品列表 -->
+    <div class="am-g" id="food_list">
+       <div class="am-g">
+        <div class="am-u-sm-6"><h3>品美味</h3></div>
+        <div class="am-u-sm-6">
+          <a href="" style="font-size:12px;float:right;color:gray">更多&gt;&gt;</a>
+        </div>
+      </div>
+      <div class="am-g">
+           <a href=""><div class="am-u-sm-4"><img src="images/find_index/food1.jpg">
+           <p>上海小混沌</p></div></a>
+           <a href=""><div class="am-u-sm-4"><img src="images/find_index/food2.jpg"><P>芝士面包</P></div></a>
+           <a href=""><div class="am-u-sm-4"><img src="images/find_index/food3.jpg"><p>时蔬汉堡</p></div></a>
+      </div>
+    </div>
+    <!-- 分割线 -->
+     <hr data-am-widget="divider" style="" class="am-divider am-divider-dashed" />
+    <!-- 生活列表 -->
+    <div class="am-g" id="life-list">
+       <div class="am-u-sm-6"><h3>享生活</h3></div>
+       <div class="am-u-sm-6">
+         <a href="" style="font-size:12px;float:right;color:gray">更多&gt;&gt;</a>
+       </div>
+    </div>
+    <div class="am-slider am-slider-default" data-am-flexslider="{itemWidth: 150, itemMargin: 5, slideshow: false}" id="life-ul">
+        <ul class="am-slides">
+            <li>                
+                <a href=""><img src="images/find_index/life1.png"/>
+                <div class="am-g">
+                    <div class="am-u-sm-6"></div>
+                    <div class="am-u-am-6"><p>玩音乐</p> </div>
+                </div></a>
+            </li>
+            <li>                
+                <a href=""><img src="images/find_index/life2.jpg"/>
+                <div class="am-g">
+                    <div class="am-u-sm-6"></div>
+                    <div class="am-u-am-6"><p>看搭配</p></div>
+                </div></a>       
+            </li>
+            <li>
+                <a href=""><img src="images/find_index/life3.jpg"/>
+                <div class="am-g">
+                    <div class="am-u-sm-6"></div>
+                    <div class="am-u-am-6"><p>做瑜伽</p></div>
+                </div></a>
+            </li>
+        </ul>
+    </div>
+     <hr data-am-widget="divider" style="" class="am-divider am-divider-dashed" />
+    <!-- 心愿列表 -->
+    <div class="am-g">
+        <div class="am-u-sm-6"><h3 style="color:#ff3333">心愿单</h3></div>
+        <div class="am-u-sm-6"><span class="am-icon-heart am-icon-sm" style="float:right;color:#ff3333"></span></div>
+    </div>
+    <div class="am-g" id="need_list">
+        <div class="am-u-sm-4">
+            <a href=""><div class="am-panel">
+               <div class="am-panel-hd">
+               <img src="images/find_index/list1.jpg">
+               </div>
+               <div class="am-panel-bd"><p>来一场愉悦身心的舞蹈</p></div>
+            </div></a>                            
+        </div>
+        <div class="am-u-sm-4">
+            <a href=""><div class="am-panel">
+               <div class="am-panel-hd">
+               <img src="images/find_index/list2.jpg">
+               </div>
+               <div class="am-panel-bd"><p>冬日里泡一次暖和的温泉</p></div>
+            </div></a>                            
+        </div>
+       <div class="am-u-sm-4">
+            <a href=""><div class="am-panel">
+               <div class="am-panel-hd">
+               <img src="images/find_index/list3.jpg">
+               </div>
+               <div class="am-panel-bd"><p>三五好友和热气腾腾的火锅</p></div>
+           </div></a>                            
+       </div>
+    </div>  
+</body>
+</html>

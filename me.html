@@ -9,14 +9,6 @@
     <script src="js/amazeui.min.js"></script>
 
     <style type="text/css">
-    	#nav ul{
-	    	height: 100%;
-	    	background: #00bcd4;
-	    }
-		#nav a{
-			color: white;
-			height: 100%;
-		}
 		.am-panel-hd img {display:block; margin:0 auto;}
 		body{
 			background-color: #f0f0f2;
@@ -33,16 +25,45 @@
 		.am-panel a:active{
 			color: blue;
 		}
+        .am-text-ir{
+            display: block;
+            height: 50px;
+            width: 120px;
+            background: url(images/logo.png)no-repeat left center;
+            background-size: cover;
+            margin-left: 30%;
+        }
+        .am-u-sm-2{
+            margin:0;
+            padding:0;
+        }
+        .am-u-sm-8{
+            margin:0;
+            padding:0;
+        }
     </style>
 </head>
 <body>
-	<div style="height:50px;" id="nav">
-     	<ul class="am-nav am-nav-pills am-nav-justify">
-     		<li><a href="" class="am-icon-home am-icon-sm"></a></li>
-     		<li><img src="images/logo.png" style="height:55px;"></li>
-     		<li><a href="" class="am-icon-refresh am-icon-sm"></a></li>
-     	</ul>
-     </div>
+    <header style="background-color:#00bcd4" class="am-topbar am-topbar-fixed-top">
+        <div style="background-color:#00bcd4 ">
+            <div class="am-g">
+                <div class="am-u-sm-2"style="padding-left:0px;">
+                    <a href="#" class="am-btn am-btn-xl" style="background-color:#00bcd4;background-size:cover">
+                        <i class="am-icon-home am-icon-sm" style="color:white;"></i>
+                    </a>
+                </div>
+                <div class="am-u-sm-8">
+                    <a href="#" class="am-text-ir">logo</a>
+                </div>
+                <div class="am-u-sm-2" style="padding-left:1px;text-align:right">
+                    <a href="#" class="am-btn am-btn-xl" style="background-color:#00bcd4;background-size:cover">
+                        <i class="am-icon-search" style="color:white;"></i>
+                    </a>
+                    
+                </div>
+            </div>
+        </div>
+    </header>
      <div>
      	<div class="am-panel" id="user">
      		<div class="am-panel-hd">
@@ -59,10 +80,10 @@
      	</div>
      	<div class="am-panel" style="margin-bottom: 2%">
      		<p style="margin-top:4%;"><a href="myHeart.html"><i class="am-icon-heart"style="color:#e94147;margin-right:10px;"></i>我的心愿单</a></p>
-     		<p><a href="#"><i class="am-icon-houzz"style="color:#e7aafa;margin-right:10px;"></i>我的积分</a><small style="float:right;margin-right:10%;color:#838484;margin-top:2%">1000分</small></p>
+     		<p><a href="#"><i class="am-icon-houzz"style="color:#e7aafa;margin-right:10px;"></i>我的积分</a><span><small style="float:right;margin-right:10%;color:#838484;margin-top:2%">1000分</small></span></p>
      	</div>
      	<div class="am-panel" style="margin-bottom: 2%">
-     		<p style="margin-top:4%;"><a href="myYHJ.html"><i class="am-icon-yelp"style="color:#f59c53;margin-right:10px;"></i>我的优惠劵</a></p>
+     		<p style="margin-top:4%;"><a href="myYHQ.html"><i class="am-icon-yelp"style="color:#f59c53;margin-right:10px;"></i>我的优惠券</a></p>
      		<p><a href="#"><i class="am-icon-envelope"style="color:#dce22d;margin-right:10px;"></i>我的消息</a></p>
      	</div>
      </div>

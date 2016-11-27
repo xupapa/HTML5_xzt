@@ -31,16 +31,53 @@
   <script src="js/jquery.js"></script>
   <script src="js/amazeui.min.js"></script>
 
+  <style type="text/css">
+  	.am-text-ir{
+			display: block;
+			height: 50px;
+			width: 120px;
+			background: url(images/logo.png)no-repeat left center;
+			background-size: cover;
+			margin-left: 30%;
+		}
+		#nav ul{
+			height: 100%;
+			background: #00bcd4;
+		}
+		#nav a{
+			color: white;
+			height: 100%;
+		}
+		.am-btn{
+			display: block;
+			background-color:#00bcd4; 
+			background:no-repeat;
+		}
+		.am-topbar{
+			background-color:#00bcd4; 
+		}
+  </style>
+
 </head>
 <body>
-	<header style="background-color:#00bcd4" class="am-topbar am-topbar-fixed-top">
-		<div style="background-color:#00bcd4 ">
-     		<ul class="am-nav am-nav-pills am-nav-justify">
-	     		<li><a href="#" class="am-icon-home am-icon-md" style="background-color:#00bcd4 ;background-size:cover;text-align:left;color:white"></a></li>
-	     		<li><img src="images/logo.png" style="width: 120%;height: 25%"></li>
-	     		<li><a href="#" class="am-icon-search am-icon-md" style="background-color:#00bcd4 ;background-size:cover;text-align:right;color:white"></a></li>
-     		</ul>
-    	</div>
+	<header class="am-topbar am-topbar-fixed-top">
+        <div>
+            <div class="am-g">
+                <div class="am-u-sm-2"style="padding-left:0px;">
+                    <a href="index.html" class="am-btn am-btn-xl" style="background-color:#00bcd4;background-size:cover">
+                        <i class="am-icon-home am-icon-sm" style="color:white;"></i>
+                    </a>
+                </div>
+                <div class="am-u-sm-7">
+                    <a href="index.html" class="am-text-ir">logo</a>
+                </div>
+                <div class="am-u-sm-3">
+                	<a href="#" class="am-btn am-btn-xl" style="background-color:#00bcd4;background-size:cover">
+					<i class="am-icon-search am-icon-sm" style="color:white;"></i>
+				</a>
+                </div>
+            </div>
+        </div>
     </header>
 	<!-- 轮播图 -->
     <div class="am-slider am-slider-default" data-am-flexslider id="demo-slider-0">

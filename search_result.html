@@ -27,19 +27,15 @@
   <link rel="stylesheet" href="css/amazeui.css"/>
   <link rel="stylesheet" href="css/app.css">
   <style type="text/css">
-  #nav ul{
-    height: 100%;
-    background:#00bcd4;
-  }
-  #nav a{
-    color: white;
-    height: 100%;
-  }
-  #nav h2{
-    color:white;
-    margin-top:8%;
-    margin-left:35%;
-  }
+
+  h3{
+      color:white;
+      text-align:center;
+      padding-top:2%;
+    }
+    .am-topbar{
+      background-color:#00bcd4; 
+    }
   #list{
     width:100%;
     background-color:#F2F2F2;
@@ -89,13 +85,27 @@
 </head>
 <body>
 <!--工具栏-->
-<div style="height:50px;" id="nav">
-      <ul class="am-nav am-nav-pills am-nav-justify">
-        <li><a href="#" class="am-icon-home am-icon-sm" style="margin-left:-50%;"></a></li>
-        <li><h2 class="am-serif">搜索</h2></li>
-        <li><a href="#" class="am-icon-search am-icon-sm" style="margin-left:45%;"></a></li>
-      </ul>
-</div>
+<header class="am-topbar am-topbar-fixed-top">
+    <div class="am-g">
+      <div class="am-u-sm-2" style="padding-left:0px;">
+        <a href="index.html" class="am-btn am-btn-xl" style="background-color:#00bcd4
+    ;background-size:cover">
+          <i class="am-icon-home am-icon-sm" style="color:white;margin-top:3px;"></i>
+        </a>
+      </div>
+      <div class="am-u-sm-8">
+        <h3 style="color:white;text-align:center;padding-top:10px">
+          搜索
+        </h3>
+      </div>
+      <div class="am-u-sm-2">
+        <button class="am-btn am-btn-xl" style="background-color:#00bcd4
+    ;background-size:cover">
+          <i class="am-icon-search" style="color:white;"></i>
+        </button>
+      </div>
+    </div>
+  </header>
 <!--列表-->
 <!--1-->
 <div class="am-g" id="list">

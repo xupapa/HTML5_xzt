@@ -10,6 +10,26 @@
     <script src="js/amazeui.min.js"></script>
 	<!-- 样式 -->
 	<style type="text/css">
+    body{
+        padding: 0;
+        margin: 0;
+      }
+    .am-text-ir{
+            display: block;
+            height: 50px;
+            width: 120px;
+            background: url(images/logo.png)no-repeat left center;
+            background-size: cover;
+            margin-left: 35%;
+        }
+    .am-btn{
+      display: block;
+      background-color:#00bcd4; 
+      background:no-repeat;
+    }
+    .am-topbar{
+      background-color:#00bcd4; 
+    }
 	    #nav ul{
 	    	height: 100%;
 	    	background: #00bcd4;
@@ -35,20 +55,21 @@
 </head>
 <body>
     <!-- 顶部导航栏 -->
-    <div class="am-topbar am-topbar-fixed-top">
-     <div style="height:50px" id="nav">
-        <ul class="am-nav am-nav-pills am-nav-justify">
-         <!-- 链接发现内容页 -->
-          <li><a href="fxcontent.html" class="am-btn am-btn-xl" style="text-align:left;background-color:#00bcd4;background-size:cover"><i class="am-icon-chevron-left am-icon-xm"></i></a></li>
-          <li></li>
-          <li></li>
-          <li><img src="images/logo2.png" style="height:55px;margin-left:-5.5%"></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-     </div>
-    </div>
+    <header class="am-topbar am-topbar-fixed-top">
+        <div>
+            <div class="am-g">
+                <div class="am-u-sm-2"style="padding-left:0px;">
+                    <a href="find_index.html" class="am-btn am-btn-xl" style="background-color:#00bcd4;background-size:cover">
+                        <i class="am-icon-chevron-left" style="color:white;"></i>
+                    </a>
+                </div>
+                <div class="am-u-sm-7">
+                    <a href="index.html" class="am-text-ir">logo</a>
+                </div>
+                <div class="am-u-sm-3"></div>
+            </div>
+        </div>
+    </header>
     <div class="am-topbar am-topbar-fixed-bottom">
         <!-- 评论输入框 -->
         <div style="background:#f0f0f0;height:45px">

@@ -26,23 +26,49 @@
         .am-topbar {
           min-height: 40px;     
         }	
+        body{
+            padding: 0;
+            margin: 0;
+        }
+        .am-text-ir{
+            display: block;
+            height: 50px;
+            width: 120px;
+            background: url(images/logo.png)no-repeat left center;
+            background-size: cover;
+            margin-left: 35%;
+        }
+        .am-btn{
+            display: block;
+            background-color:#00bcd4; 
+            background:no-repeat;
+        }
+        .am-topbar{
+            background-color:#00bcd4; 
+        }
     </style>
 </head>
 <body>
      <!-- 导航 -->
      <!-- 顶部 -->
-     <div class="am-topbar am-topbar-fixed-top">
-      <div style="height:50px" id="nav">
-     	<ul class="am-nav am-nav-pills am-nav-justify">
-     		<li><a href="find_index.html" class="am-btn am-btn-xl" style="text-align:left;background-color:#00bcd4;background-size:cover"><i class="am-icon-chevron-left am-icon-xm"></i></a></li>
-     		<li></li>
-     		<li></li>
-     		<li><img src="images/logo2.png" style="height:55px;margin-left:5.5%"></li>
-     		<li></li>
-     		<li><a href="find_comment.html" class="am-btn am-btn-lg" style="text-align:right;background-color:#00bcd4;background-size:cover"><i class="am-icon-comment-o am-icon-sm"></i></a></li>
-     	</ul>
-      </div>
-     </div>
+     
+     <header class="am-topbar am-topbar-fixed-top">
+        <div>
+            <div class="am-g">
+                <div class="am-u-sm-2"style="padding-left:0px;">
+                    <a href="find_index.html" class="am-btn am-btn-xl" style="background-color:#00bcd4;background-size:cover">
+                        <i class="am-icon-chevron-left" style="color:white;"></i>
+                    </a>
+                </div>
+                <div class="am-u-sm-7">
+                    <a href="index.html" class="am-text-ir">logo</a>
+                </div>
+                <div class="am-u-sm-3">
+                    <a href="find_comment.html" class="am-btn am-btn-lg" style="text-align:right;background-color:#00bcd4;background-size:cover;color:white"><i class="am-icon-comment-o am-icon-sm"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
      <!-- 底部 -->
      <div class="am-topbar am-topbar-fixed-bottom" id="nav">
         <ul class="am-nav am-nav-pills am-nav-justify">

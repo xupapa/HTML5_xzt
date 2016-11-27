@@ -28,20 +28,52 @@
 
   <link rel="stylesheet" href="css/amazeui.min.css">
   <link rel="stylesheet" href="css/app.css">
-  <script src="js/jquery.js"></script>
+  <script src="js/jquery.min.js"></script>
   <script src="js/amazeui.min.js"></script>
+	<style type=text/css>
+		.am-text-ir{
+			display: block;
+			height: 50px;
+			width: 120px;
+			background: url(images/logo.png)no-repeat left center;
+			background-size: cover;
+			margin-left: 30%;
+		}
+		#nav ul{
+			height: 100%;
+			background: #00bcd4;
+		}
+		#nav a{
+			color: white;
+			height: 100%;
+		}
+		#con-list p{
+			font-size: 14px;
+		}
 
+	</style>
 </head>
 <body>
-	<header style="background-color:#00bcd4" class="am-topbar am-topbar-fixed-top">
-		<div style="background-color:#00bcd4 ">
-     		<ul class="am-nav am-nav-pills am-nav-justify">
-	     		<li><a href="#" class="am-icon-home am-icon-md" style="background-color:#00bcd4 ;background-size:cover;text-align:left;color:white"></a></li>
-	     		<li><img src="images/logo.png" style="width: 120%;height: 25%"></li>
-	     		<li><a href="#" class="am-icon-search am-icon-md" style="background-color:#00bcd4 ;background-size:cover;text-align:right;color:white"></a></li>
-     		</ul>
-    	</div>
-    </header>
+<header style="background-color:#00bcd4" class="am-topbar am-topbar-fixed-top">
+	<div style="background-color:#00bcd4 ">
+		<div class="am-g">
+			<div class="am-u-sm-2"style="padding-left:0px;">
+				<a href="#" class="am-btn am-btn-xl" style="background-color:#00bcd4;background-size:cover">
+					<i class="am-icon-home am-icon-sm" style="color:white;"></i>
+				</a>
+			</div>
+			<div class="am-u-sm-7">
+				<a href="#" class="am-text-ir">logo</a>
+			</div>
+			<div class="am-u-sm-3" style="padding-right:0px;text-align:right">
+				<a href="#" class="am-btn am-btn-xl" style="background-color:#00bcd4;background-size:cover">
+					<i class="am-icon-search am-icon-sm" style="color:white;"></i>
+				</a>
+
+			</div>
+		</div>
+	</div>
+</header>
 	<!-- 轮播图 -->
     <div class="am-slider am-slider-default" data-am-flexslider id="demo-slider-0">
 	  <ul class="am-slides">
@@ -52,45 +84,43 @@
 	  </ul>
 	</div>
 	<!-- 活动 -->
-	<div class="am-g" style="max-height:25%">
-		<div class="am-u-sm-6" style="height:100%"><img src="images/dessert_3.jpeg" style="width:115%"></div>
-		<div class="am-u-sm-6" style="height:100%">
-			<div class="am-g" style="margin-left:1%">
-				<div class="am-u-sm-6" style="padding-left:0">
-					<img src="images/dessert_2.jpeg" style="width:110%;">
-					<img src="images/dessert_3.jpeg" style="width:110%;padding-top:3px">
-				</div>
-				<div class="am-u-sm-6" style="padding-left:0">
-					<img src="images/dessert_4.jpg" style="width:110%;">
-					<img src="images/dessert_5.jpeg" style="width:110%;padding-top:3px">
-				</div>
+<div class="am-g" style="max-height:25%">
+	<div class="am-u-sm-6" style="height:100%;padding-left: 1px;">
+		<img src="images/dessert_1.jpeg" style="width:111%;height: 120%;" >
+	</div>
+	<div class="am-u-sm-6" style="height:100%">
+		<div class="am-g" style="margin-left:1%">
+			<div class="am-u-sm-6" style="padding-left:0">
+				<img src="images/dessert_2.jpeg" style="width:110%;">
+				<img src="images/dessert_3.jpeg" style="width:110%;padding-top:4px">
+			</div>
+			<div class="am-u-sm-6" style="padding-left:0">
+				<img src="images/dessert_4.jpg" style="width:110%;">
+				<img src="images/dessert_5.jpeg" style="width:110%;padding-top:4px">
 			</div>
 		</div>
 	</div>
+</div>
 	<!-- 列表 -->
 	<ul class="am-list">
 	<a href="#" style="color:black;padding-top:0">
 	  <li>
 		  <div class="am-g">
-			    <div class="am-u-sm-4"><img src="images/dessert1.jpg" style="width:auto;height:auto;max-width:100%;max-height:100%;">
-			    </div>
-			    <div class="am-u-sm-8">
-			    	<div class="am-g">
-			    		<div class="am-u-sm-8" style="padding-left:0;padding-right:0"><p style="margin-bottom:0;color: #7B7B7B;font-size:14px">可口美味甜心小店</p></div>
-			    		<div class="am-u-sm-4" style=" padding-top:5px;padding-left:0;padding-right:0">
-			    			<p style="color: #7B7B7B;font-size:5px;margin-bottom:0">评分：3.5</p>
-			    		</div>
-			    	</div>
-			    	
-			    	<div class="am-g">
-			    		<div class="am-u-sm-9 am-text-truncate"><p style="color: #7B7B7B;font-size:14px">简介：玫瑰加草莓，这两种香气芬芳的食材碰撞在一起，毫无疑问是一种味觉的冲击...</p></div>
-			    		<div class="am-u-sm-3">
-			    		<a class="am-icon-pencil-square am-icon-lg" style="color:#ff5151"  data-am-collapse="{parent: '#accordion', target: '#do-not-say-1'}"></a>
-			    		</div>
-			    	</div>
-			    </div>
-			</div> 
-		<div id="do-not-say-1" class="am-panel-collapse am-collapse">
+			  <div class="am-u-sm-4"><img src="images/dessert1.jpg" style="width:auto;height:auto;max-width:100%;max-height:100%;">
+			  </div>
+			  <div class="am-u-sm-8">
+				  <div class="am-g">
+					  <div class="am-u-sm-8" style="padding-left:0;padding-right:0">
+						  <p style="color: #7B7B7B;font-size:14px">甜心可口小店</p>
+						  <p style="color: #7B7B7B;font-size:14px">评分：3.5</p>
+					  </div>
+					  <div class="am-u-sm-4" style="margin-top:15px;text-align:center">
+						  <a class="am-icon-pencil-square am-icon-lg" style="color:#ff5151"  data-am-collapse="{parent: '#accordion', target: '#do-not-say-1'}"></a>
+					  </div>
+				  </div>
+			  </div>
+		  </div>
+		  <div id="do-not-say-1" class="am-panel-collapse am-collapse">
 		  <div class="am-panel-bd">
 		  	<div class="am-g">
 		  		<div class="am-u-sm-4" style="text-align:center">
@@ -146,24 +176,20 @@
        <a href="#" style="color:black;padding-top:0">
        <li>
 		   <div class="am-g">
-			    <div class="am-u-sm-4"><img src="images/dessert1.jpg" style="width:auto;height:auto;max-width:100%;max-height:100%;">
-			    </div>
-			    <div class="am-u-sm-8">
-			    	<div class="am-g">
-			    		<div class="am-u-sm-8" style="padding-left:0;padding-right:0"><p style="margin-bottom:0;color: #7B7B7B;font-size:14px">可口美味甜心小店</p></div>
-			    		<div class="am-u-sm-4" style=" padding-top:5px;padding-left:0;padding-right:0">
-			    			<p style="color: #7B7B7B;font-size:5px;margin-bottom:0">评分：3.5</p>
-			    		</div>
-			    	</div>
-			    	
-			    	<div class="am-g">
-			    		<div class="am-u-sm-9 am-text-truncate"><p style="color: #7B7B7B;font-size:14px">简介：玫瑰加草莓，这两种香气芬芳的食材碰撞在一起，毫无疑问是一种味觉的冲击...</p></div>
-			    		<div class="am-u-sm-3">
-			    		<a class="am-icon-pencil-square am-icon-lg" style="color:#ff5151"  data-am-collapse="{parent: '#accordion', target: '#do-not-say-1'}"></a>
-			    		</div>
-			    	</div>
-			    </div>
-			</div> 
+			   <div class="am-u-sm-4"><img src="images/dessert1.jpg" style="width:auto;height:auto;max-width:100%;max-height:100%;">
+			   </div>
+			   <div class="am-u-sm-8">
+				   <div class="am-g">
+					   <div class="am-u-sm-8" style="padding-left:0;padding-right:0">
+						   <p style="color: #7B7B7B;font-size:14px">甜心可口小店</p>
+						   <p style="color: #7B7B7B;font-size:14px">评分：3.5</p>
+					   </div>
+					   <div class="am-u-sm-4" style="margin-top:15px;text-align:center">
+						   <a class="am-icon-pencil-square am-icon-lg" style="color:#ff5151"  data-am-collapse="{parent: '#accordion', target: '#do-not-say-2'}"></a>
+					   </div>
+				   </div>
+			   </div>
+		   </div>
 		<div id="do-not-say-2" class="am-panel-collapse am-collapse">
 		  <div class="am-panel-bd">
 		  	<div class="am-g">
@@ -218,15 +244,17 @@
        </li>
        </a>
 	</ul>
-    <!--底部导航条-->
-<header class="am-topbar am-topbar-fixed-bottom">
-	<ul class="am-nav am-nav-pills am-nav-justify">
-	  <li><a href="snacks.html">小吃</a></li>
-	  <li class="am-active"><a href="">甜点</a></li>
-	  <li><a href="drink.html">饮品</a></li>
-	  <li><a href="fastfood.html">快餐</a></li>
-	</ul>
-</header>
+<!--底部导航条-->
+<div class="am-topbar am-topbar-fixed-bottom" >
+	<div id="nav">
+		<ul class="am-nav am-nav-pills am-nav-justify" style="height: 50px">
+			<li><a href="snacks.html" style="background-color:#00bcd4;background-size:cover"><font size="4px"><strong>小吃</strong></font></a></li>
+			<li><a href="drink.html" style="background-color:#00bcd4;background-size:cover"><font size="4px"><strong>饮品</strong></font></a></li>
+			<li><a href="dessert.html" style="background-color:#00bcd4;background-size:cover"><font size="4px"><strong>甜品</strong></font></a></li>
+			<li><a href="fastfood.html" style="background-color:#00bcd4;background-size:cover"><font size="4px"><strong>快餐</strong></font></a></li>
+		</ul>
+	</div>
+</div>
 
 
 <script>

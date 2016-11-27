@@ -28,7 +28,7 @@
 
   <link rel="stylesheet" href="css/amazeui.min.css">
   <link rel="stylesheet" href="css/app.css">
-  <script src="js/jquery.js"></script>
+  <script src="js/jquery.min.js"></script>
   <script src="js/amazeui.min.js"></script>
 <style type="text/css">
 	.am-text-ir{
@@ -39,6 +39,17 @@
             background-size: cover;
             margin-left: 30%;
         }
+	#nav ul{
+		height: 100%;
+		background: #00bcd4;
+	}
+	#nav a{
+		color: white;
+		height: 100%;
+	}
+	#con-list p{
+		font-size: 14px;
+	}
 
 </style>
 </head>
@@ -229,17 +240,19 @@
       </a>
 	</ul>
     <!--底部导航条-->
-<header class="am-topbar am-topbar-fixed-bottom">
-	<ul class="am-nav am-nav-pills am-nav-justify">
-	  <li class="am-active"><a href="">小吃</a></li>
-	  <li><a href="dessert.html">甜点</a></li>
-	  <li><a href="drink.html">饮品</a></li>
-	  <li><a href="fastfood.html">快餐</a></li>
-	</ul>
-</header>
+	<div class="am-topbar am-topbar-fixed-bottom" >
+		<div id="nav">
+			<ul class="am-nav am-nav-pills am-nav-justify" style="height: 50px">
+				<li><a href="snacks.html" style="background-color:#00bcd4;background-size:cover"><font size="4px"><strong>小吃</strong></font></a></li>
+				<li><a href="drink.html" style="background-color:#00bcd4;background-size:cover"><font size="4px"><strong>饮品</strong></font></a></li>
+				<li><a href="dessert.html" style="background-color:#00bcd4;background-size:cover"><font size="4px"><strong>甜品</strong></font></a></li>
+				<li><a href="fastfood.html" style="background-color:#00bcd4;background-size:cover"><font size="4px"><strong>快餐</strong></font></a></li>
+			</ul>
+		</div>
+	</div>
 
 
-<script>
+	<script>
   $(function() {
     var $slider = $('#demo-slider-0');
     var counter = 0;

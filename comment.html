@@ -79,7 +79,7 @@
 		<header class="am-topbar am-topbar-fixed-top">
         <div>
             <div class="am-g">
-                <div class="am-u-sm-2"style="padding-left:0px;">
+                <div class="am-u-sm-2">
                     <a href="index.html" class="am-btn am-btn-xl" style="background-color:#00bcd4;background-size:cover">
                         <i class="am-icon-home am-icon-sm" style="color:white;"></i>
                     </a>
@@ -101,13 +101,16 @@
 
       <style type="text/css">
  .fileInputContainer{
-        height:250px;
-        background:url(http://images.cnblogs.com/cnblogs_com/dreamback/437546/o_ff6.png);
+        margin-bottom: 4%;
+        height:51px;
+        background:url(images/camera.jpg);
         position:relative;
-        width: 256px;
+        width: 64px;
     }
     .fileInput{
-        height:256px;
+        height:51px;
+        width: 64px;
+        
         font-size: 100px;
         position:absolute;
         right:0;
@@ -118,9 +121,7 @@
     }
 
 </style>
-<div class="fileInputContainer">
-    <input class="fileInput" type="file" name="" id="" />
-</div>
+
 </head>
 <body>
     <form class="am-form">
@@ -212,8 +213,16 @@
       <label for="doc-ta-1">内容</label>
       <textarea class="" rows="5" id="doc-ta-1" placeholder="输入内容"></textarea>
     </div>
-
-    <p><button type="submit" class="am-btn am-btn-default">提交</button></p>
+    
+    <div>
+        <div class="fileInputContainer">
+          <input class="fileInput" type="file" name="" id="" />
+        </div>
+        <div>
+          <p><button type="submit" class="am-btn am-btn-default">提交</button></p>
+        </div>
+    </div>
+    
   </fieldset>
 </form>
 

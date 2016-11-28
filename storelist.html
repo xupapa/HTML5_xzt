@@ -31,12 +31,13 @@
 				height: 60%;
 			}
 			.scrollspy-nav {
-			   	width:141%;
+			   	width:125%;
 			  }
 			  .scrollspy-nav ul {
-			    margin-left: -10px;
+			   margin-left: -10;
 			    padding: 0;
-			   
+			    width: 25%;
+			   position: fixed;
 			  }
 			  .scrollspy-nav li {
 			    list-style: none;
@@ -74,14 +75,10 @@
 			.am-u-sm-4{
 				padding-left:0px;
 			}
-			.am-u-sm-8{
-				padding-left:0px;
+			.am-u-sm-9{
+			
+				margin-bottom: 10%;
 
-			}
-			.am-u-sm-8 h5{
-				color: #00bcd4;
-				margin-left: 20%;
-				display: inline;
 			}
 			.content{
 					font-weight: bold;
@@ -100,7 +97,7 @@
 			}
 			.am-panel{
 				margin-top:-3%;
-				height: 45%;
+				height: 47%;
 				width: 100%;
 			}
 			.am-panel-hd{
@@ -171,9 +168,12 @@
 			</div>
 				
 		</div>
+		<div >
 		<div class="am-g">
-			<div class="am-u-sm-3">
-				<nav class="scrollspy-nav" data-am-scrollspynav="{className: {active: 'am-active'}}" data-am-sticky>
+			<div class="am-u-sm-3" >
+				<div>
+				<nav class="scrollspy-nav" data-am-scrollspynav="{className: {active: 'am-active'}}" data-am-sticky id="fixed">
+				
 				  <ul>
 				  	<li id="style1"><div class="list_text"><a href="#list">全部</a></div></li>
 				    <li id="style2"><div class="list_text"><a href="#list1">特色川菜</a></div></li>
@@ -182,6 +182,7 @@
 				    <li id="style1"><div class="list_text"><a href="#list4">特色主食</a></div></li>
 				  </ul>
 				</nav>
+				</div>
 			</div>
 			<div class="am-u-sm-9">
 			<div class="content">
@@ -318,6 +319,8 @@
 				
 			</div>
 		</div>
+		</div>
+		<div class="footer">
 		<header class="am-topbar am-topbar-fixed-bottom">
 			<ul class="am-nav am-nav-pills am-nav-justify">
 			  <li><a href="#">小吃</a>
@@ -325,7 +328,8 @@
 			  <li><a href="#">饮品</a>
 			  <li><a href="#">快餐</a>
 			</ul>
-</header>
+		</header>
+		</div>
 					
 
 

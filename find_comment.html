@@ -8,30 +8,7 @@
     <link rel="stylesheet" href="css/amazeui.min.css">
     <script src="js/jquery.min.js"></script>
     <script src="js/amazeui.min.js"></script>
-	<!-- 样式 -->
-	<style type="text/css">
-	    #nav ul{
-	    	height: 100%;
-	    	background: #00bcd4;
-	    }
-		#nav a{
-			color: white;
-			height: 100%;
-		}
-        .am-comment-bd{
-            font-size: 15px;
-        }
-        #comment{
-            width: 90%;
-            margin-left: 15px;
-        }
-        #comment i span{
-            background:#65c8f5;
-        }
-        #comment ul li{
-          margin-top:-1%;
-        }
-	</style>
+    <link rel="stylesheet" href="css/find.css">
 </head>
 <body>
     <!-- 顶部导航栏 -->
@@ -51,10 +28,10 @@
     </div>
     <div class="am-topbar am-topbar-fixed-bottom">
         <!-- 评论输入框 -->
-        <div style="background:#f0f0f0;height:45px">
-          <div class="am-g" style="width:92%;margin-left:10px">
+        <div id="input">
+          <div class="am-g">
              <div class="am-u-sm-9">
-                 <input type="text" class="am-form-field am-round" value="">
+                 <input type="text" class="am-form-field am-round" value="" placeholder="请输入...">
              </div>
              <div class="am-u-sm-3">
                  <button class="am-btn am-round am-btn-default" type="button">发送</button>
@@ -62,7 +39,7 @@
            </div>
         </div>
         <!-- 导航 -->
-        <div id="nav" style="height:40px">
+        <div id="nav">
           <ul class="am-nav am-nav-pills am-nav-justify">
             <li><a href="index.html">首页</a></li>
             <li><a href="find_news.html">消息</a></li>

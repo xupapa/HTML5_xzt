@@ -8,50 +8,7 @@
     <link rel="stylesheet" href="css/amazeui.min.css">
     <script src="js/jquery.min.js"></script>
     <script src="js/amazeui.min.js"></script>
-	<!-- 样式 -->
-	<style type="text/css">
-	    #nav ul{
-	    	height: 100%;
-	    	background: #00bcd4;
-	    }
-		#nav a{
-			color: white;
-			height: 100%;
-		}
-		#food_list{
-			width: 92%;
-		}
-		#food_list img{
-			width: 115%;
-            margin-left: -5px;
-			float:left;
-		}
-		#food_list p{
-			font-size: 16px;
-			text-align:center;
-			color:gray;
-		}
-        #life-ul p{
-            font-size: 14px;
-            color: gray;
-            font-weight: bold;
-            text-align: right;
-        }
-        #need_list img{
-            width: 100%;
-            float:left;
-        }
-        #need_list p{
-            font-size: 14px;
-            text-align:left;
-            color:gray;
-        }
-        .am-panel{
-            width: 110%;
-            height: 200px;
-            background: #f0f0f0;
-        }
-	</style>
+    <link rel="stylesheet" href="css/find.css">
 </head>
 <body>
      <!-- 导航 -->
@@ -86,7 +43,7 @@
        <div class="am-g">
         <div class="am-u-sm-6"><h3>品美味</h3></div>
         <div class="am-u-sm-6">
-          <a href="fxlist.html" style="font-size:12px;float:right;color:gray">更多&gt;&gt;</a>
+          <a href="fxlist.html" class="more">更多&gt;&gt;</a>
         </div>
       </div>
       <div class="am-g">
@@ -99,13 +56,13 @@
     <!-- 分割线 -->
      <!-- <hr data-am-widget="divider" style="" class="am-divider am-divider-dashed" /> -->
     <!-- 生活列表 -->
-    <div class="am-g" id="life-list">
+    <div class="am-g" id="life_list">
        <div class="am-u-sm-6"><h3>享生活</h3></div>
        <div class="am-u-sm-6">
-         <a href="" style="font-size:12px;float:right;color:gray">更多&gt;&gt;</a>
+         <a href="" class="more">更多&gt;&gt;</a>
        </div>
     </div>
-    <div class="am-slider am-slider-default" data-am-flexslider="{itemWidth: 145, itemMargin: 5, slideshow: false,&quot;controlNav&quot;:false}" id="life-ul">
+    <div class="am-slider am-slider-default" data-am-flexslider="{itemWidth: 145, itemMargin: 5, slideshow: false,&quot;controlNav&quot;:false}" id="life_ul">
         <ul class="am-slides">
             <li>                
                 <a href="fxcontent.html"><img src="images/find_index/life1.png"/>
@@ -133,8 +90,8 @@
      <hr data-am-widget="divider" style="" class="am-divider am-divider-dashed" />
     <!-- 心愿列表 -->
     <a href="myheart.html"><div class="am-g">
-        <div class="am-u-sm-6"><h3 style="color:#ff3333">心愿单</h3></div>
-        <div class="am-u-sm-6"><span class="am-icon-heart am-icon-sm" style="float:right;color:#ff3333"></span></div>
+        <div class="am-u-sm-6"><h3 class="wish">心愿单</h3></div>
+        <div class="am-u-sm-6"><span class="am-icon-heart am-icon-sm" id="wish_list"></span></div>
     </div></a>
     <div class="am-g" id="need_list">
         <div class="am-u-sm-4">

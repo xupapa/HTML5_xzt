@@ -5,67 +5,33 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/amazeui.css"/>
+    <link rel="stylesheet" href="css/fx.css"/>
+    <link rel="stylesheet" href="css/nav.css"/>
     <script src="js/jquery.min.js"></script>
     <script src="js/amazeui.min.js"></script>
-
-    <style type="text/css">
-    	body{
-    		padding: 0;
-    		margin: 0;
-    	}
-		.am-text-ir{
-            display: block;
-            height: 50px;
-            width: 120px;
-            background: url(images/logo.png)no-repeat left center;
-            background-size: cover;
-            margin-left: 35%;
-        }
-		.am-btn{
-			display: block;
-			background-color:#00bcd4; 
-			background:no-repeat;
-		}
-		.am-topbar{
-			background-color:#00bcd4; 
-		}
-		p{
-			font-size: 12px;
-		}
-		.am-thumbnail{
-			border: 0;
-		}
-		header ul
-		{
-			background-color: #00bcd4;
-		}
-		.am-nav a{
-        	color:white;
-    	}
-	</style>
 </head>
 <body>
 	<header class="am-topbar am-topbar-fixed-top">
         <div>
             <div class="am-g">
-                <div class="am-u-sm-2"style="padding-left:0px;">
-                    <a href="find_index.html" class="am-btn am-btn-xl" style="background-color:#00bcd4;background-size:cover">
-                        <i class="am-icon-chevron-left" style="color:white;"></i>
+                <div class="am-u-sm-2" id="sm2">
+                    <a href="find_index.html" class="am-btn am-btn-xl">
+                        <i class="am-icon-chevron-left"></i>
                     </a>
                 </div>
-                <div class="am-u-sm-7">
+                <div class="am-u-sm-7" id="sm7">
                     <a href="index.html" class="am-text-ir">logo</a>
                 </div>
-                <div class="am-u-sm-3">
-                	<p></p>
+                <div class="am-u-sm-3" id="sm3">
+                	
                 </div>
             </div>
         </div>
     </header>
-	<div class="am-g">
+	<div class="am-g" id="listBody">
 		<div class="am-u-sm-6">
 			<div class="am-g">
-				<div class="am-u-sm-12" style="margin:0;padding:0;">
+				<div class="am-u-sm-12" id="list12">
 					<a href="fxcontent.html">
 					<div class="am-thumbnail">
 						<img src="images/search_03.jpg"/>
@@ -99,7 +65,7 @@
 
 			<div class="am-g">
 				<a href="fxcontent.html">
-					<div class="am-thumbnail" style="margin-left:5px;">
+					<div class="am-thumbnail" id="thumbR">
 						<img src="images/search_02.jpg"/>
 					<div class="am-thumbnail-caption">
 						<h3>新旧书店（师活店）</h3>
@@ -114,7 +80,7 @@
 			</div>
 			<div class="am-g">
 				<a href="fxcontent.html">
-					<div class="am-thumbnail" style="margin-left:5px;">
+					<div class="am-thumbnail"id="thumbR">
 						<img src="images/search_05.jpg"/>
 					<div class="am-thumbnail-caption">
 						<h3>超越健身（师大店）</h3>
@@ -129,7 +95,7 @@
 			</div>
 			<div class="am-g">
 				<a href="fxcontent.html">
-					<div class="am-thumbnail" style="margin-left:5px;">
+					<div class="am-thumbnail" id="thumbR">
 						<img src="images/search_01.jpg"/>
 					<div class="am-thumbnail-caption">
 						<h3>校园炸鸡（百年印象店）</h3>
@@ -145,11 +111,11 @@
 		</div>
 	</div>
 
-	<header class="am-topbar am-topbar-fixed-bottom" style="min-height: 40px;">
+	<header class="am-topbar am-topbar-fixed-bottom" id="listF">
 	<ul class="am-nav am-nav-pills am-nav-justify">
-		<li><a href="index.html" style="color:white;">首页</a></li>
-		<li><a href="find_news.html" style="color:white;">消息</a></li>
-		<li><a href="me.html" style="color:white">我</a></li>
+		<li><a href="index.html">首页</a></li>
+		<li><a href="find_news.html">消息</a></li>
+		<li><a href="me.html">我</a></li>
 	</ul>
 	</header>
 </body>

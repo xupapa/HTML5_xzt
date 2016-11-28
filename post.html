@@ -22,9 +22,10 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="apple-mobile-web-app-title" content="Amaze UI"/>
-
+	
   <link rel="stylesheet" href="css/amazeui.css"/>
   <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/nav.css"/>
   <style type="text/css">
 	  #nav ul{
 	    height: 100%;
@@ -96,13 +97,25 @@
 </head>
 <body>
 	<!--工具栏-->
-	<div style="height:50px;" id="nav">
-	      <ul class="am-nav am-nav-pills am-nav-justify">
-	        <li><a href="#" class="am-icon-home am-icon-sm" style="margin-left:-50%;"></a></li>
-	        <li><h2 class="am-serif" style="margin-left:23%;">快递</h2></li>
-	        <li><a href="#" class="am-icon-search am-icon-sm" style="margin-left:45%;"></a></li>
-	      </ul>
-	</div>
+	<header class="am-topbar am-topbar-fixed-top">
+    <div class="am-g">
+      <div class="am-u-sm-2"id="sm2">
+        <a href="me.html" class="am-btn am-btn-xl">
+          <i class="am-icon-home am-icon-sm"></i>
+        </a>
+      </div>
+      <div class="am-u-sm-8"id="sm8">
+        <h3>
+          快递
+        </h3>
+      </div>
+      <div class="am-u-sm-2"id="sm2">
+      	<a href="#" class="am-btn am-btn-xl">
+			<i class="am-icon-search am-icon-sm"></i>
+		</a>
+      </div>
+    </div>
+  </header>
 	<!--列表-->
 	<!--1-->
 	<div class="content">

@@ -1,41 +1,9 @@
-.am-text-ir{
-			display: block;
-			height: 50px;
-			width: 120px;
-			background: url(../images/logo.png)no-repeat left center;
-			background-size: cover;
-			margin-left: 30%;
-			color: white;
-		}
-#nav ul{
-			height: 100%;
-			background: #00bcd4;
-		}
-#nav a{
-			color: white;
-			height: 100%;
-		}
+
 #con-list p{
 			font-size: 14px;
 		}
-.am-btn{
-			display: block;
-			background-color:#00bcd4; 
-			background:no-repeat;
-		}
-.am-topbar{
-			background-color:#00bcd4; 
-		}
-.am-btn am-btn-xl{
-	background-color:#00bcd4;
-	background-size:cover;
-}	
 #icon{
 	color: white;
-}	
-
-.am-u-sm-2{
-	padding-left:0px;
 }
 .am-g{
 	max-height:25%;

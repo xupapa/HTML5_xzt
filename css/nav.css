@@ -1,0 +1,80 @@
+/* 导航栏 */
+.am-g-fixed
+{
+	max-width: 1000px;
+}
+.am-topbar{
+	background-color: #00bcd4;
+}
+.am-btn{
+	display: block;
+	background-color:#00bcd4; 
+	background:no-repeat;
+}
+.am-text-ir{
+    display: block;
+    height: 50px;
+    width: 120px;
+    background: url(../images/logo.png)no-repeat left center;
+    background-size: cover;
+    margin-left: 30%;
+}
+#sm2{
+    margin: 0;
+    padding: 0;
+}
+#sm2 a
+{
+	background-color:#00bcd4;
+	background-size:cover;
+}
+#sm2 a i
+{
+	color:white;
+}
+#sm7{
+    margin: 0;
+    padding: 0;
+}
+#sm1{
+    margin: 0;
+    padding: 0;
+}
+#sm3{
+    margin: 0;
+    padding: 0;
+}
+#smu2{
+    margin: 0;
+    padding: 0;
+}
+#smu2 a
+{
+	background-color:#00bcd4;
+	background-size:cover;
+}
+#smu2 a i
+{
+	color:white;
+}
+#sm8{
+	padding: 0;
+	margin: 0;
+}
+#sm8 h3
+{
+	color:white;
+	text-align:center;
+	padding-top:4%;
+}
+/* 工具栏 */
+header ul
+	{
+		background-color: #00bcd4;
+	}
+.am-nav a{
+    color:white;
+}
+.am-nav a:hover{
+    color:#00bcd4;
+}

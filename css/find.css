@@ -1,5 +1,6 @@
 /*底部导航栏*/
 #nav ul{
+    font-size: 13px;
     height: 100%;
     background: #00bcd4;
 }
@@ -122,17 +123,7 @@
     float: right;
 }
 /*发现点赞页*/
-#comment .am-comment-bd{
-    font-size: 15px;
-}
-#comment{
-    width: 90%;
-    margin-left: 15px;
-}
-#comment i span{
-    background:#65c8f5;
-}
-.scrollspy-nav {
+/*.scrollspy-nav {
     top: 0;
     z-index: 100;
     background: #0e90d2;
@@ -156,21 +147,18 @@
  .scrollspy-nav a.am-active {
     color: #fff;
     font-weight: bold;
+}*/
+#upme i span{
+    background:#65c8f5;
 }
-#myup .am-panel {
-    margin-top: -1%;
+#myup i span{
+    background:#65c8f5;
 }
-#upme .am-panel{
-    margin-top: -1%;
+#upme li{
+    margin-top: 5%;
 }
-#upme ul li{
-    margin-top: -1%;
-}
-#myup{
-    margin-top: -5%;
-}
-#myup ul li{
-    margin-top: -1%;
+#myup li{
+    margin-top: 5%;
 }
 .at{
     color: red;

@@ -28,6 +28,7 @@
 
   <link rel="stylesheet" href="css/amazeui.min.css">
   <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/bottom.css">
   <script src="js/jquery.min.js"></script>
   <script src="js/amazeui.min.js"></script>
 <style type="text/css">
@@ -39,14 +40,6 @@
             background-size: cover;
             margin-left: 30%;
         }
-	#nav ul{
-		height: 100%;
-		background: #00bcd4;
-	}
-	#nav a{
-		color: white;
-		height: 100%;
-	}
 	#con-list p{
 		font-size: 14px;
 	}
@@ -235,16 +228,14 @@
       </a>
 	</ul>
 	<!--底部导航条-->
-	<div class="am-topbar am-topbar-fixed-bottom" >
-		<div id="nav">
-			<ul class="am-nav am-nav-pills am-nav-justify" style="height: 50px">
-				<li><a href="life_match.html"><font size="4px"><strong>搭配</strong></font></a></li>
-				<li><a href="life_beauty.html"><font size="4px"><strong>美妆</strong></font></a></li>
-				<li><a href="life_book.html"><font size="4px"><strong>阅读</strong></font></a></li>
-				<li><a href="post.html"><font size="4px"><strong>快递</strong></font></a></li>
-			</ul>
-		</div>
-	</div>
+    <div class="am-topbar am-topbar-fixed-bottom" id="nav">
+        <ul class="am-nav am-nav-pills am-nav-justify">
+          <li><a href="life_match.html"><i class="am-icon am-icon-gift am-icon-md"></i><br>搭配</a></li>
+          <li><a href="life_beauty.html"><i class="am-icon am-icon-medkit am-icon-md"></i><br>美妆</a></li>
+          <li><a href="life_book.html"><i class="am-icon am-icon-columns am-icon-md"></i><br>阅读</a></li>
+          <li><a href="post.html"><i class="am-icon am-icon-bolt am-icon-md"></i><br>快递</a></li>
+        </ul>
+    </div>
 
 <script>
   $(function() {

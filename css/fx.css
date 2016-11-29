@@ -72,9 +72,29 @@
 {
 	margin-top: 0;
 }
+
 .am-list .am-thumbnail
 {
 	margin: 0;
+}
+.am-list h3
+{
+	margin: 0;
+	padding-bottom: 1%;
+}
+.am-list small
+{
+	font-size: 12px;
+	color: #838484;
+}
+
+/* heartContent */
+article .am-btn
+{
+	border: 1px solid #00bcd4;
+	background-color: white;
+	color: #00bcd4;
+	font-size: 13px;
 }
 /* mySave */
 .am-tab-panel .am-thumbnail

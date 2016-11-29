@@ -9,35 +9,44 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/amazeui.min.js"></script>
     <link rel="stylesheet" href="css/find.css">
-    
+    <link rel="stylesheet" href="css/nav.css"/>
+    <link rel="stylesheet" href="css/bottom.css"/>
 </head>
 <body>
-    <div class="am-topbar am-topbar-fixed-bottom">
-        <!-- 导航 -->
-        <div id="nav">
-          <ul class="am-nav am-nav-pills am-nav-justify">
-            <li><a href="index.html">首页</a></li>
-            <li><a href="find_news.html">消息</a></li>
-            <li><a href="me.html">我</a></li>
-          </ul>
-        </div>
+    <!-- 导航 -->
+    <!-- <div class="am-topbar am-topbar-fixed-bottom" id="nav">
+        <ul class="am-nav am-nav-pills am-nav-justify">
+          <li><a href="index.html"><i class="am-icon am-icon-home am-icon-md"></i><br>首页</a></li>
+          <li><a href="find_news.html"><i class="am-icon am-icon-comments-o am-icon-md"></i><br>消息</a></li>
+          <li><a href="me.html"><i class="am-icon am-icon-github-alt am-icon-md"></i><br>我</a></li>
+        </ul>
+    </div> -->
+    <header class="am-topbar am-topbar-fixed-top">
+    <div class="am-g">
+      <div class="am-u-sm-2" id="sm2">
+        <a href="find_news.html" class="am-btn am-btn-xl">
+          <i class="am-icon-chevron-left" style="margin-top:3px;"></i>
+        </a>
+      </div>
+      <div class="am-u-sm-8" id="sm8">
+        <h3>
+          我的点赞
+        </h3>
+      </div>
+      <div class="am-u-sm-2" id="sm2">
+      </div>
     </div>
+  </header>
     <!-- 滚动侦测导航 -->
-    <nav class="scrollspy-nav" data-am-scrollspynav="{offsetTop: 45}" data-am-sticky>
-      <ul>
-        <li><a href="find_news.html" class="am-btn"><i class="am-icon-chevron-left am-icon-mx"></i></a></li>
-        <li></li>
-        <li><a href="#upme">我的点赞</a></li>
-        <li><a href="#myup">为我点赞</a></li>
+    <div data-am-widget="tabs" class="am-tabs am-tabs-d2">
+      <ul class="am-tabs-nav am-cf">
+          <li class="am-active"><a href="[data-tab-panel-0]">提到我的</a></li>
+          <li class=""><a href="[data-tab-panel-1]">我提到的</a></li>
       </ul>
-    </nav>
-    <!-- 内容 -->
-    <div class="am-panel am-panel-default" id="upme">
-      <div class="am-panel-hd">提到我的</div>
-      <div class="am-panel-bd">
-         <!-- 评论 -->
-         <ul class="am-comments-list am-comments-list-flip" id="comment">
-            <li class="am-comment am-comment-highlight">
+      <div class="am-tabs-bd">
+          <div data-tab-panel-0 class="am-tab-panel am-active">
+            <ul class="am-list" id="upme">
+               <li class="am-comment am-comment-highlight">
               <div class="am-comment">
                <a href="#link-to-user-home">
                  <img src="images/find_comment/1.jpg" alt="" class="am-comment-avatar" width="48" height="48"/>
@@ -115,15 +124,11 @@
               </div>
              </div>
            </li>
-         </ul>   
-      </div>
-    </div>
-    <div class="am-panel am-panel-default" id="myup">
-      <div class="am-panel-hd">我提到的</div>
-      <div class="am-panel-bd">
-         <!-- 评论 -->
-         <ul class="am-comments-list am-comments-list-flip" id="comment">
-            <li class="am-comment am-comment-highlight">
+            </ul>
+          </div>
+          <div data-tab-panel-1 class="am-tab-panel ">
+            <ul class="am-list" id="myup">
+               <li class="am-comment am-comment-highlight">
               <div class="am-comment">
                <a href="#link-to-user-home">
                  <img src="images/find_comment/4.jpg" alt="" class="am-comment-avatar" width="48" height="48"/>
@@ -201,8 +206,9 @@
               </div>
              </div>
            </li>
-         </ul>
+            </ul>
+          </div>
       </div>
-    </div>    
+  </div>
 </body>
 </html>

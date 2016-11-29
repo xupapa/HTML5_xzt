@@ -8,73 +8,73 @@
     <link rel="stylesheet" href="css/amazeui.min.css">
     <script src="js/jquery.min.js"></script>
     <script src="js/amazeui.min.js"></script>
-    <style type="text/css">
-    	#nav ul{
-	    	height: 100%;
-	    	background: #00bcd4;
-	    }
-		#nav a{
-			color: white;
-			height: 100%;
-		}
-		#con-list p{
-			font-size: 14px;
-		}
-		.list{
-			float: right;
-		}		
-    </style>
+    <link rel="stylesheet" href="css/find.css">
+    <link rel="stylesheet" href="css/nav.css"/>
 </head>
 <body>
      <!-- 导航 -->
      <!-- 顶部 -->
-     <div class="am-topbar am-topbar-fixed-top">
-      <div style="height:50px" id="nav">
-     	<ul class="am-nav am-nav-pills am-nav-justify">
-     		<li><a href="find_index.html" class="am-btn am-btn-xl" style="text-align:left;background-color:#00bcd4;background-size:cover"><i class="am-icon-chevron-left am-icon-xm"></i></a></li>
-     		<li></li>
-     		<li></li>
-     		<li><img src="images/logo2.png" style="height:55px;margin-left:5.5%"></li>
-     		<li></li>
-     		<li><a href="find_comment.html" class="am-btn am-btn-lg" style="text-align:right;background-color:#00bcd4;background-size:cover"><i class="am-icon-comment-o am-icon-sm"></i></a></li>
-     	</ul>
-      </div>
-     </div>
+     <header class="am-topbar am-topbar-fixed-top">
+        <div>
+            <div class="am-g">
+                <div class="am-u-sm-2" id="sm2">
+                    <a href="index.html" class="am-btn am-btn-xl">
+                        <i class="am-icon-chevron-left"></i>
+                    </a>
+                </div>
+                <div class="am-u-sm-7" id="sm7">
+                    <a href="index.html" class="am-text-ir">logo</a>
+                </div>
+                <div class="am-u-sm-1" id="sm1"></div>
+                <div class="am-u-sm-2" id="smu2">
+                    <a href="" class="am-btn am-btn-xl">
+                        <i class="am-icon-comment-o am-icon-sm"></i>
+                    </a>
+                </div>                
+            </div>
+        </div>
+    </header>
      <!-- 底部 -->
-     <div class="am-topbar am-topbar-fixed-bottom" id="nav" style="height:40px">
+     <div class="am-topbar am-topbar-fixed-bottom" id="nav">
         <ul class="am-nav am-nav-pills am-nav-justify">
-          <li><a href="index.html">首页</a></li>
-          <li><a href="find_news.html">消息</a></li>
-          <li><a href="me.html">我</a></li>
+          <li><a href="index.html"><i class="am-icon am-icon-home am-icon-md"></i><br>首页</a></li>
+          <li><a href="find_news.html"><i class="am-icon am-icon-comments-o am-icon-md"></i><br>消息</a></li>
+          <li><a href="me.html"><i class="am-icon am-icon-github-alt am-icon-md"></i><br>我</a></li>
         </ul>
     </div>    
     <!-- 列表 -->
-    <ul class="am-list am-list-info am-list-static am-list-striped" id="con-list" style="margin-top:1%;margin-bottom: 1% ">
-      <li>
-         <div class="am-g"><a href="find_mysave.html">
-         	<div class="am-u-sm-2"><i class="am-icon-star am-icon-sm am-icon-fw" style="color:gray"></i></div>
-         	<div class="am-u-sm-8" style="color:gray">
+    <ul class="am-list am-list-info am-list-static am-list-striped" id="con_list">
+      <li class="mynews">
+         <div class="am-g">
+          <a href="find_mysave.html">
+         	<div class="left"><div class="am-u-sm-2"><i class="am-icon-star am-icon-sm am-icon-fw" ></i></div></div>
+         	<div class="am-u-sm-8">
          		我的收藏
          	</div>
-         	<div class="am-u-sm-2"><i class="am-icon-chevron-right am-icon-xm" style="float:right"></i></div></a>
+         	<div class="right"><div class="am-u-sm-2"><i class="am-icon-chevron-right am-icon-xm"></i></div></div>
+          </a>
          </div>
       </li>
-      <li>
-         <div class="am-g"><a href="find_mycomment.html">
-         	<div class="am-u-sm-2"><i class="am-icon-comment-o am-icon-sm am-icon-fw" style="color:gray"></i></div>
-         	<div class="am-u-sm-8" style="color:gray">
-         		我的评论
-         	</div>
-         	<div class="am-u-sm-2"><i class="am-icon-chevron-right am-icon-xm" style="float:right"></i></div></a>
+      <li class="mynews">
+         <div class="am-g">
+          <a href="find_mycomment.html">
+            <div class="left"><div class="am-u-sm-2"><i class="am-icon-comment-o am-icon-sm am-icon-fw" ></i></div></div>
+            <div class="am-u-sm-8">
+                我的评论
+            </div>
+            <div class="right"><div class="am-u-sm-2"><i class="am-icon-chevron-right am-icon-xm"></i></div></div>
+          </a>
          </div>
       </li>
-      <li>
-         <div class="am-g"><a href="find_myup.html">
-         	<div class="am-u-sm-2"><i class="am-icon-thumbs-up am-icon-sm am-icon-fw" style="color:gray"></i></div>
-         	<div class="am-u-sm-8" style="color:gray">
-         		我的赞
-         	</div>
-         	<div class="am-u-sm-2"><i class="am-icon-chevron-right am-icon-xm" style="float:right"></i></div></a>
+      <li class="mynews">
+         <div class="am-g">
+          <a href="find_myup.html">
+            <div class="left"><div class="am-u-sm-2"><i class="am-icon-thumbs-up am-icon-sm am-icon-fw" ></i></div></div>
+            <div class="am-u-sm-8">
+                我的赞
+            </div>
+            <div class="right"><div class="am-u-sm-2"><i class="am-icon-chevron-right am-icon-xm"></i></div></div>
+          </a>
          </div>
       </li>
       <li>
@@ -125,6 +125,26 @@
          		<p>有本事就偷我的黑珍珠号</p>
          	</div>
          	<div class="am-u-sm-3"><p class="list">2016.11.5</p></div>
+         </div>
+      </li>
+      <li>
+         <div class="am-g">
+            <div class="am-u-sm-2"><img src="images/find_comment/3.jpg" class="am-circle"></div>
+            <div class="am-u-sm-8">
+                <h3>笑得咬了舌头</h3>
+                <p>I have a pen,I have a apple.Uhh~Apple-pen</p>
+            </div>
+            <div class="am-u-sm-2"><p class="list">昨天</p></div>
+         </div>
+      </li>
+      <li>
+         <div class="am-g">
+            <div class="am-u-sm-2"><img src="images/find_comment/1.jpg" class="am-circle"></div>
+            <div class="am-u-sm-7">
+                <h3>咖啡放糖</h3>
+                <p>前尘往事成云烟，消散在彼此眼前，就连说过了再见，也看不见你有些哀怨...</p>
+            </div>
+            <div class="am-u-sm-3"><p class="list" ">2016.11.7</p></div>
          </div>
       </li>
     </ul>

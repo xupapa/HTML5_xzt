@@ -8,93 +8,46 @@
     <link rel="stylesheet" href="css/amazeui.min.css">
     <script src="js/jquery.min.js"></script>
     <script src="js/amazeui.min.js"></script>
-	<!-- 样式 -->
-	<style type="text/css">
-	    #nav ul{
-	    	height: 100%;
-	    	background: #00bcd4;
-	    }
-      #nav a{
-        color: white;
-        height: 100%;
-      }
-      .am-comment-bd{
-          font-size: 15px;
-      }
-      #comment{
-          width: 90%;
-          margin-left: 15px;
-      }
-      #comment i span{
-          background:#65c8f5;
-      }
-      .scrollspy-nav {
-        top: 0;
-        z-index: 100;
-        background: #0e90d2;
-        width: 100%;    
-        height: 50px;    
-      }
-      .scrollspy-nav ul {
-        margin: 0;
-        padding: 0;
-      }
-      .scrollspy-nav li {
-        display: inline-block;
-        list-style: none;
-        margin-left: 2%;
-
-      }
-      .scrollspy-nav a {
-        color: #eee;
-        padding: 10px 20px;
-        display: inline-block;
-      }
-      .scrollspy-nav a.am-active {
-        color: #fff;
-        font-weight: bold;
-      }
-      .am-panel {
-        margin-top: -1%;
-      }
-      #upme ul li{
-        margin-top: -1%;
-      }
-      #myup{
-        margin-top: -5%;
-      }
-      #myup ul li{
-        margin-top: -1%;
-      }
-	</style>
+    <link rel="stylesheet" href="css/find.css">
+    <link rel="stylesheet" href="css/nav.css"/>
 </head>
 <body>
     <div class="am-topbar am-topbar-fixed-bottom">
         <!-- 导航 -->
-        <div id="nav" style="height:40px">
+        <div id="nav">
           <ul class="am-nav am-nav-pills am-nav-justify">
-            <li><a href="index.html" style="color:white">首页</a></li>
-            <li><a href="find_news.html" style="color:white">消息</a></li>
-            <li><a href="me.html" style="color:white">我</a></li>
+            <li><a href="index.html">首页</a></li>
+            <li><a href="find_news.html">消息</a></li>
+            <li><a href="me.html">我</a></li>
           </ul>
         </div>
     </div>
+    <header class="am-topbar am-topbar-fixed-top">
+    <div class="am-g">
+      <div class="am-u-sm-2" id="sm2">
+        <a href="find_news.html" class="am-btn am-btn-xl">
+          <i class="am-icon-chevron-left" style="margin-top:3px;"></i>
+        </a>
+      </div>
+      <div class="am-u-sm-8" id="sm8">
+        <h3>
+          我的点赞
+        </h3>
+      </div>
+      <div class="am-u-sm-2" id="sm2">
+      </div>
+    </div>
+  </header>
     <!-- 滚动侦测导航 -->
-    <nav class="scrollspy-nav" data-am-scrollspynav="{offsetTop: 45}" data-am-sticky>
-      <ul>
-        <li><a href="find_news.html" class="am-btn"><i class="am-icon-chevron-left am-icon-mx"></i></a></li>
-        <li></li>
-        <li><a href="#atme">我的点赞</a></li>
-        <li><a href="#myat">为我点赞</a></li>
+    <div data-am-widget="tabs" class="am-tabs am-tabs-d2">
+      <ul class="am-tabs-nav am-cf">
+          <li class="am-active"><a href="[data-tab-panel-0]">提到我的</a></li>
+          <li class=""><a href="[data-tab-panel-1]">我提到的</a></li>
       </ul>
-    </nav>
-    <!-- 内容 -->
-    <div class="am-panel am-panel-default" id="upme">
-      <div class="am-panel-hd">提到我的</div>
-      <div class="am-panel-bd">
-         <!-- 评论 -->
-         <ul class="am-comments-list am-comments-list-flip" id="comment">
-            <li class="am-comment am-comment-highlight">
+      <div class="am-tabs-bd">
+          <div data-tab-panel-0 class="am-tab-panel am-active">
+            <ul class="am-list" id="upme">
+               <li class="am-comment am-comment-highlight">
               <div class="am-comment">
                <a href="#link-to-user-home">
                  <img src="images/find_comment/1.jpg" alt="" class="am-comment-avatar" width="48" height="48"/>
@@ -108,7 +61,7 @@
                  </div>
                </header>
                <div class="am-comment-bd">
-                 <p style="color:red">@全体成员</p>hello,大家好，我是xxx。 
+                 <p class="at">@全体成员</p>hello,大家好，我是xxx。 
                </div>
                <footer class="am-comment-footer">
                   <div class="am-comment-actions">
@@ -134,7 +87,7 @@
                  </div>
                </header>
                <div class="am-comment-bd">
-                 <p style="color:red">@全体成员</p>hello,大家好，我是xxx。 
+                 <p class="at">@全体成员</p>hello,大家好，我是xxx。 
                </div>
                <footer class="am-comment-footer">
                   <div class="am-comment-actions">
@@ -160,7 +113,7 @@
                  </div>
                </header>
                <div class="am-comment-bd">
-                 <p style="color:red">@全体成员</p>hello,大家好，我是xxx。 
+                 <p class="at">@全体成员</p>hello,大家好，我是xxx。 
                </div>
                <footer class="am-comment-footer">
                   <div class="am-comment-actions">
@@ -172,15 +125,11 @@
               </div>
              </div>
            </li>
-         </ul>   
-      </div>
-    </div>
-    <div class="am-panel am-panel-default" id="myup">
-      <div class="am-panel-hd">我提到的</div>
-      <div class="am-panel-bd">
-         <!-- 评论 -->
-         <ul class="am-comments-list am-comments-list-flip" id="comment">
-            <li class="am-comment am-comment-highlight">
+            </ul>
+          </div>
+          <div data-tab-panel-1 class="am-tab-panel ">
+            <ul class="am-list" id="myup">
+               <li class="am-comment am-comment-highlight">
               <div class="am-comment">
                <a href="#link-to-user-home">
                  <img src="images/find_comment/4.jpg" alt="" class="am-comment-avatar" width="48" height="48"/>
@@ -194,7 +143,7 @@
                  </div>
                </header>
                <div class="am-comment-bd">
-                 <p style="color:red">@全体成员</p>hello,大家好，我是xxx。 
+                 <p class="at">@全体成员</p>hello,大家好，我是xxx。 
                </div>
                <footer class="am-comment-footer">
                   <div class="am-comment-actions">
@@ -220,7 +169,7 @@
                  </div>
                </header>
                <div class="am-comment-bd">
-                 <p style="color:red">@全体成员</p>hello,大家好，我是xxx。 
+                 <p class="at">@全体成员</p>hello,大家好，我是xxx。 
                </div>
                <footer class="am-comment-footer">
                   <div class="am-comment-actions">
@@ -246,7 +195,7 @@
                  </div>
                </header>
                <div class="am-comment-bd">
-                 <p style="color:red">@全体成员</p>hello,大家好，我是xxx。 
+                 <p class="at">@全体成员</p>hello,大家好，我是xxx。 
                </div>
                <footer class="am-comment-footer">
                   <div class="am-comment-actions">
@@ -258,8 +207,9 @@
               </div>
              </div>
            </li>
-         </ul>
+            </ul>
+          </div>
       </div>
-    </div>    
+  </div>
 </body>
 </html>

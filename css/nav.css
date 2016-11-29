@@ -6,7 +6,7 @@
 .am-topbar{
 	background-color: #00bcd4;
 }
-.am-btn{
+am-topbar am-topbar-fixed-top .am-btn{
 	display: block;
 	background-color:#00bcd4; 
 	background:no-repeat;
@@ -69,9 +69,9 @@
 }
 /* 工具栏 */
 header ul
-	{
-		background-color: #00bcd4;
-	}
+{
+	background-color: #00bcd4;
+}
 .am-nav a{
     color:white;
 }

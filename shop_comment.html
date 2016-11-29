@@ -1,202 +1,216 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="">
-  <meta name="keywords" content="">
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>店铺评论.</title>
-  <!-- Set render engine for 360 browser -->
-  <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>店铺评论</title>
+    <!-- Set render engine for 360 browser -->
+    <meta name="renderer" content="webkit">
 
-  <!-- No Baidu Siteapp-->
-  <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <!-- No Baidu Siteapp-->
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
 
-  <link rel="icon" type="image/png" href="#">
+    <link rel="icon" type="image/png" href="#">
 
-  <!-- Add to homescreen for Chrome on Android -->
-  <meta name="mobile-web-app-capable" content="yes">
-  <link rel="icon" sizes="192x192" href="#">
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="#">
 
-  <!-- Add to homescreen for Safari on iOS -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="Amaze UI"/>
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI"/>
 
-  <link rel="stylesheet" href="css/amazeui.css"/>
-  <link rel="stylesheet" href="css/app.css">
-  <style type="text/css">
-    .body{
-        font-family:serif;
-    }
-    .back{
-        position:absolute;
-        top:3%;
-        left:3%;
-    }
-    h3{
-        margin-top:10px;
-        margin-left:20px;
-    }
-    h3 i{
-        color:orange;
-        margin-left:3px;
-    }
-    p{
-        margin-top:-15px;
-        margin-left:20px;
-        font-size:14px;
-        font-weight:bold;
-        color:#4C4C4C;
-    }
-    p i{
-        color:yellow;
-    }
-    .badge{
-        margin-top:-10px;
-        margin-left:15px;
-    }
-    .am-progress{
-        margin:10px 10px 0 10px;
-    }
-    .am-comments-list{
-      margin:0 10px 0 10px;
-    }
-    header ul{
-      background-color:#00bcd4;
-    }
-    .am-nav a{
-      color:white;
-    }
-    .am-nav a:hover{
-      color:#00bcd4;
-    }
-  </style> 
+    <link rel="stylesheet" href="css/amazeui.css"/>
+    <link rel="stylesheet" href="css/app.css">
+    <style type="text/css">
+        .body{
+            font-family:serif;
+        }
+        .back{
+            position:absolute;
+            top:3%;
+            left:3%;
+        }
+        h3{
+
+            margin-left:20px;
+        }
+        #center{
+            margin-top:15px;
+            margin-left:-9px;
+        }
+        h3 i{
+            color:orange;
+            margin-left:3px;
+        }
+        p{
+            margin-top:-15px;
+            margin-left:20px;
+            font-size:14px;
+            font-weight:bold;
+            color:#4C4C4C;
+        }
+        p i{
+            color:yellow;
+        }
+        .badge{
+            margin-top:-10px;
+            margin-left:20px;
+        }
+        .am-progress{
+            margin:10px 10px 0 10px;
+        }
+        .am-comments-list{
+            margin:0 10px 0 10px;
+        }
+        header ul{
+            background-color:#00bcd4;
+        }
+        .am-nav a{
+            color:white;
+        }
+        .am-nav a:hover{
+            color:#00bcd4;
+        }
+    </style>
 </head>
 <body>
 <!--商品展示图-->
 <img src="images/food_banner_1.jpg" class="am-img-responsive" alt="" width="100%"/>
 <!--商品销量评价-->
-<span class="back"><a href="storelist.html" class="am-icon-chevron-left am-icon-sm am-icon-fw" style="color:#F6F6F6"></a></span>
-<h3 class="am-serif">江水煮江鱼<i class="am-icon-thumbs-o-up"></i><i class="am-icon-thumbs-o-up"></i><i class="am-icon-thumbs-o-up"></i></h3>
-<p class="am-serif">月销：110&nbsp&nbsp&nbsp最低价：100</p>
-<p class="am-serif"></p>
-<p class="am-serif">评价：<i class="am-icon-star"></i><i class="am-icon-star"></i><i class="am-icon-star"></i><i class="am-icon-star"></i><i class="am-icon-star-o"></i></p>
+<span class="back"><a href="#" class="am-icon-chevron-left am-icon-sm am-icon-fw" style="color:#F6F6F6"></a></span>
+<div class="am-g" id="center">
+    <div class="am-u-sm-6">
+        <h3 class="am-serif">江水煮江鱼<i class="am-icon-thumbs-o-up"></i><i class="am-icon-thumbs-o-up"></i><i class="am-icon-thumbs-o-up"></i></h3>
+        <p class="am-serif">月销：110&nbsp&nbsp&nbsp最低价：100</p>
+        <p class="am-serif"></p>
+        <p class="am-serif">评价：<i class="am-icon-star"></i><i class="am-icon-star"></i><i class="am-icon-star"></i><i class="am-icon-star"></i><i class="am-icon-star-o"></i></p>
+    </div>
+    <div class="am-u-sm-6">
+        <a href="#" class="am-btn am-btn-sm"style="color:white;background-color:#00bcd4;"><i class="am-icon-heart"></i>&nbsp收藏</a>
+        <a href="comment.html" class="am-btn am-btn-sm"style="color:#00bcd4;background-color:white; border-color:#00bcd4;"><i class="am-icon-comments-o"></i>&nbsp评论</a>
+    </div>
+</div>
 <!--评价标签-->
-<div class="badge">
-<span class="am-badge am-badge-primary am-round">肉质鲜美55</span>
-<span class="am-badge am-badge-primary am-round">配菜多42</span>
-<span class="am-badge am-badge-primary am-round">份量足56</span>
-<span class="am-badge am-badge-secondary am-round">口味正宗36</span>
-<span class="am-badge am-badge-secondary am-round">口感偏辣5</span>
-<span class="am-badge am-badge-danger am-round">精致25</span>
-<span class="am-badge am-badge-danger am-round">送餐快66</span>
+<div class="am-g">
+    <div class="badge">
+        <span class="am-badge am-badge-primary am-round">肉质鲜美55</span>
+        <span class="am-badge am-badge-primary am-round">配菜多42</span>
+        <span class="am-badge am-badge-primary am-round">份量足56</span>
+        <span class="am-badge am-badge-secondary am-round">口味正宗36</span>
+        <span class="am-badge am-badge-secondary am-round">口感偏辣5</span>
+        <span class="am-badge am-badge-danger am-round">精致25</span>
+        <span class="am-badge am-badge-danger am-round">送餐快66</span>
+    </div>
 </div>
 <!--进度条-->
 <div class="am-g">
-  <div class="am-u-sm-3" style="text-align:center;padding-left:0;padding-right:0;padding-top:10px;color:#4C4C4C;font-size:14px;">分量足</div>
-  <div class="am-u-sm-9" style="padding-left:0px;padding-right:0">
-    <div class="am-progress">
-      <div class="am-progress-bar"  style="width: 35%;background-color:#58BFF4;">35%</div>
-      <div class="am-progress-bar"  style="width: 65%;background-color:pink;">65%</div>
+    <div class="am-u-sm-3" style="text-align:center;padding-left:0;padding-right:0;padding-top:10px;color:#4C4C4C;font-size:14px;">分量足</div>
+    <div class="am-u-sm-9" style="padding-left:0px;padding-right:0">
+        <div class="am-progress">
+            <div class="am-progress-bar"  style="width: 35%;background-color:#58BFF4;">35%</div>
+            <div class="am-progress-bar"  style="width: 65%;background-color:pink;">65%</div>
+        </div>
     </div>
-  </div>
 </div>
 <div class="am-g">
-  <div class="am-u-sm-3" style="text-align:center;padding-left:0;padding-right:0;padding-top:10px;color:#4C4C4C;font-size:14px;">偏辣</div>
-  <div class="am-u-sm-9" style="padding-left:0px;padding-right:0">
-    <div class="am-progress">
-      <div class="am-progress-bar"  style="width: 80%;background-color:#58BFF4;">80%</div>
-      <div class="am-progress-bar"  style="width: 20%;background-color:pink;">20%</div>
+    <div class="am-u-sm-3" style="text-align:center;padding-left:0;padding-right:0;padding-top:10px;color:#4C4C4C;font-size:14px;">偏辣</div>
+    <div class="am-u-sm-9" style="padding-left:0px;padding-right:0">
+        <div class="am-progress">
+            <div class="am-progress-bar"  style="width: 80%;background-color:#58BFF4;">80%</div>
+            <div class="am-progress-bar"  style="width: 20%;background-color:pink;">20%</div>
+        </div>
     </div>
-  </div>
 </div>
 <!--评论-->
 <ul class="am-comments-list am-comments-list-flip">
     <!--1-->
-  <li class="am-comment am-comment-highlight">
-     <a href="#">
-       <img src="images/head_1.jpg" alt="" class="am-comment-avatar" width="48" height="48"/>
-     </a>
-     <div class="am-comment-main">
-        <header class="am-comment-hd">
-          <!--<h3 class="am-comment-title">评论标题</h3>-->
-          <div class="am-comment-meta">
-            <a href="#link-to-user" class="am-comment-author">咸鱼悠悠</a>
-            评论于 <time datetime="2016-11-21T04:54:29-07:00" title="2016年11月21日 下午4:47 格林尼治标准时间+0800">2016-11-21 16:47</time>
-          </div>
-        </header>
-        <div class="am-comment-bd">
-            <p class="am-serif">口感滑嫩，油而不腻。既去除了鱼的腥味，又保持了鱼的鲜嫩。</p>
+    <li class="am-comment am-comment-highlight">
+        <a href="#">
+            <img src="images/head_1.jpg" alt="" class="am-comment-avatar" width="48" height="48"/>
+        </a>
+        <div class="am-comment-main">
+            <header class="am-comment-hd">
+                <!--<h3 class="am-comment-title">评论标题</h3>-->
+                <div class="am-comment-meta">
+                    <a href="#link-to-user" class="am-comment-author">咸鱼悠悠</a>
+                    评论于 <time datetime="2016-11-21T04:54:29-07:00" title="2016年11月21日 下午4:47 格林尼治标准时间+0800">2016-11-21 16:47</time>
+                </div>
+            </header>
+            <div class="am-comment-bd">
+                <p class="am-serif">口感滑嫩，油而不腻。既去除了鱼的腥味，又保持了鱼的鲜嫩。</p>
+            </div>
         </div>
-     </div>
-  </li>
-  <!--2-->
-  <li class="am-comment am-comment-highlight">
-     <a href="#">
-       <img src="images/head_2.jpg" alt="" class="am-comment-avatar" width="60" height="60"/>
-     </a>
-     <div class="am-comment-main">
-        <header class="am-comment-hd">
-          <!--<h3 class="am-comment-title">评论标题</h3>-->
-          <div class="am-comment-meta">
-            <a href="#link-to-user" class="am-comment-author">馋猫侠</a>
-            评论于 <time datetime="2016-11-21T04:54:29-07:00" title="2016年11月21日 下午5:03 格林尼治标准时间+0800">2016-11-21 17:03</time>
-          </div>
-        </header>
-        <div class="am-comment-bd">
-            <p class="am-serif">满目的辣椒红亮养眼，辣而不燥，麻而不苦。“麻上头，辣过瘾”</p>
+    </li>
+    <!--2-->
+    <li class="am-comment am-comment-highlight">
+        <a href="#">
+            <img src="images/head_2.jpg" alt="" class="am-comment-avatar" width="60" height="60"/>
+        </a>
+        <div class="am-comment-main">
+            <header class="am-comment-hd">
+                <!--<h3 class="am-comment-title">评论标题</h3>-->
+                <div class="am-comment-meta">
+                    <a href="#link-to-user" class="am-comment-author">馋猫侠</a>
+                    评论于 <time datetime="2016-11-21T04:54:29-07:00" title="2016年11月21日 下午5:03 格林尼治标准时间+0800">2016-11-21 17:03</time>
+                </div>
+            </header>
+            <div class="am-comment-bd">
+                <p class="am-serif">满目的辣椒红亮养眼，辣而不燥，麻而不苦。“麻上头，辣过瘾”</p>
+            </div>
         </div>
-     </div>
-  </li>
-  <!--3-->
-  <li class="am-comment am-comment-highlight">
-      <a href="#">
-       <img src="images/head_3.jpg" alt="" class="am-comment-avatar" width="60" height="60"/>
-     </a>
-     <div class="am-comment-main">
-        <header class="am-comment-hd">
-          <!--<h3 class="am-comment-title">评论标题</h3>-->
-          <div class="am-comment-meta">
-            <a href="#link-to-user" class="am-comment-author">爱吃鱼的黑皇后</a>
-            评论于 <time datetime="2016-11-21T04:54:29-07:00" title="2016年11月21日 下午5:10
+    </li>
+    <!--3-->
+    <li class="am-comment am-comment-highlight">
+        <a href="#">
+            <img src="images/head_3.jpg" alt="" class="am-comment-avatar" width="60" height="60"/>
+        </a>
+        <div class="am-comment-main">
+            <header class="am-comment-hd">
+                <!--<h3 class="am-comment-title">评论标题</h3>-->
+                <div class="am-comment-meta">
+                    <a href="#link-to-user" class="am-comment-author">爱吃鱼的黑皇后</a>
+                    评论于 <time datetime="2016-11-21T04:54:29-07:00" title="2016年11月21日 下午5:10
             格林尼治标准时间+0800">2016-11-21 17:10</time>
-          </div>
-        </header>
-        <div class="am-comment-bd">
-            <p class="am-serif">看似原始的做法，实际做工考究--选新鲜生猛活鱼，又充分发挥辣椒御寒、益气养血功效</p>
+                </div>
+            </header>
+            <div class="am-comment-bd">
+                <p class="am-serif">看似原始的做法，实际做工考究--选新鲜生猛活鱼，又充分发挥辣椒御寒、益气养血功效</p>
+            </div>
         </div>
-     </div>
-  </li>
-  <!--4-->
-  <li class="am-comment am-comment-highlight">
-      <a href="#">
-       <img src="images/head_3.jpg" alt="" class="am-comment-avatar" width="60" height="60"/>
-     </a>
-     <div class="am-comment-main">
-        <header class="am-comment-hd">
-          <!--<h3 class="am-comment-title">评论标题</h3>-->
-          <div class="am-comment-meta">
-            <a href="#link-to-user" class="am-comment-author">爱吃鱼的黑皇后</a>
-            评论于 <time datetime="2016-11-21T04:54:29-07:00" title="2016年11月21日 下午5:10
+    </li>
+    <!--4-->
+    <li class="am-comment am-comment-highlight">
+        <a href="#">
+            <img src="images/head_3.jpg" alt="" class="am-comment-avatar" width="60" height="60"/>
+        </a>
+        <div class="am-comment-main">
+            <header class="am-comment-hd">
+                <!--<h3 class="am-comment-title">评论标题</h3>-->
+                <div class="am-comment-meta">
+                    <a href="#link-to-user" class="am-comment-author">爱吃鱼的黑皇后</a>
+                    评论于 <time datetime="2016-11-21T04:54:29-07:00" title="2016年11月21日 下午5:10
             格林尼治标准时间+0800">2016-11-21 17:10</time>
-          </div>
-        </header>
-        <div class="am-comment-bd">
-            <p class="am-serif">看似原始的做法，实际做工考究--选新鲜生猛活鱼，又充分发挥辣椒御寒、益气养血功效</p>
+                </div>
+            </header>
+            <div class="am-comment-bd">
+                <p class="am-serif">看似原始的做法，实际做工考究--选新鲜生猛活鱼，又充分发挥辣椒御寒、益气养血功效</p>
+            </div>
         </div>
-     </div>
-  </li>
+    </li>
 </ul>
 <!--底部导航条-->
-<header class="am-topbar am-topbar-fixed-bottom" style="min-height: 40px;">
-<ul class="am-nav am-nav-pills am-topbar-nav am-nav-justify" style="margin-bottom: 0">
-  <li class="am-active"><a href="#">小吃</a></li>
-  <li><a href="#">甜点</a></li>
-  <li><a href="#">饮品</a></li>
-  <li><a href="#">快餐</a></li>
-</ul>
+<header class="am-topbar am-topbar-fixed-bottom">
+    <ul class="am-nav am-nav-pills am-topbar-nav am-nav-justify">
+        <li><a href="#">小吃</a></li>
+        <li><a href="#">甜点</a></li>
+        <li><a href="#">饮品</a></li>
+        <li><a href="#">快餐</a></li>
+    </ul>
 </header>
 <script src="js/jquery.min.js"></script>
 <script src="js/amazeui.min.js"></script>

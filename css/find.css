@@ -1,0 +1,177 @@
+/*底部导航栏*/
+#nav ul{
+    height: 100%;
+    background: #00bcd4;
+}
+#nav a{
+	color: white;
+	height: 100%;
+}
+/*发现首页css find_index.html*/
+/*更多*/
+.more{
+    font-size: 12px;
+    float: right;
+    color: gray;
+}
+/*食品列表*/
+#food_list{
+	width: 92%;
+}
+#food_list img{
+	width: 115%;
+    margin-left: -5px;
+	float:left;
+}
+#food_list p{
+	font-size: 16px;
+	text-align: center;
+	color: gray;
+}
+/*生活列表*/
+#lift_list{
+    width: 92%;
+}
+#life_ul p{
+    font-size: 14px;
+    color: gray;
+    font-weight: bold;
+    text-align: right;
+}
+/*心愿列表*/
+#need_list img{
+    width: 100%;
+    float:left;
+}
+#need_list p{
+    font-size: 14px;
+    text-align:left;
+    color:gray;
+}
+#need_list .am-panel{
+    width: 110%;
+    height: 200px;
+    background: #f0f0f0;
+}
+.wish{
+    color:#ff3333;
+}
+#wish_list{
+    color:#ff3333;
+    float:right;
+}
+/*发现消息页*/
+#con_list{
+    margin-top: 0.5%;
+    margin-bottom: 1%;
+}
+#con_list p{
+    font-size: 14px;
+}
+.list{
+    float: right;
+}
+.mynews .left{
+    color: gray;
+}
+.mynews .am-u-sm-8{
+    color: gray;
+}
+.mynews .right{
+    float: right;
+}
+/*发现评论页*/
+.am-comment-bd{
+    font-size: 15px;
+}
+#comment{
+    width: 90%;
+    margin-left: 15px;
+}
+#comment i span{
+    background:#65c8f5;
+}
+#comment ul li{
+    margin-top:-1%;
+}
+/*输入框*/
+#input{
+    background:#f0f0f0;          
+}
+#input .am-g{
+    width:92%;
+    margin-left:5%;
+}
+/*发现收藏页*/
+#con_tab h3{
+    color: black;
+}
+#con_tab p{
+    font-size: 14px;
+    color: black;
+}
+/*发现评论页*/
+#con-list p{
+    font-size: 14px;
+    color: gray;
+}
+#con_tab .title{
+    color: black;
+}
+.list{
+    float: right;
+}
+/*发现点赞页*/
+#comment .am-comment-bd{
+    font-size: 15px;
+}
+#comment{
+    width: 90%;
+    margin-left: 15px;
+}
+#comment i span{
+    background:#65c8f5;
+}
+.scrollspy-nav {
+    top: 0;
+    z-index: 100;
+    background: #0e90d2;
+    width: 100%;    
+    height: 50px;    
+}
+.scrollspy-nav ul {
+    margin: 0;
+    padding: 0;
+}
+.scrollspy-nav li {
+    display: inline-block;
+    list-style: none;
+    margin-left: 2%;
+}
+ .scrollspy-nav a {
+    color: #eee;
+    padding: 10px 20px;
+    display: inline-block;
+}
+ .scrollspy-nav a.am-active {
+    color: #fff;
+    font-weight: bold;
+}
+#myup .am-panel {
+    margin-top: -1%;
+}
+#upme .am-panel{
+    margin-top: -1%;
+}
+#upme ul li{
+    margin-top: -1%;
+}
+#myup{
+    margin-top: -5%;
+}
+#myup ul li{
+    margin-top: -1%;
+}
+.at{
+    color: red;
+}

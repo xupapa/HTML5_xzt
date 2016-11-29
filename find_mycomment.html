@@ -7,53 +7,39 @@
     <link rel="stylesheet" href="css/amazeui.css"/>
     <script src="js/jquery.min.js"></script>
     <script src="js/amazeui.min.js"></script>
-
-    <style type="text/css">
-    body{
-        padding: 0;
-        margin: 0;
-      }
-      .am-topbar{
-      background-color:#00bcd4; 
-    }
-    #con-list p{
-      font-size: 14px;
-    }
-    .list{
-      float: right;
-    }
-    </style>
+    <link rel="stylesheet" href="css/find.css">
+    <link rel="stylesheet" href="css/nav.css"/>
 </head>
 <body>
-   <div class="am-topbar am-topbar-fixed-bottom">
-        <!-- 导航 -->
-        <div id="nav" style="height:40px">
-          <ul class="am-nav am-nav-pills am-nav-justify">
-            <li><a href="index.html" style="color:white">首页</a></li>
-            <li><a href="find_news.html" style="color:white">消息</a></li>
-            <li><a href="me.html" style="color:white">我</a></li>
-          </ul>
-        </div>
+   <!-- 底部导航 -->
+   <div class="am-topbar am-topbar-fixed-bottom">        
+      <div id="nav">
+        <ul class="am-nav am-nav-pills am-nav-justify">
+          <li><a href="index.html">首页</a></li>
+          <li><a href="find_news.html">消息</a></li>
+          <li><a href="me.html">我</a></li>
+        </ul>
       </div>
+  </div>
+  <!-- 顶部导航 -->
   <header class="am-topbar am-topbar-fixed-top">
     <div class="am-g">
-      <div class="am-u-sm-2" style="padding-left:0px;">
-        <a href="find_news.html" class="am-btn am-btn-xl" style="background-color:#00bcd4;background-size:cover">
-          <i class="am-icon-chevron-left" style="color:white;margin-top:3px;"></i>
+      <div class="am-u-sm-2"id="sm2">
+        <a href="find_news.html" class="am-btn am-btn-xl">
+          <i class="am-icon-chevron-left" style="margin-top:3px;"></i>
         </a>
       </div>
-      <div class="am-u-sm-8">
-        <h3 style="color:white;text-align:center;padding-top:10px">
+      <div class="am-u-sm-8"id="sm8">
+        <h3>
           我的评论
         </h3>
       </div>
-      <div class="am-u-sm-2">
+      <div class="am-u-sm-2"id="sm2">
       </div>
     </div>
   </header>
-   <div data-am-widget="tabs"
-       class="am-tabs am-tabs-d2"
-        >
+  <!-- 切换标签 -->
+  <div data-am-widget="tabs" class="am-tabs am-tabs-d2" id="con_tab">
       <ul class="am-tabs-nav am-cf">
           <li class="am-active"><a href="[data-tab-panel-0]">店铺评论</a></li>
           <li class=""><a href="[data-tab-panel-1]">商品评论</a></li>
@@ -70,7 +56,7 @@
               <img src="images/chuanwei_1.jpg"/></div>
             </div>
             <div class="am-u-sm-7">
-              <h3 style="color:black">花开川味坊</h3>
+              <h3>花开川味坊</h3>
             </div>
             </div>
           </a>
@@ -93,7 +79,7 @@
               <img src="images/chuanwei_1.jpg"/></div>
             </div>
             <div class="am-u-sm-7">
-              <h3 style="color:black">花开川味坊</h3>
+              <h3>花开川味坊</h3>
             </div>
             </div>
           </a>
@@ -116,7 +102,7 @@
               <img src="images/chuanwei_1.jpg"/></div>
             </div>
             <div class="am-u-sm-7">
-              <h3 style="color:black">花开川味坊</h3>
+              <h3>花开川味坊</h3>
             </div>
             </div>
           </a>
@@ -132,11 +118,11 @@
          </div>
       </li>        
       </ul>
-          </div>
-          <!-- 商品点评 -->
-          <div data-tab-panel-1 class="am-tab-panel ">
-            <ul class="am-list am-list-striped" id="con-list">
-        <li>
+        </div>
+        <!-- 商品点评 -->
+        <div data-tab-panel-1 class="am-tab-panel ">
+          <ul class="am-list am-list-striped" id="con-list">
+          <li>
           <a href="shop_comment.html">
             <div class="am-g">
               <div class="am-u-sm-5">
@@ -144,12 +130,12 @@
               <img src="images/search_01.jpg"/></div>
             </div>
             <div class="am-u-sm-7">
-              <h3 style="color:black">双鸡堡</h3>
-              <p style="color:black">校园汉堡（师大店）</p>
+              <h3>双鸡堡</h3>
+              <p class="title">校园汉堡（师大店）</p>
             </div>
             </div>
           </a>
-        </li>
+         </li>
          <li>
          <div class="am-g">
           <div class="am-u-sm-2"><img src="images/find_comment/1.jpg" class="am-circle"></div>
@@ -159,7 +145,7 @@
           </div>
           <div class="am-u-sm-2"><p class="list">今天</p></div>
          </div>
-      </li>
+        </li>
         <li>
           <a href="shop_comment.html">
             <div class="am-g">
@@ -168,8 +154,8 @@
               <img src="images/search_01.jpg"/></div>
             </div>
             <div class="am-u-sm-7">
-              <h3 style="color:black">双鸡堡</h3>
-              <p style="color:black">校园汉堡（师大店）</p>
+              <h3>双鸡堡</h3>
+              <p class="title">校园汉堡（师大店）</p>
             </div>
             </div>
           </a>
@@ -183,7 +169,7 @@
           </div>
           <div class="am-u-sm-2"><p class="list">今天</p></div>
          </div>
-      </li>
+        </li>
         <li>
           <a href="shop_comment.html">
             <div class="am-g">
@@ -192,8 +178,8 @@
               <img src="images/search_01.jpg"/></div>
             </div>
             <div class="am-u-sm-7">
-              <h3 style="color:black">双鸡堡</h3>
-              <p style="color:black">校园汉堡（师大店）</p>
+              <h3>双鸡堡</h3>
+              <p class="title">校园汉堡（师大店）</p>
             </div>
             </div>
           </a>
@@ -207,7 +193,7 @@
           </div>
           <div class="am-u-sm-2"><p class="list">今天</p></div>
          </div>
-      </li>
+        </li>
         <li>
           <a href="shop_comment.html">
             <div class="am-g">
@@ -216,8 +202,8 @@
               <img src="images/search_01.jpg"/></div>
             </div>
             <div class="am-u-sm-7">
-              <h3 style="color:black">双鸡堡</h3>
-              <p style="color:black">校园汉堡（师大店）</p>
+              <h3>双鸡堡</h3>
+              <p class="title">校园汉堡（师大店）</p>
             </div>
             </div>
           </a>

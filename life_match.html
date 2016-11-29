@@ -7,7 +7,7 @@
   <meta name="keywords" content="">
   <meta name="viewport"
         content="width=device-width, initial-scale=1">
-  <title>snacks</title>
+  <title>搭配</title>
 
   <!-- Set render engine for 360 browser -->
   <meta name="renderer" content="webkit">
@@ -28,26 +28,45 @@
 
   <link rel="stylesheet" href="css/amazeui.min.css">
   <link rel="stylesheet" href="css/app.css">
-  <link rel="stylesheet" type="text/css" href="css/food.css">
   <script src="js/jquery.min.js"></script>
   <script src="js/amazeui.min.js"></script>
-  <link rel="stylesheet" href="css/nav.css"/>
+<style type="text/css">
+	.am-text-ir{
+            display: block;
+            height: 50px;
+            width: 120px;
+            background: url(images/logo.png)no-repeat left center;
+            background-size: cover;
+            margin-left: 30%;
+        }
+	#nav ul{
+		height: 100%;
+		background: #00bcd4;
+	}
+	#nav a{
+		color: white;
+		height: 100%;
+	}
+	#con-list p{
+		font-size: 14px;
+	}
+</style>
 </head>
 <body>
-	<header class="am-topbar am-topbar-fixed-top">
-        <div >
+	<header style="background-color:#00bcd4" class="am-topbar am-topbar-fixed-top">
+        <div style="background-color:#00bcd4 ">
             <div class="am-g">
-                <div class="am-u-sm-2">
-                    <a href="index.html" class="am-btn am-btn-xl" >
-                        <i class="am-icon-home am-icon-sm" id="icon"></i>
+                <div class="am-u-sm-2"style="padding-left:0px;">
+                    <a href="index.html" class="am-btn am-btn-xl" style="background-color:#00bcd4;background-size:cover">
+                        <i class="am-icon-home am-icon-sm" style="color:white;"></i>
                     </a>
                 </div>
                 <div class="am-u-sm-7">
                     <a href="index.html" class="am-text-ir">logo</a>
                 </div>
-                <div class="am-u-sm-3" >
-                    <a href="shop_search.html" class="am-btn am-btn-xl" >
-                        <i class="am-icon-search am-icon-sm" id="icon"></i>
+                <div class="am-u-sm-3" style="padding-right:0px;text-align:right">
+                    <a href="shop_search.html" class="am-btn am-btn-xl" style="background-color:#00bcd4;background-size:cover">
+                        <i class="am-icon-search am-icon-sm" style="color:white;"></i>
                     </a>
                     
                 </div>
@@ -58,26 +77,26 @@
 	<!-- 轮播图 -->
     <div class="am-slider am-slider-default" data-am-flexslider id="demo-slider-0">
 	  <ul class="am-slides">
-	    <li><img src="images/a2.jpg" /></li>
-	    <li><img src="images/ab.jpg" /></li>
-	    <li><img src="images/ac.jpg" /></li>
-	    <li><img src="images/f4.jpg" /></li>
+	    <li><img src="images/match2.jpg" /></li>
+	    <li><img src="images/match7.jpg" /></li>
+	    <li><img src="images/match5.jpg" /></li>
+	    <li><img src="images/match6.jpg" /></li>
 	  </ul>
 	</div>
 	<!-- 活动 -->
-	<div class="am-g">
+	<div class="am-g" style="max-height:25%">
 		<div class="am-u-sm-6" style="height:100%;padding-left: 1px;">
-			<img src="images/yu_1.jpg" style="width:111%;height: 120%;" >
+			<img src="images/match_cen_1.jpg" style="width:111%;height: 120%;" >
 		</div>
 		<div class="am-u-sm-6" style="height:100%">
 			<div class="am-g" style="margin-left:1%">
 				<div class="am-u-sm-6" style="padding-left:0">
-					<img src="images/yuku_2.jpg" style="width:110%;">
-					<img src="images/yuku_3.jpg" style="width:110%;padding-top:4px">
+					<img src="images/match_cen_2.jpg" style="width:110%;">
+					<img src="images/match_cen_3.jpg" style="width:110%;padding-top:4px">
 				</div>
 				<div class="am-u-sm-6" style="padding-left:0">
-					<img src="images/yuku_4.jpg" style="width:110%;">
-					<img src="images/yuku_2.jpg" style="width:110%;padding-top:4px">
+					<img src="images/match_cen_4.jpg" style="width:110%;">
+					<img src="images/match_cen_5.jpg" style="width:110%;padding-top:4px">
 				</div>
 			</div>
 		</div>
@@ -87,12 +106,13 @@
 	 <a href="storelist.html" style="color:black;padding-top:0">
 	 	<li>
 		  <div class="am-g">
-		    <div class="am-u-sm-4"><img src="images/name.jpg" style="width:auto;height:auto;max-width:100%;max-height:100%;">
+		    <div class="am-u-sm-4"><img src="images/match_shop_1.jpg" style="width:auto;height:auto;max-width:100%;max-height:100%;">
 		    </div>
 		    <div class="am-u-sm-8">
 		    	<div class="am-g">
 		    		<div class="am-u-sm-8" style="padding-left:0;padding-right:0">
-		    			<p style="color: #7B7B7B;font-size:14px">多芝新西兰少乳酪小店</p>
+		    			<p style="color:#363636;font-size:15px;font-weight:bold;">Beauty Beauty</p>
+						<p class="am-serif am-text-truncate" style="color: #666666;font-size:14px;margin-top:-10px;">简介:Beauty服饰带给人们的是一种休闲的气质，让无拘无束的美国青年能够尽情的享受自然、舒适的生活。</p>
 		    			<p style="color: #7B7B7B;font-size:14px">评分：3.5</p>
 		    		</div>
 		    		<div class="am-u-sm-4" style="margin-top:15px;text-align:center">
@@ -103,33 +123,33 @@
 		</div> 
 		<div id="do-not-say-1" class="am-panel-collapse am-collapse">
 		  <div class="am-panel-bd">
-		  	<div class="am-g" style="text-align:left">
-		  		<div class="am-u-sm-4">
-		  			<span class="am-badge am-round am-badge-primary am-text-sm" style="color:white">口碑好14</span>	  			
+		  	<div class="am-g" style="margin-top:10px">
+		  		<div class="am-u-sm-4" style="text-align:center">
+		  			<span class="am-badge am-round am-badge-primary am-text-sm" style="color:white;background-color:">复古味14</span>		
 		  		</div>
-		  		<div class="am-u-sm-4">		  			
-		  			<span class="am-badge am-round am-badge-warning am-text-sm" style="color:white">装饰好21</span>	  			
+		  		<div class="am-u-sm-4" style="text-align:center">		  			
+		  			<span class="am-badge am-round am-badge-warning am-text-sm" style="color:white">高品质21</span>	  			
 		  		</div>
-		  		<div class="am-u-sm-4">		  			
-		  			<span class="am-badge am-round am-badge-secondary am-text-sm" style="color:white">环境美421</span>
+		  		<div class="am-u-sm-4" style="text-align:center">		  			
+		  			<span class="am-badge am-round am-badge-secondary am-text-sm" style="color:white">材料优21</span>
 		  		</div>
 		  	</div>
 		  	<div class="am-g" style="margin-top:10px">
 		  		<div class="am-u-sm-4" style="text-align:center">
-		  			<span class="am-badge am-round am-badge-success am-text-sm" style="color:white">飞毛腿4</span>
+		  			<span class="am-badge am-round am-badge-success am-text-sm" style="color:white">质感4</span>
 		  		</div>
 		  		<div class="am-u-sm-4" style="text-align:center">
-		  			<span class="am-badge am-round am-badge-danger am-text-sm" style="color:white">优惠多123</span>
+		  			<span class="am-badge am-round am-badge-danger am-text-sm" style="color:white">色彩123</span>
 		  		</div>
 		  		<div class="am-u-sm-4" style="text-align:center">
-		  			<span class="am-badge am-round am-badge-primary am-text-sm" style="color:white">配送快1</span>
+		  			<span class="am-badge am-round am-badge-primary am-text-sm" style="color:white">合身1</span>
 		  		</div>
 		  	</div>
 		  	<div class="am-g" style="margin-top:10px">
-		  		<div class="am-u-sm-3" style="padding-left:0;padding-right:0">分量足</div>
+		  		<div class="am-u-sm-3" style="padding-left:0;padding-right:0">品质好</div>
 		  		<div class="am-u-sm-9" style="padding-left:0;padding-right:0">
 		  			<div class="am-progress" style="margin-bottom:0">
-					  <div class="am-progress-bar" style="width: 40%">40%</div>
+					  <div class="am-progress-bar am-progress-bar-warning" style="width: 40%">40%</div>
 					  <div class="am-progress-bar am-progress-bar-success" style="width: 60%">60%</div>
 					</div>
 		  		</div>
@@ -138,7 +158,7 @@
 		  		<div class="am-u-sm-3" style="padding-left:0;padding-right:0">好评量</div>
 		  		<div class="am-u-sm-9" style="padding-left:0;padding-right:0">
 		  			<div class="am-progress" style="margin-bottom:0">
-					  <div class="am-progress-bar" style="width: 60%">60%</div>
+					  <div class="am-progress-bar am-progress-bar-warning" style="width: 60%">60%</div>
 					  <div class="am-progress-bar am-progress-bar-success" style="width: 40%">40%</div>
 					</div>
 		  		</div>
@@ -151,13 +171,14 @@
 	 <a href="#" style="color:black;padding-top:0">
        <li>
 		  <div class="am-g">
-		    <div class="am-u-sm-4"><img src="images/name.jpg" style="width:auto;height:auto;max-width:100%;max-height:100%;">
+		    <div class="am-u-sm-4"><img src="images/match_shop_2.jpg" style="width:auto;height:auto;max-width:100%;max-height:100%;">
 		    </div>
 		    <div class="am-u-sm-8">
 		    	<div class="am-g">
 		    		<div class="am-u-sm-8" style="padding-left:0;padding-right:0">
-		    			<p style="color: #7B7B7B;font-size:14px">多芝新西兰少乳酪店</p>
-		    			<p style="color: #7B7B7B;font-size:14px">评分：3.5</p>
+		    			<p style="color:#363636;font-size:15px;font-weight:bold;">Man Faillop</p>
+						<p class="am-serif am-text-truncate" style="color: #666666;font-size:14px;margin-top:-10px;">简介:lily Faillop让无拘无束的美国青年能够尽情的享受自然、舒适的生活。</p>
+		    			<p style="color: #7B7B7B;font-size:14px">评分：4.5</p>
 		    		</div>
 		    		<div class="am-u-sm-4" style="margin-top:15px;text-align:center">
 		    			<a class="am-icon-pencil-square am-icon-lg" style="color:#ff5151"  data-am-collapse="{parent: '#accordion', target: '#do-not-say-2'}"></a>
@@ -169,37 +190,31 @@
 		  <div class="am-panel-bd">
 		  	<div class="am-g">
 		  		<div class="am-u-sm-4" style="text-align:center">
-		  		
-		  			<span class="am-badge am-round am-badge-warning am-text-sm" style="color:white">口碑好14</span>
-		  			
+		  			<span class="am-badge am-round am-badge-warning am-text-sm" style="color:white">时尚14</span>
 		  		</div>
 		  		<div class="am-u-sm-4" style="text-align:center">
-		  			
-		  			<span class="am-badge am-round am-badge-primary am-text-sm" style="color:white">装饰好21</span>
-		  			
+		  			<span class="am-badge am-round am-badge-primary am-text-sm" style="color:white">好品质21</span>
 		  		</div>
 		  		<div class="am-u-sm-4" style="text-align:center">
-		  			
-		  			<span class="am-badge am-round am-badge-danger am-text-sm" style="color:white">环境美421</span>
+		  			<span class="am-badge am-round am-badge-danger am-text-sm" style="color:white">色彩421</span>
 		  		</div>
-
 		  	</div>
 		  	<div class="am-g" style="margin-top:10px">
 		  		<div class="am-u-sm-4" style="text-align:center">
-		  			<span class="am-badge am-round am-badge-secondary am-text-sm" style="color:white">飞毛腿4</span>
+		  			<span class="am-badge am-round am-badge-secondary am-text-sm" style="color:white">材料佳4</span>
 		  		</div>
 		  		<div class="am-u-sm-4" style="text-align:center">
-		  			<span class="am-badge am-round am-badge-success am-text-sm" style="color:white">优惠多123</span>
+		  			<span class="am-badge am-round am-badge-success am-text-sm" style="color:white">有质感123</span>
 		  		</div>
 		  		<div class="am-u-sm-4" style="text-align:center">
-		  			<span class="am-badge am-round am-badge-warning am-text-sm" style="color:white">配送快1</span>
+		  			<span class="am-badge am-round am-badge-warning am-text-sm" style="color:white">合身18</span>
 		  		</div>
 		  	</div>
 		  	<div class="am-g" style="margin-top:10px">
-		  		<div class="am-u-sm-3" style="padding-left:0;padding-right:0">分量足</div>
+		  		<div class="am-u-sm-3" style="padding-left:0;padding-right:0">品质好</div>
 		  		<div class="am-u-sm-9" style="padding-left:0;padding-right:0">
 		  			<div class="am-progress" style="margin-bottom:0">
-					  <div class="am-progress-bar" style="width: 40%">40%</div>
+					  <div class="am-progress-bar am-progress-bar-warning" style="width: 40%">40%</div>
 					  <div class="am-progress-bar am-progress-bar-success" style="width: 60%">60%</div>
 					</div>
 		  		</div>
@@ -208,7 +223,7 @@
 		  		<div class="am-u-sm-3" style="padding-left:0;padding-right:0">好评量</div>
 		  		<div class="am-u-sm-9" style="padding-left:0;padding-right:0">
 		  			<div class="am-progress" style="margin-bottom:0">
-					  <div class="am-progress-bar" style="width: 60%">60%</div>
+					  <div class="am-progress-bar am-progress-bar-warning" style="width: 60%">60%</div>
 					  <div class="am-progress-bar am-progress-bar-success" style="width: 40%">40%</div>
 					</div>
 		  		</div>
@@ -222,11 +237,11 @@
 	<!--底部导航条-->
 	<div class="am-topbar am-topbar-fixed-bottom" >
 		<div id="nav">
-			<ul class="am-nav am-nav-pills am-nav-justify">
-				<li><a href="snacks.html"><font size="4px"><strong>小吃</strong></font></a></li>
-				<li><a href="drink.html"><font size="4px"><strong>饮品</strong></font></a></li>
-				<li><a href="dessert.html"><font size="4px"><strong>甜品</strong></font></a></li>
-				<li><a href="fastfood.html"><font size="4px"><strong>快餐</strong></font></a></li>
+			<ul class="am-nav am-nav-pills am-nav-justify" style="height: 50px">
+				<li><a href="life_match.html"><font size="4px"><strong>搭配</strong></font></a></li>
+				<li><a href="life_beauty.html"><font size="4px"><strong>美妆</strong></font></a></li>
+				<li><a href="dessert.html"><font size="4px"><strong>阅读</strong></font></a></li>
+				<li><a href="fastfood.html"><font size="4px"><strong>快递</strong></font></a></li>
 			</ul>
 		</div>
 	</div>

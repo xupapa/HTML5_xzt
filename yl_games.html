@@ -28,6 +28,7 @@
 
   <link rel="stylesheet" href="css/amazeui.min.css">
   <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/bottom.css"/>
   <script src="js/jquery.min.js"></script>
   <script src="js/amazeui.min.js"></script>
 	<style type="text/css">
@@ -38,14 +39,6 @@
 			background: url(images/logo.png)no-repeat left center;
 			background-size: cover;
 			margin-left: 30%;
-		}
-		#nav ul{
-			height: 100%;
-			background: #00bcd4;
-		}
-		#nav a{
-			color: white;
-			height: 100%;
 		}
 		#con-list p{
 			font-size: 14px;
@@ -372,23 +365,20 @@
        
 	</ul>
     <!--底部导航条-->
-<div class="am-topbar am-topbar-fixed-bottom" >
-	<div id="nav">
-		<ul class="am-nav am-nav-pills am-nav-justify" style="height: 50px">
-			<li><a href="yl_movie.html"><font size="4px"><strong>电影</strong></font></a></li>
-			<li><a href="#"><font size="4px"><strong>游戏</strong></font></a></li>
-			<li><a href="yl_sports.html"><font size="4px"><strong>运动</strong></font></a></li>
-			
-		</ul>
-	</div>
-</div>
+<div class="am-topbar am-topbar-fixed-bottom" id="nav">
+        <ul class="am-nav am-nav-pills am-nav-justify">
+          <li><a href="yl_movie.html"><i class="am-icon am-icon-ticket am-icon-md"></i><br>电影</a></li>
+          <li><a href="yl_games.html"><i class="am-icon am-icon-fort-awesome am-icon-md"></i><br>游戏</a></li>
+          <li><a href="yl_sports.html"><i class="am-icon am-icon-life-saver am-icon-md"></i><br>运动</a></li>
+        </ul>
+    </div>
 
 
 <script>
   $(function() {
     var $slider = $('#demo-slider-0');
-    var counter = 0;
-    var getSlide = function() {
+    var getSlide = function() {    var counter = 0;
+
       counter++;
       return '<li><img src="http://s.amazeui.org/media/i/demos/bing-' +
         (Math.floor(Math.random() * 4) + 1) + '.jpg" />' +

@@ -10,6 +10,7 @@
     <script src="js/amazeui.min.js"></script>
     <link rel="stylesheet" href="css/find.css">
     <link rel="stylesheet" href="css/nav.css"/>
+    <link rel="stylesheet" href="css/bottom.css">
 </head>
 <body>
      <!-- 导航 -->
@@ -32,21 +33,33 @@
                 </div>                
             </div>
         </div>
-    </header>  
+    </header>
+    <div class="am-topbar am-topbar-fixed-bottom" id="nav">
+        <ul class="am-nav am-nav-pills am-nav-justify">
+          <li><a href="find_index.html"><i class="am-icon am-icon-diamond am-icon-md"></i><br>发现</a></li>
+          <li><a href="find_news.html"><i class="am-icon am-icon-comments-o am-icon-md"></i><br>消息</a></li>
+          <li><a href="me.html"><i class="am-icon am-icon-github-alt am-icon-md"></i><br>我</a></li>
+        </ul>
+    </div>  
     <!-- 轮播图 -->
-     <div class="am-slider am-slider-default am-slider-carousel" data-am-flexslider="{controlNav:'thumbnails'}">
+     <!-- <div class="am-slider am-slider-default am-slider-carousel" data-am-flexslider="{controlNav:'thumbnails'}"> -->
+     <div class="am-slider am-slider-default" data-am-flexslider id="demo-slider-0">
         <ul class="am-slides">
-            <li data-thumb="">
+            <!-- <li data-thumb=""> --><li>
                 <img src="images/find_index/banner1.jpg"/>
             </li>
-            <li data-thumb="">
+            <li>
                 <img src="images/find_index/banner2.jpg"/>
             </li>
-            <li data-thumb="">
+            <li>
                 <img src="images/find_index/banner3.jpg"/>
+            </li>
+            <li>
+                <img src="images/game_01.jpg"/>
             </li>
         </ul>
     </div>
+    <div class="am-g"><p></p></div>
     <!-- 食品列表 -->
     <div class="am-g" id="food_list">
        <div class="am-g">
@@ -99,7 +112,7 @@
      <hr data-am-widget="divider" style="" class="am-divider am-divider-dashed" />
     <!-- 心愿列表 -->
     <a href="find_list.html"><div class="am-g">
-        <div class="am-u-sm-6"><h3 class="wish">亲情分享</h3></div>
+        <div class="am-u-sm-6"><h3 class="wish">心分享</h3></div>
         <div class="am-u-sm-6"><span class="am-icon-heart am-icon-sm" id="wish_list"></span></div>
     </div></a>
     <div class="am-g" id="need_list">

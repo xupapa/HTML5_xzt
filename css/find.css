@@ -125,12 +125,19 @@
     float: right;
 }
 .mycom_tab img{
-    width: 25%;
+    width: 17%;
     float: left;
     margin-top: -7%;
 }
 .mycom_tab small{
     color: gray;
+}
+#content_list .p{
+    font-size:16px;
+    font-weight:bold;
+}
+#content_list .p1{
+    margin-top:-8%;
 }
 /*发现点赞页*/
 /*.scrollspy-nav {

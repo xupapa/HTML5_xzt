@@ -27,6 +27,7 @@
   <link rel="stylesheet" href="css/amazeui.css"/>
   <link rel="stylesheet" href="css/app.css">
   <link rel="stylesheet" href="css/nav.css"/>
+  <link rel="stylesheet" href="css/bottom.css">
   <style type="text/css">
   #list{
     width:100%;
@@ -36,7 +37,7 @@
   }
   #list_img img{
     width:100%;
-    margin-left:-12px;
+    margin:10px -2px;
   }
   .am-u-sm-7{
     padding-left:0px;
@@ -72,7 +73,7 @@
     <div class="am-g">
       <div class="am-u-sm-2"id="sm2">
         <a href="index.html" class="am-btn am-btn-lg">
-          <i class="am-icon-home am-icon-sm" style="margin-top:3px;"></i>
+          <i class="am-icon-chevron-left am-icon-sm" style="margin-top:3px;"></i>
         </a>
       </div>
       <div class="am-u-sm-8"id="sm8">
@@ -199,14 +200,14 @@
   </div>
 </div>
 <!--底部导航条-->
-<header class="am-topbar am-topbar-fixed-bottom" style="min-height: 40px;">
-<ul class="am-nav am-nav-pills am-topbar-nav am-nav-justify">
-  <li class="am-active"><a href="#">小吃</a></li>
-  <li><a href="#">甜点</a></li>
-  <li><a href="#">饮品</a></li>
-  <li><a href="#">快餐</a></li>
-</ul>
-</header>
+<div class="am-topbar am-topbar-fixed-bottom" id="nav">
+        <ul class="am-nav am-nav-pills am-nav-justify">
+          <li><a href="snacks.html"><i class="am-icon am-icon-paw am-icon-md"></i><br>小吃</a></li>
+          <li><a href="drink.html"><i class="am-icon am-icon-beer am-icon-md"></i><br>饮品</a></li>
+          <li><a href="dessert.html"><i class="am-icon am-icon-bell-o am-icon-md"></i><br>甜品</a></li>
+          <li><a href="fastfood.html"><i class="am-icon am-icon-anchor am-icon-md"></i><br>快餐</a></li>
+        </ul>
+    </div>
 <script src="js/jquery.min.js"></script>
 <script src="js/amazeui.min.js"></script>
 </body>

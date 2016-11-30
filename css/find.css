@@ -61,6 +61,7 @@
 }
 .list{
     float: right;
+    font-size: 12px;
 }
 .mynews .left{
     color: gray;

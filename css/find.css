@@ -183,3 +183,25 @@
 #body p{
     margin-top: 2%;
 }
+/*顾客内容*/
+#my-scrollspy .am-comment-bd{
+    padding: 0;
+    margin: 0;
+}
+#hea h1{
+    height: 275px;
+    width: 100%;
+    background:url(images/find_02.jpg) center no-repeat;
+    background-size: cover;    
+}
+#hea a{
+    background-color:black;
+    background-size:cover;
+}
+#meta1{
+    font-size:17px;line-height:20px;color:black;
+}
+#meta2{
+    color:white;
+    background-color:#00bcd4;
+}

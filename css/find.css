@@ -121,6 +121,17 @@
 .list{
     float: right;
 }
+#date{
+    float: right;
+}
+.mycom_tab img{
+    width: 25%;
+    float: left;
+    margin-top: -7%;
+}
+.mycom_tab small{
+    color: gray;
+}
 /*发现点赞页*/
 /*.scrollspy-nav {
     top: 0;

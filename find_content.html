@@ -9,29 +9,13 @@
     <link rel="stylesheet" href="css/bottom.css"/>
     <script src="js/jquery.min.js"></script>
     <script src="js/amazeui.min.js"></script>
-    <style type="text/css">
-    	.am-g-fixed{
-    		max-width: 1000px;
-    	}
-		.am-topbar{
-			background-color:#00bcd4; 	
-		}
-		.am-comment-bd{
-			padding: 0;
-			margin: 0;
-		}
-    </style>
 </head>
 <body>
-	<header class="am-topbar">
+	<header class="am-topbar" id="hea">
 		<div class="am-g" >
-		
-		<h1 class="am-topbar-brand" style="height: 275px;width: 100%;
-			background:url(images/find_02.jpg)center no-repeat;
-			background-size: cover;">
-			<a href="find_list.html" class="am-btn am-btn-xl" style="background-color:black
-		;background-size:cover">
-				<i class="am-icon-chevron-left" style="color:white;"></i>
+		<h1 class="am-topbar-brand">
+			<a href="find_list.html" class="am-btn am-btn-xl">
+				<i id="con_i" class="am-icon-chevron-left"></i>
 			</a>
 		</h1>
 		</div>
@@ -47,29 +31,25 @@
 				</div>
 				<div class="am-u-sm-10">
 					<div class="am-comment-meta">
-						<div class="am-g" id=
-						"meta">
+						<div class="am-g" id="meta">
 							<div class="am-u-sm-8">
-								<a href="#link-to-user" class="am-comment-author" style="
-						font-size:17px;line-height:20px;color:black;">蹡蹡</a>
+								<a id="meta1" href="#link-to-user" class="am-comment-author">蹡蹡</a>
 							</div>
 							<div class="am-u-sm-4">
-								<a href="#" class="am-btn am-btn-sm" style="color:white;background-color:#00bcd4;"><i class="am-icon-heart"></i>收藏</a>			
+								<a id="meta2" href="#" class="am-btn am-btn-sm"><i class="am-icon-heart"></i>收藏</a>			
 							</div>
 						</div>
 						<div class="am-g">
 							<p>发现于 <time datetime="2016-07-27T04:54:29-07:00">2016-7-12 15:30</time></p>
 						</div>
-					</div> 
-					 
-
+					</div> 					 
 				</div>
 			</div>
 			</div>
 		</article>
      	<article class="am-article">
             <div class="am-article-bd">
-              <p class="am-article-lead" style="padding-left:20px;">
+              <p id="con_p" class="am-article-lead">
               昨天去了这家店，真是太好吃了
               <br/>
               要是我知道芭蕾如何跳————
@@ -92,11 +72,12 @@
         </article>
         <div class="am-topbar am-topbar-fixed-bottom" id="nav">
         <ul class="am-nav am-nav-pills am-nav-justify">
-          <li><a href="index.html"><i class="am-icon am-icon-home am-icon-md"></i><br>首页</a></li>
+          <li><a href="find_index.html"><i class="am-icon am-icon-diamond am-icon-md"></i><br>发现</a></li>
           <li><a href="find_news.html"><i class="am-icon am-icon-comments-o am-icon-md"></i><br>消息</a></li>
           <li><a href="me.html"><i class="am-icon am-icon-github-alt am-icon-md"></i><br>我</a></li>
         </ul>
         </div>
+        <nav class="scrollspy-nav" data-am-scrollspynav="{offsetTop: 45}" data-am-sticky id="f_con_nav">
         <div id="input">
           <div class="am-g">
              <div class="am-u-sm-9">
@@ -107,6 +88,7 @@
              </div>
            </div>
         </div>
+        </nav>
        <div id="comment">
     <ul class="am-comments-list am-comments-list-flip">
        <li class="am-comment am-comment-highlight">

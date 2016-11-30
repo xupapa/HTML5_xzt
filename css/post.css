@@ -1,0 +1,54 @@
+/*快递 post.html*/
+#list{
+	    width:100%;
+	    background-color:#F2F2F2;
+	    border:1px solid #EEEEE0;
+	    margin-top:10px;
+	    height: 18%;
+	  }
+	  .am-u-sm-7{
+	  		
+	  		width: 54%;
+		   	height: 70%;
+		   	margin-top: 4%;
+	  }
+	  .am-u-sm-5{
+	  		width: 40%;
+	  		height: 70%;
+	  		margin-top: 4%;
+	  		margin-left: -12%;	
+	  }
+	  .am-u-sm-7 img{
+	  		width: 100%;
+	  		height: 100%;
+	  }
+	  #list-title{
+	  	margin-left: -20%;
+	  }
+	  #list h3{
+	  	color: #7B7B7B;
+	  }
+	  #list-content{
+	  		margin-top: -12%;
+	  		margin-left: -20%;
+	  }
+	  #list-content p{
+	  		font-size:10px;
+	  		color: #8E8E8E;
+	  }
+
+	  header ul{
+      		background-color:#00bcd4;
+	  }
+	  .am-nav a{
+	      color:white;
+	  }
+	  .am-nav a:hover{
+	      color:#00bcd4;
+	  }
+	  header ul li a:am-active{
+	      background:white;
+	  }
+	  .am-footer{
+	  	margin-top: 8%;
+	  }

@@ -1,4 +1,6 @@
-#nav ul{
+/*搜索页 shop_search.html*/
+
+  #nav ul{
       height: 100%;
       background:#00bcd4;
   }
@@ -11,6 +13,7 @@
       margin-top:8%;
       margin-left:35%;
   }
+
   .form{
     width:100%;
     height:50px;
@@ -53,6 +56,4 @@
       text-align:center;
       padding-top:2%;
     }
-    .am-topbar{
-      background-color:#00bcd4; 
-    }
+  .am-to

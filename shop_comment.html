@@ -27,62 +27,15 @@
     <link rel="stylesheet" href="css/amazeui.css"/>
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="css/bottom.css">
+    <link rel="stylesheet" href="css/shop_comment.css">
     <style type="text/css">
-        .body{
-            font-family:serif;
-        }
-        .back{
-            position:absolute;
-            top:3%;
-            left:3%;
-        }
-        h3{
-            margin-left:20px;
-        }
-        #center{
-            margin-top:15px;
-            margin-left:-9px;
-        }
-        h3 i{
-            color:orange;
-            margin-left:3px;
-        }
-        p{
-            margin-top:-15px;
-            margin-left:20px;
-            font-size:14px;
-            font-weight:bold;
-            color:#4C4C4C;
-        }
-        p i{
-            color:yellow;
-        }
-        .badge{
-            margin-top:-10px;
-            margin-left:20px;
-        }
-        .am-progress{
-            margin:10px 10px 0 10px;
-        }
-        .am-comments-list{
-            margin:0 10px 0 10px;
-        }
-        header ul{
-            background-color:#00bcd4;
-        }
-        .am-nav a{
-            color:white;
-        }
-        .am-nav a:hover{
-            color:#00bcd4;
-        }
     </style>
 </head>
 <body>
 <!--商品展示图-->
 <img src="images/food_banner_1.jpg" class="am-img-responsive" alt="" width="100%"/>
 <!--商品销量评价-->
-<span class="back"><a href="#" class="am-icon-chevron-left am-icon-sm am-icon-fw" style="color:#F6F6F6"></a></span>
+<span class="back"><a href="#" class="am-icon-chevron-left am-icon-sm am-icon-fw"></a></span>
 <div class="am-g" id="center">
     <div class="am-u-sm-6">
         <h3 class="am-serif">江水煮江鱼<i class="am-icon-thumbs-o-up"></i><i class="am-icon-thumbs-o-up"></i><i class="am-icon-thumbs-o-up"></i></h3>
@@ -91,8 +44,8 @@
         <p class="am-serif">评价：<i class="am-icon-star"></i><i class="am-icon-star"></i><i class="am-icon-star"></i><i class="am-icon-star"></i><i class="am-icon-star-o"></i></p>
     </div>
     <div class="am-u-sm-6">
-        <a href="#" class="am-btn am-btn-sm"style="color:white;background-color:#00bcd4;"><i class="am-icon-heart"></i>&nbsp收藏</a>
-        <a href="comment.html" class="am-btn am-btn-sm"style="color:#00bcd4;background-color:white; border-color:#00bcd4;"><i class="am-icon-comments-o"></i>&nbsp评论</a>
+        <a href="#" id="btn1" class="am-btn am-btn-sm"><i class="am-icon-heart"></i>&nbsp收藏</a>
+        <a href="comment.html" id="btn2"class="am-btn am-btn-sm"><i class="am-icon-comments-o"></i>&nbsp评论</a>
     </div>
 </div>
 <!--评价标签-->
@@ -108,21 +61,21 @@
     </div>
 </div>
 <!--进度条-->
-<div class="am-g">
-    <div class="am-u-sm-3" style="text-align:center;padding-left:0;padding-right:0;padding-top:10px;color:#4C4C4C;font-size:14px;">分量足</div>
-    <div class="am-u-sm-9" style="padding-left:0px;padding-right:0">
+<div class="am-g" id="progress">
+    <div class="am-u-sm-3">分量足</div>
+    <div class="am-u-sm-9">
         <div class="am-progress">
-            <div class="am-progress-bar"  style="width: 35%;background-color:#58BFF4;">35%</div>
-            <div class="am-progress-bar"  style="width: 65%;background-color:pink;">65%</div>
+            <div class="am-progress-bar" id="bar1" style="width: 35%;">35%</div>
+            <div class="am-progress-bar" id="bar2" style="width: 65%;">65%</div>
         </div>
     </div>
 </div>
-<div class="am-g">
-    <div class="am-u-sm-3" style="text-align:center;padding-left:0;padding-right:0;padding-top:10px;color:#4C4C4C;font-size:14px;">偏辣</div>
-    <div class="am-u-sm-9" style="padding-left:0px;padding-right:0">
+<div class="am-g" id="progress">
+    <div class="am-u-sm-3">偏辣</div>
+    <div class="am-u-sm-9">
         <div class="am-progress">
-            <div class="am-progress-bar"  style="width: 80%;background-color:#58BFF4;">80%</div>
-            <div class="am-progress-bar"  style="width: 20%;background-color:pink;">20%</div>
+            <div class="am-progress-bar" id="bar3" style="width: 80%;">80%</div>
+            <div class="am-progress-bar" id="bar4" style="width: 20%;">20%</div>
         </div>
     </div>
 </div>

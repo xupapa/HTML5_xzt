@@ -68,3 +68,23 @@ p{
 	padding-left:0;
 	padding-right:0;
 }
+/*login页面和regitered的css*/
+.logpadding{
+	padding-right:0;
+	padding-top:5px;
+}
+.logpadding1{
+	padding-left:0;
+}
+i{
+	color:blue;
+}
+.logpadding3{
+	padding-left:25px;
+}
+.logtext{
+	text-align:center;
+}
+.logback{
+	background: #00bcd4;
+}

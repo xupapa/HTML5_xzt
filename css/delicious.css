@@ -1,0 +1,70 @@
+/*活动*/
+.active{
+	height:100%;
+	padding-left: 1px;
+}
+.acimg{
+	width:111%;
+	height: 120%;
+}
+.acheight{
+	height: 100%;
+}
+.acpadd{
+	padding-left:0;
+}
+.acimg1{
+	width:110%;
+}
+.acimg2{
+	width:110%;
+	padding-top:4px;
+}
+/*列表*/
+ul a{
+	color:black;
+	padding-top:0;
+}
+.img1{
+	width:auto;
+	height:auto;
+	max-width:100%;
+	max-height:100%;
+	padding-top:3%;
+	padding-bottom:12%;
+
+}
+.padding{
+	padding-left:0;
+	padding-right:0;
+}
+p{
+	color: #7B7B7B;
+	font-size:14px;
+}
+.margin{
+	margin-top:15px;
+	text-align:center;
+}
+.textalign{
+	text-align:left;
+}
+.color{
+	color:white;
+}
+.margin1{
+	margin-top:10px
+}
+.margin2{
+	margin-top:10px
+}
+.margin3{
+	margin-top:10px
+}
+.margin1 div{
+	text-align:center;
+}
+.mar2padd{
+	padding-left:0;
+	padding-right:0;
+}

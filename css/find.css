@@ -158,3 +158,50 @@
 .at{
     color: red;
 }
+.sm_img{
+    width: 50%;
+    height: 50%;
+}
+#date{
+    padding-left: 0%;
+    padding-right:2%; 
+    text-align: center;
+}
+#date h3{
+    margin-bottom: 2%;
+}
+#content_list{
+    padding-bottom: 4%;
+    border-bottom: 1px solid lightgray;
+}
+#body div{
+    padding-top: 2%;
+}
+#body h4{
+   margin-bottom: 2%;
+}
+#body p{
+    margin-top: 2%;
+}
+/*顾客内容*/
+#my-scrollspy .am-comment-bd{
+    padding: 0;
+    margin: 0;
+}
+#hea h1{
+    height: 275px;
+    width: 100%;
+    background:url(images/find_02.jpg) center no-repeat;
+    background-size: cover;    
+}
+#hea a{
+    background-color:black;
+    background-size:cover;
+}
+#meta1{
+    font-size:17px;line-height:20px;color:black;
+}
+#meta2{
+    color:white;
+    background-color:#00bcd4;
+}

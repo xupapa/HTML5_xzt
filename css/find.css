@@ -158,3 +158,28 @@
 .at{
     color: red;
 }
+.sm_img{
+    width: 50%;
+    height: 50%;
+}
+#date{
+    padding-left: 0%;
+    padding-right:2%; 
+    text-align: center;
+}
+#date h3{
+    margin-bottom: 2%;
+}
+#content_list{
+    padding-bottom: 4%;
+    border-bottom: 1px solid lightgray;
+}
+#body div{
+    padding-top: 2%;
+}
+#body h4{
+   margin-bottom: 2%;
+}
+#body p{
+    margin-top: 2%;
+}

@@ -1,3 +1,7 @@
+/*导航*/
+#left{
+    margin-top:3px;
+}
 /*发现首页css find_index.html*/
 /*更多*/
 .more{
@@ -191,7 +195,7 @@
 #hea h1{
     height: 275px;
     width: 100%;
-    background:url(images/find_02.jpg) center no-repeat;
+    background:url(../images/find_02.jpg)center no-repeat;
     background-size: cover;    
 }
 #hea a{
@@ -204,4 +208,17 @@
 #meta2{
     color:white;
     background-color:#00bcd4;
+}
+#con_i{
+    color:white;
+}
+#con_p{
+    padding-left:20px;
+}
+#f_con_nav{
+    margin-top:-6%;
+}
+/*顾客推荐列表页*/
+#listBody img{
+    width: 100%;
 }

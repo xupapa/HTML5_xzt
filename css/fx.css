@@ -58,6 +58,22 @@
 	line-height:20px;
 	color:black;
 } 
+#fxcontent article img
+{
+	height: 60px;
+	width: 60px;
+}
+#fxcontent #save
+{
+	color:white;
+	background-color:#00bcd4;
+}
+#fxcontent #commment
+{
+	color:#00bcd4;
+	background-color:white;
+	 border-color:#00bcd4;
+}
 /* me */
 #me
 {
@@ -94,8 +110,63 @@
 	color:#838484;
 	margin-top:2%
 }
-
+#me #sm2 i
+{
+	margin-top:3px;
+}
+#me #user .am-panel-hd
+{
+	text-align:center;
+}
+#me #panelList
+{
+	margin-bottom: 2%;
+}
+#me #meName i
+{
+	color:#00bcd4;
+}
+#me #meSex i
+{
+	color:#b8c6fe;
+}
+#me #meSave i
+{
+	color:#fcf228;
+}
+#me #meComment i
+{
+	color:#d4edb0;
+}
+#me #meWish i
+{
+	color:#e94147;
+}
+#me #mePoint i
+{
+	color:#e7aafa;
+}
+#me #meYHQ i
+{
+	color:#f59c53;
+}
+#me #meNews i
+{
+	color:#dce22d;
+}
 /* myHeart */
+#meHeart
+{
+	line-height: 1.4;
+}
+#meHeart #sm2 i
+{
+	margin-top:3px;
+}
+#meHeart .am-list h3
+{
+	color:black
+}
 .am-list
 {
 	margin-top: 0;
@@ -152,7 +223,42 @@ article .am-btn
 	line-height:20px;
 	color:black;
 } 
+#heartContent article .am-u-sm-10
+{
+	padding-left: 8%;
+}
+#heartContent #time
+{
+	margin-top: 15%;
+}
+#heartContent article img
+{
+	height: 60px;
+	width: 60px;
+}
+#heartContent .am-comment-meta button
+{
+	float:right;
+}
+#heartContent .am-article-lead
+{
+	font-size:13px;
+	padding-left:20px;
+}
 /* mySave */
+#meSave #sm2 i
+{
+	margin-top:3px;"
+}
+#meSave h3
+{
+	color: black;
+}
+#meSave p
+{
+	color:black;
+	font-size:13px;
+}
 .am-tab-panel .am-thumbnail
 {
 	margin:0;
@@ -161,6 +267,14 @@ article .am-btn
 	padding: 0;
 }
 /* myYHQ */
+#meYHQ #sm2 i
+{
+	margin-top:3px;
+}
+#h3
+{
+	margin-bottom:0;
+}
 #mYHQ .am-thumbnail {
 	margin:0;
 }

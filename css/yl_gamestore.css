@@ -1,0 +1,64 @@
+		.am-g-fixed{
+    		max-width: 1000px;
+    	}
+		.am-topbar{
+			background-color:#00bcd4; 	
+		}
+		.am-comment-bd{
+			padding: 0;
+			margin: 0;
+		}
+		.am-g h1{
+			height: 300px;
+			width: 100%;
+			background:url(../images/gamestore_01a.jpg) center no-repeat;
+			background-size: cover;
+		}
+		.am-topbar-brand a{
+			background-size:cover;
+		}
+		#a_i{
+			color:white;
+			background-color: black;
+		}
+		.am-u-sm-6 a{
+			font-size:17px;
+			line-height:20px;
+			color:black;
+		}
+		#p1{
+			margin-left:10px;
+		}
+		#p2{
+			padding-left:20px;
+		}
+		.am-topbar a{
+			color:white;
+			padding-top:13px;
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

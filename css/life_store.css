@@ -1,0 +1,55 @@
+.am-g-fixed{
+    		max-width: 1000px;
+    	}
+		.am-topbar{
+			background-color:#00bcd4;	
+		}
+		.am-topbar-brand{
+			height: 300px;width: 100%;
+			background:url(../images/bstore_banner_1.jpg)center no-repeat;
+			background-size: cover;
+		}
+		.am-comment-bd{
+			padding: 0;
+			margin: 0;
+		}
+		#chevron-left{
+			color:white;
+			margin-left:-10px;
+		}
+		.am-comment-bd{
+			background-color:#C6E2FF;
+			margin-top:-20px
+		}
+		#center{
+			padding:15px 15px;
+		}
+		#center .am-u-sm-2{
+			margin-top:0px;
+		}
+		#author{
+			font-size:17px;
+			color:black;
+			margin-left:12%;
+		}
+		#leaf{
+			padding-left:10px;
+			color:green;
+		}
+		hr{
+			background:linear-gradient(to left,#BFEFFF,#FFFFFF,#BFEFFF);
+			height:1px;
+			margin-top:8px;
+		}
+		#article{
+			padding:15px 10px;
+		}
+		#article_lead{
+			text-indent:2em;
+			padding-left:20px;
+		}
+		#bottom_btn{
+			color:white;
+			background-color:#00bcd4;
+			padding-top:13px;
+		}

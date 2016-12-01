@@ -17,7 +17,7 @@
         <div>
             <div class="am-g">
                 <div class="am-u-sm-2" id="sm2">
-                  <a href="fxcontent.html" class="am-btn am-btn-xl"><i class="am-icon-chevron-left" style="margin-top:3px;"></i>
+                  <a href="fxcontent.html" class="am-btn am-btn-xl"><i id="left" class="am-icon-chevron-left"></i>
                   </a>
                 </div>
                 <div class="am-u-sm-7" id="sm7">
@@ -216,11 +216,4 @@
     </div>
     <div class="am-g"><p></p></div>
 </body>
-<script>
-    var badge = $('#comment .am-badge').innerHTML;
-    $('#comment a').onclick = function(){
-      badge = parseInt(badge)+1;
-      $('#comment .am-badge').innerHTML = badge;
-    }
-</script>
 </html>

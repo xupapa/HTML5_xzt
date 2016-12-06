@@ -1,0 +1,62 @@
+ header ul{
+        background-color:#00bcd4;
+    }
+    .am-nav a{
+        color:white;
+    }
+    .am-nav a:hover{
+        color:#00bcd4;
+    }
+    body{
+        padding: 0;
+        margin: 0;
+      }
+    .am-text-ir{
+            display: block;
+            height: 50px;
+            width: 120px;
+            background: url(../images/logo.png)no-repeat left center;
+            background-size: cover;
+            margin-left: 30%;
+        }
+    .am-btn{
+      display: block;
+      background-color:#00bcd4; 
+      background:no-repeat;
+    }
+    .am-topbar{
+      background-color:#00bcd4; 
+    }
+    .fileInputContainer{
+        margin-bottom: 4%;
+        height:51px;
+        background:url(../images/camera.jpg);
+        position:relative;
+        width: 64px;
+    }
+    .fileInput{
+        height:51px;
+        width: 64px;
+        
+        font-size: 100px;
+        position:absolute;
+        right:0;
+        top:0;
+        opacity: 0;
+        filter:alpha(opacity=0);
+        cursor:pointer;
+    }
+    #href1{
+        background-color:#00bcd4;
+        background-size:cover;
+    }
+    #i1{
+        color: white;
+    }
+     #href2{
+        background-color:#00bcd4;
+        background-size:cover;
+    }
+    #i2{
+        color: white;
+    }

@@ -1,3 +1,7 @@
+/*导航*/
+#left{
+    margin-top:3px;
+}
 /*发现首页css find_index.html*/
 /*更多*/
 .more{
@@ -117,6 +121,38 @@
 .list{
     float: right;
 }
+#date{
+    float: right;
+}
+.mycom_tab img{
+    width: 17%;
+    float: left;
+    margin-top: -7%;
+}
+.mycom_tab small{
+    padding-top: -5%;
+    color: gray;
+}
+#content_list .p{
+    font-size:16px;
+    font-weight:bold;
+}
+#content_list .p1{
+    margin-top:-8%;
+}
+#content_list .am-u-sm-2 img{
+    margin-top: 8%;
+}
+#content_li .am-u-sm-10{
+    margin-left: 5%
+}
+#content_li .p{
+    font-size:16px;
+    font-weight:bold;
+}
+#content_li .p1{
+    margin-top:-8%;
+}
 /*发现点赞页*/
 /*.scrollspy-nav {
     top: 0;
@@ -191,7 +227,7 @@
 #hea h1{
     height: 275px;
     width: 100%;
-    background:url(images/find_02.jpg) center no-repeat;
+    background:url(../images/find_02.jpg)center no-repeat;
     background-size: cover;    
 }
 #hea a{
@@ -204,4 +240,17 @@
 #meta2{
     color:white;
     background-color:#00bcd4;
+}
+#con_i{
+    color:white;
+}
+#con_p{
+    padding-left:20px;
+}
+#f_con_nav{
+    margin-top:-6%;
+}
+/*顾客推荐列表页*/
+#listBody img{
+    width: 100%;
 }

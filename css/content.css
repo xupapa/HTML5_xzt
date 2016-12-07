@@ -92,14 +92,28 @@
 		}
 /*标签评价*/
 		#do-not-say-1 .am-g{
-			margin-top:10px;
+			margin-top:15px;
 		}
+		.am-panel-bd{
+			margin-top:-10px;
+		}
+		.am-panel-bd #badge{
+			float:left;
+			margin:6px 10px;
+			text-align:center;
+			padding:5px 10px;
+		}
+		.clear{
+			clear:both;
+		}
+
 		#do-not-say-1 .am-u-sm-4{
 			text-align:center;
 		}
 		#do-not-say-1 .am-u-sm-4 span{
 			color:white;
 		}
+
 		#do-not-say-1 .am-u-sm-3{
 			padding-left:0;
 			padding-right:0;

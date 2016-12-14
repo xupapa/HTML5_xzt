@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>《碎评》-发现</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="__PUBLIC__/home/css/amazeui.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/home/css/amazeui.min.css">
+    <script src="__PUBLIC__/home/js/jquery.min.js"></script>
+    <script src="__PUBLIC__/home/js/amazeui.min.js"></script>
+    <link rel="stylesheet" href="__PUBLIC__/home/css/find.css">
+    <link rel="stylesheet" href="__PUBLIC__/home/css/nav.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/home/css/bottom.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/home/css/fx.css">
+</head>
+<body>
+     <!-- 导航 -->
+     <header class="am-topbar am-topbar-fixed-top">
+        <div>
+            <div class="am-g">
+                <div class="am-u-sm-2" id="sm2">
+                    <a href="{:U('Home/Index/index')}" class="am-btn am-btn-lg">
+                        <i class="am-icon-home am-icon-sm"></i>
+                    </a>
+                </div>
+                <div class="am-u-sm-7" id="sm7">
+                    <a href="{:U(Home/Index/index)}" class="am-text-ir">logo</a>
+                </div>
+                <div class="am-u-sm-1" id="sm1"></div>
+                <div class="am-u-sm-2" id="smu2">
+                    <a href="{:U('Home/Index/choose')}" class="am-btn am-btn-lg">
+                        <i class="am-icon-bars am-icon-sm"></i>
+                    </a>
+                </div>                
+            </div>
+        </div>
+    </header>
+    <div class="am-topbar am-topbar-fixed-bottom" id="nav">
+        <ul class="am-nav am-nav-pills am-nav-justify">
+          <li><a href="find_index.html"><i class="am-icon am-icon-diamond am-icon-md"></i><br>发现</a></li>
+          <li><a href="find_news.html"><i class="am-icon am-icon-shopping-cart am-icon-md"></i><br>购买</a></li>
+          <li><a href="{:U('Home/Account/me')}"><i class="am-icon am-icon-github-alt am-icon-md"></i><br>我</a></li>
+        </ul>
+    </div>  
+        <!--/sidebar-->
+{__CONTENT__}
+    <!--/main-->
+</body>
+</html>

@@ -24,14 +24,14 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="apple-mobile-web-app-title" content="Amaze UI"/>
 
-    <link rel="stylesheet" href="css/amazeui.css"/>
-    <link rel="stylesheet" href="css/app.css">
-    <link rel="stylesheet" href="css/bottom.css">
-    <link rel="stylesheet" href="css/shop_comment.css">
+    <link rel="stylesheet" href="__PUBLIC__/home/css/amazeui.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/home/css/app.css">
+    <link rel="stylesheet" href="__PUBLIC__/home/css/bottom.css">
+    <link rel="stylesheet" href="__PUBLIC__/home/css/shop_comment.css">
 </head>
 <body>
 <!--商品展示图-->
-<img src="images/food_banner_1.jpg" class="am-img-responsive" alt="" width="100%"/>
+<img src="__PUBLIC__/home/images/food_banner_1.jpg" class="am-img-responsive" alt="" width="100%"/>
 <!--商品销量评价-->
 <div>
     <span class="back" >
@@ -49,7 +49,7 @@
     <div class="am-u-sm-4" id="double_div">
         <div  id="double">
         <a href="#" id="btn1" class="am-btn am-btn-sm"><i class="am-icon-heart"></i>&nbsp收藏</a>
-        <a href="comment.html" id="btn2"class="am-btn am-btn-sm"><i class="am-icon-comments-o"></i>&nbsp评论</a>
+        <a href="{:U('Home/Index/comment')}" id="btn2" class="am-btn am-btn-sm"><i class="am-icon-comments-o"></i>&nbsp评论</a>
         </div>
     </div>
 </div>
@@ -89,7 +89,7 @@
     <!--1-->
     <li class="am-comment am-comment-highlight">
         <a href="#">
-            <img src="images/head_1.jpg" alt="" class="am-comment-avatar" width="48" height="48"/>
+            <img src="__PUBLIC__/home/images/head_1.jpg" alt="" class="am-comment-avatar" width="48" height="48"/>
         </a>
         <div class="am-comment-main">
             <header class="am-comment-hd">
@@ -107,7 +107,7 @@
     <!--2-->
     <li class="am-comment am-comment-highlight">
         <a href="#">
-            <img src="images/head_2.jpg" alt="" class="am-comment-avatar" width="60" height="60"/>
+            <img src="__PUBLIC__/home/images/head_2.jpg" alt="" class="am-comment-avatar" width="60" height="60"/>
         </a>
         <div class="am-comment-main">
             <header class="am-comment-hd">
@@ -125,7 +125,7 @@
     <!--3-->
     <li class="am-comment am-comment-highlight">
         <a href="#">
-            <img src="images/head_3.jpg" alt="" class="am-comment-avatar" width="60" height="60"/>
+            <img src="__PUBLIC__/home/images/head_3.jpg" alt="" class="am-comment-avatar" width="60" height="60"/>
         </a>
         <div class="am-comment-main">
             <header class="am-comment-hd">
@@ -144,7 +144,7 @@
     <!--4-->
     <li class="am-comment am-comment-highlight">
         <a href="#">
-            <img src="images/head_3.jpg" alt="" class="am-comment-avatar" width="60" height="60"/>
+            <img src="__PUBLIC__/home/images/head_3.jpg" alt="" class="am-comment-avatar" width="60" height="60"/>
         </a>
         <div class="am-comment-main">
             <header class="am-comment-hd">
@@ -170,7 +170,7 @@
           <li><a href="fastfood.html"><i class="am-icon am-icon-anchor am-icon-md"></i><br>快餐</a></li>
         </ul>
     </div>
-<script src="js/jquery.min.js"></script>
-<script src="js/amazeui.min.js"></script>
+<script src="__PUBLIC__/home/js/jquery.min.js"></script>
+<script src="__PUBLIC__/home/js/amazeui.min.js"></script>
 </body>
 </html>

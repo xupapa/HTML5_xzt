@@ -5,11 +5,19 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/amazeui.css"/>
-    <link rel="stylesheet" href="css/life_store.css"/>
     <script src="js/jquery.min.js"></script>
     <script src="js/amazeui.min.js"></script>
     <style type="text/css">
-    	
+    	.am-g-fixed{
+    		max-width: 1000px;
+    	}
+		.am-topbar{
+			background-color:#00bcd4;	
+		}
+		.am-comment-bd{
+			padding: 0;
+			margin: 0;
+		}
     </style>
 </head>
 <body>
@@ -18,18 +26,19 @@
 	</div>
 	<header class="am-topbar">
 		<div class="am-g" >
-		<h1 class="am-topbar-brand">
-			<img src="images/bstore_banner_1.jpg" id="banner"/>
+		<h1 class="am-topbar-brand" style="height: 300px;width: 100%;
+			background:url(images/bstore_banner_1.jpg)center no-repeat;
+			background-size: cover;">
 			<a href="life_beauty.html" class="am-btn am-btn-lg">
-				<i class="am-icon-chevron-left" id="store_i"></i>
+				<i class="am-icon-chevron-left" style="color:white;margin-left:-10px;"></i>
 			</a>
 		</h1>
 		</div>
 	</header>
 	<article class="am-comment" id="my-scrollspy">
-			<div class="am-comment-bd">
-			<div class="am-g" id="center">
-				<div class="am-u-sm-2">
+			<div class="am-comment-bd" style="background-color:#C6E2FF;margin-top:-20px">
+			<div class="am-g" style="padding:15px 15px">
+				<div class="am-u-sm-2" style="margin-top:0px">
 					<a href="#">
 						<img src="images/bstore_head_1.jpg" alt="头像" height="52px" width="52px" class="am-round" />
 					</a>
@@ -39,7 +48,7 @@
 						<div class="am-g" id=
 						"meta">
 							<div class="am-u-sm-10">
-								<a href="#link-to-user" class="am-comment-author" id="author">欧缇丽&nbspCAUDALIE<i class="am-icon-envira" id="leaf"></i></a>
+								<a href="#link-to-user" class="am-comment-author" style="font-size:17px;color:black;margin-left:12%;">欧缇丽&nbspCAUDALIE<i class="am-icon-envira" style="padding-left:10px;color:green"></i></a>
 							</div>
 							<!--
 							<div class="am-u-sm-4">
@@ -48,25 +57,25 @@
 							-->
 						</div>	
 					</div> 
-					<hr></hr>
+					<hr style=";background:linear-gradient(to left,#BFEFFF,#FFFFFF,#BFEFFF);height:1px;margin-top:8px;"></hr>
 				</div>
 
 			</div>
 			</div>
 		</article>
      	<article class="am-article">
-            <div class="am-article-bd" id="article">
+            <div class="am-article-bd" style="padding:15px 10px">
               <blockquote>
 			  <p>我创造欧缇丽Caudalie是因为我坚信可以找到集功效，天然和魅力于一身的护肤品，这成为欧缇丽Caudalie品牌的核心价值，也是我每天努力的动力源泉。</p>
 			  <small>欧缇丽创始人——马蒂德小姐</small>
 			  </blockquote>
-              <p class="am-article-lead" id="article_lead">
+              <p class="am-article-lead" style="text-indent:2em;padding-left:20px;">
               1993年，欧缇丽创始人马帝德小姐(Mathilde)和唐拓马先生(Bertrand)在家族拥有的法国波尔多SmithHautLafitte酒庄的葡萄田偶遇世界知名多酚类专家费邓教授， 惊叹于葡萄籽中含有的具有超强抵抗皮肤衰老的多酚物质的神奇功效，欧缇丽从此诞生。之后欧缇丽推出了一系列以葡萄藤，葡萄蔓和葡萄萃取物为主要成分的抗衰老护肤产品。今天欧缇丽以其天然，高效和迷人的品牌文化成为法国及分布世界25个国家的知名天然护肤品牌。
               </p>
             </div>
 
             <div class="am-topbar am-topbar-fixed-bottom">
-			<a href="#" class="am-btn am-btn-lg am-btn-block" id="bottom_btn"><i class="am-icon-cart-plus"></i>&nbsp&nbsp&nbsp去购物</a>
+			<a href="#" class="am-btn am-btn-lg am-btn-block" style="color:white;background-color:#00bcd4;padding-top:13px"><i class="am-icon-cart-plus"></i>&nbsp&nbsp&nbsp去购物</a>
 		</div>
         </article>
 		

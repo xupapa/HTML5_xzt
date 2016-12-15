@@ -1,0 +1,27 @@
+<layout name="layout"/>
+	<div class="am-g" id="listBody">
+		<volist name="recommendtab_share" id="v">
+		<div class="am-u-sm-12">
+			<div class="am-g" style="width:112%;">
+				<div class="am-u-sm-12" id="list12">
+					<a href="{:U('Home/Find/fxcontent_life')}/id/{$v[rfid]}">
+					<div class="am-thumbnail">
+						<img src="__PUBLIC__/home/images/{$v[images]}"/>
+						<div class="am-thumbnail-caption">
+							<h3>{$v[title]}</h3>
+							<p>
+								{$v[content]}
+							</p>
+						</div>
+					</div>
+					</a>
+				</div>
+			</div>
+			
+			
+		</div>
+</volist>
+		
+		</div>
+	</div>
+	

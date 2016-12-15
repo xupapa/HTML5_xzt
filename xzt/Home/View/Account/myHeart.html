@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>我的心愿单</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="__PUBLIC__/home/css/amazeui.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/home/css/fx.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/home/css/nav.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/home/css/bottom.css"/>
+    <script src="__PUBLIC__/home/js/jquery.min.js"></script>
+    <script src="__PUBLIC__/home/js/amazeui.min.js"></script>
+</head>
+<body id="meHeart">
+	<header class="am-topbar am-topbar-fixed-top">
+    <div class="am-g">
+      <div class="am-u-sm-2" id="sm2">
+        <a href="me.html" class="am-btn am-btn-lg">
+          <i class="am-icon-chevron-left"></i>
+        </a>
+      </div>
+      <div class="am-u-sm-8" id="sm8">
+        <h3>
+          我的心愿单
+        </h3>
+      </div>
+      <div class="am-u-sm-2" id="sm2">
+      	<a href="{:U('Home/Index/comment_wish')}" class="am-btn am-btn-lg"><i class="am-icon-pencil"></i></a>
+      </div>
+    </div>
+  </header>
+	<ul class="am-list">
+	<volist name="wishtab" id="v">
+		<li>
+			<a href="{:U('Home/Account/heartContent')}/id/{$v.wid}">
+				<div class="am-g">
+					<div class="am-u-sm-5">
+						<div class="am-thumbnail">
+						<img src="__PUBLIC__/upload/{$v[images]}"/></div>
+					</div>
+					<div class="am-u-sm-7">
+						<h3>{$v[wish_title]}</h3>
+						<small>{$v[wish_content]}</small>
+						
+					</div>
+				</div>
+			</a>
+		</li>
+		</volist>
+	</ul>
+</body>
+</html>

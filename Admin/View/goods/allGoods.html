@@ -1,0 +1,109 @@
+    <!--/sidebar-->
+    <div class="main-wrap">
+
+        <div class="crumb-wrap">
+            <div class="crumb-list"><i class="icon-font"></i><a href="index.html">首页</a><span class="crumb-step">&gt;</span><span class="crumb-name">商品管理</span><span class="crumb-step">&gt;</span><span>所有商品</span></div>
+        </div>
+        <div class="search-wrap">
+            <div class="search-content">
+                <form action="" method="post">
+                    <table class="search-tab">
+                        <tr>
+                            <th width="120">选择分类:</th>
+                            <td>
+                                <select name="search-sort" id="">
+                                    <option selected>全部</option>
+                                    <volist name="product_category" id="pc">
+                                        <option name="pcid"value="{$pc.pcid}">{$pc.pcname}</option>
+                                    </volist>
+                                </select>
+                            </td>
+                            <th width="70">关键字:</th>
+                            <td><input class="common-text" placeholder="关键字" name="keywords" value="" id="" type="text"></td>
+                            <td><input class="btn btn-primary btn2" name="sub" value="查询" type="submit"></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+        <div class="result-wrap">
+            <form name="myform" id="myform" method="post" action="{:U('Admin/goods/destoryBatch')}">
+                <div class="result-title">
+                    <div class="result-list">
+                        <a href="__MODULE__/Goods/addGoods.html"><i class="icon-font"></i>新增商品</a>
+                        <a id="batchDel" href="javascript:void(0)" ><i class="icon-font"></i>批量删除</a>
+                    </div>
+                </div>
+                <div class="result-content">
+                    <table class="result-tab" width="100%">
+                        <tr>
+                            <th class="tc"><input class="SelectAll" id="SelectAll" name="" type="checkbox"></th>
+                            <th>分类</th>
+                            <th>图片</th>
+                            <th>商品名称</th>
+                            <th>价格(元)</th>
+                            <th>发布时间</th>
+                            <th>数量（个）</th>
+                            <th>操作</th>
+                        </tr>
+                            <volist name="productstab" id="g">
+                                <tr>
+                                    <td class="tc"><input type="checkbox" name="pid[]" value="{$g.pid}"></td>
+                                    <td>{$g.pcname}</td>
+                                    <td><img src="__PUBLIC__/upload/{$g.pimage}" height="100px" width="150px" /></td>
+                                    <td>{$g.pname}</td>
+                                    <td>{$g.price}</td>
+                                    <td>{$g.publishtime}</td>
+                                    <td>{$g.pnum}</td>
+                                    <td><a href="goods_edit/id/{$g.pid}">修改</a>&nbsp;&nbsp;<a href="delete/id/{$g.pid}">删除</a></td>
+                                </tr>
+                            </volist>
+                    </table>
+                    <div class="input-group pull-left form" style="margin-top:2%;">
+                        <a href="javascript:void(0)" id="batchDel2" class="btn btn-danger"> 删 除</a>
+                    </div>
+                    <div class="list-page">
+                        <ul class="pagination" style="text-align:center">
+                            <li>{$pages}</li>
+                        </ul>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--/main-->
+<script type="text/javascript">
+// 全选
+$("#SelectAll").click(function()
+{
+    if($(this).is(':checked'))
+    {
+        $(':checkbox').attr('checked','checked');
+    }else
+    {
+        $(':checkbox').removeAttr('checked');
+    }
+});
+$("#batchDel").click(function(){
+    var r=confirm("确认删除?");
+    if(r==true)
+    {
+        document.myform.submit();
+    }
+    else
+    {
+        window.location.reload(); 
+    }
+});
+$("#batchDel2").click(function(){
+    var r=confirm("确认删除?");
+    if(r==true)
+    {
+        document.myform.submit();
+    }
+    else
+    {
+        window.location.reload(); 
+    }
+});
+</script>

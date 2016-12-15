@@ -1,0 +1,55 @@
+
+    <!--/sidebar-->
+    <div class="main-wrap">
+
+        <div class="crumb-wrap">
+            <div class="crumb-list"><i class="icon-font"></i><a href="index.html">首页</a><span class="crumb-step">&gt;</span><span class="crumb-name">优惠券管理</span><span class="crumb-step">&gt;</span><span class="crumb-name">所有优惠券</span></div>
+        </div>
+        <div class="search-wrap">
+            <div class="search-content">
+                <form action="/jscss/admin/design/index" method="post">
+                </form>
+            </div>
+        </div>
+        <div class="result-wrap">
+            <form name="myform" id="myform" method="post">
+                <div class="result-title">
+                    <div class="result-list">
+                        <a href="addRoom.html"><i class="icon-font"></i>新增优惠券</a>
+                        <a id="batchDel" href="javascript:void(0)"><i class="icon-font"></i>批量删除</a>
+                        <a id="updateOrd" href="javascript:void(0)"><i class="icon-font"></i>更新排序</a>
+                    </div>
+                </div>
+                <div class="result-content">
+                    <table class="result-tab" width="100%">
+                        <tr>  
+                            <th>用户名</th>
+                            <th>编号 </th>
+                            <th>使用条件</th>
+                            <th>减去金额</th>
+                            <th>开始时间</th>
+                            <th>终止时间</th>
+                            <th>发送数量</th>
+                        </tr>
+                        <volist name="coupon" id="c">
+                        <tr>
+                            <td>{$c.busername}</td>
+                            <td>{$c.coupon_num}</td>
+                            <td>{$c.price}</td>
+                            <td>{$c.subtraction}</td>
+                            <td>{$c.start_time}</td>
+                            <td>{$c.end_time}</td>
+                            <td>{$c.num}</td>
+                        </tr>
+                    </volist>
+                    </table>
+                    <div class="list-page">
+                        <ul class="pagination" style="text-align:center">
+                            <li>{$pages}</li>
+                        </ul>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--/main-->

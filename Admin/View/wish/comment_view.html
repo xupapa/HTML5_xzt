@@ -1,0 +1,68 @@
+
+    <!--/sidebar-->
+    <div class="main-wrap">
+
+        <div class="crumb-wrap">
+            <div class="crumb-list"><i class="icon-font"></i><a href="index.html">首页</a><span class="crumb-step">&gt;</span><a class="crumb-name" href="allNewses.html">心愿单管理</a><span class="crumb-step">&gt;</span><span>心愿单评论</span></div>
+        </div>
+        <div class="result-wrap">
+            <div class="result-content">
+                <form action="" method="post" id="myform" name="myform" enctype="multipart/form-data">
+                    <table class="insert-tab" width="100%">
+                        <tbody>
+                            <tr>
+                                <th width="15%"><i class="require-red">*</i>用户名：</th>
+                                <td>
+                                    {$comment_view.busernames}
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><i class="require-red">*</i>心愿单标题：</th>
+                                <td>
+                                    {$comment_view.wish_title}
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><i class="require-red">*</i>心愿单评论：</th>
+                                <td>
+                                    {$comment_view.content}
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><i class="require-red">*</i>状态</th>
+                                <td>
+                                    {$comment_view.wish_type}
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><i class="require-red">*</i>发布时间</th>
+                                <td>
+                                    {$comment_view.wctime}
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><i class="require-red">*</i>心愿单内容：</th>
+                                <td>
+                                    <textarea name="content" class="common-textarea" id="content"cols="30" style="width: 98%;" rows="7" disabled>{$comment_view.wish_content}</textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th height="350px"><i class="require-red">*</i>图片：</th>
+                                <td>
+                                    <img src="__PUBLIC__/upload/{$adopt_view['images']}" height="300px" width="450px" />
+                                    <br/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th></th>
+                                <td>
+                                    <input class="btn btn6" onclick="history.go(-1)" value="返回" type="button">
+                                </td>
+                            </tr>
+                        </tbody></table>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <!--/main-->

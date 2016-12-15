@@ -1,0 +1,42 @@
+
+    <!--/sidebar-->
+    <div class="main-wrap">
+
+        <div class="crumb-wrap">
+            <div class="crumb-list"><i class="icon-font"></i><a href="index.html">首页</a><span class="crumb-step">&gt;</span><span class="crumb-name"><a href="#">心愿单管理</a></span><span class="crumb-step">&gt;</span><span><a href="__MODULE__/Wish/allWish.html">所有心愿</a></span></div>
+        </div>
+        <div class="result-wrap">
+            <form name="myform" id="myform" method="post">
+                <div class="result-content">
+                    <table class="result-tab" width="100%">
+                        <tr>
+                            <th>用户名</th>
+                            <th>标题</th>
+                            <th>内容</th>
+                            <th>状态</th>
+                            <th>操作</th>
+                        </tr>
+                        <volist name="wishtab" id="w">
+                            <tr>
+                                <td>{$w.busername}</td>
+                                <td>{$w.wish_title}</td>
+                                <td>{$w.wish_content}</td>
+                                <td>{$w.wish_type}</td>
+                                <td>
+                                    <a class="link-update" href="adopt/id/{$w.wid}">采纳</a>&nbsp;
+                                    <a class="link-update" href="wish_view/id/{$w.wid}">查看</a>
+                                </td>
+                                    
+                            </tr>
+                        </volist>
+                    </table>
+                    <div class="list-page">
+                        <ul class="pagination" style="text-align:center">
+                            <li>{$pages}</li>
+                        </ul>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--/main-->

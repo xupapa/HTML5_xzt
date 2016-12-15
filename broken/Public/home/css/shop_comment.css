@@ -1,0 +1,82 @@
+/* 店铺评论shop_comment.html*/
+       .body{
+            font-family:serif;
+        }
+
+        .back{
+            position:absolute;
+            top:3%;
+            left:3%;
+        }
+        .back a{
+            color:#F6F6F6;
+        }
+        h3{
+            margin-left:20px;
+        }
+        #center{
+            margin-top:15px;
+            margin-left:-9px;
+        }
+        h3 i{
+            color:orange;
+            margin-left:3px;
+        }
+        p{
+            margin-top:-15px;
+            margin-left:20px;
+            font-size:14px;
+            font-weight:bold;
+            color:#4C4C4C;
+        }
+        p i{
+            color:yellow;
+        }
+    /*按钮*/
+        #btn1{
+            color:white;
+            background-color:#00bcd4;
+        }
+        #btn2{
+            color:#00bcd4;
+            background-color:white; 
+            border-color:#00bcd4;
+        }
+     /*标签*/
+        .badge{
+            margin-top:-10px;
+            margin-left:20px;
+        }
+     /*进度条*/
+        #progress .am-progress{
+            margin:10px 10px 0 10px;
+        }
+        #progress .am-u-sm-3{
+            text-align:center;
+            padding-left:0;
+            padding-right:0;
+            padding-top:10px;
+            color:#4C4C4C;
+            font-size:13px;
+        }
+        #progress .am-u-sm-9{
+            padding-left:0px;
+            padding-right:0
+        }
+        #bar1{
+            background-color:#58BFF4;
+        }
+        #bar2{
+            background-color:pink;
+        }
+        #bar3{
+            background-color:#58BFF4;
+        }
+        #bar4{
+            background-color:pink;
+        }
+        .am-comments-list{
+            margin:0 10px 0 10px;
+        }
+        
+        

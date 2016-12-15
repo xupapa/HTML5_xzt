@@ -1,0 +1,107 @@
+<layout name="layout_delicious" />
+<title>snacks</title>
+<!-- 轮播图 -->
+<div class="am-slider am-slider-default" data-am-flexslider id="demo-slider-0">
+	<ul class="am-slides">
+	  <volist name="sliders" id="s">
+		<li><img src="__PUBLIC__/home/images/{$s[sldimage]}" /></li>
+	  </volist>
+	</ul>
+</div>
+<!-- 活动 -->
+<div class="am-g">
+	<div class="am-u-sm-6 active">	
+		<img src="__PUBLIC__/home/images/{$activity[0][avtimage]}" class="acimg">	
+	</div>
+	<div class="am-u-sm-6 acheight">
+		<div class="am-g" style="margin-left:1%">
+			<div class="am-u-sm-6 acpadd">
+				<img src="__PUBLIC__/home/images/{$activity[1][avtimage]}" class="acimg1">
+				<img src="__PUBLIC__/home/images/{$activity[2][avtimage]}" class="acimg2">
+			</div>
+			<div class="am-u-sm-6 acpadd">
+				<img src="__PUBLIC__/home/images/{$activity[3][avtimage]}" class="acimg1">
+				<img src="__PUBLIC__/home/images/{$activity[1][avtimage]}" class="acimg2">
+			</div>
+		</div>
+	</div>
+</div>
+<!-- 列表 -->
+<ul class="am-list">
+  <volist name="sellertab" id="v">
+	<a href="{:U('Home/Delicious/storelist')}/id/{$v.susername}"><!-- 得到店的sid -->
+		<li>
+			<div class="am-g">
+				<div class="am-u-sm-4">
+					<img src="__PUBLIC__/home/images/{$v[simage]}" class="img1">
+				</div>
+				<div class="am-u-sm-8">
+					<div class="am-g">
+						<div class="am-u-sm-8 padding">
+							<p>{$v[shopname]}</p>
+							<p>评分：{$v[slevel]}</p>
+						</div>
+						<div class="am-u-sm-4 margin">
+							<a class="am-icon-pencil-square am-icon-lg" style="color:#ff5151"  data-am-collapse="{parent: '#accordion', target: '#{$v.sid}'}"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="{$v.sid}" class="am-panel-collapse am-collapse">
+				<div class="am-panel-bd">
+					<div class="am-g textalign">
+						<volist name="chips" id="vo" offset="" length=''  empty="抱歉，暂时没有店铺信息。"> 
+				  			<a class="clickme" id="{$vo.id}" href="javascript:void(0);"><div  class="am-badge am-round am-badge-secondary am-text-sm" id="badge1">{$vo.chipname} <span>{$vo.clickcount}</span></div></a>	  
+					</volist>
+
+					</div>
+	<!-- 进度条 -->
+					<div class="am-g margin2">
+						<div class="am-u-sm-3 mar2padd">分量足</div>
+						<div class="am-u-sm-9 mar2padd">
+							<div class="am-progress" style="margin-bottom:0">
+								<div class="am-progress-bar" style="width: 40%">40%</div>
+								<div class="am-progress-bar am-progress-bar-success" style="width: 60%">60%</div>
+							</div>
+						</div>
+					</div>
+					<div class="am-g margin3">
+						<div class="am-u-sm-3 mar2padd">好评量</div>
+						<div class="am-u-sm-9 mar2padd">
+							<div class="am-progress" style="margin-bottom:0">
+								<div class="am-progress-bar" style="width: 60%">60%</div>
+								<div class="am-progress-bar am-progress-bar-success" style="width: 40%">40%</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</li>
+	</a>
+  </volist>
+	<input id="ids" type="hidden" value="{$user[busername]}">
+</ul>
+<script>
+$(".clickme").on('click',function(){    
+	if($("#ids").val()!=''){
+		var Oa=$(this);
+        var id=Oa.attr('id');//获取id属性
+        var vl=Oa.find("span").text();
+            vl=parseInt(vl)+1;
+        $.post('__CONTROLLER__/set_hits',{id:id},function(data){
+            if(data.status==1){ 
+                alert('感谢您的选择！');
+                Oa.find("span").text(vl);//页面元素加1
+            }else{
+                alert("失败！");
+            }
+        },'json'); 
+    
+	}else{
+    	window.location.href="__MODULE__/Login/login";
+    }
+})
+</script>
+
+</script>

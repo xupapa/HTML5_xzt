@@ -1,0 +1,110 @@
+<layout name="layout_life"/>
+<!-- 轮播图 -->
+<div class="am-slider am-slider-default" data-am-flexslider id="demo-slider-0">
+	<ul class="am-slides">
+	<volist name="sliders" id="v" offset="0" length='' empty="抱歉，暂时没有图片。">
+		<li><img src="__PUBLIC__/home/images/{$v.sldimage}" /></li>
+	</volist>
+	</ul>
+</div>
+<!-- 活动 -->
+<div class="am-g" id="active">
+	<div class="am-u-sm-6" id="active1">
+		<img src="__PUBLIC__/home/images/match_cen_1.png">
+	</div>
+	<div class="am-u-sm-6" id="active4">
+		<div class="am-g">
+			<div class="am-u-sm-6" id="active2">
+				<img src="__PUBLIC__/home/images/match_cen_8.png">
+			</div>
+			<div class="am-u-sm-6" id="active3">
+				<img src="__PUBLIC__/home/images/match_cen_2.png" id="active3_img1">
+				<img src="__PUBLIC__/home/images/match_cen_3.png" id="active3_img2">
+			</div>
+		</div>
+	</div>
+</div>
+<!-- 列表 -->
+<ul class="am-list" id="list">
+	<volist name="sellertab" id="v" offset="0" length='3' empty="抱歉，暂时没有店铺信息。">
+	<a href="__MODULE__/Life/store/id/{$v.sid}" target="_blank">
+		<li>
+			<div class="am-g">
+				<div class="am-u-sm-4" id="list1"><img src="__PUBLIC__/home/images/{$v.simage}">
+				</div>
+				<div class="am-u-sm-8">
+					<div class="am-g">
+						<div class="am-u-sm-8" id="list2">
+							<p id="list2_p1">{$v.shopname}</p>
+							<p id="list2_p2"class="am-serif am-text-truncate">{$v.introduce}</p>
+							<p id="list2_p3">评分：{$v.slevel}</p>
+						</div>
+						<div class="am-u-sm-4" id="list3">
+							<a class="am-icon-pencil-square am-icon-lg" data-am-collapse="{parent: '#accordion', target: '#do-not-say-1'}"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="do-not-say-1" class="am-panel-collapse am-collapse">
+				<div class="am-panel-bd">
+					<volist name="chips" id="v" offset="0" length='' empty="抱歉，暂时没有可选标签。">
+							<a class="clickme" id="{$v.id}" href="javascript:void(0);"><div style="" class="am-badge am-round am-badge-secondary am-text-sm" id="badge">{$v.chipname} <span>{$v.clickcount}</span></div></a>
+					  	
+					</volist>
+					<div class="clear"></div>	
+					<div class="am-g">
+						<div class="am-u-sm-3">品质好</div>
+						<div class="am-u-sm-9">
+							<div class="am-progress" >
+								<div class="am-progress-bar am-progress-bar-warning" id="bar1" style="width: 40%">40%</div>
+								<div class="am-progress-bar am-progress-bar-success" id="bar2" style="width: 60%">60%</div>
+							</div>
+						</div>
+					</div>
+					<div class="am-g">
+						<div class="am-u-sm-3">好评量</div>
+						<div class="am-u-sm-9">
+							<div class="am-progress">
+								<div class="am-progress-bar am-progress-bar-warning" id="bar3" style="width: 60%">60%</div>
+								<div class="am-progress-bar am-progress-bar-success" id="bar4" style="width: 40%">40%</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</li>
+	</a>
+	</volist>
+</ul>
+
+<script>
+/*
+var ajax;
+if(window.XMLHttpRequest)
+{ 
+	ajax = new XMLHttpRequest();
+}
+else{ 
+	ajax = new ActiveXObject('Microsoft.XMLHTTP');
+}
+ajax.open('GET','__MODULE__/Life/set_hits/id/{$_GET['id']}',true);
+ajax.send();
+*/
+$(".clickme").on('click',function(){
+        var Oa=$(this);
+        var id=Oa.attr('id');//获取id属性
+        var vl=Oa.find("span").text();
+            vl=parseInt(vl)+1;
+        $.post('__CONTROLLER__/set_hits',{id:id},function(data){
+            if(data.status==1){ 
+                alert('感谢您的选择！');//模拟异步数据加1
+                Oa.find("span").text(vl);//页面元素加1
+            }else{
+                //alert('您已经点过赞了,不要重复哦！');
+            }
+        },'json'); 
+    })
+</script>
+
+

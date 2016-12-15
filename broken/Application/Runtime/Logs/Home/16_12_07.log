@@ -1,0 +1,2071 @@
+[ 2016-12-07T08:14:17+08:00 ] 127.0.0.1 /broken/index.php/Home/Life/match
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.018904s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.018973s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.019212s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0215s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_branch='搭配' )  [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `sliders` [ RunTime:0.0104s ]
+SQL: SELECT * FROM `sliders` WHERE ( type_branch='搭配' )  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0488s ]
+SQL: SELECT * FROM `activity` WHERE ( type_branch='搭配' )  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000238s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000414s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.132353s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.132517s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.020575s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.020743s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.028131s ]
+INFO: [ app_end ] --END-- [ RunTime:0.028412s ]
+
+[ 2016-12-07T08:15:15+08:00 ] 127.0.0.1 /broken/index.php/Home/Life/tt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001028s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001179s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001280s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0444s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_branch='搭配' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sliders` [ RunTime:0.0462s ]
+SQL: SELECT * FROM `sliders` WHERE ( type_branch='搭配' )  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0084s ]
+SQL: SELECT * FROM `activity` WHERE ( type_branch='搭配' )  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `chips` [ RunTime:0.0386s ]
+SQL: SELECT * FROM `chips` WHERE ( type_branch='搭配' ) ORDER BY clickcount+0 desc LIMIT 7   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000158s ]
+NOTIC: [8] Undefined index: id D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\d6e2f54f4cf9c774717d7620dc840fdb.php 第 146 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012221s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012301s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000559s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000609s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001056s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001161s ]
+
+[ 2016-12-07T08:19:20+08:00 ] 127.0.0.1 /broken/index.php/Home/Life/tt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000947s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001278s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001400s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0225s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_branch='搭配' )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sliders` [ RunTime:0.0161s ]
+SQL: SELECT * FROM `sliders` WHERE ( type_branch='搭配' )  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0115s ]
+SQL: SELECT * FROM `activity` WHERE ( type_branch='搭配' )  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `chips` [ RunTime:0.0121s ]
+SQL: SELECT * FROM `chips` WHERE ( type_branch='搭配' ) ORDER BY clickcount+0 desc LIMIT 7   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000137s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000238s ]
+NOTIC: [8] Undefined index: id D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\d6e2f54f4cf9c774717d7620dc840fdb.php 第 146 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018028s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018098s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000511s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000562s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000936s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001026s ]
+
+[ 2016-12-07T08:19:43+08:00 ] 127.0.0.1 /broken/index.php/Home/Life/tt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000902s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001204s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001312s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0213s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_branch='搭配' )  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `sliders` [ RunTime:0.0539s ]
+SQL: SELECT * FROM `sliders` WHERE ( type_branch='搭配' )  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0135s ]
+SQL: SELECT * FROM `activity` WHERE ( type_branch='搭配' )  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `chips` [ RunTime:0.0121s ]
+SQL: SELECT * FROM `chips` WHERE ( type_branch='搭配' ) ORDER BY clickcount+0 desc LIMIT 7   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000154s ]
+NOTIC: [8] Undefined index: id D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\d6e2f54f4cf9c774717d7620dc840fdb.php 第 146 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016467s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016545s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000489s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000537s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001026s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001130s ]
+
+[ 2016-12-07T08:20:00+08:00 ] 127.0.0.1 /broken/index.php/Home/Life/set_hits
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000545s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000736s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000790s ]
+SQL: SHOW COLUMNS FROM `chips` [ RunTime:0.0192s ]
+SQL: UPDATE `chips` SET `clickcount`=clickcount+1 WHERE `id` = 7 [ RunTime:0.1978s ]
+
+[ 2016-12-07T08:20:05+08:00 ] 127.0.0.1 /broken/index.php/Home/Life/tt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000691s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000705s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000784s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0228s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_branch='搭配' )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sliders` [ RunTime:0.0173s ]
+SQL: SELECT * FROM `sliders` WHERE ( type_branch='搭配' )  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0085s ]
+SQL: SELECT * FROM `activity` WHERE ( type_branch='搭配' )  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `chips` [ RunTime:0.0074s ]
+SQL: SELECT * FROM `chips` WHERE ( type_branch='搭配' ) ORDER BY clickcount+0 desc LIMIT 7   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000154s ]
+NOTIC: [8] Undefined index: id D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\d6e2f54f4cf9c774717d7620dc840fdb.php 第 146 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013788s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013864s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000591s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000653s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000931s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001030s ]
+
+[ 2016-12-07T08:20:35+08:00 ] 127.0.0.1 /broken/index.php/Home/Life/tt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001047s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000999s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001086s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0209s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_branch='搭配' )  [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `sliders` [ RunTime:0.0132s ]
+SQL: SELECT * FROM `sliders` WHERE ( type_branch='搭配' )  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0109s ]
+SQL: SELECT * FROM `activity` WHERE ( type_branch='搭配' )  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `chips` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `chips` WHERE ( type_branch='搭配' ) ORDER BY clickcount+0 desc LIMIT 7   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000165s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000307s ]
+NOTIC: [8] Undefined index: id D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\d6e2f54f4cf9c774717d7620dc840fdb.php 第 146 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013540s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013627s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000555s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000612s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001010s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001112s ]
+
+[ 2016-12-07T08:22:15+08:00 ] 127.0.0.1 /broken/index.php/Home/Life/store/id/4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000850s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001157s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001273s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0229s ]
+SQL: SELECT * FROM `sellertab` WHERE `sid` = 4 LIMIT 1   [ RunTime:0.0018s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000192s ]
+NOTIC: [8] Undefined variable: sellertab D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\1f7b51c5c5d62e0c42de57e646f8feb6.php 第 5 行.
+NOTIC: [8] Undefined variable: sellertab D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\1f7b51c5c5d62e0c42de57e646f8feb6.php 第 5 行.
+NOTIC: [8] Undefined variable: sellertab D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\1f7b51c5c5d62e0c42de57e646f8feb6.php 第 22 行.
+NOTIC: [8] Undefined variable: sellertab D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\1f7b51c5c5d62e0c42de57e646f8feb6.php 第 33 行.
+NOTIC: [8] Undefined variable: sellertab D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\1f7b51c5c5d62e0c42de57e646f8feb6.php 第 41 行.
+NOTIC: [8] Undefined variable: sellertab D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\1f7b51c5c5d62e0c42de57e646f8feb6.php 第 59 行.
+NOTIC: [8] Undefined variable: sellertab D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\1f7b51c5c5d62e0c42de57e646f8feb6.php 第 60 行.
+NOTIC: [8] Undefined variable: sellertab D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\1f7b51c5c5d62e0c42de57e646f8feb6.php 第 63 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020237s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020397s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001079s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001203s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001579s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001686s ]
+
+[ 2016-12-07T08:23:36+08:00 ] 127.0.0.1 /broken/index.php/Home/Life/tt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000981s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001469s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0245s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_branch='搭配' )  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `sliders` [ RunTime:0.0081s ]
+SQL: SELECT * FROM `sliders` WHERE ( type_branch='搭配' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0076s ]
+SQL: SELECT * FROM `activity` WHERE ( type_branch='搭配' )  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `chips` [ RunTime:0.0504s ]
+SQL: SELECT * FROM `chips` WHERE ( type_branch='搭配' ) ORDER BY clickcount+0 desc LIMIT 7   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000166s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000266s ]
+NOTIC: [8] Undefined index: id D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\d6e2f54f4cf9c774717d7620dc840fdb.php 第 146 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019638s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019725s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000657s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000726s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001017s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001111s ]
+
+[ 2016-12-07T08:23:53+08:00 ] 127.0.0.1 /broken/index.php/Home/Life/tt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000614s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000790s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000852s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0222s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_branch='搭配' )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sliders` [ RunTime:0.0206s ]
+SQL: SELECT * FROM `sliders` WHERE ( type_branch='搭配' )  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `activity` WHERE ( type_branch='搭配' )  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `chips` [ RunTime:0.0124s ]
+SQL: SELECT * FROM `chips` WHERE ( type_branch='搭配' ) ORDER BY clickcount+0 desc LIMIT 7   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000177s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000287s ]
+NOTIC: [8] Undefined index: id D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\d6e2f54f4cf9c774717d7620dc840fdb.php 第 146 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021674s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021780s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000839s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000934s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001721s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001940s ]
+
+[ 2016-12-07T08:24:13+08:00 ] 127.0.0.1 /broken/index.php/Home/Life/tt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001287s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000992s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001098s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0194s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_branch='搭配' )  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `sliders` [ RunTime:0.0124s ]
+SQL: SELECT * FROM `sliders` WHERE ( type_branch='搭配' )  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `activity` WHERE ( type_branch='搭配' )  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `chips` [ RunTime:0.0083s ]
+SQL: SELECT * FROM `chips` WHERE ( type_branch='搭配' ) ORDER BY clickcount+0 desc LIMIT 7   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000093s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000152s ]
+NOTIC: [8] Undefined index: id D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\d6e2f54f4cf9c774717d7620dc840fdb.php 第 146 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011156s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011218s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000432s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000480s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000825s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000901s ]
+
+[ 2016-12-07T08:29:22+08:00 ] 127.0.0.1 /broken/index.php/Home/Life/tt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000583s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000825s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000895s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.1175s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_branch='搭配' )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sliders` [ RunTime:0.0207s ]
+SQL: SELECT * FROM `sliders` WHERE ( type_branch='搭配' )  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `activity` WHERE ( type_branch='搭配' )  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `chips` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `chips` WHERE ( type_branch='搭配' ) ORDER BY clickcount+0 desc LIMIT 7   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000161s ]
+NOTIC: [8] Undefined index: id D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\d6e2f54f4cf9c774717d7620dc840fdb.php 第 148 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013946s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014032s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000512s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000564s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001008s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001086s ]
+
+[ 2016-12-07T08:30:01+08:00 ] 127.0.0.1 /broken/index.php/Home/Life/tt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000552s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000758s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000819s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0201s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_branch='搭配' )  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `sliders` [ RunTime:0.0193s ]
+SQL: SELECT * FROM `sliders` WHERE ( type_branch='搭配' )  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `activity` WHERE ( type_branch='搭配' )  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `chips` [ RunTime:0.0086s ]
+SQL: SELECT * FROM `chips` WHERE ( type_branch='搭配' ) ORDER BY clickcount+0 desc LIMIT 7   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000155s ]
+NOTIC: [8] Undefined index: id D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\d6e2f54f4cf9c774717d7620dc840fdb.php 第 148 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012787s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012892s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000709s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000781s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001349s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001505s ]
+
+[ 2016-12-07T08:31:23+08:00 ] 127.0.0.1 /broken/index.php/Home/Life/set_hits
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000614s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000767s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000827s ]
+SQL: SHOW COLUMNS FROM `chips` [ RunTime:0.2078s ]
+SQL: UPDATE `chips` SET `clickcount`=clickcount+1 WHERE `id` = 7 [ RunTime:0.0407s ]
+
+[ 2016-12-07T08:32:40+08:00 ] 127.0.0.1 /broken/index.php/Home/Life/tt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001060s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001408s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001530s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0202s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_branch='搭配' )  [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `sliders` [ RunTime:0.0115s ]
+SQL: SELECT * FROM `sliders` WHERE ( type_branch='搭配' )  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0109s ]
+SQL: SELECT * FROM `activity` WHERE ( type_branch='搭配' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `chips` [ RunTime:0.0554s ]
+SQL: SELECT * FROM `chips` WHERE ( type_branch='搭配' ) ORDER BY clickcount+0 desc LIMIT 7   [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000276s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000452s ]
+NOTIC: [8] Undefined index: id D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\d6e2f54f4cf9c774717d7620dc840fdb.php 第 148 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035752s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035934s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001409s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001612s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001199s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001298s ]
+
+[ 2016-12-07T08:35:41+08:00 ] 127.0.0.1 /broken/index.php/Home/Life/tt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000925s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001241s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001356s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0219s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_branch='搭配' )  [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `sliders` [ RunTime:0.0208s ]
+SQL: SELECT * FROM `sliders` WHERE ( type_branch='搭配' )  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `activity` WHERE ( type_branch='搭配' )  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `chips` [ RunTime:0.0531s ]
+SQL: SELECT * FROM `chips` WHERE ( type_branch='搭配' ) ORDER BY clickcount+0 desc LIMIT 7   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000168s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000267s ]
+NOTIC: [8] Undefined index: id D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\d6e2f54f4cf9c774717d7620dc840fdb.php 第 148 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019989s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020090s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000798s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000878s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001122s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001214s ]
+
+[ 2016-12-07T08:37:54+08:00 ] 127.0.0.1 /broken/index.php/Home/Life/tt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000588s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000750s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000811s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0671s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_branch='搭配' )  [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `sliders` [ RunTime:0.0124s ]
+SQL: SELECT * FROM `sliders` WHERE ( type_branch='搭配' )  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0124s ]
+SQL: SELECT * FROM `activity` WHERE ( type_branch='搭配' )  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `chips` [ RunTime:0.0083s ]
+SQL: SELECT * FROM `chips` WHERE ( type_branch='搭配' ) ORDER BY clickcount+0 desc LIMIT 7   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000154s ]
+NOTIC: [8] Undefined index: id D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\d6e2f54f4cf9c774717d7620dc840fdb.php 第 148 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012278s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012352s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000494s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000543s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000973s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001084s ]
+
+[ 2016-12-07T08:38:54+08:00 ] 127.0.0.1 /broken/index.php/Home/Life/tt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001107s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001417s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0577s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_branch='搭配' )  [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `sliders` [ RunTime:0.0205s ]
+SQL: SELECT * FROM `sliders` WHERE ( type_branch='搭配' )  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0197s ]
+SQL: SELECT * FROM `activity` WHERE ( type_branch='搭配' )  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `chips` [ RunTime:0.0175s ]
+SQL: SELECT * FROM `chips` WHERE ( type_branch='搭配' ) ORDER BY clickcount+0 desc LIMIT 7   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000161s ]
+NOTIC: [8] Undefined index: id D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\d6e2f54f4cf9c774717d7620dc840fdb.php 第 146 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011970s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012053s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000514s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000568s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000832s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000906s ]
+
+[ 2016-12-07T08:39:04+08:00 ] 127.0.0.1 /broken/index.php/Home/Life/set_hits
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000561s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000718s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000774s ]
+SQL: SHOW COLUMNS FROM `chips` [ RunTime:0.0087s ]
+SQL: UPDATE `chips` SET `clickcount`=clickcount+1 WHERE `id` = 5 [ RunTime:0.0602s ]
+
+[ 2016-12-07T08:39:24+08:00 ] 127.0.0.1 /broken/index.php/Home/Life/tt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000804s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000706s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000776s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0193s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_branch='搭配' )  [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `sliders` [ RunTime:0.0192s ]
+SQL: SELECT * FROM `sliders` WHERE ( type_branch='搭配' )  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0104s ]
+SQL: SELECT * FROM `activity` WHERE ( type_branch='搭配' )  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `chips` [ RunTime:0.0104s ]
+SQL: SELECT * FROM `chips` WHERE ( type_branch='搭配' ) ORDER BY clickcount+0 desc LIMIT 7   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000155s ]
+NOTIC: [8] Undefined index: id D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\d6e2f54f4cf9c774717d7620dc840fdb.php 第 146 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013556s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013637s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000458s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000514s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001315s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001437s ]
+
+[ 2016-12-07T08:40:33+08:00 ] 127.0.0.1 /broken/index.php/Home/Life/tt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001249s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001024s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001129s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0154s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_branch='搭配' )  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `sliders` [ RunTime:0.0076s ]
+SQL: SELECT * FROM `sliders` WHERE ( type_branch='搭配' )  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0077s ]
+SQL: SELECT * FROM `activity` WHERE ( type_branch='搭配' )  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `chips` [ RunTime:0.0079s ]
+SQL: SELECT * FROM `chips` WHERE ( type_branch='搭配' ) ORDER BY clickcount+0 desc LIMIT 7   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000154s ]
+NOTIC: [8] Undefined index: id D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\d6e2f54f4cf9c774717d7620dc840fdb.php 第 146 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011745s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011823s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000470s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000532s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000833s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000924s ]
+
+[ 2016-12-07T08:41:39+08:00 ] 127.0.0.1 /broken/index.php/Home/Life/tt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000594s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000805s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000978s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0161s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_branch='搭配' )  [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `sliders` [ RunTime:0.0171s ]
+SQL: SELECT * FROM `sliders` WHERE ( type_branch='搭配' )  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0116s ]
+SQL: SELECT * FROM `activity` WHERE ( type_branch='搭配' )  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `chips` [ RunTime:0.0112s ]
+SQL: SELECT * FROM `chips` WHERE ( type_branch='搭配' ) ORDER BY clickcount+0 desc LIMIT 7   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000154s ]
+NOTIC: [8] Undefined index: id D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\d6e2f54f4cf9c774717d7620dc840fdb.php 第 147 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012029s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012122s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000487s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000536s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000937s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001012s ]
+
+[ 2016-12-07T08:42:16+08:00 ] 127.0.0.1 /broken/index.php/Home/Life/set_hits
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000969s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001536s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001662s ]
+SQL: SHOW COLUMNS FROM `chips` [ RunTime:0.0369s ]
+SQL: UPDATE `chips` SET `clickcount`=clickcount+1 WHERE `id` = 7 [ RunTime:0.0216s ]
+
+[ 2016-12-07T08:43:06+08:00 ] 127.0.0.1 /broken/index.php/Home/Life/tt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000586s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000801s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000860s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0203s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_branch='搭配' )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sliders` [ RunTime:0.0199s ]
+SQL: SELECT * FROM `sliders` WHERE ( type_branch='搭配' )  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `activity` WHERE ( type_branch='搭配' )  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `chips` [ RunTime:0.0127s ]
+SQL: SELECT * FROM `chips` WHERE ( type_branch='搭配' ) ORDER BY clickcount+0 desc LIMIT 7   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000153s ]
+NOTIC: [8] Undefined index: id D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\d6e2f54f4cf9c774717d7620dc840fdb.php 第 147 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012367s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012440s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000503s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000552s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000884s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000981s ]
+
+[ 2016-12-07T08:43:25+08:00 ] 127.0.0.1 /broken/index.php/Home/Life/tt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000760s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001007s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001112s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0419s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_branch='搭配' )  [ RunTime:0.0038s ]
+SQL: SHOW COLUMNS FROM `sliders` [ RunTime:0.0193s ]
+SQL: SELECT * FROM `sliders` WHERE ( type_branch='搭配' )  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0094s ]
+SQL: SELECT * FROM `activity` WHERE ( type_branch='搭配' )  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `chips` [ RunTime:0.0085s ]
+SQL: SELECT * FROM `chips` WHERE ( type_branch='搭配' ) ORDER BY clickcount+0 desc LIMIT 7   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000093s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000153s ]
+NOTIC: [8] Undefined index: id D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\d6e2f54f4cf9c774717d7620dc840fdb.php 第 147 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012306s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012397s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000444s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000502s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001009s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001096s ]
+
+[ 2016-12-07T08:43:41+08:00 ] 127.0.0.1 /broken/index.php/Home/Life/tt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000551s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000854s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000958s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0157s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_branch='搭配' )  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `sliders` [ RunTime:0.0149s ]
+SQL: SELECT * FROM `sliders` WHERE ( type_branch='搭配' )  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0082s ]
+SQL: SELECT * FROM `activity` WHERE ( type_branch='搭配' )  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `chips` [ RunTime:0.0074s ]
+SQL: SELECT * FROM `chips` WHERE ( type_branch='搭配' ) ORDER BY clickcount+0 desc LIMIT 7   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000120s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000182s ]
+NOTIC: [8] Undefined index: id D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\d6e2f54f4cf9c774717d7620dc840fdb.php 第 147 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012448s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012526s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000439s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000491s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000834s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000923s ]
+
+[ 2016-12-07T08:43:54+08:00 ] 127.0.0.1 /broken/index.php/Home/Life/tt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000601s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000950s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001025s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0210s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_branch='搭配' )  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `sliders` [ RunTime:0.0089s ]
+SQL: SELECT * FROM `sliders` WHERE ( type_branch='搭配' )  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0074s ]
+SQL: SELECT * FROM `activity` WHERE ( type_branch='搭配' )  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `chips` [ RunTime:0.0077s ]
+SQL: SELECT * FROM `chips` WHERE ( type_branch='搭配' ) ORDER BY clickcount+0 desc LIMIT 7   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000118s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000196s ]
+NOTIC: [8] Undefined index: id D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\d6e2f54f4cf9c774717d7620dc840fdb.php 第 147 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012711s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012779s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000481s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000529s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000923s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000995s ]
+
+[ 2016-12-07T08:44:36+08:00 ] 127.0.0.1 /broken/index.php/Home/Life/tt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001471s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001100s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001212s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0224s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_branch='搭配' )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sliders` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `sliders` WHERE ( type_branch='搭配' )  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0071s ]
+SQL: SELECT * FROM `activity` WHERE ( type_branch='搭配' )  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `chips` [ RunTime:0.0081s ]
+SQL: SELECT * FROM `chips` WHERE ( type_branch='搭配' ) ORDER BY clickcount+0 desc LIMIT 7   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000154s ]
+NOTIC: [8] Undefined index: id D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\d6e2f54f4cf9c774717d7620dc840fdb.php 第 147 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012373s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012464s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000635s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000702s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000941s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001022s ]
+
+[ 2016-12-07T08:44:49+08:00 ] 127.0.0.1 /broken/index.php/Home/Life/tt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000556s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000688s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000747s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0211s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_branch='搭配' )  [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `sliders` [ RunTime:0.0223s ]
+SQL: SELECT * FROM `sliders` WHERE ( type_branch='搭配' )  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0128s ]
+SQL: SELECT * FROM `activity` WHERE ( type_branch='搭配' )  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `chips` [ RunTime:0.0104s ]
+SQL: SELECT * FROM `chips` WHERE ( type_branch='搭配' ) ORDER BY clickcount+0 desc LIMIT 7   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000153s ]
+NOTIC: [8] Undefined index: id D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\d6e2f54f4cf9c774717d7620dc840fdb.php 第 147 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013966s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014039s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000425s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000484s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000813s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000915s ]
+
+[ 2016-12-07T08:45:10+08:00 ] 127.0.0.1 /broken/index.php/Home/Life/tt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001167s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001358s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001509s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0198s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_branch='搭配' )  [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `sliders` [ RunTime:0.0109s ]
+SQL: SELECT * FROM `sliders` WHERE ( type_branch='搭配' )  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0109s ]
+SQL: SELECT * FROM `activity` WHERE ( type_branch='搭配' )  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `chips` [ RunTime:0.0098s ]
+SQL: SELECT * FROM `chips` WHERE ( type_branch='搭配' ) ORDER BY clickcount+0 desc LIMIT 7   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000093s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000153s ]
+NOTIC: [8] Undefined index: id D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\d6e2f54f4cf9c774717d7620dc840fdb.php 第 147 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012232s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012302s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000505s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000554s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001046s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001147s ]
+
+[ 2016-12-07T08:45:27+08:00 ] 127.0.0.1 /broken/index.php/Home/Life/tt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000825s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002769s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003079s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0198s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_branch='搭配' )  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `sliders` [ RunTime:0.0123s ]
+SQL: SELECT * FROM `sliders` WHERE ( type_branch='搭配' )  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0119s ]
+SQL: SELECT * FROM `activity` WHERE ( type_branch='搭配' )  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `chips` [ RunTime:0.0081s ]
+SQL: SELECT * FROM `chips` WHERE ( type_branch='搭配' ) ORDER BY clickcount+0 desc LIMIT 7   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000171s ]
+NOTIC: [8] Undefined index: id D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\d6e2f54f4cf9c774717d7620dc840fdb.php 第 147 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012398s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012458s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000409s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000459s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000809s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000892s ]
+
+[ 2016-12-07T08:45:50+08:00 ] 127.0.0.1 /broken/index.php/Home/Life/tt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000845s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001358s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0230s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_branch='搭配' )  [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `sliders` [ RunTime:0.0209s ]
+SQL: SELECT * FROM `sliders` WHERE ( type_branch='搭配' )  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0105s ]
+SQL: SELECT * FROM `activity` WHERE ( type_branch='搭配' )  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `chips` [ RunTime:0.0107s ]
+SQL: SELECT * FROM `chips` WHERE ( type_branch='搭配' ) ORDER BY clickcount+0 desc LIMIT 7   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000160s ]
+NOTIC: [8] Undefined index: id D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\d6e2f54f4cf9c774717d7620dc840fdb.php 第 147 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013940s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014021s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000454s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000506s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000865s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000951s ]
+
+[ 2016-12-07T08:47:14+08:00 ] 127.0.0.1 /broken/index.php/Home/Life/set_hits
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000565s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000710s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000765s ]
+SQL: SHOW COLUMNS FROM `chips` [ RunTime:0.0208s ]
+SQL: UPDATE `chips` SET `clickcount`=clickcount+1 WHERE `id` = 4 [ RunTime:0.0619s ]
+
+[ 2016-12-07T09:02:46+08:00 ] 127.0.0.1 /broken/index.php/Home/Life/tt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000615s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000736s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000795s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0230s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_branch='搭配' )  [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `sliders` [ RunTime:0.0193s ]
+SQL: SELECT * FROM `sliders` WHERE ( type_branch='搭配' )  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0132s ]
+SQL: SELECT * FROM `activity` WHERE ( type_branch='搭配' )  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `chips` [ RunTime:0.0565s ]
+SQL: SELECT * FROM `chips` WHERE ( type_branch='搭配' ) ORDER BY clickcount+0 desc LIMIT 7   [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000451s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000765s ]
+NOTIC: [8] Undefined index: id D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\d6e2f54f4cf9c774717d7620dc840fdb.php 第 147 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042074s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000663s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000731s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001114s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001197s ]
+
+[ 2016-12-07T09:02:51+08:00 ] 127.0.0.1 /broken/index.php/Home/Life/match
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000591s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000801s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000863s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0626s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_branch='搭配' )  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `sliders` [ RunTime:0.0191s ]
+SQL: SELECT * FROM `sliders` WHERE ( type_branch='搭配' )  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0196s ]
+SQL: SELECT * FROM `activity` WHERE ( type_branch='搭配' )  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `chips` [ RunTime:0.0133s ]
+SQL: SELECT * FROM `chips` WHERE ( type_branch='搭配' ) ORDER BY clickcount+0 desc LIMIT 7   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000154s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000238s ]
+NOTIC: [8] Undefined index: id D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\09ec375d8b90db38eba988999bcf0c2f.php 第 137 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019681s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019771s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000519s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000573s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000999s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001073s ]
+
+[ 2016-12-07T09:03:01+08:00 ] 127.0.0.1 /broken/index.php/Home/Life/set_hits
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000586s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000844s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000899s ]
+SQL: SHOW COLUMNS FROM `chips` [ RunTime:0.0196s ]
+SQL: UPDATE `chips` SET `clickcount`=clickcount+1 WHERE `id` = 7 [ RunTime:0.0786s ]
+
+[ 2016-12-07T09:03:26+08:00 ] 127.0.0.1 /broken/index.php/Home/Life/match
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001322s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001445s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0135s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_branch='搭配' )  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `sliders` [ RunTime:0.0131s ]
+SQL: SELECT * FROM `sliders` WHERE ( type_branch='搭配' )  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `activity` WHERE ( type_branch='搭配' )  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `chips` [ RunTime:0.0081s ]
+SQL: SELECT * FROM `chips` WHERE ( type_branch='搭配' ) ORDER BY clickcount+0 desc LIMIT 7   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000123s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000188s ]
+NOTIC: [8] Undefined index: id D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\09ec375d8b90db38eba988999bcf0c2f.php 第 146 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012835s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012909s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000497s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000546s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000948s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001018s ]
+
+[ 2016-12-07T09:03:54+08:00 ] 127.0.0.1 /broken/index.php/Home/Life/match
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000763s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000948s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001043s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0221s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_branch='搭配' )  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `sliders` [ RunTime:0.0193s ]
+SQL: SELECT * FROM `sliders` WHERE ( type_branch='搭配' )  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0573s ]
+SQL: SELECT * FROM `activity` WHERE ( type_branch='搭配' )  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `chips` [ RunTime:0.0262s ]
+SQL: SELECT * FROM `chips` WHERE ( type_branch='搭配' ) ORDER BY clickcount+0 desc LIMIT 7   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000150s ]
+NOTIC: [8] Undefined index: id D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\09ec375d8b90db38eba988999bcf0c2f.php 第 146 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012380s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012443s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000432s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000480s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000797s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000882s ]
+
+[ 2016-12-07T09:05:06+08:00 ] 127.0.0.1 /broken/index.php/Home/Life/match
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001113s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000934s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001044s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0217s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_branch='搭配' )  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `sliders` [ RunTime:0.0109s ]
+SQL: SELECT * FROM `sliders` WHERE ( type_branch='搭配' )  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0116s ]
+SQL: SELECT * FROM `activity` WHERE ( type_branch='搭配' )  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `chips` [ RunTime:0.0079s ]
+SQL: SELECT * FROM `chips` WHERE ( type_branch='搭配' ) ORDER BY clickcount+0 desc LIMIT 7   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000097s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000155s ]
+NOTIC: [8] Undefined index: id D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\09ec375d8b90db38eba988999bcf0c2f.php 第 147 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011841s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011910s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000433s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000485s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000910s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000998s ]
+
+[ 2016-12-07T09:06:07+08:00 ] 127.0.0.1 /broken/index.php/Home/Life/match
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000943s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001154s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001261s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0165s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_branch='搭配' )  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `sliders` [ RunTime:0.0127s ]
+SQL: SELECT * FROM `sliders` WHERE ( type_branch='搭配' )  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.1831s ]
+SQL: SELECT * FROM `activity` WHERE ( type_branch='搭配' )  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `chips` [ RunTime:0.0221s ]
+SQL: SELECT * FROM `chips` WHERE ( type_branch='搭配' ) ORDER BY clickcount+0 desc LIMIT 7   [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000210s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000328s ]
+NOTIC: [8] Undefined index: id D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\09ec375d8b90db38eba988999bcf0c2f.php 第 147 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024233s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024391s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000900s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002585s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002782s ]
+
+[ 2016-12-07T09:06:51+08:00 ] 127.0.0.1 /broken/index.php/Home/Life/store/id/5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000983s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001723s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001854s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0215s ]
+SQL: SELECT * FROM `sellertab` WHERE `sid` = 5 LIMIT 1   [ RunTime:0.0018s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000206s ]
+NOTIC: [8] Undefined variable: sellertab D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\1f7b51c5c5d62e0c42de57e646f8feb6.php 第 5 行.
+NOTIC: [8] Undefined variable: sellertab D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\1f7b51c5c5d62e0c42de57e646f8feb6.php 第 5 行.
+NOTIC: [8] Undefined variable: sellertab D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\1f7b51c5c5d62e0c42de57e646f8feb6.php 第 22 行.
+NOTIC: [8] Undefined variable: sellertab D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\1f7b51c5c5d62e0c42de57e646f8feb6.php 第 33 行.
+NOTIC: [8] Undefined variable: sellertab D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\1f7b51c5c5d62e0c42de57e646f8feb6.php 第 41 行.
+NOTIC: [8] Undefined variable: sellertab D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\1f7b51c5c5d62e0c42de57e646f8feb6.php 第 59 行.
+NOTIC: [8] Undefined variable: sellertab D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\1f7b51c5c5d62e0c42de57e646f8feb6.php 第 60 行.
+NOTIC: [8] Undefined variable: sellertab D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\1f7b51c5c5d62e0c42de57e646f8feb6.php 第 63 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018098s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018240s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000830s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000922s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001268s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001365s ]
+
+[ 2016-12-07T09:06:53+08:00 ] 127.0.0.1 /broken/index.php/Home/Life/store/id/4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000470s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000637s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000699s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0123s ]
+SQL: SELECT * FROM `sellertab` WHERE `sid` = 4 LIMIT 1   [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000093s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000202s ]
+NOTIC: [8] Undefined variable: sellertab D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\1f7b51c5c5d62e0c42de57e646f8feb6.php 第 5 行.
+NOTIC: [8] Undefined variable: sellertab D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\1f7b51c5c5d62e0c42de57e646f8feb6.php 第 5 行.
+NOTIC: [8] Undefined variable: sellertab D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\1f7b51c5c5d62e0c42de57e646f8feb6.php 第 22 行.
+NOTIC: [8] Undefined variable: sellertab D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\1f7b51c5c5d62e0c42de57e646f8feb6.php 第 33 行.
+NOTIC: [8] Undefined variable: sellertab D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\1f7b51c5c5d62e0c42de57e646f8feb6.php 第 41 行.
+NOTIC: [8] Undefined variable: sellertab D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\1f7b51c5c5d62e0c42de57e646f8feb6.php 第 59 行.
+NOTIC: [8] Undefined variable: sellertab D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\1f7b51c5c5d62e0c42de57e646f8feb6.php 第 60 行.
+NOTIC: [8] Undefined variable: sellertab D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\1f7b51c5c5d62e0c42de57e646f8feb6.php 第 63 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012865s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012981s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000664s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000744s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000992s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001070s ]
+
+[ 2016-12-07T09:07:09+08:00 ] 127.0.0.1 /broken/index.php/Home/Life/store/id/5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000907s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001245s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001349s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0197s ]
+SQL: SELECT * FROM `sellertab` WHERE `sid` = 5 LIMIT 1   [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000174s ]
+NOTIC: [8] Undefined variable: sellertab D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\1f7b51c5c5d62e0c42de57e646f8feb6.php 第 5 行.
+NOTIC: [8] Undefined variable: sellertab D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\1f7b51c5c5d62e0c42de57e646f8feb6.php 第 5 行.
+NOTIC: [8] Undefined variable: sellertab D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\1f7b51c5c5d62e0c42de57e646f8feb6.php 第 22 行.
+NOTIC: [8] Undefined variable: sellertab D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\1f7b51c5c5d62e0c42de57e646f8feb6.php 第 33 行.
+NOTIC: [8] Undefined variable: sellertab D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\1f7b51c5c5d62e0c42de57e646f8feb6.php 第 41 行.
+NOTIC: [8] Undefined variable: sellertab D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\1f7b51c5c5d62e0c42de57e646f8feb6.php 第 59 行.
+NOTIC: [8] Undefined variable: sellertab D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\1f7b51c5c5d62e0c42de57e646f8feb6.php 第 60 行.
+NOTIC: [8] Undefined variable: sellertab D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\1f7b51c5c5d62e0c42de57e646f8feb6.php 第 63 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020524s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020705s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000724s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000807s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001161s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001246s ]
+
+[ 2016-12-07T09:07:39+08:00 ] 127.0.0.1 /broken/index.php/Home/Life/match.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000989s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001217s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001334s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0587s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_branch='搭配' )  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `sliders` [ RunTime:0.0243s ]
+SQL: SELECT * FROM `sliders` WHERE ( type_branch='搭配' )  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `activity` WHERE ( type_branch='搭配' )  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `chips` [ RunTime:0.0073s ]
+SQL: SELECT * FROM `chips` WHERE ( type_branch='搭配' ) ORDER BY clickcount+0 desc LIMIT 7   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000156s ]
+NOTIC: [8] Undefined index: id D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\09ec375d8b90db38eba988999bcf0c2f.php 第 147 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012551s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012621s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000425s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000474s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000881s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000985s ]
+
+[ 2016-12-07T09:07:43+08:00 ] 127.0.0.1 /broken/index.php/Home/Life/beauty.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000542s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000700s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000759s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0200s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_branch='美妆' )  [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `sliders` [ RunTime:0.0122s ]
+SQL: SELECT * FROM `sliders` WHERE ( type_branch='美妆' )  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0123s ]
+SQL: SELECT * FROM `activity` WHERE ( type_branch='美妆' )  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000172s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014132s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014223s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000414s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000476s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000836s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000918s ]
+
+[ 2016-12-07T09:07:46+08:00 ] 127.0.0.1 /broken/index.php/Home/Life/store/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000557s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000677s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000734s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0625s ]
+SQL: SELECT * FROM `sellertab` WHERE `sid` = 1 LIMIT 1   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000159s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000333s ]
+NOTIC: [8] Undefined variable: sellertab D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\1f7b51c5c5d62e0c42de57e646f8feb6.php 第 5 行.
+NOTIC: [8] Undefined variable: sellertab D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\1f7b51c5c5d62e0c42de57e646f8feb6.php 第 5 行.
+NOTIC: [8] Undefined variable: sellertab D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\1f7b51c5c5d62e0c42de57e646f8feb6.php 第 22 行.
+NOTIC: [8] Undefined variable: sellertab D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\1f7b51c5c5d62e0c42de57e646f8feb6.php 第 33 行.
+NOTIC: [8] Undefined variable: sellertab D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\1f7b51c5c5d62e0c42de57e646f8feb6.php 第 41 行.
+NOTIC: [8] Undefined variable: sellertab D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\1f7b51c5c5d62e0c42de57e646f8feb6.php 第 59 行.
+NOTIC: [8] Undefined variable: sellertab D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\1f7b51c5c5d62e0c42de57e646f8feb6.php 第 60 行.
+NOTIC: [8] Undefined variable: sellertab D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\1f7b51c5c5d62e0c42de57e646f8feb6.php 第 63 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020386s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020521s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000652s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000737s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001109s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001209s ]
+
+[ 2016-12-07T09:08:13+08:00 ] 127.0.0.1 /broken/index.php/Home/Life/beauty.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000577s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000779s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000850s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0204s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_branch='美妆' )  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `sliders` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `sliders` WHERE ( type_branch='美妆' )  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0076s ]
+SQL: SELECT * FROM `activity` WHERE ( type_branch='美妆' )  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000142s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012098s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012183s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000438s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000492s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001023s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001107s ]
+
+[ 2016-12-07T09:08:16+08:00 ] 127.0.0.1 /broken/index.php/Home/Life/store/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000624s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000724s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000783s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0204s ]
+SQL: SELECT * FROM `sellertab` WHERE `sid` = 1 LIMIT 1   [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000126s ]
+NOTIC: [8] Undefined variable: sellertab D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\1f7b51c5c5d62e0c42de57e646f8feb6.php 第 5 行.
+NOTIC: [8] Undefined variable: sellertab D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\1f7b51c5c5d62e0c42de57e646f8feb6.php 第 5 行.
+NOTIC: [8] Undefined variable: sellertab D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\1f7b51c5c5d62e0c42de57e646f8feb6.php 第 22 行.
+NOTIC: [8] Undefined variable: sellertab D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\1f7b51c5c5d62e0c42de57e646f8feb6.php 第 33 行.
+NOTIC: [8] Undefined variable: sellertab D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\1f7b51c5c5d62e0c42de57e646f8feb6.php 第 41 行.
+NOTIC: [8] Undefined variable: sellertab D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\1f7b51c5c5d62e0c42de57e646f8feb6.php 第 59 行.
+NOTIC: [8] Undefined variable: sellertab D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\1f7b51c5c5d62e0c42de57e646f8feb6.php 第 60 行.
+NOTIC: [8] Undefined variable: sellertab D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\1f7b51c5c5d62e0c42de57e646f8feb6.php 第 63 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012308s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012426s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000671s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000785s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000903s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000970s ]
+
+[ 2016-12-07T09:10:48+08:00 ] 127.0.0.1 /broken/index.php/Home/Life/match.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000649s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000742s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000800s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0212s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_branch='搭配' )  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `sliders` [ RunTime:0.0117s ]
+SQL: SELECT * FROM `sliders` WHERE ( type_branch='搭配' )  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0098s ]
+SQL: SELECT * FROM `activity` WHERE ( type_branch='搭配' )  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `chips` [ RunTime:0.0099s ]
+SQL: SELECT * FROM `chips` WHERE ( type_branch='搭配' ) ORDER BY clickcount+0 desc LIMIT 7   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000105s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000170s ]
+NOTIC: [8] Undefined index: id D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\09ec375d8b90db38eba988999bcf0c2f.php 第 147 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012307s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012384s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000489s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000540s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001005s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001111s ]
+
+[ 2016-12-07T09:10:54+08:00 ] 127.0.0.1 /broken/index.php/Home/Life/store/id/4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000553s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000670s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000738s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0084s ]
+SQL: SELECT * FROM `sellertab` WHERE `sid` = 4 LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000124s ]
+NOTIC: [8] Undefined variable: sellertab D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\1f7b51c5c5d62e0c42de57e646f8feb6.php 第 5 行.
+NOTIC: [8] Undefined variable: sellertab D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\1f7b51c5c5d62e0c42de57e646f8feb6.php 第 5 行.
+NOTIC: [8] Undefined variable: sellertab D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\1f7b51c5c5d62e0c42de57e646f8feb6.php 第 22 行.
+NOTIC: [8] Undefined variable: sellertab D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\1f7b51c5c5d62e0c42de57e646f8feb6.php 第 33 行.
+NOTIC: [8] Undefined variable: sellertab D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\1f7b51c5c5d62e0c42de57e646f8feb6.php 第 41 行.
+NOTIC: [8] Undefined variable: sellertab D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\1f7b51c5c5d62e0c42de57e646f8feb6.php 第 59 行.
+NOTIC: [8] Undefined variable: sellertab D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\1f7b51c5c5d62e0c42de57e646f8feb6.php 第 60 行.
+NOTIC: [8] Undefined variable: sellertab D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\1f7b51c5c5d62e0c42de57e646f8feb6.php 第 63 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007467s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007557s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000405s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000458s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000668s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000730s ]
+
+[ 2016-12-07T09:15:05+08:00 ] 127.0.0.1 /broken/index.php/Home/Life/match.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000577s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000781s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000843s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0207s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_branch='搭配' )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sliders` [ RunTime:0.0128s ]
+SQL: SELECT * FROM `sliders` WHERE ( type_branch='搭配' )  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0660s ]
+SQL: SELECT * FROM `activity` WHERE ( type_branch='搭配' )  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `chips` [ RunTime:0.0225s ]
+SQL: SELECT * FROM `chips` WHERE ( type_branch='搭配' ) ORDER BY clickcount+0 desc LIMIT 7   [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000312s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000505s ]
+NOTIC: [8] Undefined index: id D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\09ec375d8b90db38eba988999bcf0c2f.php 第 147 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039951s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040139s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001342s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001508s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001846s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001995s ]
+
+[ 2016-12-07T09:15:08+08:00 ] 127.0.0.1 /broken/index.php/Home/Life/store/sid/4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000555s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000756s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000815s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0202s ]
+SQL: SELECT * FROM `sellertab` WHERE `sid` = 4 LIMIT 1   [ RunTime:0.0018s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000186s ]
+NOTIC: [8] Undefined variable: sellertab D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\1f7b51c5c5d62e0c42de57e646f8feb6.php 第 5 行.
+NOTIC: [8] Undefined variable: sellertab D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\1f7b51c5c5d62e0c42de57e646f8feb6.php 第 5 行.
+NOTIC: [8] Undefined variable: sellertab D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\1f7b51c5c5d62e0c42de57e646f8feb6.php 第 22 行.
+NOTIC: [8] Undefined variable: sellertab D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\1f7b51c5c5d62e0c42de57e646f8feb6.php 第 33 行.
+NOTIC: [8] Undefined variable: sellertab D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\1f7b51c5c5d62e0c42de57e646f8feb6.php 第 41 行.
+NOTIC: [8] Undefined variable: sellertab D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\1f7b51c5c5d62e0c42de57e646f8feb6.php 第 59 行.
+NOTIC: [8] Undefined variable: sellertab D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\1f7b51c5c5d62e0c42de57e646f8feb6.php 第 60 行.
+NOTIC: [8] Undefined variable: sellertab D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\1f7b51c5c5d62e0c42de57e646f8feb6.php 第 63 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014013s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014144s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000734s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000820s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001345s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001452s ]
+
+[ 2016-12-07T09:17:11+08:00 ] 127.0.0.1 /broken/index.php/Home/Life/match.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000560s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000735s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000796s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0204s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_branch='搭配' )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sliders` [ RunTime:0.0133s ]
+SQL: SELECT * FROM `sliders` WHERE ( type_branch='搭配' )  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0129s ]
+SQL: SELECT * FROM `activity` WHERE ( type_branch='搭配' )  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `chips` [ RunTime:0.0082s ]
+SQL: SELECT * FROM `chips` WHERE ( type_branch='搭配' ) ORDER BY clickcount+0 desc LIMIT 7   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000124s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000217s ]
+NOTIC: [8] Undefined index: id D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\09ec375d8b90db38eba988999bcf0c2f.php 第 147 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014739s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014820s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000559s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000609s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000961s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001040s ]
+
+[ 2016-12-07T09:17:14+08:00 ] 127.0.0.1 /broken/index.php/Home/Life/store/id/4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000711s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000752s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000819s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0209s ]
+SQL: SELECT * FROM `sellertab` WHERE `sid` = 4 LIMIT 1   [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000158s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000337s ]
+NOTIC: [8] Undefined variable: sellertab D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\1f7b51c5c5d62e0c42de57e646f8feb6.php 第 5 行.
+NOTIC: [8] Undefined variable: sellertab D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\1f7b51c5c5d62e0c42de57e646f8feb6.php 第 5 行.
+NOTIC: [8] Undefined variable: sellertab D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\1f7b51c5c5d62e0c42de57e646f8feb6.php 第 22 行.
+NOTIC: [8] Undefined variable: sellertab D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\1f7b51c5c5d62e0c42de57e646f8feb6.php 第 33 行.
+NOTIC: [8] Undefined variable: sellertab D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\1f7b51c5c5d62e0c42de57e646f8feb6.php 第 41 行.
+NOTIC: [8] Undefined variable: sellertab D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\1f7b51c5c5d62e0c42de57e646f8feb6.php 第 59 行.
+NOTIC: [8] Undefined variable: sellertab D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\1f7b51c5c5d62e0c42de57e646f8feb6.php 第 60 行.
+NOTIC: [8] Undefined variable: sellertab D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\1f7b51c5c5d62e0c42de57e646f8feb6.php 第 63 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022295s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022430s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000847s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000936s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001156s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001243s ]
+
+[ 2016-12-07T09:18:43+08:00 ] 127.0.0.1 /broken/index.php/Home/Life/match.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000848s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001201s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001306s ]
+
+[ 2016-12-07T09:18:58+08:00 ] 127.0.0.1 /broken/index.php/Home/Life/match.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000925s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001263s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001389s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0201s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_branch='搭配' )  [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `sliders` [ RunTime:0.0109s ]
+SQL: SELECT * FROM `sliders` WHERE ( type_branch='搭配' )  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0114s ]
+SQL: SELECT * FROM `activity` WHERE ( type_branch='搭配' )  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `chips` [ RunTime:0.0095s ]
+SQL: SELECT * FROM `chips` WHERE ( type_branch='搭配' ) ORDER BY clickcount+0 desc LIMIT 7   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000257s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000492s ]
+NOTIC: [8] Undefined index: id D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\09ec375d8b90db38eba988999bcf0c2f.php 第 147 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013998s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014072s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000512s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000565s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001084s ]
+
+[ 2016-12-07T09:19:01+08:00 ] 127.0.0.1 /broken/index.php/Home/Life/store/id/4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000673s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001079s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001211s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0202s ]
+SQL: SELECT * FROM `sellertab` WHERE `sid` = 4 LIMIT 1   [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000198s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000448s ]
+NOTIC: [8] Undefined variable: sellertab D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\1f7b51c5c5d62e0c42de57e646f8feb6.php 第 5 行.
+NOTIC: [8] Undefined variable: sellertab D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\1f7b51c5c5d62e0c42de57e646f8feb6.php 第 5 行.
+NOTIC: [8] Undefined variable: sellertab D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\1f7b51c5c5d62e0c42de57e646f8feb6.php 第 22 行.
+NOTIC: [8] Undefined variable: sellertab D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\1f7b51c5c5d62e0c42de57e646f8feb6.php 第 33 行.
+NOTIC: [8] Undefined variable: sellertab D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\1f7b51c5c5d62e0c42de57e646f8feb6.php 第 41 行.
+NOTIC: [8] Undefined variable: sellertab D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\1f7b51c5c5d62e0c42de57e646f8feb6.php 第 59 行.
+NOTIC: [8] Undefined variable: sellertab D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\1f7b51c5c5d62e0c42de57e646f8feb6.php 第 60 行.
+NOTIC: [8] Undefined variable: sellertab D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\1f7b51c5c5d62e0c42de57e646f8feb6.php 第 63 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024382s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024604s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001458s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001623s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002195s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002369s ]
+
+[ 2016-12-07T09:19:55+08:00 ] 127.0.0.1 /broken/index.php/Home/Life/book.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000931s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001309s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001419s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0591s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_branch='阅读' )  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `sliders` [ RunTime:0.0229s ]
+SQL: SELECT * FROM `sliders` WHERE ( type_branch='阅读' )  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0133s ]
+SQL: SELECT * FROM `activity` WHERE ( type_branch='阅读' )  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000139s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000242s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020884s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020990s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000691s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000759s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001100s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001185s ]
+
+[ 2016-12-07T09:20:00+08:00 ] 127.0.0.1 /broken/index.php/Home/Life/book.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000570s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000652s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000710s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0128s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_branch='阅读' )  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `sliders` [ RunTime:0.0122s ]
+SQL: SELECT * FROM `sliders` WHERE ( type_branch='阅读' )  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0516s ]
+SQL: SELECT * FROM `activity` WHERE ( type_branch='阅读' )  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000144s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011381s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011468s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000548s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000605s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000852s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000938s ]
+
+[ 2016-12-07T09:20:02+08:00 ] 127.0.0.1 /broken/index.php/Home/Life/store/id/7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000606s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001520s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001602s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0210s ]
+SQL: SELECT * FROM `sellertab` WHERE `sid` = 7 LIMIT 1   [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000158s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000341s ]
+NOTIC: [8] Undefined variable: sellertab D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\1f7b51c5c5d62e0c42de57e646f8feb6.php 第 5 行.
+NOTIC: [8] Undefined variable: sellertab D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\1f7b51c5c5d62e0c42de57e646f8feb6.php 第 5 行.
+NOTIC: [8] Undefined variable: sellertab D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\1f7b51c5c5d62e0c42de57e646f8feb6.php 第 22 行.
+NOTIC: [8] Undefined variable: sellertab D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\1f7b51c5c5d62e0c42de57e646f8feb6.php 第 33 行.
+NOTIC: [8] Undefined variable: sellertab D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\1f7b51c5c5d62e0c42de57e646f8feb6.php 第 41 行.
+NOTIC: [8] Undefined variable: sellertab D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\1f7b51c5c5d62e0c42de57e646f8feb6.php 第 59 行.
+NOTIC: [8] Undefined variable: sellertab D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\1f7b51c5c5d62e0c42de57e646f8feb6.php 第 60 行.
+NOTIC: [8] Undefined variable: sellertab D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\1f7b51c5c5d62e0c42de57e646f8feb6.php 第 63 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023487s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023674s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001138s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001249s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001292s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001388s ]
+
+[ 2016-12-07T09:20:24+08:00 ] 127.0.0.1 /broken/index.php/Home/Life/match.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000985s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001219s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001337s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0199s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_branch='搭配' )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sliders` [ RunTime:0.0192s ]
+SQL: SELECT * FROM `sliders` WHERE ( type_branch='搭配' )  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0104s ]
+SQL: SELECT * FROM `activity` WHERE ( type_branch='搭配' )  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `chips` [ RunTime:0.0071s ]
+SQL: SELECT * FROM `chips` WHERE ( type_branch='搭配' ) ORDER BY clickcount+0 desc LIMIT 7   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000139s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000235s ]
+NOTIC: [8] Undefined index: id D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\09ec375d8b90db38eba988999bcf0c2f.php 第 147 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012863s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012933s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000419s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000467s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000837s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000926s ]
+
+[ 2016-12-07T09:20:28+08:00 ] 127.0.0.1 /broken/index.php/Home/Life/set_hits
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000546s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000654s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000707s ]
+SQL: SHOW COLUMNS FROM `chips` [ RunTime:0.0568s ]
+SQL: UPDATE `chips` SET `clickcount`=clickcount+1 WHERE `id` = 7 [ RunTime:0.0162s ]
+
+[ 2016-12-07T09:22:50+08:00 ] 127.0.0.1 /broken/index.php/Home/Life/match.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000581s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000720s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000779s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0206s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_branch='搭配' )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sliders` [ RunTime:0.0152s ]
+SQL: SELECT * FROM `sliders` WHERE ( type_branch='搭配' )  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `activity` WHERE ( type_branch='搭配' )  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `chips` [ RunTime:0.0114s ]
+SQL: SELECT * FROM `chips` WHERE ( type_branch='搭配' ) ORDER BY clickcount+0 desc LIMIT 7   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000155s ]
+NOTIC: [8] Undefined index: id D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\09ec375d8b90db38eba988999bcf0c2f.php 第 147 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013188s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013260s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000515s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000565s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000991s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001062s ]
+
+[ 2016-12-07T09:22:53+08:00 ] 127.0.0.1 /broken/index.php/Home/Life/store/id/4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000547s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000670s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000727s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0626s ]
+SQL: SELECT * FROM `sellertab` WHERE `sid` = 4 LIMIT 1   [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000189s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016158s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016311s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000532s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000591s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000889s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000948s ]
+
+[ 2016-12-07T09:45:48+08:00 ] 127.0.0.1 /broken/index.php/Home/Life/match.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000607s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000771s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000830s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0089s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_branch='搭配' )  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `sliders` [ RunTime:0.0092s ]
+SQL: SELECT * FROM `sliders` WHERE ( type_branch='搭配' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0095s ]
+SQL: SELECT * FROM `activity` WHERE ( type_branch='搭配' )  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `chips` [ RunTime:0.0104s ]
+SQL: SELECT * FROM `chips` WHERE ( type_branch='搭配' ) ORDER BY clickcount+0 desc LIMIT 7   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000195s ]
+NOTIC: [8] Undefined index: id D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\09ec375d8b90db38eba988999bcf0c2f.php 第 147 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014262s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014334s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000477s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000530s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001101s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001198s ]
+
+[ 2016-12-07T09:45:51+08:00 ] 127.0.0.1 /broken/index.php/Home/Life/beauty.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000593s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000724s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000785s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0202s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_branch='美妆' )  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `sliders` [ RunTime:0.0213s ]
+SQL: SELECT * FROM `sliders` WHERE ( type_branch='美妆' )  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0114s ]
+SQL: SELECT * FROM `activity` WHERE ( type_branch='美妆' )  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `chips` [ RunTime:0.0072s ]
+SQL: SELECT * FROM `chips` WHERE ( type_branch='美妆' ) ORDER BY clickcount+0 desc LIMIT 7   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000148s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012397s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012483s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000540s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000592s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000934s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001030s ]
+
+[ 2016-12-07T09:45:59+08:00 ] 127.0.0.1 /broken/index.php/Home/Life/set_hits
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000630s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000715s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000770s ]
+SQL: SHOW COLUMNS FROM `chips` [ RunTime:0.0545s ]
+SQL: UPDATE `chips` SET `clickcount`=clickcount+1 WHERE `id` = 12 [ RunTime:0.0148s ]
+
+[ 2016-12-07T09:46:49+08:00 ] 127.0.0.1 /broken/index.php/Home/Life/beauty.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000623s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000801s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000867s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0205s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_branch='美妆' )  [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `sliders` [ RunTime:0.0135s ]
+SQL: SELECT * FROM `sliders` WHERE ( type_branch='美妆' )  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `activity` WHERE ( type_branch='美妆' )  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `chips` [ RunTime:0.0105s ]
+SQL: SELECT * FROM `chips` WHERE ( type_branch='美妆' ) ORDER BY clickcount+0 desc LIMIT 7   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000118s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000178s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013706s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013778s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000495s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000546s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001369s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001490s ]
+
+[ 2016-12-07T09:46:52+08:00 ] 127.0.0.1 /broken/index.php/Home/Life/book.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000689s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000784s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000848s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0205s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_branch='阅读' )  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `sliders` [ RunTime:0.0180s ]
+SQL: SELECT * FROM `sliders` WHERE ( type_branch='阅读' )  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0119s ]
+SQL: SELECT * FROM `activity` WHERE ( type_branch='阅读' )  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `chips` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `chips` WHERE ( type_branch='阅读' ) ORDER BY clickcount+0 desc LIMIT 7   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000093s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000149s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012641s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012743s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000654s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000743s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001161s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001273s ]
+
+[ 2016-12-07T09:48:11+08:00 ] 127.0.0.1 /broken/index.php/Home/Life/book.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000874s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001157s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001258s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0251s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_branch='阅读' )  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `sliders` [ RunTime:0.0179s ]
+SQL: SELECT * FROM `sliders` WHERE ( type_branch='阅读' )  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0661s ]
+SQL: SELECT * FROM `activity` WHERE ( type_branch='阅读' )  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `chips` [ RunTime:0.0221s ]
+SQL: SELECT * FROM `chips` WHERE ( type_branch='阅读' ) ORDER BY clickcount+0 desc LIMIT 7   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000187s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000308s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023886s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023986s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000612s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000678s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001011s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001085s ]
+
+[ 2016-12-07T09:48:17+08:00 ] 127.0.0.1 /broken/index.php/Home/Life/set_hits
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000539s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000963s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001076s ]
+SQL: SHOW COLUMNS FROM `chips` [ RunTime:0.0585s ]
+SQL: UPDATE `chips` SET `clickcount`=clickcount+1 WHERE `id` = 25 [ RunTime:0.0163s ]
+
+[ 2016-12-07T10:18:48+08:00 ] 127.0.0.1 /broken/index.php/Home/Life/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000848s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000823s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000902s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000124s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008074s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008145s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000537s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000590s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000794s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000857s ]
+
+[ 2016-12-07T10:18:49+08:00 ] 127.0.0.1 /broken/index.php/Home/Life/css/delicious.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000880s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001326s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001425s ]
+ERR: 非法操作:css
+
+[ 2016-12-07T10:18:49+08:00 ] 127.0.0.1 /broken/index.php/Home/Life/css/app.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001095s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001350s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001453s ]
+ERR: 非法操作:css
+
+[ 2016-12-07T10:18:49+08:00 ] 127.0.0.1 /broken/index.php/Home/Life/css/nav.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000830s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001391s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001493s ]
+ERR: 非法操作:css
+
+[ 2016-12-07T10:18:49+08:00 ] 127.0.0.1 /broken/index.php/Home/Life/js/amazeui.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000810s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001401s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001502s ]
+ERR: 非法操作:js
+
+[ 2016-12-07T10:18:49+08:00 ] 127.0.0.1 /broken/index.php/Home/Life/js/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000879s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001260s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001440s ]
+ERR: 非法操作:js
+
+[ 2016-12-07T10:18:49+08:00 ] 127.0.0.1 /broken/index.php/Home/Life/css/amazeui.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000963s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001466s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001604s ]
+ERR: 非法操作:css
+
+[ 2016-12-07T10:18:49+08:00 ] 127.0.0.1 /broken/index.php/Home/Life/images/user.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000667s ]
+
+[ 2016-12-07T10:18:49+08:00 ] 127.0.0.1 /broken/index.php/Home/Life/js/amazeui.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000492s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001606s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001820s ]
+ERR: 非法操作:js
+
+[ 2016-12-07T10:18:49+08:00 ] 127.0.0.1 /broken/index.php/Home/Life/images/user.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000483s ]
+
+[ 2016-12-07T10:49:23+08:00 ] 127.0.0.1 /broken/index.php/Home/Life/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000739s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000763s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000827s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000119s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000194s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009852s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009921s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000501s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000556s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000801s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000856s ]
+
+[ 2016-12-07T10:51:29+08:00 ] 127.0.0.1 /broken/index.php/Home/Life/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000605s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000738s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000798s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000122s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007902s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007969s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000520s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000581s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000813s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000870s ]
+
+[ 2016-12-07T10:58:31+08:00 ] 127.0.0.1 /broken/index.php/Home/Admin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000871s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001177s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001278s ]
+ERR: 模板不存在:./Application/Home/View/Admin/login.html
+
+[ 2016-12-07T11:00:21+08:00 ] 127.0.0.1 /broken/index.php/Home/Admin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000936s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001221s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001330s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000128s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000266s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027012s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027169s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000809s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000898s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001281s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001374s ]
+
+[ 2016-12-07T11:18:29+08:00 ] 127.0.0.1 /broken/index.php/Home/Home/match
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000951s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001137s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001222s ]
+ERR: 无法加载控制器:Home
+
+[ 2016-12-07T11:18:40+08:00 ] 127.0.0.1 /broken/index.php/Home/match
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000671s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000737s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000804s ]
+ERR: 无法加载控制器:Match
+
+[ 2016-12-07T11:18:54+08:00 ] 127.0.0.1 /broken/index.php/Home/Life/match
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000554s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000638s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000698s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0213s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_branch='搭配' )  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `sliders` [ RunTime:0.0082s ]
+SQL: SELECT * FROM `sliders` WHERE ( type_branch='搭配' )  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0079s ]
+SQL: SELECT * FROM `activity` WHERE ( type_branch='搭配' )  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `chips` [ RunTime:0.0079s ]
+SQL: SELECT * FROM `chips` WHERE ( type_branch='搭配' ) ORDER BY clickcount+0 desc LIMIT 7   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000161s ]
+NOTIC: [8] Undefined index: id D:\WebServer\wwwroot\broken\Application\Runtime\Cache\Home\09ec375d8b90db38eba988999bcf0c2f.php 第 147 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013275s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013341s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000591s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000661s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001158s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001260s ]
+
+[ 2016-12-07T11:20:24+08:00 ] 127.0.0.1 /broken/index.php/Home/Life/set_hits
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000795s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001083s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001187s ]
+SQL: SHOW COLUMNS FROM `chips` [ RunTime:0.0227s ]
+SQL: UPDATE `chips` SET `clickcount`=clickcount+1 WHERE `id` = 7 [ RunTime:0.0672s ]
+

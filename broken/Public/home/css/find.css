@@ -130,7 +130,6 @@
     margin-top: -7%;
 }
 .mycom_tab small{
-    padding-top: -5%;
     color: gray;
 }
 #content_list .p{
@@ -138,19 +137,6 @@
     font-weight:bold;
 }
 #content_list .p1{
-    margin-top:-8%;
-}
-#content_list .am-u-sm-2 img{
-    margin-top: 8%;
-}
-#content_li .am-u-sm-10{
-    margin-left: 5%
-}
-#content_li .p{
-    font-size:16px;
-    font-weight:bold;
-}
-#content_li .p1{
     margin-top:-8%;
 }
 /*发现点赞页*/

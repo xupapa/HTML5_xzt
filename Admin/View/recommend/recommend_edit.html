@@ -1,0 +1,57 @@
+
+    <!--/sidebar-->
+    <div class="main-wrap">
+
+        <div class="crumb-wrap">
+            <div class="crumb-list"><i class="icon-font"></i><a href="index.html">首页</a><span class="crumb-step">&gt;</span><a class="crumb-name" href="allNewses.html">动态管理</a><span class="crumb-step">&gt;</span><span>修改动态</span></div>
+        </div>
+        <div class="result-wrap">
+            <div class="result-content">
+                <form action="" method="post" id="myform" name="myform" enctype="multipart/form-data">
+                    <table class="insert-tab" width="100%">
+                        <tbody>
+                            <tr>
+                                <th><i class="require-red">*</i>标题：</th>
+                                <td>
+                                    <input class="common-text required" id="pname" name="pname" value="{$recommendtab_food.title}"size="50"type="text">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><i class="require-red">*</i>内容：</th>
+                                <td>
+                                    <textarea name="content" class="common-textarea" id="content"cols="30" style="width: 98%;" rows="10">{$recommendtab_food.content}</textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><i class="require-red">*</i>缩略图：</th>
+                                <td>
+                                    <img src="__PUBLIC__/upload/{$recommendtab_food['small']}" height="100px" width="150px" />
+                                    <br/>
+                                    <input name="small" id="small" type="file" value="{$recommendtab_food.small}">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><i class="require-red">*</i>高清图：</th>
+                                <td>
+                                    <img src="__PUBLIC__/upload/{$recommendtab_food['images']}" height="300px" width="450px" />
+                                    <br/>
+                                    <input name="images" id="images" type="file" value="{$recommendtab_food.images}">
+                                </td>
+                            </tr>
+                            <tr>
+                                <input type="hidden" name="rid" value="{$recommendtab_food.rid}">
+                            </tr>
+                            <tr>
+                                <th></th>
+                                <td>
+                                    <input class="btn btn-primary btn6 mr10" value="提交" type="submit" multiple>
+                                    <input class="btn btn6" onclick="history.go(-1)" value="返回" type="button">
+                                </td>
+                            </tr>
+                        </tbody></table>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <!--/main-->

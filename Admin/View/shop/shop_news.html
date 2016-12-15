@@ -1,0 +1,62 @@
+
+    <!--/sidebar-->
+    <div class="main-wrap">
+
+        <div class="crumb-wrap">
+            <div class="crumb-list"><i class="icon-font"></i><a href="__MOUDLE__/Index/index.html">首页</a><span class="crumb-step">&gt;</span><span>店铺信息</span></div>
+        </div>
+        <div class="result-wrap">
+            <div class="result-content">
+                <form action="{:U('Admin/Shop/shop_edit')}" method="post" id="myform" name="myform" enctype="multipart/form-data">
+                    <table class="insert-tab" width="100%">
+                        <tbody>
+                            <tr>
+                                <th><i class="require-red">*</i>店铺名</th>
+                                <td>
+                                    <input class="common-text required" id="shopname" name="shopname" size="50" value="{$shop['shopname']}" type="text">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><i class="require-red">*</i>店铺评分</th>
+                                <td>{$shop['slevel']}&nbsp;分</td>
+                            </tr>
+                            <tr>
+                                <th><i class="require-red">*</i>店铺头像：</th>
+                                <td>
+                                    <img src="__PUBLIC__/upload/{$shop['simage']}" height="100px" width="150px" /><br/>
+                                    <input name="simage" id="" type="file" value="{$shop['simage']}">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><i class="require-red">*</i>模块分类:</th>
+                                <td>
+                                    {$shop.type_origin}
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><i class="require-red">*</i>内容分类:</th>
+                                <td>
+                                    {$shop.type_branch}
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><i class="require-red">*</i>店铺简介：</th>
+                                <td><input type="text" class="common-text required" name="sintroduce" id="sintroduce" size="50" value="{$shop['sintroduce']}"></td>
+                            </tr>
+                            <tr>
+                                <th><i class="require-red">*</i>店铺介绍：</th>
+                                <td><textarea name="introduce" class="common-textarea" id="introduce" cols="30" style="width: 98%;" rows="10">{$shop['introduce']}</textarea></td>
+                            </tr>
+                            <tr>
+                                <th></th>
+                                <td>
+                                    <input class="btn btn-primary btn6 mr10" value="保存" type="submit" multiple>
+                                </td>
+                            </tr>
+                        </tbody></table>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <!--/main-->

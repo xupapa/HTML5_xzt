@@ -1,0 +1,26 @@
+<layout name="layout"/>
+	<div class="am-g" id="listBody">
+		<volist name="wishtab" id="v">
+		<div class="am-u-sm-12">
+			<div class="am-g" style="width:112%;">
+				<div class="am-u-sm-12" id="list12">
+					<a href="{:U('Home/Find/find_content')}/id/{$v[wid]}">
+					<div class="am-thumbnail">
+						<img src="__PUBLIC__/home/images/{$v[images]}"/>
+						<div class="am-thumbnail-caption">
+							<h3>{$v[wish_title]}</h3>
+							<p>
+								{$v[wish_content]}
+							</p>
+						</div>
+					</div>
+					</a>
+				</div>
+			</div>
+			
+		</div>
+</volist>
+		
+		</div>
+	</div>
+	

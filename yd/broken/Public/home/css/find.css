@@ -1,0 +1,207 @@
+/*发现首页css find_index.html*/
+/*更多*/
+.more{
+    font-size: 12px;
+    float: right;
+    color: gray;
+}
+/*食品列表*/
+#food_list{
+	width: 92%;
+}
+#food_list img{
+	width: 115%;
+    margin-left: -5px;
+	float:left;
+}
+#food_list p{
+	font-size: 16px;
+	text-align: center;
+	color: gray;
+}
+/*生活列表*/
+#lift_list{
+    width: 92%;
+}
+#life_ul p{
+    font-size: 14px;
+    color: gray;
+    font-weight: bold;
+    text-align: right;
+}
+/*心愿列表*/
+#need_list img{
+    width: 100%;
+    float:left;
+}
+#need_list p{
+    font-size: 14px;
+    text-align:left;
+    color:gray;
+}
+#need_list .am-panel{
+    width: 110%;
+    height: 160px;
+    background: #f0f0f0;
+}
+.wish{
+    color:#ff3333;
+}
+#wish_list{
+    color:#ff3333;
+    float:right;
+}
+/*发现消息页*/
+#con_list{
+    margin-top: 0.5%;
+    margin-bottom: 1%;
+}
+#con_list p{
+    font-size: 14px;
+}
+.list{
+    float: right;
+    font-size: 12px;
+}
+.mynews .left{
+    color: gray;
+}
+.mynews .am-u-sm-8{
+    color: gray;
+}
+.mynews .right{
+    float: right;
+}
+/*发现评论页*/
+.am-comment-bd{
+    font-size: 15px;
+}
+#comment{
+    width: 90%;
+    margin-left: 15px;
+}
+#comment i span{
+    background:#65c8f5;
+}
+#comment ul li{
+    margin-top:-1%;
+}
+/*输入框*/
+#input{
+    background:#f0f0f0;          
+}
+#input .am-g{
+    width:92%;
+    margin-left:5%;
+}
+#input{
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+/*发现收藏页*/
+#con_tab h3{
+    color: black;
+}
+#con_tab p{
+    font-size: 14px;
+    color: black;
+}
+/*发现评论页*/
+#con-list p{
+    font-size: 14px;
+    color: gray;
+}
+#con_tab .title{
+    color: black;
+}
+.list{
+    float: right;
+}
+/*发现点赞页*/
+/*.scrollspy-nav {
+    top: 0;
+    z-index: 100;
+    background: #0e90d2;
+    width: 100%;    
+    height: 50px;    
+}
+.scrollspy-nav ul {
+    margin: 0;
+    padding: 0;
+}
+.scrollspy-nav li {
+    display: inline-block;
+    list-style: none;
+    margin-left: 2%;
+}
+ .scrollspy-nav a {
+    color: #eee;
+    padding: 10px 20px;
+    display: inline-block;
+}
+ .scrollspy-nav a.am-active {
+    color: #fff;
+    font-weight: bold;
+}*/
+#upme i span{
+    background:#65c8f5;
+}
+#myup i span{
+    background:#65c8f5;
+}
+#upme li{
+    margin-top: 5%;
+}
+#myup li{
+    margin-top: 5%;
+}
+.at{
+    color: red;
+}
+.sm_img{
+    width: 50%;
+    height: 50%;
+}
+#date{
+    padding-left: 0%;
+    padding-right:2%; 
+    text-align: center;
+}
+#date h3{
+    margin-bottom: 2%;
+}
+#content_list{
+    padding-bottom: 4%;
+    border-bottom: 1px solid lightgray;
+}
+#body div{
+    padding-top: 2%;
+}
+#body h4{
+   margin-bottom: 2%;
+}
+#body p{
+    margin-top: 2%;
+}
+/*顾客内容*/
+#my-scrollspy .am-comment-bd{
+    padding: 0;
+    margin: 0;
+}
+#hea h1{
+    height: 275px;
+    width: 100%;
+    background:url(images/find_02.jpg) center no-repeat;
+    background-size: cover;    
+}
+#hea a{
+    background-color:black;
+    background-size:cover;
+}
+#meta1{
+    font-size:17px;line-height:20px;color:black;
+}
+#meta2{
+    color:white;
+    background-color:#00bcd4;
+}

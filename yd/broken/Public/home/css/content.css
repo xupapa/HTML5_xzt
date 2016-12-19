@@ -1,0 +1,133 @@
+/*生活三个首页css life_match.html life_beauty.html life_book.html*/
+/*活动*/
+		#active{
+			max-height:25%;
+		}
+		#active1{
+			height:100%;
+			padding-left:1px;
+			border-right:1px solid #E0E0E0;
+		}
+		#active1 img{
+			width:111%;
+			height: 120%;
+		}
+		#active2{
+			padding-left:0;
+			border-right:1px solid #E0E0E0;
+		}
+		#active2 img{
+			width:110%;
+		}
+		#active3{
+			padding-left:0;
+		}
+		#active4{
+			height:100%;
+		}
+		#active4 .am-g{
+			margin-left:1%;
+		}
+		#active3_img1{
+			width:110%;
+			border-bottom:1px solid #E0E0E0;
+		}
+		#active3_img2{
+			width:110%;
+			padding-top:4px;
+		}
+		#active5{
+			padding-left:0;
+		}
+		#active5_img1{
+			width:110%;
+		}
+		#active5_img2{
+			width:110%;
+			padding-top:4px;
+		}
+/*列表*/
+		#list a{
+			color:black;
+			padding-top:0;
+		}
+		#list1{
+			margin:3px 0px;
+		}
+		#list1 img{
+			width:auto;
+			height:auto;
+			max-width:100%;
+			max-height:100%;
+		}
+		#list2{
+			padding-left:0;
+			padding-right:0;
+		}
+		#list2_p1{
+			color:#363636;
+			font-size:15px;
+			font-weight:bold;
+		}
+		#list2_p1 span{
+			color:#363636;
+			font-size:13px;
+			font-weight:normal;
+		}
+		#list2_p2{
+			color: #666666;
+			font-size:14px;
+			margin-top:-10px;
+		}
+		#list2_p3{
+			color: #7B7B7B;
+			font-size:14px;
+		}
+		#list3{
+			margin-top:15px;
+			text-align:center;
+		}
+		#list3 a{
+			color:#ff5151;
+		}
+/*标签评价*/
+		#do-not-say-1 .am-g{
+			margin-top:10px;
+		}
+		#do-not-say-1 .am-u-sm-4{
+			text-align:center;
+		}
+		#do-not-say-1 .am-u-sm-4 span{
+			color:white;
+		}
+		#do-not-say-1 .am-u-sm-3{
+			padding-left:0;
+			padding-right:0;
+		}
+		#do-not-say-1 .am-u-sm-9{
+			 padding-left:0;
+			 padding-right:0;
+		}
+		#do-not-say-1 .am-u-sm-9 .am-progress{
+			 margin-bottom:0;
+		}
+		#do-not-say-2 .am-g{
+			margin-top:10px;
+		}
+		#do-not-say-2 .am-u-sm-4{
+			text-align:center;
+		}
+		#do-not-say-2 .am-u-sm-4 span{
+			color:white;
+		}
+		#do-not-say-2 .am-u-sm-3{
+			padding-left:0;
+			padding-right:0;
+		}
+		#do-not-say-2 .am-u-sm-9{
+			 padding-left:0;
+			 padding-right:0;
+		}
+		#do-not-say-2 .am-u-sm-9 .am-progress{
+			 margin-bottom:0;
+		}

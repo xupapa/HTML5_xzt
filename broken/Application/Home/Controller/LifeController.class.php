@@ -11,6 +11,7 @@ class LifeController extends Controller {
         $this->assign('activity', $activity);
         //判断登陆
         $data['busername']=$_SESSION['user']['busername'];
+        $data['bid']=$_SESSION['user']['bid'];
         $this->assign('user',$data);
         $shopModel=M("sellertab");
         $shop = $shopModel->where("type_branch='搭配'")->select();
@@ -282,6 +283,7 @@ class LifeController extends Controller {
         //print_r($data['id']);exit;
         $obj = M("chips");
         $data['sex']=$_SESSION['user']['sex'];
+        $bid=$_SESSION['user']['bid'];
         //print_r($data['sex']);exit;
         if($data['sex']['sex']=='male'){
             //print_r('吃饭');exit;
@@ -290,6 +292,7 @@ class LifeController extends Controller {
         if($data['sex']['sex']=='female'){
             $obj->where($data)->setInc('femalenum');
         }
+        $obj->where($data)->field('bid')->save($bid);
         if(!isset($_COOKIE[$_POST['data']+10000])&&$obj->where($data)->setInc('clickcount')){
             $cookiename = $_POST['data']+10000;
             setcookie($cookiename,40,time()+60,'/');

@@ -1,0 +1,90 @@
+
+    <!--/sidebar-->
+    <div class="main-wrap">
+
+        <div class="crumb-wrap">
+            <div class="crumb-list"><i class="icon-font"></i><a href="index.html">首页</a><span class="crumb-step">&gt;</span><span class="crumb-name">动态管理</span><span class="crumb-step">&gt;</span><span class="crumb-name">所有动态</span></div>
+        </div>
+        <div class="search-wrap">
+            <div class="search-content">
+                <form action="/jscss/admin/design/index" method="post">
+                </form>
+            </div>
+        </div>
+        <div class="result-wrap">
+            <form name="myform" id="myform" method="post" action="{:U('Admin/Recommend/destoryBatch')}">
+                <div class="result-title">
+                    <div class="result-list">
+                        <a href="addRoom.html"><i class="icon-font"></i>新增动态</a>
+                        <a id="batchDel" href="javascript:void(0)" ><i class="icon-font"></i>批量删除</a>
+                    </div>
+                </div>
+                <div class="result-content">
+                    <table class="result-tab" width="100%">
+                        <tr>
+                            <th class="tc"><input class="SelectAll" id="SelectAll" name="" type="checkbox"></th>
+                            <th>标题</th>
+                            <th>发布时间</th>
+                            <th>操作</th>
+                        </tr>
+                        <volist name="recommendtab_food" id="nt">
+                        <tr>
+                            <td class="tc"><input name="rid[]" value="{$nt.rid}" type="checkbox"></td>
+                            <td>{$nt.title}</td>
+                            <td>{$nt.time}</td>
+                            <td>
+                                <a class="link-update" href="view/id/{$nt.rid}">查看</a>&nbsp;&nbsp;
+                                <a class="link-update" href="recommend_edit/id/{$nt.rid}">修改</a>&nbsp;&nbsp;
+                                <a class="link-del" href="delete/id/{$nt.rid}">删除</a>
+                            </td>
+                        </tr>
+                    </volist>
+                    </table>
+                    <div class="input-group pull-left form" style="margin-top:2%;">
+                        <a href="javascript:void(0)" id="batchDel2" class="btn btn-danger"> 删 除</a>
+                    </div>
+                    <div class="list-page">
+                        <ul class="pagination" style="text-align:center">
+                            <li>{$pages}</li>
+                        </ul>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--/main-->
+    <script type="text/javascript">
+// 全选
+$("#SelectAll").click(function()
+{
+    if($(this).is(':checked'))
+    {
+        $(':checkbox').attr('checked','checked');
+    }else
+    {
+        $(':checkbox').removeAttr('checked');
+    }
+});
+$("#batchDel").click(function(){
+    var r=confirm("确认删除?");
+    if(r==true)
+    {
+        document.myform.submit();
+    }
+    else
+    {
+        window.location.reload(); 
+    }
+});
+$("#batchDel2").click(function(){
+    var r=confirm("确认删除?");
+    if(r==true)
+    {
+        document.myform.submit();
+    }
+    else
+    {
+        window.location.reload(); 
+    }
+});
+</script>

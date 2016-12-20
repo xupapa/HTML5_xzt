@@ -1,0 +1,23 @@
+<layout name="layout_life"/>
+	<!--列表-->
+	<div class="content">
+	<volist name="sellertab" id="v" offset="0" length='' empty="抱歉，暂时没有店铺信息。">
+		<!--1-->
+		<div class="am-g" id="list">
+		  <div class="am-u-sm-7" id="list_img">
+		  	<img src="__PUBLIC__/home/images/{$v.simage}">
+		  </div>
+		  <div class="am-u-sm-5" id="list_text">
+			  <div class="am-g">
+			    <div class="am-u-sm-12" id="list-title"><h3>{$v.shopname}</h3></div>
+			  </div>
+			  <div class="am-g">
+			    <div class="am-u-sm-12" id="list-content">
+			      <p class="am-serif">地址：{$v.introduce}</p>
+			    </div>
+			  </div>
+		  </div>
+		</div>
+	</volist>
+	</div>
+	

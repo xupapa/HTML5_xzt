@@ -11,8 +11,10 @@
 		.am-g h1{
 			height: 300px;
 			width: 100%;
-			background:url(../images/moviestore_01a.jpg) center no-repeat;
-			background-size: cover;
+		}
+		.img img{
+			width: 100%;
+
 		}
 		.am-topbar-brand a{
 			background-size:cover;

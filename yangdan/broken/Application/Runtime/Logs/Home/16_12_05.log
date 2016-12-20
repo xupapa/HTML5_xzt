@@ -1,0 +1,2519 @@
+[ 2016-12-05T13:32:46+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_games.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.058935s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.016098s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.016206s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0513s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_origin='娱乐' )  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_branch='游戏' )  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000186s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000310s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.305195s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.305301s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.092777s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.092912s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.037735s ]
+INFO: [ app_end ] --END-- [ RunTime:0.037895s ]
+
+[ 2016-12-05T13:34:31+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_sports.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000452s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000891s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000998s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000147s ]
+NOTIC: [8] Undefined variable: vo F:\Html Five\Web Server\apache2.2\htdocs\broken\Application\Runtime\Cache\Home\6e446deede5de5c5de6f504c5af8f864.php 第 94 行.
+NOTIC: [8] Undefined variable: vo F:\Html Five\Web Server\apache2.2\htdocs\broken\Application\Runtime\Cache\Home\6e446deede5de5c5de6f504c5af8f864.php 第 99 行.
+NOTIC: [8] Undefined variable: vo F:\Html Five\Web Server\apache2.2\htdocs\broken\Application\Runtime\Cache\Home\6e446deede5de5c5de6f504c5af8f864.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.068894s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.069014s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000345s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000395s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000628s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000681s ]
+
+[ 2016-12-05T13:34:35+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_sports.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000345s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000483s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000541s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000178s ]
+NOTIC: [8] Undefined variable: vo F:\Html Five\Web Server\apache2.2\htdocs\broken\Application\Runtime\Cache\Home\6e446deede5de5c5de6f504c5af8f864.php 第 94 行.
+NOTIC: [8] Undefined variable: vo F:\Html Five\Web Server\apache2.2\htdocs\broken\Application\Runtime\Cache\Home\6e446deede5de5c5de6f504c5af8f864.php 第 99 行.
+NOTIC: [8] Undefined variable: vo F:\Html Five\Web Server\apache2.2\htdocs\broken\Application\Runtime\Cache\Home\6e446deede5de5c5de6f504c5af8f864.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009650s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009719s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000310s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000377s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000621s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000703s ]
+
+[ 2016-12-05T13:34:46+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_sports.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000418s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000609s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000688s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000167s ]
+NOTIC: [8] Undefined variable: vo F:\Html Five\Web Server\apache2.2\htdocs\broken\Application\Runtime\Cache\Home\6e446deede5de5c5de6f504c5af8f864.php 第 94 行.
+NOTIC: [8] Undefined variable: vo F:\Html Five\Web Server\apache2.2\htdocs\broken\Application\Runtime\Cache\Home\6e446deede5de5c5de6f504c5af8f864.php 第 99 行.
+NOTIC: [8] Undefined variable: vo F:\Html Five\Web Server\apache2.2\htdocs\broken\Application\Runtime\Cache\Home\6e446deede5de5c5de6f504c5af8f864.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008711s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008767s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000354s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000585s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000636s ]
+
+[ 2016-12-05T13:35:05+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_sports.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000562s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000641s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000701s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0174s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_origin='娱乐' )  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_branch='游戏' )  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000120s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000275s ]
+NOTIC: [8] Undefined variable: vo F:\Html Five\Web Server\apache2.2\htdocs\broken\Application\Runtime\Cache\Home\6e446deede5de5c5de6f504c5af8f864.php 第 94 行.
+NOTIC: [8] Undefined variable: vo F:\Html Five\Web Server\apache2.2\htdocs\broken\Application\Runtime\Cache\Home\6e446deede5de5c5de6f504c5af8f864.php 第 99 行.
+NOTIC: [8] Undefined variable: vo F:\Html Five\Web Server\apache2.2\htdocs\broken\Application\Runtime\Cache\Home\6e446deede5de5c5de6f504c5af8f864.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009846s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009914s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000358s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000583s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000634s ]
+
+[ 2016-12-05T13:35:20+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_sports.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000544s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000901s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001004s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0165s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_origin='娱乐' )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_branch='运动' )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000142s ]
+NOTIC: [8] Undefined variable: vo F:\Html Five\Web Server\apache2.2\htdocs\broken\Application\Runtime\Cache\Home\6e446deede5de5c5de6f504c5af8f864.php 第 94 行.
+NOTIC: [8] Undefined variable: vo F:\Html Five\Web Server\apache2.2\htdocs\broken\Application\Runtime\Cache\Home\6e446deede5de5c5de6f504c5af8f864.php 第 99 行.
+NOTIC: [8] Undefined variable: vo F:\Html Five\Web Server\apache2.2\htdocs\broken\Application\Runtime\Cache\Home\6e446deede5de5c5de6f504c5af8f864.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008376s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008436s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000314s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000369s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000711s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000777s ]
+
+[ 2016-12-05T13:35:22+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_sports.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000438s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000634s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000694s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0171s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_origin='娱乐' )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_branch='运动' )  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000144s ]
+NOTIC: [8] Undefined variable: vo F:\Html Five\Web Server\apache2.2\htdocs\broken\Application\Runtime\Cache\Home\6e446deede5de5c5de6f504c5af8f864.php 第 94 行.
+NOTIC: [8] Undefined variable: vo F:\Html Five\Web Server\apache2.2\htdocs\broken\Application\Runtime\Cache\Home\6e446deede5de5c5de6f504c5af8f864.php 第 99 行.
+NOTIC: [8] Undefined variable: vo F:\Html Five\Web Server\apache2.2\htdocs\broken\Application\Runtime\Cache\Home\6e446deede5de5c5de6f504c5af8f864.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009548s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009646s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001197s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001285s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001021s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001089s ]
+
+[ 2016-12-05T13:35:24+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_sports.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000403s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000612s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000685s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0216s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_origin='娱乐' )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_branch='运动' )  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000165s ]
+NOTIC: [8] Undefined variable: vo F:\Html Five\Web Server\apache2.2\htdocs\broken\Application\Runtime\Cache\Home\6e446deede5de5c5de6f504c5af8f864.php 第 94 行.
+NOTIC: [8] Undefined variable: vo F:\Html Five\Web Server\apache2.2\htdocs\broken\Application\Runtime\Cache\Home\6e446deede5de5c5de6f504c5af8f864.php 第 99 行.
+NOTIC: [8] Undefined variable: vo F:\Html Five\Web Server\apache2.2\htdocs\broken\Application\Runtime\Cache\Home\6e446deede5de5c5de6f504c5af8f864.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011394s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011490s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000324s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000397s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000736s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000829s ]
+
+[ 2016-12-05T13:35:51+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_sports.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000337s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000487s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000546s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0202s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_origin='娱乐' )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_branch='运动' )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000129s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000193s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.058779s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.058858s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000261s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000929s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001055s ]
+
+[ 2016-12-05T13:38:06+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_sports.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.012398s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.014785s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.014868s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0171s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_origin='娱乐' )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_branch='运动' )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000159s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.159790s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.159880s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.009372s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009465s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.010051s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010139s ]
+
+[ 2016-12-05T13:38:08+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_sports.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000410s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000575s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000634s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0421s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_origin='娱乐' )  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_branch='运动' )  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000148s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009675s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009779s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000379s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000438s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000701s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000756s ]
+
+[ 2016-12-05T13:39:25+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_sports.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000503s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000520s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000592s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0205s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_origin='娱乐' )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_branch='运动' )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000164s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.056805s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056982s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000472s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000563s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001413s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001497s ]
+
+[ 2016-12-05T13:40:02+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_games.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000427s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000482s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000539s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0173s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_origin='娱乐' )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_branch='游戏' )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000160s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052042s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052122s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000256s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000320s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000898s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001011s ]
+
+[ 2016-12-05T13:40:12+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_games.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000510s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000619s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000680s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0988s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_origin='娱乐' )  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_branch='游戏' )  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000145s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010200s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010276s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000362s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001058s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001176s ]
+
+[ 2016-12-05T13:41:12+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_games.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000912s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001101s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0231s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_origin='娱乐' )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_branch='游戏' )  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000149s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010793s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010870s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000365s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001095s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001210s ]
+
+[ 2016-12-05T13:41:14+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_sports.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000391s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000572s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000638s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0215s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_origin='娱乐' )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_branch='运动' )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000157s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010164s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010253s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000268s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000319s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000542s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000594s ]
+
+[ 2016-12-05T13:41:32+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_sports.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001128s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000739s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000824s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0205s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_origin='娱乐' )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_branch='运动' )  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000147s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000226s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.059430s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.059552s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001323s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001541s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001958s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002294s ]
+
+[ 2016-12-05T13:43:38+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_sports.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000444s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000629s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000688s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.1215s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_origin='娱乐' )  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_branch='运动' )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000131s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000204s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.073765s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.073856s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000435s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001099s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001209s ]
+
+[ 2016-12-05T13:44:37+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_sports.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000383s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000601s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000660s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0610s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_origin='娱乐' )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_branch='运动' )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000145s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000227s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.068748s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.068829s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000315s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000364s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001054s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001164s ]
+
+[ 2016-12-05T13:44:41+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_movie.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000353s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000483s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000539s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0205s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_origin='娱乐' )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_branch='电影' )  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000145s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000222s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.053038s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053133s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000267s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000596s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000676s ]
+
+[ 2016-12-05T13:44:44+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_sports.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000375s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000957s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001065s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0178s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_origin='娱乐' )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_branch='运动' )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000129s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000204s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.062526s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062612s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000393s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000453s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000879s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000961s ]
+
+[ 2016-12-05T13:44:55+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_movie.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000379s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000633s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000704s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0169s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_origin='娱乐' )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_branch='电影' )  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000149s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010466s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010543s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000311s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000361s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001072s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001167s ]
+
+[ 2016-12-05T13:44:59+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_sports.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000337s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000535s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000592s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0235s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_origin='娱乐' )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_branch='运动' )  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000154s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000238s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060566s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060658s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000257s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000312s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000920s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001012s ]
+
+[ 2016-12-05T13:45:03+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_movie.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000400s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000557s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000626s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0187s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_origin='娱乐' )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_branch='电影' )  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000124s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000304s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010677s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010759s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000279s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000329s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000705s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000796s ]
+
+[ 2016-12-05T13:45:07+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_movie.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000340s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000477s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000533s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0212s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_origin='娱乐' )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_branch='电影' )  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000143s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010090s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010169s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000343s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000401s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001322s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001416s ]
+
+[ 2016-12-05T13:45:07+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_movie.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000337s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000477s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000533s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0121s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_origin='娱乐' )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_branch='电影' )  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000145s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009834s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009913s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000384s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000662s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000749s ]
+
+[ 2016-12-05T13:45:08+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_moviestore.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000478s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000580s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000652s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000204s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050314s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050420s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000362s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000444s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000814s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000903s ]
+
+[ 2016-12-05T13:46:23+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_movie.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000452s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000589s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000660s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.1069s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_origin='娱乐' )  [ RunTime:0.0009s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_branch='电影' )  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000154s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000263s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018451s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018581s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000558s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000652s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001107s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001240s ]
+
+[ 2016-12-05T13:47:20+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_movie.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000575s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000634s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0208s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_origin='娱乐' )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_branch='电影' )  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000177s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.064206s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.064288s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000319s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000372s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001106s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001224s ]
+
+[ 2016-12-05T14:09:24+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_moviestore.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003734s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004323s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000174s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000413s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023945s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024214s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001447s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001728s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002593s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002831s ]
+
+[ 2016-12-05T14:09:29+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_moviestore.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000363s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000548s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000610s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000118s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006192s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006260s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000265s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000316s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000550s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000631s ]
+
+[ 2016-12-05T15:21:38+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_movie.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000151s ]
+INFO: [ app_init ] --END-- [ RunTime:0.010779s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003348s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003607s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0592s ]
+SQL: SELECT * FROM `sellertab` WHERE `type_origin` = '娱乐' AND `type_branch` = '电影'  [ RunTime:0.0024s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000320s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000484s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.161624s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.161852s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001605s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001765s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005574s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005904s ]
+
+[ 2016-12-05T15:25:03+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_movie.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001331s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002381s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002576s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0629s ]
+SQL: SELECT * FROM `sellertab` WHERE `type_origin` = '娱乐' AND `type_branch` = '电影'  [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000190s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000346s ]
+NOTIC: [8] Undefined variable: imgs F:\Html Five\Web Server\apache2.2\htdocs\broken\Application\Runtime\Cache\Home\f811f65a28e593fb6f03622ce29d4ab5.php 第 64 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.373406s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.373826s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001443s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001742s ]
+SQL: SHOW COLUMNS FROM `sliders` [ RunTime:0.0357s ]
+SQL: SELECT * FROM `sliders` WHERE `type` = 'sliders' AND `type_origin` = '娱乐' AND `type_branch` = '电影'  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000168s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.402063s ]
+NOTIC: [8] Undefined index: simage F:\Html Five\Web Server\apache2.2\htdocs\broken\Application\Runtime\Cache\Home\f811f65a28e593fb6f03622ce29d4ab5.php 第 93 行.
+NOTIC: [8] Undefined index: shopname F:\Html Five\Web Server\apache2.2\htdocs\broken\Application\Runtime\Cache\Home\f811f65a28e593fb6f03622ce29d4ab5.php 第 98 行.
+NOTIC: [8] Undefined index: slevel F:\Html Five\Web Server\apache2.2\htdocs\broken\Application\Runtime\Cache\Home\f811f65a28e593fb6f03622ce29d4ab5.php 第 99 行.
+NOTIC: [8] Undefined index: simage F:\Html Five\Web Server\apache2.2\htdocs\broken\Application\Runtime\Cache\Home\f811f65a28e593fb6f03622ce29d4ab5.php 第 93 行.
+NOTIC: [8] Undefined index: shopname F:\Html Five\Web Server\apache2.2\htdocs\broken\Application\Runtime\Cache\Home\f811f65a28e593fb6f03622ce29d4ab5.php 第 98 行.
+NOTIC: [8] Undefined index: slevel F:\Html Five\Web Server\apache2.2\htdocs\broken\Application\Runtime\Cache\Home\f811f65a28e593fb6f03622ce29d4ab5.php 第 99 行.
+NOTIC: [8] Undefined index: simage F:\Html Five\Web Server\apache2.2\htdocs\broken\Application\Runtime\Cache\Home\f811f65a28e593fb6f03622ce29d4ab5.php 第 93 行.
+NOTIC: [8] Undefined index: shopname F:\Html Five\Web Server\apache2.2\htdocs\broken\Application\Runtime\Cache\Home\f811f65a28e593fb6f03622ce29d4ab5.php 第 98 行.
+NOTIC: [8] Undefined index: slevel F:\Html Five\Web Server\apache2.2\htdocs\broken\Application\Runtime\Cache\Home\f811f65a28e593fb6f03622ce29d4ab5.php 第 99 行.
+NOTIC: [8] Undefined index: simage F:\Html Five\Web Server\apache2.2\htdocs\broken\Application\Runtime\Cache\Home\f811f65a28e593fb6f03622ce29d4ab5.php 第 93 行.
+NOTIC: [8] Undefined index: shopname F:\Html Five\Web Server\apache2.2\htdocs\broken\Application\Runtime\Cache\Home\f811f65a28e593fb6f03622ce29d4ab5.php 第 98 行.
+NOTIC: [8] Undefined index: slevel F:\Html Five\Web Server\apache2.2\htdocs\broken\Application\Runtime\Cache\Home\f811f65a28e593fb6f03622ce29d4ab5.php 第 99 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016489s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.041297s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000024s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.056098s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002588s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002832s ]
+
+[ 2016-12-05T15:25:29+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_movie.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001425s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002675s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003087s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0656s ]
+SQL: SELECT * FROM `sellertab` WHERE `type_origin` = '娱乐' AND `type_branch` = '电影'  [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000159s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000291s ]
+NOTIC: [8] Undefined variable: imgs F:\Html Five\Web Server\apache2.2\htdocs\broken\Application\Runtime\Cache\Home\f811f65a28e593fb6f03622ce29d4ab5.php 第 64 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.078317s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.078452s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000396s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000450s ]
+SQL: SHOW COLUMNS FROM `sliders` [ RunTime:0.0161s ]
+SQL: SELECT * FROM `sliders` WHERE `type` = 'sliders' AND `type_origin` = '娱乐' AND `type_branch` = '电影'  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.083888s ]
+NOTIC: [8] Undefined index: simage F:\Html Five\Web Server\apache2.2\htdocs\broken\Application\Runtime\Cache\Home\f811f65a28e593fb6f03622ce29d4ab5.php 第 95 行.
+NOTIC: [8] Undefined index: shopname F:\Html Five\Web Server\apache2.2\htdocs\broken\Application\Runtime\Cache\Home\f811f65a28e593fb6f03622ce29d4ab5.php 第 100 行.
+NOTIC: [8] Undefined index: slevel F:\Html Five\Web Server\apache2.2\htdocs\broken\Application\Runtime\Cache\Home\f811f65a28e593fb6f03622ce29d4ab5.php 第 101 行.
+NOTIC: [8] Undefined index: simage F:\Html Five\Web Server\apache2.2\htdocs\broken\Application\Runtime\Cache\Home\f811f65a28e593fb6f03622ce29d4ab5.php 第 95 行.
+NOTIC: [8] Undefined index: shopname F:\Html Five\Web Server\apache2.2\htdocs\broken\Application\Runtime\Cache\Home\f811f65a28e593fb6f03622ce29d4ab5.php 第 100 行.
+NOTIC: [8] Undefined index: slevel F:\Html Five\Web Server\apache2.2\htdocs\broken\Application\Runtime\Cache\Home\f811f65a28e593fb6f03622ce29d4ab5.php 第 101 行.
+NOTIC: [8] Undefined index: simage F:\Html Five\Web Server\apache2.2\htdocs\broken\Application\Runtime\Cache\Home\f811f65a28e593fb6f03622ce29d4ab5.php 第 95 行.
+NOTIC: [8] Undefined index: shopname F:\Html Five\Web Server\apache2.2\htdocs\broken\Application\Runtime\Cache\Home\f811f65a28e593fb6f03622ce29d4ab5.php 第 100 行.
+NOTIC: [8] Undefined index: slevel F:\Html Five\Web Server\apache2.2\htdocs\broken\Application\Runtime\Cache\Home\f811f65a28e593fb6f03622ce29d4ab5.php 第 101 行.
+NOTIC: [8] Undefined index: simage F:\Html Five\Web Server\apache2.2\htdocs\broken\Application\Runtime\Cache\Home\f811f65a28e593fb6f03622ce29d4ab5.php 第 95 行.
+NOTIC: [8] Undefined index: shopname F:\Html Five\Web Server\apache2.2\htdocs\broken\Application\Runtime\Cache\Home\f811f65a28e593fb6f03622ce29d4ab5.php 第 100 行.
+NOTIC: [8] Undefined index: slevel F:\Html Five\Web Server\apache2.2\htdocs\broken\Application\Runtime\Cache\Home\f811f65a28e593fb6f03622ce29d4ab5.php 第 101 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009028s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.018204s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000013s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.026846s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001014s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001109s ]
+
+[ 2016-12-05T15:25:43+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_movie.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001370s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001587s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001784s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0628s ]
+SQL: SELECT * FROM `sellertab` WHERE `type_origin` = '娱乐' AND `type_branch` = '电影'  [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `sliders` [ RunTime:0.0337s ]
+SQL: SELECT * FROM `sliders` WHERE `type` = 'sliders' AND `type_origin` = '娱乐' AND `type_branch` = '电影'  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000205s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000364s ]
+NOTIC: [8] Undefined index: simage F:\Html Five\Web Server\apache2.2\htdocs\broken\Application\Runtime\Cache\Home\f811f65a28e593fb6f03622ce29d4ab5.php 第 95 行.
+NOTIC: [8] Undefined index: shopname F:\Html Five\Web Server\apache2.2\htdocs\broken\Application\Runtime\Cache\Home\f811f65a28e593fb6f03622ce29d4ab5.php 第 100 行.
+NOTIC: [8] Undefined index: slevel F:\Html Five\Web Server\apache2.2\htdocs\broken\Application\Runtime\Cache\Home\f811f65a28e593fb6f03622ce29d4ab5.php 第 101 行.
+NOTIC: [8] Undefined index: simage F:\Html Five\Web Server\apache2.2\htdocs\broken\Application\Runtime\Cache\Home\f811f65a28e593fb6f03622ce29d4ab5.php 第 95 行.
+NOTIC: [8] Undefined index: shopname F:\Html Five\Web Server\apache2.2\htdocs\broken\Application\Runtime\Cache\Home\f811f65a28e593fb6f03622ce29d4ab5.php 第 100 行.
+NOTIC: [8] Undefined index: slevel F:\Html Five\Web Server\apache2.2\htdocs\broken\Application\Runtime\Cache\Home\f811f65a28e593fb6f03622ce29d4ab5.php 第 101 行.
+NOTIC: [8] Undefined index: simage F:\Html Five\Web Server\apache2.2\htdocs\broken\Application\Runtime\Cache\Home\f811f65a28e593fb6f03622ce29d4ab5.php 第 95 行.
+NOTIC: [8] Undefined index: shopname F:\Html Five\Web Server\apache2.2\htdocs\broken\Application\Runtime\Cache\Home\f811f65a28e593fb6f03622ce29d4ab5.php 第 100 行.
+NOTIC: [8] Undefined index: slevel F:\Html Five\Web Server\apache2.2\htdocs\broken\Application\Runtime\Cache\Home\f811f65a28e593fb6f03622ce29d4ab5.php 第 101 行.
+NOTIC: [8] Undefined index: simage F:\Html Five\Web Server\apache2.2\htdocs\broken\Application\Runtime\Cache\Home\f811f65a28e593fb6f03622ce29d4ab5.php 第 95 行.
+NOTIC: [8] Undefined index: shopname F:\Html Five\Web Server\apache2.2\htdocs\broken\Application\Runtime\Cache\Home\f811f65a28e593fb6f03622ce29d4ab5.php 第 100 行.
+NOTIC: [8] Undefined index: slevel F:\Html Five\Web Server\apache2.2\htdocs\broken\Application\Runtime\Cache\Home\f811f65a28e593fb6f03622ce29d4ab5.php 第 101 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030908s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031037s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000531s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000647s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004158s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004395s ]
+
+[ 2016-12-05T15:26:00+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_movie.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001550s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002008s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002214s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0513s ]
+SQL: SELECT * FROM `sellertab` WHERE `type_origin` = '娱乐' AND `type_branch` = '电影'  [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000211s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000381s ]
+NOTIC: [8] Undefined variable: imgs F:\Html Five\Web Server\apache2.2\htdocs\broken\Application\Runtime\Cache\Home\f811f65a28e593fb6f03622ce29d4ab5.php 第 64 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033424s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033576s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000819s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000943s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001810s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001983s ]
+
+[ 2016-12-05T15:26:03+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_movie.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000353s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000535s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000610s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0213s ]
+SQL: SELECT * FROM `sellertab` WHERE `type_origin` = '娱乐' AND `type_branch` = '电影'  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000151s ]
+NOTIC: [8] Undefined variable: imgs F:\Html Five\Web Server\apache2.2\htdocs\broken\Application\Runtime\Cache\Home\f811f65a28e593fb6f03622ce29d4ab5.php 第 64 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010883s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010955s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000241s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000287s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000513s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000564s ]
+
+[ 2016-12-05T15:26:11+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_movie.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002683s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001752s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001942s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0524s ]
+SQL: SELECT * FROM `sellertab` WHERE `type_origin` = '娱乐' AND `type_branch` = '电影'  [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000290s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000521s ]
+NOTIC: [8] Undefined variable: imgs F:\Html Five\Web Server\apache2.2\htdocs\broken\Application\Runtime\Cache\Home\f811f65a28e593fb6f03622ce29d4ab5.php 第 64 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024788s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024992s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000937s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001073s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001396s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001534s ]
+
+[ 2016-12-05T15:26:58+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_movie.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000381s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000523s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000584s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0172s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_origin='娱乐' )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_branch='电影' )  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000093s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000170s ]
+NOTIC: [8] Undefined variable: imgs F:\Html Five\Web Server\apache2.2\htdocs\broken\Application\Runtime\Cache\Home\f811f65a28e593fb6f03622ce29d4ab5.php 第 64 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011406s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011477s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000230s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000277s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000512s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000575s ]
+
+[ 2016-12-05T15:27:01+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_movie.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000443s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000829s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001046s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0185s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_origin='娱乐' )  [ RunTime:0.0011s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_branch='电影' )  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000158s ]
+NOTIC: [8] Undefined variable: imgs F:\Html Five\Web Server\apache2.2\htdocs\broken\Application\Runtime\Cache\Home\f811f65a28e593fb6f03622ce29d4ab5.php 第 64 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010339s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010484s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000228s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000276s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000492s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000541s ]
+
+[ 2016-12-05T15:27:12+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_movie.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000338s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000505s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000563s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0210s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_origin='娱乐' )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `sellertab` WHERE ( type_branch='电影' )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000154s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010145s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010225s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000243s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000305s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000900s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001012s ]
+
+[ 2016-12-05T15:29:20+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_movie.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000402s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000612s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000674s ]
+
+[ 2016-12-05T15:29:40+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_movie.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000444s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000616s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000676s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0210s ]
+SQL: SELECT * FROM `sellertab` WHERE `type_origin` = '电影'  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000156s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010994s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011099s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000444s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000514s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000641s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000694s ]
+
+[ 2016-12-05T15:29:48+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_movie.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000472s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000677s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000773s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0228s ]
+SQL: SELECT * FROM `sellertab` WHERE `type_origin` = '电影'  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000142s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009768s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009861s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000353s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001010s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001225s ]
+
+[ 2016-12-05T15:30:31+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_movie.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000339s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000493s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000563s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0183s ]
+SQL: SELECT * FROM `sellertab` WHERE `type_origin` = '娱乐' AND `type_branch` = '电影'  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000157s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010185s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010262s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000229s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000278s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000799s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000912s ]
+
+[ 2016-12-05T15:31:06+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_movie.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000409s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000580s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000637s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0221s ]
+SQL: SELECT * FROM `sellertab` WHERE `type_origin` = '娱乐' AND `type_branch` = '电影'  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000151s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012764s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012846s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000378s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000434s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001119s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001227s ]
+
+[ 2016-12-05T15:31:07+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_games.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000349s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000603s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000696s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0188s ]
+SQL: SELECT * FROM `sellertab` WHERE `type_origin` = '娱乐' AND `type_branch` = '游戏'  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000182s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.059241s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.059323s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000279s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000337s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001171s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001295s ]
+
+[ 2016-12-05T15:31:09+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_sports.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000560s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000602s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000673s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0213s ]
+SQL: SELECT * FROM `sellertab` WHERE `type_origin` = '娱乐' AND `type_branch` = '运动'  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000171s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.075907s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.075994s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000361s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000705s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000806s ]
+
+[ 2016-12-05T15:31:10+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_movie.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000364s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000514s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000572s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0186s ]
+SQL: SELECT * FROM `sellertab` WHERE `type_origin` = '娱乐' AND `type_branch` = '电影'  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000170s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009835s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009914s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000547s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000669s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001018s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001125s ]
+
+[ 2016-12-05T15:35:50+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_movie.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001014s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001601s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001767s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0548s ]
+SQL: SELECT * FROM `sellertab` WHERE `type_origin` = '娱乐' AND `type_branch` = '电影'  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `sliders` [ RunTime:0.0238s ]
+SQL: SELECT * FROM `sliders` WHERE `type` = 'sliders' AND `type_origin` = '娱乐' AND `type_branch` = '电影'  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: id F:\Html Five\Web Server\apache2.2\htdocs\broken\ThinkPHP\Library\Think\Template\TagLib\Cx.class.php 第 70 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000182s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001850s ]
+
+[ 2016-12-05T15:36:58+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_movie.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001213s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004154s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004399s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0509s ]
+SQL: SELECT * FROM `sellertab` WHERE `type_origin` = '娱乐' AND `type_branch` = '电影'  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `sliders` [ RunTime:0.0381s ]
+SQL: SELECT * FROM `sliders` WHERE `type` = 'sliders' AND `type_origin` = '娱乐' AND `type_branch` = '电影'  [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: id F:\Html Five\Web Server\apache2.2\htdocs\broken\ThinkPHP\Library\Think\Template\TagLib\Cx.class.php 第 70 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000163s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000287s ]
+
+[ 2016-12-05T15:37:00+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_movie.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000349s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000510s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000567s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0185s ]
+SQL: SELECT * FROM `sellertab` WHERE `type_origin` = '娱乐' AND `type_branch` = '电影'  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `sliders` [ RunTime:0.0166s ]
+SQL: SELECT * FROM `sliders` WHERE `type` = 'sliders' AND `type_origin` = '娱乐' AND `type_branch` = '电影'  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: id F:\Html Five\Web Server\apache2.2\htdocs\broken\ThinkPHP\Library\Think\Template\TagLib\Cx.class.php 第 70 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000140s ]
+
+[ 2016-12-05T15:37:46+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_movie.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001855s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001580s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001769s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0757s ]
+SQL: SELECT * FROM `sellertab` WHERE `type_origin` = '娱乐' AND `type_branch` = '电影'  [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `sliders` [ RunTime:0.0280s ]
+SQL: SELECT * FROM `sliders` WHERE `type` = 'sliders' AND `type_origin` = '娱乐' AND `type_branch` = '电影'  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000196s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000356s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.163616s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.163802s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000851s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000980s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.012674s ]
+INFO: [ app_end ] --END-- [ RunTime:0.012899s ]
+
+[ 2016-12-05T15:46:57+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_movie.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001867s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001643s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001802s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0466s ]
+SQL: SELECT * FROM `sellertab` WHERE `type_origin` = '娱乐' AND `type_branch` = '电影'  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `sliders` [ RunTime:0.0151s ]
+SQL: SELECT * FROM `sliders` WHERE `type` = 'sliders' AND `type_origin` = '娱乐' AND `type_branch` = '电影'  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000129s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000235s ]
+NOTIC: [8] Undefined variable: imgs F:\Html Five\Web Server\apache2.2\htdocs\broken\Application\Runtime\Cache\Home\f811f65a28e593fb6f03622ce29d4ab5.php 第 69 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.098489s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.098552s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000384s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001618s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001721s ]
+
+[ 2016-12-05T15:47:14+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_movie.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000962s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001270s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001406s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0833s ]
+SQL: SELECT * FROM `sellertab` WHERE `type_origin` = '娱乐' AND `type_branch` = '电影'  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `sliders` [ RunTime:0.0190s ]
+SQL: SELECT * FROM `sliders` WHERE `type` = 'sliders' AND `type_origin` = '娱乐' AND `type_branch` = '电影'  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000138s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000246s ]
+NOTIC: [8] Undefined variable: imgs F:\Html Five\Web Server\apache2.2\htdocs\broken\Application\Runtime\Cache\Home\f811f65a28e593fb6f03622ce29d4ab5.php 第 69 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019855s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019969s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000657s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000737s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001155s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001277s ]
+
+[ 2016-12-05T15:49:46+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_movie.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000409s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000727s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000787s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.1669s ]
+SQL: SELECT * FROM `sellertab` WHERE `type_origin` = '娱乐' AND `type_branch` = '电影'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sliders` [ RunTime:0.0278s ]
+SQL: SELECT * FROM `sliders` WHERE `type` = 'sliders' AND `type_origin` = '娱乐' AND `type_branch` = '电影'  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `sliders` WHERE `type` = 'activities' AND `type_origin` = '娱乐' AND `type_branch` = '电影'  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000195s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000344s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.199652s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.199894s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000796s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000881s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001355s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001484s ]
+
+[ 2016-12-05T15:50:04+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_movie.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000405s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000646s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000705s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0343s ]
+SQL: SELECT * FROM `sellertab` WHERE `type_origin` = '娱乐' AND `type_branch` = '电影'  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `sliders` [ RunTime:0.0192s ]
+SQL: SELECT * FROM `sliders` WHERE `type` = 'sliders' AND `type_origin` = '娱乐' AND `type_branch` = '电影'  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `sliders` WHERE `type` = 'activities' AND `type_origin` = '娱乐' AND `type_branch` = '电影'  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000167s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000310s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.148494s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.148611s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000545s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000619s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001202s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001316s ]
+
+[ 2016-12-05T15:51:36+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_movie.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000365s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000504s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000559s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0181s ]
+SQL: SELECT * FROM `sellertab` WHERE `type_origin` = '娱乐' AND `type_branch` = '电影'  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `sliders` [ RunTime:0.0146s ]
+SQL: SELECT * FROM `sliders` WHERE `type` = 'sliders' AND `type_origin` = '娱乐' AND `type_branch` = '电影'  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `sliders` WHERE `type` = 'activities' AND `type_origin` = '娱乐' AND `type_branch` = '电影'  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000165s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.085420s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.085506s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000365s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005857s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006028s ]
+
+[ 2016-12-05T15:52:20+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_games.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000911s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001491s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0310s ]
+SQL: SELECT * FROM `sellertab` WHERE `type_origin` = '娱乐' AND `type_branch` = '游戏'  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000225s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000435s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023517s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023664s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000766s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000902s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006774s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015408s ]
+
+[ 2016-12-05T15:54:15+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_games.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001097s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001574s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001732s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0399s ]
+SQL: SELECT * FROM `sellertab` WHERE `type_origin` = '娱乐' AND `type_branch` = '游戏'  [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000149s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016145s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016284s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000448s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000525s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001519s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001624s ]
+
+[ 2016-12-05T15:54:21+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_movie.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000423s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000646s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000711s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.1080s ]
+SQL: SELECT * FROM `sellertab` WHERE `type_origin` = '娱乐' AND `type_branch` = '电影'  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `sliders` [ RunTime:0.0247s ]
+SQL: SELECT * FROM `sliders` WHERE `type` = 'sliders' AND `type_origin` = '娱乐' AND `type_branch` = '电影'  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `sliders` WHERE `type` = 'activities' AND `type_origin` = '娱乐' AND `type_branch` = '电影'  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000222s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000399s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.169165s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.169307s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000521s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000608s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002930s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003100s ]
+
+[ 2016-12-05T15:56:04+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_movie.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000848s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001175s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001302s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0237s ]
+SQL: SELECT * FROM `sellertab` WHERE `type_origin` = '娱乐' AND `type_branch` = '电影'  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `sliders` [ RunTime:0.0153s ]
+SQL: SELECT * FROM `sliders` WHERE `type` = 'sliders' AND `type_origin` = '娱乐' AND `type_branch` = '电影'  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `sliders` WHERE `type` = 'activities' AND `type_origin` = '娱乐' AND `type_branch` = '电影'  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000137s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000260s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.129524s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.129627s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000357s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000423s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009309s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009661s ]
+
+[ 2016-12-05T16:08:05+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_movie.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000451s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000601s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000661s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0175s ]
+SQL: SELECT * FROM `sellertab` WHERE `type_origin` = '娱乐' AND `type_branch` = '电影'  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `sliders` [ RunTime:0.0142s ]
+SQL: SELECT * FROM `sliders` WHERE `type` = 'sliders' AND `type_origin` = '娱乐' AND `type_branch` = '电影'  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `sliders` WHERE `type` = 'activities' AND `type_origin` = '娱乐' AND `type_branch` = '电影'  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000170s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.082527s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.082610s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000356s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000404s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001876s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002009s ]
+
+[ 2016-12-05T16:09:58+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_movie.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000925s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001598s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001741s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0444s ]
+SQL: SELECT * FROM `sellertab` WHERE `type_origin` = '娱乐' AND `type_branch` = '电影'  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `sliders` [ RunTime:0.0157s ]
+SQL: SELECT * FROM `sliders` WHERE `type` = 'sliders' AND `type_origin` = '娱乐' AND `type_branch` = '电影'  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `sliders` WHERE `type` = 'activities' AND `type_origin` = '娱乐' AND `type_branch` = '电影'  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000117s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000203s ]
+NOTIC: [8] Undefined variable: imgs F:\Html Five\Web Server\apache2.2\htdocs\broken\Application\Runtime\Cache\Home\f811f65a28e593fb6f03622ce29d4ab5.php 第 69 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013953s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014036s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000328s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000375s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001029s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001118s ]
+
+[ 2016-12-05T16:10:16+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_movie.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001362s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004130s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004386s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0463s ]
+SQL: SELECT * FROM `sellertab` WHERE `type_origin` = '娱乐' AND `type_branch` = '电影'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sliders` [ RunTime:0.0515s ]
+SQL: SELECT * FROM `sliders` WHERE `type` = 'sliders' AND `type_origin` = '娱乐' AND `type_branch` = '电影'  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000153s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000258s ]
+NOTIC: [8] Undefined variable: imgs F:\Html Five\Web Server\apache2.2\htdocs\broken\Application\Runtime\Cache\Home\f811f65a28e593fb6f03622ce29d4ab5.php 第 69 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031586s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031717s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000518s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000603s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001194s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001325s ]
+
+[ 2016-12-05T16:10:18+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_movie.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000391s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000530s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000632s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0205s ]
+SQL: SELECT * FROM `sellertab` WHERE `type_origin` = '娱乐' AND `type_branch` = '电影'  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sliders` [ RunTime:0.0155s ]
+SQL: SELECT * FROM `sliders` WHERE `type` = 'sliders' AND `type_origin` = '娱乐' AND `type_branch` = '电影'  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000178s ]
+NOTIC: [8] Undefined variable: imgs F:\Html Five\Web Server\apache2.2\htdocs\broken\Application\Runtime\Cache\Home\f811f65a28e593fb6f03622ce29d4ab5.php 第 69 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013829s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013904s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000234s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000279s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001027s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001226s ]
+
+[ 2016-12-05T16:10:40+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_movie.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000369s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000577s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000655s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0188s ]
+SQL: SELECT * FROM `sellertab` WHERE `type_origin` = '娱乐' AND `type_branch` = '电影'  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `sliders` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `sliders` WHERE `type` = 'sliders' AND `type_origin` = '娱乐' AND `type_branch` = '电影'  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000151s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.070769s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.070843s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000230s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000290s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001293s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001464s ]
+
+[ 2016-12-05T16:30:18+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_moviestore.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000599s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000766s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000832s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000211s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000445s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014377s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014473s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000465s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000539s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000912s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-12-05T16:30:31+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000497s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000668s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000729s ]
+ERR: 非法操作:index
+
+[ 2016-12-05T16:32:23+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/shop_search.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000856s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001495s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000275s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002876s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.176760s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.177020s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.040180s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.040380s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001401s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001530s ]
+
+[ 2016-12-05T16:32:23+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/css/amazeui.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000571s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000829s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000938s ]
+ERR: 非法操作:css
+
+[ 2016-12-05T16:32:23+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/css/app.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000712s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000887s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000993s ]
+ERR: 非法操作:css
+
+[ 2016-12-05T16:32:23+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/css/nav.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000642s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000879s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001003s ]
+ERR: 非法操作:css
+
+[ 2016-12-05T16:32:23+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/css/shop_search.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000653s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001007s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001178s ]
+ERR: 非法操作:css
+
+[ 2016-12-05T16:32:23+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/js/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002410s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000886s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001006s ]
+ERR: 非法操作:js
+
+[ 2016-12-05T16:32:23+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/js/amazeui.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000640s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000930s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001095s ]
+ERR: 非法操作:js
+
+[ 2016-12-05T16:32:23+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/shop_search.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000422s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000578s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000654s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000148s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008829s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008942s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000456s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000530s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000672s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000733s ]
+
+[ 2016-12-05T16:32:23+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/shop_search.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000437s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000554s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000621s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000137s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008854s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008945s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000276s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000332s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000645s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000743s ]
+
+[ 2016-12-05T16:34:32+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_moviestore.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000418s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000683s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000743s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000125s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006903s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006995s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000352s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000410s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000807s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000866s ]
+
+[ 2016-12-05T16:35:57+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_moviestore.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000929s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001504s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000132s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000296s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017193s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017345s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000712s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000824s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001422s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001546s ]
+
+[ 2016-12-05T16:46:10+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_moviestore.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000916s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001759s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001922s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000175s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000375s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032169s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032348s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000770s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000890s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001255s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001392s ]
+
+[ 2016-12-05T17:09:01+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_moviestore.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.075491s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.016076s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.016172s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000104s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000176s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.159556s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.159692s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.029997s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.030118s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.010801s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010883s ]
+
+[ 2016-12-05T17:09:14+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_moviestore.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001218s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001088s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001225s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000145s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018485s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018594s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000331s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000405s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000653s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000721s ]
+
+[ 2016-12-05T17:09:33+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_moviestore.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000429s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000613s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000686s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000177s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008843s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008928s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000341s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000388s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000714s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000777s ]
+
+[ 2016-12-05T17:09:37+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_moviestore.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000377s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000602s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000661s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000183s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000523s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008388s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008467s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000359s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000413s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000657s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000717s ]
+
+[ 2016-12-05T17:11:41+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_moviestore.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004742s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002172s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002398s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000205s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030587s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030756s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000537s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000622s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000995s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001086s ]
+
+[ 2016-12-05T17:11:58+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_gamestore.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000682s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001086s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001188s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000290s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000611s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.246351s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.246564s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000986s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001137s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002640s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002861s ]
+
+[ 2016-12-05T17:12:03+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_gamestore.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000571s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000912s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000142s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006153s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006237s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000555s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000697s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001130s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001265s ]
+
+[ 2016-12-05T17:12:15+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_gamestore.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000986s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001637s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001815s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000100s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000217s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014012s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014211s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001177s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001332s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001322s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001478s ]
+
+[ 2016-12-05T17:13:40+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_sports.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000912s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001366s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001514s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.1233s ]
+SQL: SELECT * FROM `sellertab` WHERE `type_origin` = '娱乐' AND `type_branch` = '运动'  [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000233s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000427s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.537348s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.537481s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000358s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000408s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007641s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008195s ]
+
+[ 2016-12-05T17:13:52+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_sportsstore.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000435s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000700s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000795s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000125s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047513s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047615s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000338s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000499s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000551s ]
+
+[ 2016-12-05T21:40:16+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_movie.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000090s ]
+INFO: [ app_init ] --END-- [ RunTime:0.037450s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.043241s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.043421s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0569s ]
+SQL: SELECT * FROM `sellertab` WHERE `type_origin` = '娱乐' AND `type_branch` = '电影'  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `sliders` [ RunTime:0.0363s ]
+SQL: SELECT * FROM `sliders` WHERE `type` = 'sliders' AND `type_origin` = '娱乐' AND `type_branch` = '电影'  [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000282s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000428s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.432681s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.432839s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.025730s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.025877s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.018223s ]
+INFO: [ app_end ] --END-- [ RunTime:0.046519s ]
+
+[ 2016-12-05T21:40:26+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_movie.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000814s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001377s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001539s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0379s ]
+SQL: SELECT * FROM `sellertab` WHERE `type_origin` = '娱乐' AND `type_branch` = '电影'  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `sliders` [ RunTime:0.0341s ]
+SQL: SELECT * FROM `sliders` WHERE `type` = 'sliders' AND `type_origin` = '娱乐' AND `type_branch` = '电影'  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000261s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000471s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027213s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027356s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000698s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001199s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002423s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002624s ]
+
+[ 2016-12-05T21:40:32+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_moviestore.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000470s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000607s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000666s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000129s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015335s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015411s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000319s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000366s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000615s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000667s ]
+
+[ 2016-12-05T22:21:55+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_moviestore.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000131s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003076s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002261s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001961s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002389s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.081650s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.081886s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001153s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001377s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.011094s ]
+INFO: [ app_end ] --END-- [ RunTime:0.011379s ]
+
+[ 2016-12-05T22:21:56+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/images/moviestore_01a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000582s ]
+
+[ 2016-12-05T22:21:56+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/images/moviestore_01a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000665s ]
+
+[ 2016-12-05T22:22:26+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_movie.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000582s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000877s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000966s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0262s ]
+SQL: SELECT * FROM `sellertab` WHERE `type_origin` = '娱乐' AND `type_branch` = '电影'  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `sliders` [ RunTime:0.0160s ]
+SQL: SELECT * FROM `sliders` WHERE `type` = 'sliders' AND `type_origin` = '娱乐' AND `type_branch` = '电影'  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000134s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000244s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.106024s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.106120s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000447s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000526s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001437s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001536s ]
+
+[ 2016-12-05T22:22:28+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_moviestore.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000343s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000478s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000534s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015030s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015105s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000237s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000283s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000496s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000551s ]
+
+[ 2016-12-05T22:22:31+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_moviestore.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000815s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000666s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000750s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000115s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006083s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006169s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000397s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000536s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000597s ]
+
+[ 2016-12-05T22:23:07+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_moviestore.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001527s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001649s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001835s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000299s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000556s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028237s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028459s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000710s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000859s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001659s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001828s ]
+
+[ 2016-12-05T22:23:37+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_moviestore.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000881s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001490s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000133s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000276s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017294s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017539s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001070s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001221s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001478s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001611s ]
+
+[ 2016-12-05T22:25:50+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_moviestore.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001236s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005846s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006200s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000171s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000359s ]
+NOTIC: [8] Undefined variable: sellertab F:\Html Five\Web Server\apache2.2\htdocs\broken\Application\Runtime\Cache\Home\d96b676cab78af0c26d9bb38856088f0.php 第 17 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044830s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045868s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002567s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002828s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002464s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002899s ]
+
+[ 2016-12-05T22:26:19+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_moviestore.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000710s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001368s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001503s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000228s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022838s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022983s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001975s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002135s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001156s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001256s ]
+
+[ 2016-12-05T22:27:43+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_moviestore.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001606s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002443s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002694s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000132s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000280s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016763s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017084s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000606s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000748s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001174s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001294s ]
+
+[ 2016-12-05T22:29:24+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_moviestore.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000819s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001245s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001373s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000122s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000258s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014504s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014641s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000679s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000826s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004589s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004793s ]
+
+[ 2016-12-05T22:29:39+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_moviestore.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003877s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001853s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002038s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000176s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000388s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030319s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030521s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001154s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001877s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002043s ]
+
+[ 2016-12-05T22:31:09+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_moviestore.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001255s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003017s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003269s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000178s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000381s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.115717s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.115990s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001781s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002031s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004679s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005095s ]
+
+[ 2016-12-05T22:32:00+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_moviestore.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001737s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001893s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002094s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000210s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000404s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031446s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031837s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001867s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003885s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004946s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005144s ]
+
+[ 2016-12-05T22:32:17+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_moviestore.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003889s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001657s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001843s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000348s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000678s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037800s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037984s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000529s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000650s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001788s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001983s ]
+
+[ 2016-12-05T22:32:32+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_moviestore.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003181s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001550s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001736s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000178s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000390s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028405s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028639s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000748s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000933s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001653s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001831s ]
+
+[ 2016-12-05T22:32:42+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_moviestore.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000413s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000635s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000695s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000172s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008013s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008100s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000361s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000642s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000703s ]
+
+[ 2016-12-05T22:32:51+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_moviestore.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001569s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001619s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001806s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000208s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000438s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034092s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034348s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001091s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001330s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005776s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006244s ]
+
+[ 2016-12-05T22:34:38+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_sports.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000383s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000682s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000748s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.1036s ]
+SQL: SELECT * FROM `sellertab` WHERE `type_origin` = '娱乐' AND `type_branch` = '运动'  [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000192s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000338s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.334284s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.334474s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001052s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001211s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005754s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006068s ]
+
+[ 2016-12-05T22:34:40+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_sportsstore.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000365s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000501s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000557s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000115s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013602s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013676s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000262s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000307s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000492s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000542s ]
+
+[ 2016-12-05T22:34:52+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_sportsstore.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001948s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002449s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002687s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000202s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000440s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016761s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016922s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000695s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000811s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001319s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001437s ]
+
+[ 2016-12-05T22:35:46+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_games.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000378s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000666s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000733s ]
+SQL: SHOW COLUMNS FROM `sellertab` [ RunTime:0.0182s ]
+SQL: SELECT * FROM `sellertab` WHERE `type_origin` = '娱乐' AND `type_branch` = '游戏'  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000121s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000341s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060990s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.061066s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000358s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000412s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.024516s ]
+INFO: [ app_end ] --END-- [ RunTime:0.024743s ]
+
+[ 2016-12-05T22:35:47+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement/yl_gamestore.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000343s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000476s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000532s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000121s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016247s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016442s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000258s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000315s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000508s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000558s ]
+

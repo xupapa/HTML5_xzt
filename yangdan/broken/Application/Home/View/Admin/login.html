@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1">
+  <title>login</title>
+
+  <!-- Set render engine for 360 browser -->
+  <meta name="renderer" content="webkit">
+
+  <!-- No Baidu Siteapp-->
+  <meta http-equiv="Cache-Control" content="no-siteapp"/>
+
+  <!-- Add to homescreen for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+
+  <!-- Add to homescreen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Amaze UI"/>
+
+  <!-- Tile icon for Win8 (144x144 + tile color) -->
+  <meta name="msapplication-TileColor" content="#0e90d2">
+
+  <link rel="stylesheet" href="__PUBLIC__/home/css/amazeui.min.css">
+  <link rel="stylesheet" href="__PUBLIC__/home/css/app.css">
+  <link rel="stylesheet" href="__PUBLIC__/home/css/nav.css"/>
+  <link rel="stylesheet" href="__PUBLIC__/home/css/delicious.css"/>
+  <script src="__PUBLIC__/home/js/jquery.min.js"></script>
+  <script src="__PUBLIC__/home/js/amazeui.min.js"></script>
+</head>
+<body>
+<header class="am-topbar am-topbar-fixed-top">
+        <div>
+            <div class="am-g">
+                <div class="am-u-sm-2" id="sm2">
+                    <a href="{:U('Home/Index/index')}" class="am-btn am-btn-lg">
+                        <i class="am-icon-home am-icon-sm"></i>
+                    </a>
+                </div>
+                <div class="am-u-sm-7" id="sm7">
+                    <a href="index.html" class="am-text-ir">logo</a>
+                </div>
+                <div class="am-u-sm-1" id="sm1"></div>
+                <div class="am-u-sm-2" id="smu2">
+                    <a href="login.html" class="am-btn am-btn-lg">
+                    <i class="am-icon-refresh am-icon-sm"></i>
+                </a>
+                </div>
+            </div>
+        </div>
+    </header><br/>
+     <div style="text-align:center"><img class="am-circle" src="__PUBLIC__/home/images/user.jpg" width="120" height="120"/></div>
+     <br/>
+  <div class="am-g">
+    <div class="am-u-sm-11 am am-u-sm-centered">
+      <form class="am-form" method="post" action="">
+          <div class="am-form-group">
+            <label for="username" class="am-u-sm-4 am-form-label logpadding">用户名</label>
+            <div class="am-u-sm-8 am-form-group am-form-icon logpadding1">
+              <i class="am-icon-user" id="i"></i>
+              <input type="text" class="am-form-field am-input-lg" name="busername" id="username" placeholder="用户名">
+            </div>
+          </div><br/><br/><br/>
+
+          <div class="am-form-group">
+            <label for="password" class="am-u-sm-4 am-form-label logpadding">
+            密&nbsp&nbsp&nbsp&nbsp码</label>
+            <div class="am-u-sm-8 am-form-group am-form-icon logpadding1">
+              <i class="am-icon-key" id="i"></i>
+              <input type="password" class="am-form-field am-input-lg" name="bpassword" id="password" placeholder="密码">
+            </div>
+          </div><br/><br/>
+
+          <div class="checkbox logpadding3">
+            <label>
+               <input type="checkbox" checked="checked"> 记住我
+            </label>
+          </div><br/><br/>
+
+          <div class="am-u-sm-6 logtext">
+            <button type="submit" class="am-btn am-btn-primary logback">
+            登录
+            </button>
+          </div>
+          <div class="am-u-sm-6 logtext">
+            <a href="__MODULE__/Admin/registered" type="button" class="am-btn am-btn-default">注册</a>
+          </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

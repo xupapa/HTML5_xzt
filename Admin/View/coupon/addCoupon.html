@@ -1,0 +1,57 @@
+
+    <!--/sidebar-->
+    <div class="main-wrap">
+
+        <div class="crumb-wrap">
+            <div class="crumb-list"><i class="icon-font"></i><a href="index.html">首页</a><span class="crumb-step">&gt;</span><a class="crumb-name" href="allNewses.html">优惠券管理</a><span class="crumb-step">&gt;</span><span>添加优惠券</span></div>
+        </div>
+        <div class="result-wrap">
+            <div class="result-content">
+                <form action="" method="post" id="myform" name="myform" enctype="multipart/form-data">
+                    <table class="insert-tab" width="100%">
+                        <tbody>
+                            <tr>
+                                <th><i class="require-red">*</i>编号：</th>
+                                <td>
+                                    <input class="common-text required" id="coupon_num" name="coupon_num" size="50"type="text">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><i class="require-red">*</i>使用条件：</th>
+                                <td>
+                                    满<input type="number" name="price" id="price" style="width:5%">可用
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><i class="require-red">*</i>减少金额：</th>
+                                <td><input class="common-text required" name="subtraction" id="subtraction" type="number" style="width:8%">元</td>
+                            </tr>
+                            <tr>
+                                <th><i class="require-red">*</i>开始时间：</th>
+                                <td><input class="common-text required" name="start_time" id="start_time" type="datetime"></td>
+                            </tr>
+                            <tr>
+                                <th><i class="require-red">*</i>终止时间：</th>
+                                <td>
+                                    <input class="common-text required" name="end_time" id="end_time" type="datetime"></td>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><i class="require-red">*</i>数量：</th>
+                                <td>
+                                    <input class="common-text required" name="num" id="num" type="number"></td>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th></th>
+                                <td>
+                                    <input class="btn btn-primary btn6 mr10" value="提交" type="submit" multiple>
+                                </td>
+                            </tr>
+                        </tbody></table>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <!--/main-->

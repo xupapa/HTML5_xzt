@@ -1,0 +1,61 @@
+
+    <!--/sidebar-->
+    <div class="main-wrap">
+
+        <div class="crumb-wrap">
+            <div class="crumb-list"><i class="icon-font"></i><a href="index.html">首页</a><span class="crumb-step">&gt;</span><a class="crumb-name" href="allNewses.html">动态管理</a><span class="crumb-step">&gt;</span><span>查看动态评论</span></div>
+        </div>
+        <div class="result-wrap">
+            <div class="result-content">
+                <form action="" method="post" id="myform" name="myform" enctype="multipart/form-data">
+                    <table class="insert-tab" width="100%">
+                        <tbody>
+                            <tr>
+                                <th width="15%"><i class="require-red">*</i>评论人：</th>
+                                <td>
+                                    {$news_comment.busername}
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><i class="require-red">*</i>动态内容：</th>
+                                <td>
+                                    <textarea name="content" class="common-textarea" id="content"cols="30" style="width: 98%;" rows="10" disabled>{$news_comment.content}</textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><i class="require-red">*</i>动态评论：</th>
+                                <td>
+                                    <textarea name="content" class="common-textarea" id="content"cols="30" style="width: 98%;" rows="10" disabled>{$news_comment.user_content}</textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><i class="require-red">*</i>评论好评数</th>
+                                <td>
+                                    {$news_comment.good_num}
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><i class="require-red">*</i>评论差评数</th>
+                                <td>
+                                    {$news_comment.bad_num}
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><i class="require-red">*</i>发布时间</th>
+                                <td>
+                                    {$news_comment.user_time}
+                                </td>
+                            </tr>
+                            <tr>
+                                <th></th>
+                                <td>
+                                    <input class="btn btn6" onclick="history.go(-1)" value="返回" type="button">
+                                </td>
+                            </tr>
+                        </tbody></table>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <!--/main-->

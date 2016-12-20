@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1">
+  
+
+  <!-- Set render engine for 360 browser -->
+  <meta name="renderer" content="webkit">
+
+  <!-- No Baidu Siteapp-->
+  <meta http-equiv="Cache-Control" content="no-siteapp"/>
+
+  <!-- Add to homescreen for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+
+  <!-- Add to homescreen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Amaze UI"/>
+
+  <!-- Tile icon for Win8 (144x144 + tile color) -->
+  <meta name="msapplication-TileColor" content="#0e90d2">
+
+  <link rel="stylesheet" href="__PUBLIC__/home/css/amazeui.min.css">
+  <link rel="stylesheet" href="__PUBLIC__/home/css/app.css">
+  <link rel="stylesheet" href="__PUBLIC__/home/css/nav.css">
+  <link rel="stylesheet" href="__PUBLIC__/home/css/bottom.css"/>
+  <link rel="stylesheet" href="__PUBLIC__/home/css/yl_content.css"/>
+  <script src="__PUBLIC__/home/js/jquery.min.js"></script>
+  <script src="__PUBLIC__/home/js/amazeui.min.js"></script>
+
+</head>
+<body>
+<header class="am-topbar am-topbar-fixed-top">
+        <div>
+            <div class="am-g">
+                <div class="am-u-sm-2">
+                    <a href="index.html" class="am-btn am-btn-lg" >
+                        <i class="am-icon-home am-icon-sm" id="am-btn_i"></i>
+                    </a>
+                </div>
+                <div class="am-u-sm-7">
+                    <a href="index.html" class="am-text-ir">logo</a>
+                </div>
+                <div class="am-u-sm-3">
+                	<a href="{:U('Home/Amusement/shop_search')}" class="am-btn am-btn-lg" >
+					<i class="am-icon-search am-icon-sm" ></i>
+				</a>
+                </div>
+            </div>
+        </div>
+    </header>
+	<!-- 轮播图 -->
+    {__CONTENT__}
+		
+    <!--底部导航条-->
+    
+<div class="am-topbar am-topbar-fixed-bottom" id="nav">
+        <ul class="am-nav am-nav-pills am-nav-justify">
+          <li><a href="yl_movie.html"><i class="am-icon am-icon-ticket am-icon-md"></i><br>电影</a></li>
+          <li><a href="yl_games.html"><i class="am-icon am-icon-fort-awesome am-icon-md"></i><br>游戏</a></li>
+          <li><a href="yl_sports.html"><i class="am-icon am-icon-life-saver am-icon-md"></i><br>运动</a></li>
+        </ul>
+    </div>
+
+
+<script>
+  $(function() {
+    var $slider = $('#demo-slider-0');
+    var getSlide = function() {    var counter = 0;
+
+      counter++;
+      return '<li><img src="http://s.amazeui.org/media/i/demos/bing-' +
+        (Math.floor(Math.random() * 4) + 1) + '.jpg" />' +
+        '<div class="am-slider-desc">动态插入的 slide ' + counter + '</div></li>';
+    };
+
+    $('.js-demo-slider-btn').on('click', function() {
+      var action = this.getAttribute('data-action');
+      if (action === 'add') {
+        $slider.flexslider('addSlide', getSlide());
+      } else {
+        var count = $slider.flexslider('count');
+        count > 1 && $slider.flexslider('removeSlide', $slider.flexslider('count') - 1);
+      }
+    });
+
+  });
+</script>
+
+</body>
+</html>

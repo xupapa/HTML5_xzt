@@ -1,0 +1,64 @@
+
+    <!--/sidebar-->
+    <div class="main-wrap">
+
+        <div class="crumb-wrap">
+            <div class="crumb-list"><i class="icon-font"></i><a href="index.html">首页</a><span class="crumb-step">&gt;</span><a class="crumb-name" href="allNewses.html">商品管理</a><span class="crumb-step">&gt;</span><span>添加商品</span></div>
+        </div>
+        <div class="result-wrap">
+            <div class="result-content">
+                <form action="{:U('Admin/goods/store')}" method="post" id="myform" name="myform" enctype="multipart/form-data">
+                    <table class="insert-tab" width="100%">
+                        <tbody>
+                            <tr>
+                                <th><i class="require-red">*</i>商品名称：</th>
+                                <td>
+                                    <input class="common-text required" id="pname" name="pname" size="50" value="" type="text">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><i class="require-red">*</i>商品分类：</th>
+                                <td>
+                                    <select name="pcid" id="pcid">
+                                        <option selected>请选择</option>
+                                        <volist name="product_category" id="pc">
+                                            <option value="{$pc.pcid}">{$pc.pcname}</option>
+                                        </volist>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><i class="require-red">*</i>商品缩略图：</th>
+                                <td><input name="pimage" id="pimage" type="file" ></td>
+                            </tr>
+                            <tr>
+                                <th><i class="require-red">*</i>商品高清图：</th>
+                                <td><input name="images" id="images" type="file" ></td>
+                            </tr>
+                            <tr>
+                                <th><i class="require-red">*</i>商品价格:</th><td><input name="price" type="number" id="price" style="width:80px">元</td>
+                            </tr>
+                            <tr>
+                                <th><i class="require-red">*</i>商品数量:</th><td><input name="pnum" type="number" id="pnum" style="width:80px">个</td>
+                            </tr>
+                            <tr><th><i class="require-red">*</i>商品简介：</th>
+                                <td>
+                                    <input class="common-text required" id="pintroduce" name="pintroduce" size="50" value="" type="text">
+                                </td></tr>
+                            <tr>
+                                <th><i class="require-red">*</i>商品介绍：</th>
+                                <td><textarea name="introduce" class="common-textarea" id="introduce" cols="30" style="width: 98%;" rows="10"></textarea></td>
+                            </tr>
+                            <tr>
+                                <th></th>
+                                <td>
+                                    <input class="btn btn-primary btn6 mr10" value="提交" type="submit" multiple>
+                                </td>
+                            </tr>
+                        </tbody></table>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <!--/main-->

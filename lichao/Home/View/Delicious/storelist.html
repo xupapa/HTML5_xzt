@@ -1,0 +1,74 @@
+<html>
+	<head>	
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width,initial-scale=1" charset="utf-8">
+		<link rel="stylesheet" href="__PUBLIC__/home/css/amazeui.css">
+		<link rel="stylesheet" href="__PUBLIC__/home/css/bottom.css">
+		<link rel="stylesheet" href="__PUBLIC__/home/css/storelist.css">
+	</head>
+	<body>
+		<div class="header">  
+            <img src="__PUBLIC__/home/images/black1.jpg">      
+			<div class="return">
+				<span class="back"><a onclick="history.go(-1)" class="am-icon-chevron-left  am-icon-fw"></a></span>
+			</div>
+			<div class="logo">
+                <img src="__PUBLIC__/home/images/{$seller[0].simage}">
+			</div>
+			<div class="text">
+				<p>{$seller[0].shopname}</p>
+				<p><small>评分：{$seller[0].slevel}</small></p>
+				<span><p id="p2">月售{$seller[0].coupon_num}份</p></span>
+			</div>			
+		</div>
+		<div class="am-g">
+			<div class="am-u-sm-3">
+				<nav class="scrollspy-nav" data-am-scrollspynav="{className: {active: 'am-active'}}" data-am-sticky>
+				  <ul>                 
+				  	<li id="style2"><div class="list_text"><a href="#list">全部</a></div></li>
+
+                    <volist name="category" id="c">
+				    <li id="style1"><div class="list_text"><a href="#{$c[id]}">{$c[branch]}</a></div></li>
+                    </volist>
+				  
+				  </ul>
+				</nav>
+			</div>
+			<div class="am-u-sm-9">
+			<div class="content">
+				<h5>详情</h5>
+				<a href="{:U('Home/Delicious/comment')}/id/{$seller[0].shopname}" type="button"><h6><i  id="content_i" class="am-icon-heart"></i>心愿</h6></a>
+			</div>
+			  <volist name="category" id="cc">
+				<div class="am-panel am-panel-default" id="{$cc[id]}">
+					<div class="am-panel-hd"><p id="{$cc[branch]}"><i class="am-icon-fire" id="am-panel-hd_i"></i>{$cc[branch]}</p></div>
+  					<div class="am-panel-bd">
+    					<ul >
+                          <volist name="productstab" id="p">
+    						<a href="{:U('Home/Delicious/shop_comment')}/id/{$p.pid}/idd/{$seller[0].sid}"><li>
+    							<div class="img">
+    								<img src="__PUBLIC__/home/images/{$p[pimage]}" >
+    							</div>
+    							<div class="tet" >
+    								<p>{$p[pname]}</p>
+    							</div>
+    						</li></a>
+                          </volist>
+    					</ul>
+  					</div>
+				</div>
+              </volist>				
+			</div>
+		</div>
+		<div class="am-topbar am-topbar-fixed-bottom" id="nav">
+        <ul class="am-nav am-nav-pills am-nav-justify">
+          <li><a href="{:U('Home/Delicious/snacks')}"><i class="am-icon am-icon-paw am-icon-md"></i><br>小吃</a></li>
+          <li><a href="{:U('Home/Delicious/drink')}"><i class="am-icon am-icon-beer am-icon-md"></i><br>饮品</a></li>
+          <li><a href="{:U('Home/Delicious/dessert')}"><i class="am-icon am-icon-bell-o am-icon-md"></i><br>甜品</a></li>
+          <li><a href="{:U('Home/Delicious/fastfood')}"><i class="am-icon am-icon-anchor am-icon-md"></i><br>快餐</a></li>
+        </ul>
+    </div>
+		<script src="__PUBLIC__/home/js/jquery.min.js"></script>
+		<script src="__PUBLIC__/home/js/amazeui.js"></script>
+	</body>
+</html>

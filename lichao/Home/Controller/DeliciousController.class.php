@@ -305,26 +305,44 @@ class DeliciousController extends Controller {
             $this->display();
         }
     // 一个产品的详情
-    public function shop_comment(){
-        $pid=$_GET['id'];//产品的pid
-        $idd=$_GET['idd'];//商家sid
-        $model = M("productstab");
-        $data = array(
-            "pid"=>$pid
-        );
-        $prosult=$model->where($data)->select();
-        $pname=$model->where($data)->field('pname')->select();
-        $this->assign("productstab",$prosult);
-        // 评论部分的输出 
-        $data1=array(
-            "sid"=>$idd,
-            "pname"=>$pname[0]['pname']
-        );
-        $comModel=M("com_products");
-        $reasult=$comModel->join('buyertab on com_products.bid=buyertab.bid')->join('imagetab on buyertab.blevel=imagetab.blevel')->where($data1)->order('pcomment_time desc')->select();
-        $this->assign("reasult",$reasult);
-        $this->display();
-    }
+   public function shop_comment(){
+           $pid=$_GET['id'];//产品的pid
+           $idd=$_GET['idd'];//商家sid
+           $model = M("productstab");
+           $data = array(
+               "pid"=>$pid
+           );
+           $sellerModel=M('sellertab');
+           $user=$sellerModel->where("sid=$idd")->select();
+           $this->assign("user",$user);
+
+           $prosult=$model->where($data)->select();
+           $pname=$model->where($data)->field('pname')->select();
+           $this->assign("productstab",$prosult);
+            //print_r($user);exit;
+           // 评论部分的输出
+           $data1=array(
+               "sid"=>$idd,
+               "pname"=>$pname[0]['pname']
+           );
+           $comModel=M("com_products");
+           $reasult=$comModel->join('buyertab on com_products.bid=buyertab.bid')->where($data1)->order('pcomment_time desc')->select();
+           $this->assign("reasult",$reasult);
+            // print_r($reasult);exit;
+           // 小标签
+           $data['busername']=$_SESSION['user']['busername'];
+           $branchModel=M('sellertab');
+           $branch=$branchModel->where("sid=$idd")->field('type_branch')->select();
+           $branch1=$branch[0]['type_branch'];
+           $chipsModel=M('chips');
+           $data=array(
+               "type_branch"=>$branch1
+               );
+           $chips=$chipsModel->where($data)->order('clickcount desc')->limit(0,4)->select();
+           $this->assign("chips",$chips);
+           //print_r($chips);exit;
+           $this->display();
+       }
     // 小徽章的方法
       public function set_hits(){
         $data['id']=isset($_POST['id'])?intval(trim($_POST['id'])):0;

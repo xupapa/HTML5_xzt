@@ -49,17 +49,17 @@
 		<div id="{$v.sid}" class="am-panel-collapse am-collapse">
 		  <div class="am-panel-bd">
 		  	<input type="hidden" name="chipname" />
-		  	<volist name="chips" id="v" offset="0" length='' empty="抱歉，暂时没有可选标签。">
-				<a class="clickme" data="{$v.id}" href="javascript:void(0);"><div class="am-badge am-round am-badge-secondary am-text-sm" id="badge">{$v.chipname} <span>{$v.clickcount}</span></div></a>	  	
+		  	<volist name="v.chiptwo" id="k" offset="0" length='' empty="抱歉，暂时没有可选标签。">
+				<a class="clickme" data="{$k.id}" href="javascript:void(0);"><div class="am-badge am-round am-badge-secondary am-text-sm" id="badge">{$k.chipname} <span>{$k.clickcount}</span></div></a>	  	
 			</volist>
 			<div class="clear"></div>
-		  	<volist name="progress" id="v" offset="0" length='2' empty="抱歉，暂时没有可选标签。">
+		  	<volist name="v.chiptwo" id="k" offset="0" length='2' empty="抱歉，暂时没有可选标签。">
 		  	<div class="am-g" id="panel">
-		  		<div class="am-u-sm-3">{$v.chipname}</div>
+		  		<div class="am-u-sm-3">{$k.chipname}</div>
 		  		<div class="am-u-sm-9">
 		  			<div class="am-progress">
-					  <div class="am-progress-bar am-progress-bar-warning" style="width: {$v.malewidth}%">{$v.malewidth}%</div>
-					  <div class="am-progress-bar am-progress-bar-success" style="width: {$v.femalewidth}%">{$v.femalewidth}%</div>
+					  <div class="am-progress-bar am-progress-success" id="progress-bar-1" style="width: {$k.malewidth}%">{$k.malewidth}%</div>
+					  <div class="am-progress-bar am-progress-warning" id="progress-bar-2" style="width: {$k.femalewidth}%">{$k.femalewidth}%</div>
 					</div>
 		  		</div>
 		  	</div>
@@ -84,9 +84,9 @@
  //         // 	type:"post",
  //         // 	dataType:"json"
  //         // });
-	// 	$.post('__CONTROLLER__/mat/ssid/{data:id}',{data:id},function(d){
-	// 		alert(d);
-	// 	}); 
+	// 	$.post('__CONTROLLER__/mat',{data:id},function(d){
+	// 	alert(d);
+	// })
  //        //alert(data);
  //  // $.ajax({
  //  // 	type:"post",

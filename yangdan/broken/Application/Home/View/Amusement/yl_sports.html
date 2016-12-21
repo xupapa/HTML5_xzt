@@ -1,0 +1,109 @@
+<layout name="layout_amusement" />
+<title>运动</title>
+	<!-- 轮播图 -->
+    <div class="am-slider am-slider-default" data-am-flexslider id="demo-slider-0">
+	  <ul class="am-slides">
+		<volist name="sliders" id="vo">
+	    	<li><img src="__PUBLIC__/home/images/{$vo.sldimage}" /></li>
+	    </volist>
+	  </ul>
+	</div>
+	<!-- 活动 -->
+<div class="am-g" id="g1" >
+	<div class="am-u-sm-6" id="am-u-sm-6_1">
+		<img src="__PUBLIC__/home/images/{$activities[0]['actimage']}" id="img1" >
+	</div>
+	<div class="am-u-sm-6" id="am-u-sm-6_2" >
+		<div class="am-g" id="g2">
+			<div class="am-u-sm-6" id="am-u-sm-6_3">
+				<img src="__PUBLIC__/home/images/{$activities[1]['actimage']}" id="img2">
+				<img src="__PUBLIC__/home/images/{$activities[2]['actimage']}" id="img3">
+			</div>
+			<div class="am-u-sm-6" id="am-u-sm-6_3">
+				<img src="__PUBLIC__/home/images/{$activities[3]['actimage']}" id="img2">
+				<img src="__PUBLIC__/home/images/{$activities[4]['actimage']}" id="img3">
+			</div>
+		</div>
+	</div>
+</div>
+	<!-- 列表 -->
+	<ul class="am-list">
+	<volist name="sellertab" id="vo" offset="0" length='' empty="抱歉，暂时没有店铺信息。">
+	<a href="__MODULE__/Amusement/yl_sportsstore/id/{$vo.sid}" id="am-list-a" >
+	  <li>
+		  <div class="am-g">
+			  <div class="am-u-sm-4"><img src="__PUBLIC__/home/images/{$vo.simage}" id="img4">
+			  </div>
+			  <div class="am-u-sm-8">
+				  <div class="am-g">
+					  <div class="am-u-sm-8" id="am-u-sm-8_1">
+						  <p>{$vo.shopname}</p>
+						  <p>评分：{$vo.slevel}</p>
+					  </div>
+					  <div class="am-u-sm-4" id="am-u-sm-4_1">
+						  <a class="am-icon-pencil-square am-icon-lg" data-am-collapse="{parent: '#accordion', target: '#{$vo.sid}'}"></a>
+					  </div>
+				  </div>
+			  </div>
+		  </div>
+
+		  <div id="{$vo.sid}" class="am-panel-collapse am-collapse">
+			  <div class="am-panel-bd">
+				  <div class="am-g" id="g3">
+					  <volist name="vo.chiptwo" id="k" offset="" length=''  empty="抱歉，暂时没有标签信息。"> 
+				  			<a class="clickme" id="{$k.id}" href="javascript:void(0);"><div  class="am-badge am-round am-badge-secondary am-text-sm" id="badge1">{$k.chipname} <span>{$k.clickcount}</span></div></a>	  
+					  </volist>
+				  </div>
+				  <volist name="vo.chiptwo" id="k" offset="0" length='2'  empty="抱歉，暂时没有进度条信息。"> 
+				  <div class="am-g" id="g4" >				    
+					<div class="am-u-sm-3" id="am-u-sm-3_1">{$k.chipname}</div>		
+					  <div class="am-u-sm-9" id="am-u-sm-9_1">
+						<div class="am-progress" id="progress_1">
+							<div class="am-progress-bar" id="progress-bar_1" style="width:{$k.malewidth}% ;">{$k.malewidth}%</div>
+							<div class="am-progress-bar " id="progress-bar_2" style="width: {$k.femalewidth}%;">{$k.femalewidth}%</div>
+					  </div>
+				    </div>
+				  </div>
+				  </volist>
+				  
+			  </div>
+		  </div>
+       </li>
+       </a>
+       </volist>
+       <input id="ids" type="hidden" value="{$user[busername]}">
+	</ul>
+    <!--底部导航条-->
+	<script>
+/*
+var ajax;
+if(window.XMLHttpRequest)
+{ 
+	ajax = new XMLHttpRequest();
+}
+else{ 
+	ajax = new ActiveXObject('Microsoft.XMLHTTP');
+}
+ajax.open('GET','__MODULE__/Life/set_hits/id/{$_GET['id']}',true);
+ajax.send();
+*/
+$(".clickme").on('click',function(){    
+	if($("#ids").val()!=''){
+		var Oa=$(this);
+        var id=Oa.attr('id');//获取id属性
+        var vl=Oa.find("span").text();
+            vl=parseInt(vl)+1;
+        $.post('__CONTROLLER__/set_hits',{id:id},function(data){
+            if(data.status==1){ 
+                alert('感谢您的选择！');
+                Oa.find("span").text(vl);//页面元素加1
+            }else{
+                alert("失败！");
+            }
+        },'json'); 
+    
+	}else{
+    	window.location.href="__MODULE__/Admin/login";
+    }
+})
+</script>

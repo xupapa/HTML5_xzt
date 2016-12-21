@@ -1,0 +1,52 @@
+[ 2016-11-30T08:37:42+08:00 ] 127.0.0.1 /broken/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000076s ]
+INFO: [ app_init ] --END-- [ RunTime:0.094133s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.055535s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.055857s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.256545s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.256888s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.065571s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.065874s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.055664s ]
+INFO: [ app_end ] --END-- [ RunTime:0.055941s ]
+
+[ 2016-11-30T08:37:42+08:00 ] 127.0.0.1 /broken/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001989s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.041877s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.042114s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.257552s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.257853s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.064637s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.064932s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.064757s ]
+INFO: [ app_end ] --END-- [ RunTime:0.064996s ]
+
+[ 2016-11-30T08:46:16+08:00 ] 127.0.0.1 /broken/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001709s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002567s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002828s ]
+ERR: 无法加载控制器:Index
+
+[ 2016-11-30T08:46:50+08:00 ] 127.0.0.1 /broken/index.php/Home/Amusement
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001583s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003671s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004079s ]
+ERR: 非法操作:index
+

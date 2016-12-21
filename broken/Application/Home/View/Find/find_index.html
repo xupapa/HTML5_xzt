@@ -1,0 +1,84 @@
+<layout name="layout"/>
+    <!-- 轮播图 -->
+     <!-- <div class="am-slider am-slider-default am-slider-carousel" data-am-flexslider="{controlNav:'thumbnails'}"> -->
+     <div class="am-slider am-slider-default" data-am-flexslider id="demo-slider-0">
+        <ul class="am-slides">
+            <!-- <li data-thumb=""> --><li>
+                <img src="__PUBLIC__/home/images/find_index/banner1.jpg"/>
+            </li>
+            <li>
+                <img src="__PUBLIC__/home/images/find_index/banner2.jpg"/>
+            </li>
+            <li>
+                <img src="__PUBLIC__/home/images/find_index/banner3.jpg"/>
+            </li>
+            <li>
+                <img src="__PUBLIC__/home/images/game_01.jpg"/>
+            </li>
+        </ul>
+    </div>
+    <div class="am-g"><p></p></div>
+    <!-- 食品列表 -->
+    <div class="am-g" id="food_list">
+       <div class="am-g">
+        <div class="am-u-sm-6"><h3>品美味</h3></div>
+        <div class="am-u-sm-6">
+          <a href="{:U('Home/Find/fxlist')}" class="more">更多&gt;&gt;</a>
+        </div>
+      </div>
+      <div class="am-g">
+        <volist name="recommendtab_food" id='v'>
+          <input name="ids[]" value="{$v.rid}" type="hidden">
+          <a href="{:U('Home/Find/fxcontent')}/id/{$v.rid}">
+            <div class="am-u-sm-4">
+              <img src="__PUBLIC__/home/images/{$v[small]}">
+              <p>{$v[title]}</p>
+              </div>
+          </a>
+        </volist>   
+           
+      </div>
+    </div>
+    <!-- 分割线 -->
+     <!-- <hr data-am-widget="divider" style="" class="am-divider am-divider-dashed" /> -->
+    <!-- 生活列表 -->
+    <div class="am-g" id="life_list">
+       <div class="am-u-sm-6"><h3>享生活</h3></div>
+       <div class="am-u-sm-6">
+         <a href="{:U('Home/Find/fxlist_life')}" class="more">更多&gt;&gt;</a>
+       </div>
+    </div>
+    <div class="am-slider am-slider-default" data-am-flexslider="{itemWidth: 145, itemMargin: 5, slideshow: false,&quot;controlNav&quot;:false}" id="life_ul">
+
+        <ul class="am-slides">
+          <volist name="recommendtab_share" id="vl">
+            <li>                
+                <a href="{:U('Home/Find/fxcontent_life')}/id/{$vl.rfid}"><img src="__PUBLIC__/home/images/find_index/{$vl[small]}"/>
+                <div class="am-g" >
+                    <div class="am-u-sm-6"></div>
+                    <div class="am-u-am-6" ><p style='text-align:left'>{$vl[title]}</p></div>
+                </div></a>
+            </li>
+           </volist>
+        </ul>
+    </div>
+     <hr data-am-widget="divider" style="" class="am-divider am-divider-dashed" />
+    <!-- 心愿列表 -->
+    <a href="{:U('Home/Find/find_list_wish')}">
+      <div class="am-g">
+        <div class="am-u-sm-6"><h3 class="wish">心分享</h3></div>
+        <div class="am-u-sm-6"><span class="am-icon-heart am-icon-sm" id="wish_list"><font size="1%">&nbsp;更多>></font></span></div>
+      </div>
+    </a>
+    <div class="am-g" id="need_list">
+      <volist name="wishtab" id="v">
+        <div class="am-u-sm-4">
+            <a href="{:U('Home/Find/find_content')}/id/{$v.wid}"><div class="am-panel">
+               <div class="am-panel-hd">
+               <img src="__PUBLIC__/home/images/{$v.images}">
+               </div>
+               <div class="am-panel-bd"><p>{$v.wish_title}</p></div>
+            </div></a>                            
+        </div>
+      </volist>  
+    </div>  

@@ -9,50 +9,98 @@ class LifeController extends Controller {
         $activityModel=M("activity");
         $activity = $activityModel->where("type_branch='搭配'")->select();
         $this->assign('activity', $activity);
-
+        //判断登陆
+        $data['busername']=$_SESSION['user']['busername'];
+        $data['bid']=$_SESSION['user']['bid'];
+        $this->assign('user',$data);
         $shopModel=M("sellertab");
         $shop = $shopModel->where("type_branch='搭配'")->select();
         // $this->assign('sellertab', $shop);
         // print_r($shop);exit;
+        //标签部分
         $chipsModel=M("chips");
         $sid=$shopModel->where("type_branch='搭配'")->field('sid')->select();
         foreach ($sid as $key => $value) {
              $sid[$key]=$sid[$key]['sid'];
              // $chips[$key] = $chipsModel->where("sid='$value'")->select();
-         }
-        foreach($sid as $key => $value) {
-            $chips[$key] = $chipsModel->where("sid='$value'")->select();
+         }//sid的数组
+       //  print_r($sid);exit;
+
+        $count=$chipsModel->where("id")->field('clickcount')->select();
+        $male=$chipsModel->where("id")->field('malenum')->select();
+        $female=$chipsModel->where("id")->field('femalenum')->select();
+        //print_r($male);exit;
+        //print_r(round($male[1]['malenum']/$count[1]['clickcount'],2));exit;
+        $length=$chipsModel->count();
+        //print_r($length);exit;
+        for($i=0;$i<$length;$i++)
+        {
+            $malenum[$i]=round($male[$i]['malenum']/$count[$i]['clickcount'],2)*100;
+            $femalenum[$i]=round($female[$i]['femalenum']/$count[$i]['clickcount'],2)*100;
+            //$data['malewidth']=$malenum[$i];
         }
+        //print_r($malenum);exit;
+        foreach($malenum as $key=>$val)
+        {
+           //print($key);
+            $data['malewidth']=$val;
+            //print_r($data['malewidth']);
+            $data11=array(
+                "id"=>$key+1
+                );
+            $chipsModel->where($data11)->field('malewidth')->save($data);
+        }
+        foreach($femalenum as $key=>$val)
+        {
+            $data['femalewidth']=$val;
+            //print_r($data['femalewidth']);
+            $data11=array(
+                "id"=>$key+1
+                );
+            $chipsModel->where($data11)->field('femalewidth')->save($data);
+        }
+        $progress=$chipsModel->where("type_branch='搭配'")->order('clickcount+0 desc')->limit(0,2)->select();
+        //print_r($progress);exit;
+        //$this->assign('progress',$progress);
+
+        foreach($sid as $key => $value) {
+            $chips[$key] = $chipsModel->where("sid='$value'")->field('chipname,clickcount,id,femalenum,malenum,malewidth,femalewidth')->order('clickcount+0 desc')->select();
+        }//0店  0 1 2。。的标签 
         //print_r($chips);exit;
-        
         //print_r($new);exit;
         //三层转二层
-        foreach($chips as $key=>$value){
-            if($value['id']){
-                $newchips[]=$value;
-            }
-            else{
-               foreach($value as $k=>$v){
-                $newchips[]=$v;
-            } 
-            }
-            
-        }
-        //print_r($newchips);exit;
-        foreach($newchips as $k=>$v){
-            $newchips[$k]=$newchips[$k]['chipname'];
-        }
-        foreach($shop as $k=>$v){
-            $shop[$k]['chipname']=$newchips;
-        }
+        // foreach($chips as $key=>$value){
+        //     if($value['id']){
+        //         $newchips[]=$value;
+        //     }
+        //     else{
+        //        foreach($value as $k=>$v){
+        //         $newchips[]=$v;
+        //     } 
+        //     }
+         foreach($chips as $key=>$value){
+           foreach ($value as $k => $v) {
+               $data[$key][$k]=$v;
+           }
+          }  
+        //print_r($data);exit;
+        // foreach($newchips as $k=>$v){
+        //     $newchips[$k]=$newchips[$k]['chipname'];
+        // }
+        // foreach($shop as $k=>$v){
+        //     $shop[$k]['chipname']=$newchips;
+        // }
+        //print_r($chips);exit;
         // $chipnamestr= implode(",",$newchips);
         // $chipnamearr=explode(",",$chipnamestr,3);
         //print_r($chipnamearr);exit;
         // foreach($shop as $key=>$val){
         //     $shop[$key]['chipname']=$chipnamestr;
         // }
-
-        print_r($shop);exit;
+        foreach($shop as $key=>$val){
+             $shop[$key]['chiptwo']=$data[$key];
+         }
+        //print_r($shop);exit;
         $this->assign('sellertab', $shop);
         //print_r($sid);exit;
         // for ($j=0;$j<count($sid);$j++) {
@@ -61,6 +109,7 @@ class LifeController extends Controller {
         //     }
         // }
         //print_r($chips);exit;
+        
         $this->display();
     }
     public function mat(){
@@ -74,61 +123,142 @@ class LifeController extends Controller {
         // $this->assign('ch',$chips);
        echo $_POST['data'];
        
-
     }
     public function beauty(){
-        $shopModel=M("sellertab");
-        $shop = $shopModel->where("type_branch='美妆'")->select();
-        $this->assign('sellertab', $shop);
         $slidersModel=M("sliders");
         $sliders = $slidersModel->where("type_branch='美妆'")->select();
         $this->assign('sliders', $sliders);
         $activityModel=M("activity");
         $activity = $activityModel->where("type_branch='美妆'")->select();
         $this->assign('activity', $activity);
-        //标签部分
-        $chipsModel=M("chips");
-        $chips = $chipsModel->where("type_branch='美妆'")->order('clickcount+0 desc')->limit(7)->select();
-        $this->assign('chips', $chips);
         //判断登陆
         $data['busername']=$_SESSION['user']['busername'];
         $this->assign('user',$data);
-        //进度条
+        //店铺部分
+        $shopModel=M("sellertab");
+        $shop = $shopModel->where("type_branch='美妆'")->select();
+        //标签部分
+        $chipsModel=M("chips");
+        $sid=$shopModel->where("type_branch='美妆'")->field('sid')->select();
+        //店铺赋值
+        foreach ($sid as $key => $value) {
+             $sid[$key]=$sid[$key]['sid'];
+             // $chips[$key] = $chipsModel->where("sid='$value'")->select();
+         }
+         //进度条计算
+        $count=$chipsModel->where("id")->field('clickcount')->select();
+        $male=$chipsModel->where("id")->field('malenum')->select();
+        $female=$chipsModel->where("id")->field('femalenum')->select();
+        $length=$chipsModel->count();
+        for($i=0;$i<$length;$i++)
+        {
+            $malenum[$i]=round($male[$i]['malenum']/$count[$i]['clickcount'],2)*100;
+            $femalenum[$i]=round($female[$i]['femalenum']/$count[$i]['clickcount'],2)*100;
+            //$data['malewidth']=$malenum[$i];
+        }
+        foreach($malenum as $key=>$val)
+        {
+           //print($key);
+            $data['malewidth']=$val;
+            //print_r($data['malewidth']);
+            $data11=array(
+                "id"=>$key+1
+                );
+            $chipsModel->where($data11)->field('malewidth')->save($data);
+        }
+        foreach($femalenum as $key=>$val)
+        {
+            $data['femalewidth']=$val;
+            //print_r($data['femalewidth']);
+            $data11=array(
+                "id"=>$key+1
+                );
+            $chipsModel->where($data11)->field('femalewidth')->save($data);
+        }
         $progress=$chipsModel->where("type_branch='美妆'")->order('clickcount+0 desc')->limit(0,2)->select();
-        $this->assign('progress',$progress);
+        //店铺表与标签表数据处理
+        foreach($sid as $key => $value) {
+            $chips[$key] = $chipsModel->where("sid='$value'")->field('chipname,clickcount,id,femalenum,malenum,malewidth,femalewidth')->order('clickcount+0 desc')->select();
+        }
+        foreach($chips as $key=>$value){
+           foreach ($value as $k => $v) {
+               $data[$key][$k]=$v;
+           }
+          }  
+        foreach($shop as $key=>$val){
+             $shop[$key]['chiptwo']=$data[$key];
+         }
+        $this->assign('sellertab', $shop);
     	$this->display();
     }
     public function book(){
-        $shopModel=M("sellertab");
-        $shop = $shopModel->where("type_branch='阅读'")->select();
-        $this->assign('sellertab', $shop);
         $slidersModel=M("sliders");
         $sliders = $slidersModel->where("type_branch='阅读'")->select();
         $this->assign('sliders', $sliders);
         $activityModel=M("activity");
         $activity = $activityModel->where("type_branch='阅读'")->select();
         $this->assign('activity', $activity);
-        //标签部分
-        $chipsModel=M("chips");
-        $chips = $chipsModel->where("type_branch='阅读'")->order('clickcount+0 desc')->limit(7)->select();
-        $this->assign('chips', $chips);
         //判断登陆
         $data['busername']=$_SESSION['user']['busername'];
         $this->assign('user',$data);
-
+        //店铺部分
+        $shopModel=M("sellertab");
+        $shop = $shopModel->where("type_branch='阅读'")->select();
+        //标签部分
+        $chipsModel=M("chips");
+        $sid=$shopModel->where("type_branch='阅读'")->field('sid')->select();
+        //店铺sid赋值
+        foreach ($sid as $key => $value) {
+             $sid[$key]=$sid[$key]['sid'];
+             // $chips[$key] = $chipsModel->where("sid='$value'")->select();
+         }
+         //进度条计算
+        $count=$chipsModel->where("id")->field('clickcount')->select();
+        $male=$chipsModel->where("id")->field('malenum')->select();
+        $female=$chipsModel->where("id")->field('femalenum')->select();
+        $length=$chipsModel->count();
+        for($i=0;$i<$length;$i++)
+        {
+            $malenum[$i]=round($male[$i]['malenum']/$count[$i]['clickcount'],2)*100;
+            $femalenum[$i]=round($female[$i]['femalenum']/$count[$i]['clickcount'],2)*100;
+            //$data['malewidth']=$malenum[$i];
+        }
+        foreach($malenum as $key=>$val)
+        {
+           //print($key);
+            $data['malewidth']=$val;
+            //print_r($data['malewidth']);
+            $data11=array(
+                "id"=>$key+1
+                );
+            $chipsModel->where($data11)->field('malewidth')->save($data);
+        }
+        foreach($femalenum as $key=>$val)
+        {
+            $data['femalewidth']=$val;
+            //print_r($data['femalewidth']);
+            $data11=array(
+                "id"=>$key+1
+                );
+            $chipsModel->where($data11)->field('femalewidth')->save($data);
+        }
         $progress=$chipsModel->where("type_branch='阅读'")->order('clickcount+0 desc')->limit(0,2)->select();
-        $this->assign('progress',$progress);
+        //店铺表与标签表数据处理
+        foreach($sid as $key => $value) {
+            $chips[$key] = $chipsModel->where("sid='$value'")->field('chipname,clickcount,id,femalenum,malenum,malewidth,femalewidth')->order('clickcount+0 desc')->select();
+        }
+        foreach($chips as $key=>$value){
+           foreach ($value as $k => $v) {
+               $data[$key][$k]=$v;
+           }
+          }  
+        foreach($shop as $key=>$val){
+             $shop[$key]['chiptwo']=$data[$key];
+         }
+        $this->assign('sellertab', $shop);
     	$this->display();
     }
     public function store(){
-        /*
-        $id=I('id');
-        $shoptabModel=M("shoptab");
-        $shop=$shoptabModel->find($id);
-        //$shopcontent=$shoptabModel->where("shop_id='$id'")->find();
-        $this->assign('shoptab', $shop);
-    	$this->display();
-        */
         $id=I('id');
         $shoptabModel=M("sellertab");
         $shop=$shoptabModel->find($id);
@@ -153,6 +283,7 @@ class LifeController extends Controller {
         //print_r($data['id']);exit;
         $obj = M("chips");
         $data['sex']=$_SESSION['user']['sex'];
+        $bid=$_SESSION['user']['bid'];
         //print_r($data['sex']);exit;
         if($data['sex']['sex']=='male'){
             //print_r('吃饭');exit;
@@ -161,6 +292,7 @@ class LifeController extends Controller {
         if($data['sex']['sex']=='female'){
             $obj->where($data)->setInc('femalenum');
         }
+        $obj->where($data)->field('bid')->save($bid);
         if(!isset($_COOKIE[$_POST['data']+10000])&&$obj->where($data)->setInc('clickcount')){
             $cookiename = $_POST['data']+10000;
             setcookie($cookiename,40,time()+60,'/');

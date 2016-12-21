@@ -11,8 +11,8 @@
 		.am-g h1{
 			height: 300px;
 			width: 100%;
-			background:url(../images/gamestore_01a.jpg) center no-repeat;
-			background-size: cover;
+			/*background:url(../images/gamestore_01a.jpg) center no-repeat;
+			background-size: cover;*/
 		}
 		.am-topbar-brand a{
 			background-size:cover;

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>提交</title>
+	<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1">
+
+
+  <!-- Set render engine for 360 browser -->
+  <meta name="renderer" content="webkit">
+
+  <!-- No Baidu Siteapp-->
+  <meta http-equiv="Cache-Control" content="no-siteapp"/>
+
+  <link rel="icon" type="image/png" href="__PUBLIC__/home/i/favicon.png">
+
+  <!-- Add to homescreen for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="icon" sizes="192x192" href="__PUBLIC__/home/i/app-icon72x72@2x.png">
+
+  <!-- Add to homescreen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Amaze UI"/>
+  <link rel="apple-touch-icon-precomposed" href="__PUBLIC__/home/i/app-icon72x72@2x.png">
+
+  <!-- Tile icon for Win8 (144x144 + tile color) -->
+  <meta name="msapplication-TileImage" content="__PUBLIC__/home/i/app-icon72x72@2x.png">
+  <meta name="msapplication-TileColor" content="#0e90d2">
+
+  <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+  <!--
+  <link rel="canonical" href="http://www.example.com/">
+  -->
+
+  <link rel="stylesheet" href="__PUBLIC__/home/css/amazeui.min.css">
+  <link rel="stylesheet" href="__PUBLIC__/home/css/app.css">
+  <link rel="stylesheet" type="text/css" href="__PUBLIC__/home/css/comment.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <link rel="stylesheet" href="__PUBLIC__/home/css/cui.css" />
+  <script src="__PUBLIC__/home/js/jquery.min.js"></script>
+<!--<![endif]-->
+<script src="__PUBLIC__/home/js/amazeui.min.js"></script>
+</head>
+<body>
+    <header class="am-topbar am-topbar-fixed-top">
+        <div>
+            <div class="am-g">
+                <div class="am-u-sm-2">
+                    <a href="index.html" class="am-btn am-btn-lg" id="href1">
+                        <i class="am-icon-home am-icon-sm" id="i1"></i>
+                    </a>
+                </div>
+                <div class="am-u-sm-7">
+                    <a href="index.html" class="am-text-ir">logo</a>
+                </div>
+                <div class="am-u-sm-3">
+                    <a href="#" class="am-btn am-btn-lg" id="href2">
+                        <i class="am-icon-refresh am-icon-sm" id="i2"></i>
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </header>
+    <header class="am-topbar am-topbar-fixed-bottom">
+        <ul class="am-nav am-nav-pills am-nav-justify">
+          <li class="am-active"><a onclick="history.go(-1)">返回</a></li>    
+        </ul>
+    </header>
+      <!-- 中间部分 -->
+</head>
+
+    <form class="am-form" action="{:U('Home/Account/submit_wish')}" method='post' enctype="multipart/form-data">
+  <fieldset>
+    <legend><font color="red">许愿<i class="am-icon-heart" ></i></font></legend>
+    <div class="wrap">
+    <div class="nice-select" name="nice-select">
+    <input type="text" value="==选择店铺==" readonly>
+    <ul>
+      <volist name="name" id="v">
+        <li data-value="1">{$v.shopname}</li>
+      </volist>       
+    </ul>
+    <!-- 存储店名-隐藏域 -->
+    <input type="hidden" name="shopname" value="" id='shopname_post'>
+  </div>
+      <div class="h20"></div>
+    
+      <div class="h20"></div>
+     
+</div>
+    <div class="am-form-group">
+      <label for="doc-ipt-email-1">标题</label>
+      <input type="text" class="" id="doc-ipt-email-1" placeholder="输入标题" name="title">
+    </div>
+
+ 
+<!-- 
+    <div class="am-form-group" hidden="hidden">
+      <label for="doc-ipt-file-1">文件上传域</label>
+      <input type="file" id="doc-ipt-file-1">
+      <p class="am-form-help">请选择要上传的文件...</p>
+    </div> -->
+
+  
+
+    <div class="am-form-group">
+      <label for="doc-ta-1">内容</label>
+      <textarea class="" rows="5" id="doc-ta-1" placeholder="输入内容" name="content"></textarea>
+    </div>
+    
+    <div>
+        <div class="fileInputContainer">
+          <input class="fileInput" type="file" name="images" id="" />
+        </div>
+        
+    </div>
+
+    <br>
+    <br>
+    <div>
+        <div>
+          <p><input type="submit" class="am-btn am-btn-default"  value="提交" multiple></p>
+        </div>
+    </div>
+    
+  </fieldset>
+</form>
+      <!-- 中间部分 -->
+      <script type="text/javascript" src="__PUBLIC__/home/js/jquery.js"></script> 
+<script>  
+$('[name="nice-select"]').click(function(e){
+  $('[name="nice-select"]').find('ul').hide();
+  $(this).find('ul').show();
+  e.stopPropagation();
+});
+$('[name="nice-select"] li').hover(function(e){
+  $(this).toggleClass('on');
+  e.stopPropagation();
+});
+$('[name="nice-select"] li').click(function(e){
+  var val = $(this).text();
+  var dataVal = $(this).attr("data-value");
+  $(this).parents('[name="nice-select"]').find('input').val(val);
+  $('[name="nice-select"] ul').hide();
+  e.stopPropagation();
+  // alert("中文值是："+val);
+  $('.shopname').attr('value',val);
+  var tt=document.getElementById("shopname_post").value;
+      // alert(tt);
+  // alert("数字值是："+dataVal);
+  //alert($(this).parents('[name="nice-select"]').find('input').val());
+});
+$(document).click(function(){
+  $('[name="nice-select"] ul').hide();
+});
+</script>
+</body>
+</html>

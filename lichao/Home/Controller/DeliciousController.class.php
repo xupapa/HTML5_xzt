@@ -166,7 +166,50 @@ class DeliciousController extends Controller {
         
     }
 
+ public function addSave_good(){//添加商品收藏
+        // if (!isLogin()) {
+        //     $this->error("请登录",U("Home/Account/login"));
+        // }
+        $id=I('get.id');
+        $data['sid']=I('post.sids');
+        $data['title']=I('post.title');
+        $data['images']=I('post.images');
+        $data['susername']=I('post.susername');
+        $data['busername']=$_SESSION['user']['busername'];
+        $data['time']=date("Y-m-d  h:i:s");
 
+        $Model=M('collecttab');
+        $productModel=M('productstab');
+        $content=$productModel->where("pid=$id")->select();
+        $data['content']=$content[0]['introduce'];
+        $data['sid']=$content[0]['sid'];
+        $data['type']="商品";
+
+        //查询发布时间
+        $time=$Model->where("busername='$busername' AND title='$title'")->field('time')->select();
+        $time=$time[0][time];
+
+         // print_r($time);exit;
+        $result=$Model->field('sendTime')->select();
+        // $result=$result[0];
+
+        foreach ($result as $key => $value) {
+            // print_r($result[$key][sendtime]);
+            $newtime['time']=$result[$key][sendtime];
+            // print_r($newtime);
+            if ($newtime['time']==$time) {
+                // $this->error("请勿重复收藏");
+                $this->error('请勿重复收藏','',1);
+            }
+        }
+        if ($Model->add($data)) {
+            $this->success("添加成功");
+        }
+        else{
+            $this->error("添加失败");
+        }
+
+    }
 
     public function submit(){
         // print_r($_SESSION['user']);exit;

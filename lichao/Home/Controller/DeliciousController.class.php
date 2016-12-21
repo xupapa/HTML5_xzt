@@ -211,24 +211,73 @@ class DeliciousController extends Controller {
         }
     // 快餐
     public function fastfood(){
-        $sliModel = M("sliders");
-    	$model = M("sellertab");
-        $actModel = M("activity");
-        $condition = array(
-                "type_origin" => '美食',
-                "type_branch" => '快餐'
+            $sliModel = M("sliders");
+            $actModel = M("activity");
+            $shopModel=M("sellertab");
+            $condition = array(
+                    "type_origin" => '美食',
+                    "type_branch" => '快餐'
+                );
+            $data = array(
+                "type_branch"=>'快餐'
             );
-        $data = array(
-            "type_branch"=>'快餐'
-        );
-    	$seller = $model->where($condition)->select();
-        $sliders=$sliModel->where($data)->select();
-        $activity=$actModel->where($data)->select();
-    	$this->assign("sellertab", $seller);
-        $this->assign("sliders",$sliders);
-        $this->assign("activity",$activity); 
-    	$this->display();
-    }
+
+            $sliders=$sliModel->where($data)->select();
+            $activity=$actModel->where($data)->select();
+            $shop= $shopModel->where($condition)->select();
+            $this->assign("sliders",$sliders);
+            $this->assign("activity",$activity);
+
+            $data['busername']=$_SESSION['user']['busername'];
+            $this->assign('user',$data);
+
+
+            $chipsModel=M("chips");
+            $sid=$shopModel->where("type_branch='快餐'")->field('sid')->select();
+            foreach ($sid as $key => $value) {
+                 $sid[$key]=$sid[$key]['sid'];
+             }//sid的数组
+             $count=$chipsModel->where("id")->field('clickcount')->select();
+            $male=$chipsModel->where("id")->field('malenum')->select();
+            $female=$chipsModel->where("id")->field('femalenum')->select();
+            $length=$chipsModel->count();
+            for($i=0;$i<$length;$i++)
+            {
+                $malenum[$i]=round($male[$i]['malenum']/$count[$i]['clickcount'],2)*100;
+                $femalenum[$i]=round($female[$i]['femalenum']/$count[$i]['clickcount'],2)*100;
+            }
+            foreach($malenum as $key=>$val)
+            {
+                $data['malewidth']=$val;
+                $data11=array(
+                    "id"=>$key+1
+                    );
+                $chipsModel->where($data11)->field('malewidth')->save($data);
+            }
+            foreach($femalenum as $key=>$val)
+            {
+                $data['femalewidth']=$val;
+                $data11=array(
+                    "id"=>$key+1
+                    );
+                $chipsModel->where($data11)->field('femalewidth')->save($data);
+            }
+            $progress=$chipsModel->where("type_branch='快餐'")->order('clickcount+0 desc')->limit(0,2)->select();
+            foreach($sid as $key => $value) {
+                $chips[$key] = $chipsModel->where("sid='$value'")->field('chipname,clickcount,id,femalenum,malenum,malewidth,femalewidth')->order('clickcount+0 desc')->select();
+            }//0店  0 1 2。。的标签
+
+             foreach($chips as $key=>$value){
+               foreach ($value as $k => $v) {
+                   $data[$key][$k]=$v;
+               }
+              }
+            foreach($shop as $key=>$val){
+                 $shop[$key]['chiptwo']=$data[$key];
+             }
+            $this->assign('sellertab', $shop);
+            $this->display();
+        }
     // 进入店铺的动态获取显示storelist
     public function storelist(){
     	$susername=$_GET['id'];//马步鱼4号店

@@ -280,21 +280,30 @@ class DeliciousController extends Controller {
         }
     // 进入店铺的动态获取显示storelist
     public function storelist(){
-    	$susername=$_GET['id'];//马步鱼4号店
-        $sellModel=M("sellertab");//获取店名和图片，就这两个
-        $model = M("productstab");
-        $cateModel = M("category");
-        $data = array(
-            "susername"=>$susername//动态店名马步鱼4号店
-        );
-        $seller=$sellModel->where($data)->select();
-        $catesult=$cateModel->where($data)->select();//食品的分类
-        $prosult=$model->where($data)->limit(0,3)->select();
-        $this->assign("seller",$seller);
-        $this->assign("category",$catesult);
-        $this->assign("productstab",$prosult);
-        $this->display();
-    }
+        	$sid=$_GET['id'];//sid
+            $sellModel=M("sellertab");//获取店名和图片，就这两个
+            $model = M("productstab");//所有的产品
+            $cateModel = M("product_category");//得到店铺有几个分类
+            $data = array(
+                "sid"=>$sid//sid
+            );
+            $seller=$sellModel->where($data)->select();
+            $catesult=$cateModel->where($data)->select();//食品的分类
+
+            // 实现双循环输出产品过程
+            foreach ($catesult as $key => $value) {
+                $condition=array(
+                    "pcid"=>$catesult[$key]['pcid']
+                );
+                $prosult=$model->where($condition)->select();
+                $catesult[$key]['products']=$prosult;
+            }
+            // print_r($catesult);exit;
+            $this->assign("seller",$seller);
+            $this->assign("category",$catesult);
+            $this->assign("productstab",$prosult);
+            $this->display();
+        }
     // 一个产品的详情
     public function shop_comment(){
         $pid=$_GET['id'];//产品的pid

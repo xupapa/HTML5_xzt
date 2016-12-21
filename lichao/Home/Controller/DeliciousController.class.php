@@ -459,17 +459,17 @@ class DeliciousController extends Controller {
         }
     // 心愿页面的输出
     public function comment(){
-        // 知道店名
-        $shopname=$_GET['id'];
-        $data=array(
-            "shopname"=>$shopname
-        );
-        $proModel=M('productstab');
-        $prosult=$proModel->where($data)->select();
-        $this->assign("prosult",$prosult);
-        //print_r($prosult);exit;
-        $this->display();
-    }
+            // 知道店名
+            $sid=$_GET['id'];
+            $data=array(
+                "sid"=>$sid
+            );
+            $sellerModel=M('sellertab');
+            $sellersult=$sellerModel->where($data)->select();
+            $this->assign("seller",$sellersult);
+            //print_r($sellersult);exit;
+            $this->display();
+        }
     // 心愿的提交
     public function wish(){
         if (!isLogin()) { 

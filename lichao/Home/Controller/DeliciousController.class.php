@@ -421,44 +421,42 @@ class DeliciousController extends Controller {
     }
 
     public function submit(){
-        // print_r($_SESSION['user']);exit;
-        $pid=$_GET['id'];//能获取当前的产品的id
-        if (!isLogin()) { 
-            $this->error("请登录",U("Home/Login/login"));
-        }
-        //创建模型
-        $proModel=M('productstab');
-        $data=array(
-            "pid"=>$pid
-        );
-        $pn=$proModel->where($data)->field('pname')->select();//找到pname
-        $pname=$pn[0]['pname'];
+            // print_r($_SESSION['user']);exit;
+            $pid=$_GET['id'];//能获取当前的产品的id
+            if (!isLogin()) {
+                $this->error("请登录",U("Home/Login/login"));
+            }
+            if ($_POST['comment']=="") {
+                $this->error("发表内容不许为空");
+            }else{
+                 //创建模型
+            $proModel=M('productstab');
+            $data=array(
+                "pid"=>$pid
+            );
+            $pn=$proModel->where($data)->field('pname')->select();
+            $pname=$pn[0]['pname'];//找到pname
 
-        $sun=$proModel->where($data)->field('susername')->select();//找到susername
-        $susername=$sun[0]['susername'];
-        //有susername在sellertab表中找sids
-        $sellerModel=M('sellertab');
-        $data2=array(
-            "susername"=>$susername
-        );
-        $ssid=$sellerModel->where($data2)->field('sid')->select();
-        $sid=$ssid[0]['sid'];
-        //向表里存储
-        $commentModel=M('com_products');
-        $data['bid']=$_SESSION['user']['bid']['bid'];
-        $data['pcomment_time']=date("Y-m-d h:i:s");
-        $data['pcomment_content']=$_POST['comment'];
-        $data['sid']=$sid;
-        $data['pname']=$pname;
+            $sun=$proModel->where($data)->field('sid')->select();
+            $sid=$sun[0]['sid'];//找到sid
+            //向表里存储
+            $commentModel=M('com_products');
+            $data['bid']=$_SESSION['user']['bid']['bid'];
+            $data['pcomment_time']=date("Y-m-d h:i:s");
+            $data['pcomment_content']=$_POST['comment'];
+            $data['sid']=$sid;
+            $data['pname']=$pname;
 
-        //添加
-        if ($commentModel->add($data)) {
-            $this->success("发表成功",Home/Delicious/shop_comment/id/$id );
+            //添加
+            if ($commentModel->add($data)) {
+                $this->success("发表成功",Home/Delicious/shop_comment/id/$id );
+            }
+            else{
+                $this->error("发表失败");
+            }
+            }
+
         }
-        else{
-            $this->error("发表失败");
-        }
-    }
     // 心愿页面的输出
     public function comment(){
         // 知道店名

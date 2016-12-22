@@ -41,7 +41,7 @@ class AdminController extends Controller{
 					if($result>0)
 					{
 						session("aname",I("post.username"));
-						$this->success("登录成功！");
+						$this->success("登录成功！",U("SuperIndex/superIndex"));
 					}
 					else
 					{

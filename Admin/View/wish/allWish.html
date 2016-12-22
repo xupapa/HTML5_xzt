@@ -1,9 +1,9 @@
-
+<layout name="layout"/>
     <!--/sidebar-->
     <div class="main-wrap">
 
         <div class="crumb-wrap">
-            <div class="crumb-list"><i class="icon-font"></i><a href="index.html">首页</a><span class="crumb-step">&gt;</span><span class="crumb-name"><a href="#">心愿单管理</a></span><span class="crumb-step">&gt;</span><span><a href="__MODULE__/Wish/allWish.html">所有心愿</a></span></div>
+            <div class="crumb-list"><i class="icon-font"></i><a href="__MODULE__/Index/index.html">首页</a><span class="crumb-step">&gt;</span><span class="crumb-name"><a href="javascript:void(0)">心愿单管理</a></span><span class="crumb-step">&gt;</span><span>所有心愿</span></div>
         </div>
         <div class="result-wrap">
             <form name="myform" id="myform" method="post">
@@ -19,7 +19,7 @@
                         <volist name="wishtab" id="w">
                             <tr>
                                 <td>{$w.busername}</td>
-                                <td>{$w.wish_title}</td>
+                                <td><a class="link-update" href="wish_view/id/{$w.wid}">{$w.wish_title}</a></td>
                                 <td>{$w.wish_content}</td>
                                 <td>{$w.wish_type}</td>
                                 <td>

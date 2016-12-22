@@ -20,7 +20,7 @@
 			$count=$commentModel->join("buyertab on chips.bid=buyertab.bid")->where("sid='$sid'")->count();
 			$Page=new\Think\Page($count,8);
 			$show=$Page->show();
-			$list=$commentModel->join("buyertab on chips.bid=buyertab.bid")->where("sid='$sid'")->page($_GET['p'].',8')->select();
+			$list=$commentModel->join("buyertab on chips.bid=buyertab.bid")->where("sid='$sid'")->limit($Page->firstRow.','.$Page->listRows)->select();
 			$this->assign("commenttab",$list);
 			$this->assign('pages',$show);
 			$this->display();
@@ -38,7 +38,7 @@
 			$Page->setConfig('prev','上一页');
 			$Page->setConfig('next','下一页');
 			$show=$Page->show();
-			$list=$commentModel->join("buyertab on com_products.bid=buyertab.bid")->where("sid='$sid'")->page($_GET['p'].',8')->select();
+			$list=$commentModel->join("buyertab on com_products.bid=buyertab.bid")->where("sid='$sid'")->limit($Page->firstRow.','.$Page->listRows)->select();
 			$this->assign('commenttab',$list);
 			$this->assign('pages',$show);
 			$this->display();

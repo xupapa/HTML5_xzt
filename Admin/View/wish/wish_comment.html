@@ -1,9 +1,9 @@
-
+<layout name="layout"/>
     <!--/sidebar-->
     <div class="main-wrap">
 
         <div class="crumb-wrap">
-            <div class="crumb-list"><i class="icon-font"></i><a href="index.html">首页</a><span class="crumb-step">&gt;</span><span class="crumb-name"><a href="#">心愿单管理</a></span><span class="crumb-step">&gt;</span><span><a href="__MODULE__/Admin">心愿单评论</a></span></div>
+            <div class="crumb-list"><i class="icon-font"></i><a href="__MODULE__/Index/index.html">首页</a><span class="crumb-step">&gt;</span><span class="crumb-name"><a href="javascript:void(0)">心愿单管理</a></span><span class="crumb-step">&gt;</span><span>心愿单评论</span></div>
         </div>
         <div class="result-wrap">
             <form name="myform" id="myform" method="post">
@@ -11,7 +11,7 @@
                     <table class="result-tab" width="100%">
                         <tr>
                             <th>用户名</th>
-                            <th>心愿单标题</th>
+                            <th>心愿单</th>
                             <th>评论</th>
                             <th>发布时间</th>
                             <th>操作</th>
@@ -19,8 +19,8 @@
                         <volist name="wish_comment" id="wc">
                             <tr>
                                 <td>{$wc.busernames}</td>
-                                <td>{$wc.wish_title}</td>
-                                <td>{$wc.content}</td>
+                                <td>{$wc.wish_content}</td>
+                                <td><a class="link-update" href="comment_view/id/{$wc.wcid}">{$wc.content}</a></td>
                                 <td>{$wc.wctime}</td>
                                 <td>
                                     <a class="link-update" href="comment_view/id/{$wc.wcid}">查看</a>

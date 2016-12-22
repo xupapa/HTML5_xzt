@@ -19,7 +19,7 @@
 			$Page->setConfig('prev','上一页');
 			$Page->setConfig('next','下一页');
 			$show=$Page->show();
-			$list=$newsModel->where("susername='$susername'")->page($_GET['p'].',5')->select();
+			$list=$newsModel->where("susername='$susername'")->limit($Page->firstRow.','.$Page->listRows)->select();
 			$this->assign('recommendtab_food',$list);
 			$this->assign('pages',$show);
 			$this->display();
@@ -128,7 +128,7 @@
 			$Page->setConfig('prev','上一页');
 			$Page->setConfig('next','下一页');
 			$show=$Page->show();
-			$list=$newsCommentModel->join("recommendtab_food on recommendtab_food_comment.rid=recommendtab_food.rid")->where("recommendtab_food.susername='$susername'")->page($_GET['p'].',5')->select();
+			$list=$newsCommentModel->join("recommendtab_food on recommendtab_food_comment.rid=recommendtab_food.rid")->where("recommendtab_food.susername='$susername'")->limit($Page->firstRow.','.$Page->listRows)->select();
 			$this->assign("news_comment",$list);
 			$this->assign('pages',$show);
 			$this->display();
@@ -178,7 +178,7 @@
 			$conditon['rid']=array('in',$getrid);
 			if($newsModel->where($conditon)->delete())
 			{
-				$this->success("成功删除!",U("Admin/Recommend/allRecommend/p/1"));
+				$this->success("成功删除!",U("Admin/Recommend/allRecommend"));
 			}else
 			{
 				$this->error('删除失败!');

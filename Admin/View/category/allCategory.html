@@ -2,7 +2,7 @@
     #light{
         display: none;
         position: absolute;
-        top:25%; left: 45%;
+        top:25%; left: 35%;
         width: 20%;
         height:20%;
         background-color: white;
@@ -22,28 +22,44 @@
     {
         z-index:1001;
     }
+    #light2{
+        display: none;
+        position: absolute;
+        top:25%; left: 35%;
+        width: 20%;
+        height:20%;
+        background-color: white;
+        border: 4px solid #00bcd4;
+        z-index: 1002;
+        overflow: auto;
+    }
+    #light2 tr
+    {
+        height: 40px;
+    }
+    #light2 button
+    {
+        margin-right: 15px;
+    }
+    #btn{
+        margin-left: 2%;
+    }
 </style>
+
     <!--/sidebar-->
-    <script type="text/javascript">
-    // function checkvalue()
-    // {
-        
-    //     document.getElementById('light').style.display='block';
-    //     return true;
-    // }
-    </script>
+<layout name="layout"/>
     <div class="main-wrap">
 
         <div class="crumb-wrap">
-            <div class="crumb-list"><i class="icon-font"></i><a href="index.html">首页</a><span class="crumb-step">&gt;</span><span class="crumb-name">商品管理</span><span class="crumb-step">&gt;</span><span>所有商品</span></div>
+            <div class="crumb-list"><i class="icon-font"></i><a href="__MODULE__/Index/index.html">首页</a><span class="crumb-step">&gt;</span><span class="crumb-name">商品管理</span><span class="crumb-step">&gt;</span><span>所有商品</span></div>
         </div>
         
         <div class="result-wrap">
             <form name="myform" id="myform" method="post" action="{:U('Admin/Category/destoryBatch')}">
                 <div class="result-title">
                     <div class="result-list">
-                        <a href=""><i class="icon-font"></i>新增分类</a>
-                        <a id="batchDel" href="javascript:void(0)" onclick="myform.submit();"><i class="icon-font"></i>批量删除</a>
+                        <a href="javascript:void(0)" id="add" onclick=""><i class="icon-font"></i>新增分类</a>
+                        <a id="batchDel" href="javascript:void(0)" onclick="document.myform.submit();"><i class="icon-font"></i>批量删除</a>
                     </div>
                 </div>
                 <div class="result-content">
@@ -58,11 +74,7 @@
                                     <td class="tc"><input type="checkbox" name="id[]"id="id[]" value="{$c.pcid}"></td>
                                     <td>{$c.pcname}</td>
                                     <input type="hidden" name="pcname" value="{$c.pcname}">
-                                    <td><a href="javascript:void(0)" id="edit">修改</a>&nbsp;&nbsp;<a href="delete/id/{$c.pcid}">删除</a></td>
-                                    <form name="form1" id="form1" method="post" action="{:U('Admin/Category/category_edit')}">
-                                        <input type="hidden" name="pcid" value="{$c.pcid}">
-                                        <input type="hidden" name="pcname" id="editpc">
-                                    </form>
+                                    <td><a href="javascript:void(0)" class="clickme" id="{$c.pcid}">修改</a>&nbsp;&nbsp;<a href="{:U('Admin/Category/delete')}/id/{$c.pcid}">删除</a></td>
                                 </tr>
                             </volist>
                     </table>
@@ -80,41 +92,65 @@
             
         </div>
     </div>
-    <script type="text/javascript">
-    $("#edit").click(function(){
-        var data=prompt("修改类名","");
-        if(data!=null&&data!="")
-        {
-            $("#editpc").value=data;
-            document.getElementById("form1").submit();
-        }
-    })
-    </script>
-    <!-- <div id="light">
-                <form action="" method="post">
+    <div id="light">
+                <form action="{:U('Admin/Category/category_edit')}" method="post" name="form" id="form">
                     <table width="100%;">
                         <tr height="40px" width="100%">
                             <th style="background-color:#00bcd4;color:white;">修改类名</th>
                         </tr>
                         <tr>
                             <td>
-                            类名：<input type="text" name="pcname" id="pcname" value="{$category.pcname}">
-                            
+                            类名：<input type="text" name="pcname" value="">
                             </td>
+                            <input type="hidden" name="pcid" id="edit_pcid">
                         </tr>
                         <tr>
                             <td>
-                                <button id="btn"type="submit" class="btn btn-success" onClick="document.getElementById('light').style.display='none';"> 提交</button>
-                                <button id="btn"type="submit" class="btn btn-default" onClick="document.getElementById('light').style.display='none';" > 返回</button>
+                                <button id="btn" type="submit" class="btn btn-success" onClick="document.getElementById('light').style.display='none';"> 提交</button>
+                                <input class="btn btn4" onclick="document.getElementById('light').style.display='none';" value="返回" type="button">
                             </td>
                             
                         </tr>
                     </table>
                             
                 </form>
-    </div> -->
-    <!--/main-->
-    <script type="text/javascript">
+    </div>
+    <div id="light2">
+        <form action="{:U('Admin/Category/category_add')}" method="post" name="form2" id="form">
+            <table width="100%;">
+                <tr height="40px" width="100%">
+                    <th style="background-color:#00bcd4;color:white;">添加分类</th>
+                </tr>
+                <tr>
+                    <td>
+                    类名：<input type="text" name="pcname" value="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button id="btn" type="submit" class="btn btn-success" onClick="document.getElementById('light').style.display='none';"> 提交</button>
+                        <input class="btn btn4" onclick="document.getElementById('light2').style.display='none';" value="返回" type="button">
+                    </td>
+                    
+                </tr>
+            </table>
+                    
+        </form>
+    </div>
+    <!--/main-->   
+<script type="text/javascript">
+//添加分类
+    $("#add").click(function(){
+        document.getElementById('light2').style.display='block';
+    })
+//删除分类
+$(".clickme").click(function(){
+    document.getElementById('light').style.display='block';
+    var data=$(this);
+    var pcid=data.attr("id");
+    $("#edit_pcid").val(pcid);
+    
+});
 // 全选
 $("#SelectAll").click(function()
 {

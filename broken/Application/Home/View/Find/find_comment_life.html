@@ -52,7 +52,7 @@
         <div id="nav">
           <ul class="am-nav am-nav-pills am-nav-justify">
             <li><a href="{:U('Home/Find/find_index')}">发现</a></li>
-          <li><a href="{:U('Home/Find/find_news')}">消息</a></li>
+          <li><a href="{:U('Home/Find/find_news')}">购买</a></li>
           <li><a href="{:U('Home/Account/me')}">我</a></li>
           </ul>
         </div>
@@ -79,8 +79,8 @@
            </div>
            <footer class="am-comment-footer">
                <div class="am-comment-actions">
-                   <a class="am-btn am-round"><i class="am-icon-thumbs-up"><span class="am-badge am-round">{$vl.good_num}</span></i></a>
-                   <a class="am-btn am-round"><i class="am-icon-thumbs-down"><span class="am-badge am-round">{$vl.bad_num}</span></i></a>
+                   <a data="{$vl.rscid}" href="javascript:void(0);" class="am-btn am-round good"><i class="am-icon-thumbs-up"><span class="am-badge am-round">{$vl.good_num}</span></i></a>
+                   <a data="{$vl.rscid}" href="javascript:void(0);" class="am-btn am-round bad"><i class="am-icon-thumbs-down"><span class="am-badge am-round">{$vl.bad_num}</span></i></a>
                    <a class="am-btn am-round"><i class="am-icon-share"></i></a>
                </div>
            </footer>
@@ -94,3 +94,47 @@
      </volist>  
 </body>
 </html>
+
+<script>
+  $(".good").on('click',function(){
+        if($("#ids").val()!=''){
+        var Oa=$(this);
+        var id=Oa.attr('data');//获取id属性
+        var vl=Oa.find("span").text();
+            vl=parseInt(vl)+1;
+        $.post('__CONTROLLER__/zan_hits',{data:id},function(data){
+          if(data.status==1){ 
+                alert('感谢您的选择！');
+                Oa.find("span").text(vl);//页面元素加1
+            }else{
+                alert('失败');
+            }
+        },'json'
+            //alert(data);
+       ); 
+      }else{
+        window.location.href="__MODULE__/Admin/login";
+      }
+    })
+
+  $(".bad").on('click',function(){
+        if($("#ids").val()!=''){
+        var Oa=$(this);
+        var id=Oa.attr('data');//获取id属性
+        var vl=Oa.find("span").text();
+            vl=parseInt(vl)+1;
+        $.post('__CONTROLLER__/nozan_hits',{data:id},function(data){
+          if(data.status==1){ 
+                alert('感谢您的选择！');
+                Oa.find("span").text(vl);//页面元素加1
+            }else{
+                alert('失败');
+            }
+        },'json'
+            //alert(data);
+       ); 
+      }else{
+        window.location.href="__MODULE__/Admin/login";
+      }
+    })
+</script>

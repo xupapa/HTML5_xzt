@@ -3,27 +3,42 @@
 	height:100%;
 	padding-left: 1px;
 }
-.acimg{
-	width:111%;
-	height: 120%;
-}
-.acheight{
-	height: 100%;
-}
-.acpadd{
-	padding-left:0;
-}
+#active1 img{
+			width:111%;
+			height:120%;
+		}
+#active1{
+			height:100%;
+			padding-left:1px;
+			border-right:1px solid #E0E0E0;
+		}
+#active2{
+
+			border-right:1px solid #E0E0E0;
+		}
 .acimg1{
-	width:110%;
-}
-.acimg2{
-	width:110%;
-	padding-top:4px;
-}
+			width:100%;
+			border-bottom:1px solid #E0E0E0;
+		}
+		.acimg2{
+			width:100%;
+		}
+		#active2 img{
+			width:110%;
+		}
+		#active3{
+			padding-left:0;
+		}
+		#active4{
+			height:100%;
+		}
 /*列表*/
 ul a{
 	color:black;
 	padding-top:0;
+}
+.am-list{
+	margin-top:0%;
 }
 .img1{
 	width:auto;
@@ -87,4 +102,15 @@ p{
 }
 .logback{
 	background: #00bcd4;
+}
+.intro1{
+	margin-bottom: 0px;
+}
+.intro2{
+	margin-top: 0px;
+}
+#badge{
+	margin-left:23px;
+	margin-top:5px;
+	margin-bottom:13px;
 }

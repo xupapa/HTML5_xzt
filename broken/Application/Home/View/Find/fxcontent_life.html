@@ -38,13 +38,17 @@
 								<a href="#link-to-user" class="am-comment-author" >{$recommendtab_share[busername]}</a>
 							</div>
 							<div class="am-u-sm-8">
-								<input name="ids[]" value="{$recommendtab_share.rsid}" type="hidden">
-								<a href="{:U('Home/Account/addSave_good')}/busername/{$recommendtab_share[busername]}/title/{$recommendtab_share[title]}" class="am-btn am-btn-sm" id="save">
+							<form method='post' action="{:U('Home/Account/addSave_good')}">
+								<input name="title" value="{$recommendtab_share.title}" type="hidden">
+								<input name="busername" value="{$recommendtab_share.busername}" type="hidden">
+								<input type="hidden" name="images" value='{$recommendtab_share.images}'>
+								<button class="am-btn am-btn-sm" id="save" name="submit">
 									<i class="am-icon-heart"></i>收藏
-								</a>
+								</button>
 								<a href="{:U('Home/Find/find_comment_life')}/id/{$recommendtab_share[rfid]}" class="am-btn am-btn-sm" id="comment">
 									<i class="am-icon-comments-o"></i>评论
 								</a>
+							</form>	
 							</div>
 						</div>
 						<div class="am-g" id="time_style">
@@ -68,10 +72,29 @@
 
 		<div class="am-topbar am-topbar-fixed-bottom" id="nav" >
         <ul class="am-nav am-nav-pills am-nav-justify">
-          <li><a href="{:U('Home/Find/find_index')}"><i class="am-icon am-icon-diamond am-icon-md"></i><br>发现</a></li>
-          <li><a href="{:U('Home/Find/find_news')}"><i class="am-icon am-icon-shopping-cart am-icon-md"></i><br>购买</a></li>
-          <li><a href="{:U('Home/Account/me')}"><i class="am-icon am-icon-github-alt am-icon-md"></i><br>我</a></li>
+          <li rel="{:U('Home/Find/find_index')}"><a href="{:U('Home/Find/find_index')}"><i class="am-icon am-icon-diamond am-icon-md"></i><br>发现</a></li>
+          <li rel="{:U('Home/Find/find_news')}"><a href="{:U('Home/Find/find_news')}"><i class="am-icon am-icon-shopping-cart am-icon-md"></i><br>购买</a></li>
+          <li rel="{:U('Home/Account/me')}"><a href="{:U('Home/Account/me')}"><i class="am-icon am-icon-github-alt am-icon-md"></i><br>我</a></li>
         </ul>
     </div>
 </body>
 </html>
+<script>
+ $(function() {
+   var urlstr = location.href;
+   var urlstatus=false;
+   $('#nav li').each(function(){
+    if ((urlstr).indexOf($(this).attr('rel')) > -1&&$(this).attr('rel')!='') {
+      $(this).addClass('am-active'); 
+      urlstatus = true;
+    } 
+    else {
+      $(this).removeClass('am-active');
+    }
+    });
+    //保持状态
+    if (!urlstatus) {
+      $("#nav li").eq(0).addClass('am-active'); 
+    }
+  });
+ </script>

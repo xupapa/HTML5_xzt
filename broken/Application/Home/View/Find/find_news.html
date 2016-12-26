@@ -1,28 +1,42 @@
 <layout name="layout"/>  
-    <div>
+ 
       <div name="body"> 
+       <volist name="find_shop" id="v">
         <div>
-          <volist name="find_shop" id="v">
+            <!-- <input type="hidden" name="hide" value="{$v[fsid]}" class='input'> -->
             <img src="__PUBLIC__/home/images/{$v[images]}" style="width:100%;height:60%">
           
         </div>
-        <div class="am-slider am-slider-default" data-am-flexslider="{itemWidth: 145, itemMargin: 5, slideshow: false,&quot;controlNav&quot;:false}" id="life_ul" style="border-bottom:2px solid #00bcd4">
+        <div class="am-slider am-slider-default" data-am-flexslider="{itemWidth: 145, itemMargin: 5, slideshow: false,&quot;controlNav&quot;:false}" id="life_ul" style="border-bottom:2px solid #00bcd4;margin-bottom:0%;">
 
         <ul class="am-slides">
-          <volist name="shopping" id="vl">
+          <volist name="v[good]" id="vl">
+            
             <li>                
-                <a href="{:U('Home/Find/fxcontent_shop')}/id/{$vl.fsid}"><img src="__PUBLIC__/home/images/{$vl[small]}" style="padding-left: 4%;padding-right:2%;padding-top:10%;height:80%;width:100%;">
+                <a href="{:U('Home/Find/fxcontent_shop')}/id/{$vl.fsid}" class='href'><img src="__PUBLIC__/home/images/{$vl[small]}" style="padding-left: 4%;padding-right:2%;padding-top:10%;height:80%;width:100%;">
                   <div class="am-g" >
                       <div class="am-u-sm-6"></div>
                       <div class="am-u-am-6" >
-                        <p style='text-align:left'>{$vl[name]}<br><font color="red">￥{$vl[price]}</font></p>
+                        <p style='text-align:left;margin-bottom:1%'>{$vl.name}<br><font color="red">￥{$vl[price]}</font></p>
                       </div>
                   </div>
                 </a>
             </li>
+            
            </volist>
         </ul>
     </div>
     </volist>
       </div>
-    </div>
+<!-- <script type="text/javascript">
+window.onload=function(){
+   var hide=document.getElementsByClassName('input');
+   var a=document.getElementsByClassName('href');
+   for (var i = 0; i <hide.length; i++) {
+     alert(hide[i].value);
+   }
+for (var i = 0; i < hide.length; i++) {
+  a[i].href="{:U('Home/Find/fxcontent_shop')}/id/"+hide[i].value;
+}
+}
+</script> -->

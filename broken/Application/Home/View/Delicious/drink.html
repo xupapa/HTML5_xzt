@@ -1,162 +1,97 @@
 <layout name="layout_delicious" />
-<title>drink</title>
+<title>饮品</title>
 	<!-- 轮播图 -->
     <div class="am-slider am-slider-default" data-am-flexslider id="demo-slider-0">
 	  <ul class="am-slides">
-	    <li><img src="__PUBLIC__/home/images/drink2.jpg" /></li>
-	    <li><img src="__PUBLIC__/home/images/drink3.jpg" /></li>
-	    <li><img src="__PUBLIC__/home/images/drink4.jpg" /></li>
-	    <li><img src="__PUBLIC__/home/images/drink5.jpg" /></li>
+	    <volist name="sliders" id="s">
+		<li><img src="__PUBLIC__/home/images/{$s[sldimage]}" /></li>
+	  </volist>
 	  </ul>
 	</div>
 	<!-- 活动 -->
 <div class="am-g">
-		<div class="am-u-sm-6 active">
-			<img src="__PUBLIC__/home/images/drink_1.jpg" class="acimg">
+		<div class="am-u-sm-6" id="active1">
+			<img src="__PUBLIC__/home/images/{$activity[0][actimage]}">
 		</div>
-		<div class="am-u-sm-6 acheight">
-			<div class="am-g" style="margin-left:1%">
-				<div class="am-u-sm-6 acpadd">
-					<img src="__PUBLIC__/home/images/drink_2.jpg" class="acimg1">
-					<img src="__PUBLIC__/home/images/drink_3.jpg" class="acimg2">
+		<div class="am-u-sm-6" id="active4">
+			<div class="am-g">
+				<div class="am-u-sm-6" id="active2">
+					<img src="__PUBLIC__/home/images/{$activity[1][actimage]}">
 				</div>
-				<div class="am-u-sm-6 acpadd">
-					<img src="__PUBLIC__/home/images/drink_4.jpg" class="acimg1">
-					<img src="__PUBLIC__/home/images/drink_2.jpg" class="acimg2">
+				<div class="am-u-sm-6" id="active3">
+					<img src="__PUBLIC__/home/images/{$activity[2][actimage]}" class="acimg1">
+					<img src="__PUBLIC__/home/images/{$activity[3][actimage]}" class="acimg2">
 				</div>
 			</div>
 		</div>
 	</div>
 	<!-- 列表 -->
-	<ul class="am-list">
-	<a href="storelist.html">
+<ul class="am-list">
+  <volist name="sellertab" id="v">
+	<a href="{:U('Home/Delicious/storelist')}/id/{$v.sid}">
 	  <li>
 		  <div class="am-g">
-			  <div class="am-u-sm-4"><img src="__PUBLIC__/home/images/drink1.jpg" class="img1">
+			  <div class="am-u-sm-4"><img src="__PUBLIC__/home/images/{$v[simage]}" class="img1">
 			  </div>
 			  <div class="am-u-sm-8">
 				  <div class="am-g">
 					  <div class="am-u-sm-8 padding">
-						  <p>心情靓饮品店</p>
-						  <p>评分：3.5</p>
+						  <p class="intro1">{$v[shopname]}</p>
+							<p class="intro1 intro2">评分：{$v[slevel]}</p>
+							<p class="intro1 intro2">介绍：{$v.introduce|msubstr=0,8}</p>
 					  </div>
 					  <div class="am-u-sm-4 margin">
-						  <a class="am-icon-pencil-square am-icon-lg" style="color:#ff5151"  data-am-collapse="{parent: '#accordion', target: '#do-not-say-1'}"></a>
+						 <a class="am-icon-pencil-square am-icon-lg" data="{$v.sid}" href="javascript:void(0);" style="color:#ff5151"  data-am-collapse="{parent: '#accordion', target: '#{$v.sid}'}"></a>
 					  </div>
 				  </div>
 			  </div>
 		  </div>
 
-		  <div id="do-not-say-1" class="am-panel-collapse am-collapse">
+		  <div id="{$v.sid}" class="am-panel-collapse am-collapse">
 			  <div class="am-panel-bd">
-				  <div class="am-g textalign">
-					  <div class="am-u-sm-4">
-						  <span class="am-badge am-round am-badge-primary am-text-sm color">口碑好14</span>
-					  </div>
-					  <div class="am-u-sm-4">
-						  <span class="am-badge am-round am-badge-warning am-text-sm color">装饰好21</span>
-					  </div>
-					  <div class="am-u-sm-4">
-						  <span class="am-badge am-round am-badge-secondary am-text-sm color">环境美421</span>
-					  </div>
-				  </div>
-				  <div class="am-g margin1">
-					  <div class="am-u-sm-4">
-						  <span class="am-badge am-round am-badge-success am-text-sm color">飞毛腿4</span>
-					  </div>
-					  <div class="am-u-sm-4">
-						  <span class="am-badge am-round am-badge-danger am-text-sm color">优惠多123</span>
-					  </div>
-					  <div class="am-u-sm-4">
-						  <span class="am-badge am-round am-badge-primary am-text-sm color">配送快1</span>
-					  </div>
-				  </div>
-				  <div class="am-g margin2">
-		  		<div class="am-u-sm-3 mar2padd">分量足</div>
-		  		<div class="am-u-sm-9 mar2padd">
-		  			<div class="am-progress" style="margin-bottom:0">
-					  <div class="am-progress-bar" style="width: 40%">40%</div>
-					  <div class="am-progress-bar am-progress-bar-success" style="width: 60%">60%</div>
+				  <input type="hidden" name="chipname" />
+				<volist name="v.chiptwo" id="k" offset="0" length='' empty="抱歉，暂时没有可选标签。">
+				<a class="clickme" data="{$k.id}" href="javascript:void(0);"><div class="am-badge am-round am-badge-secondary am-text-sm" id="badge">{$k.chipname} <span>{$k.clickcount}</span></div></a>	  	
+			</volist>
+			<div class="clear"></div>
+		  	<volist name="v.chiptwo" id="k" offset="0" length='2' empty="抱歉，暂时没有可选标签。">
+		  	<div class="am-g" id="panel">
+		  		<div class="am-u-sm-3">{$k.chipname}</div>
+		  		<div class="am-u-sm-9">
+		  			<div class="am-progress">
+					  <div class="am-progress-bar am-progress-bar-warning" style="width: {$k.malewidth}%">{$k.malewidth}%</div>
+					  <div class="am-progress-bar am-progress-bar-success" style="width: {$k.femalewidth}%">{$k.femalewidth}%</div>
 					</div>
 		  		</div>
 		  	</div>
-		  	<div class="am-g margin3">
-		  		<div class="am-u-sm-3 mar2padd">好评量</div>
-		  		<div class="am-u-sm-9 mar2padd">
-		  			<div class="am-progress" style="margin-bottom:0">
-					  <div class="am-progress-bar" style="width: 60%">60%</div>
-					  <div class="am-progress-bar am-progress-bar-success" style="width: 40%">40%</div>
-					</div>
-		  		</div>
-		  	</div>
-
-			  </div>
+		  	</volist>
+			
 		  </div>
+	    </div>
        </li>
        </a>
-       <a href="storelist.html">
-       <li>
-		   <div class="am-g">
-			   <div class="am-u-sm-4"><img src="__PUBLIC__/home/images/drink1.jpg" class="img1">
-			   </div>
-			   <div class="am-u-sm-8">
-				   <div class="am-g">
-					   <div class="am-u-sm-8 padding">
-						   <p>心情靓饮品店</p>
-						   <p>评分：3.5</p>
-					   </div>
-					   <div class="am-u-sm-4 margin">
-						   <a class="am-icon-pencil-square am-icon-lg" style="color:#ff5151"  data-am-collapse="{parent: '#accordion', target: '#do-not-say-2'}"></a>
-					   </div>
-				   </div>
-			   </div>
-		   </div>
-		   <div id="do-not-say-2" class="am-panel-collapse am-collapse">
-			   <div class="am-panel-bd">
-				  <div class="am-g textalign">
-					  <div class="am-u-sm-4">
-						  <span class="am-badge am-round am-badge-primary am-text-sm color">口碑好14</span>
-					  </div>
-					  <div class="am-u-sm-4">
-						  <span class="am-badge am-round am-badge-warning am-text-sm color">装饰好21</span>
-					  </div>
-					  <div class="am-u-sm-4">
-						  <span class="am-badge am-round am-badge-secondary am-text-sm color">环境美421</span>
-					  </div>
-				  </div>
-				  <div class="am-g margin1">
-		  		<div class="am-u-sm-4">
-		  			<span class="am-badge am-round am-badge-success am-text-sm color">飞毛腿4</span>
-		  		</div>
-		  		<div class="am-u-sm-4">
-		  			<span class="am-badge am-round am-badge-danger am-text-sm color">优惠多123</span>
-		  		</div>
-		  		<div class="am-u-sm-4">
-		  			<span class="am-badge am-round am-badge-primary am-text-sm color">配送快1</span>
-		  		</div>
-		  	</div>
-		  	<div class="am-g margin2">
-		  		<div class="am-u-sm-3 mar2padd">分量足</div>
-		  		<div class="am-u-sm-9 mar2padd">
-		  			<div class="am-progress" style="margin-bottom:0">
-					  <div class="am-progress-bar" style="width: 40%">40%</div>
-					  <div class="am-progress-bar am-progress-bar-success" style="width: 60%">60%</div>
-					</div>
-		  		</div>
-		  	</div>
-		  	<div class="am-g margin3">
-		  		<div class="am-u-sm-3 mar2padd">好评量</div>
-		  		<div class="am-u-sm-9 mar2padd">
-		  			<div class="am-progress" style="margin-bottom:0">
-					  <div class="am-progress-bar" style="width: 60%">60%</div>
-					  <div class="am-progress-bar am-progress-bar-success" style="width: 40%">40%</div>
-					</div>
-		  		</div>
-		  	</div>
-
-			  </div>
-		   </div>
-       </li>
-       </a>
-	</ul>
- 
+    </volist>
+    <input id="ids" type="hidden" value="{$user[busername]}">
+</ul>
+ <script>
+	$(".clickme").on('click',function(){
+		if($("#ids").val()!=''){
+        var Oa=$(this);
+        var id=Oa.attr('data');//获取id属性
+        var vl=Oa.find("span").text();
+            vl=parseInt(vl)+1;
+        $.post('__CONTROLLER__/set_hits',{data:id},function(data){
+        	if(data.status==1){ 
+                alert('感谢您的选择！');
+                Oa.find("span").text(vl);//页面元素加1
+            }else{
+                alert('失败');
+            }
+        },'json'
+            //alert(data);
+       ); 
+    }else{
+    	window.location.href="__MODULE__/login/login";
+    }
+    })
+</script>

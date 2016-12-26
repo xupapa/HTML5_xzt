@@ -12,6 +12,73 @@
 		}
 		public function allGoods()
 		{
+			if(IS_POST)
+			{
+				$pcid=$_POST['myselect'];
+				$susername=$_SESSION['susername'];
+				$sellerModel=M("sellertab");
+				$sellerdata=$sellerModel->query("select sid from sellertab where susername='$susername'");
+				$sid=$sellerdata[0]['sid'];
+				$goodsModel=M("productstab");
+				if($pcid=='全部')
+				{
+						//关键字查询
+						$keys=I("post.keywords");				
+						$keyword = str_replace(' ', '+', I('post.keywords'));
+						//将keyword统一替换为‘+’连接，方便统一拆分             
+						$str = array('!', '@', '#', '$', '%', '(', ')', '-', '=', '.', '/', '?'); 
+						//定义搜索词不能包含的特殊符号，不包含“+”             
+						foreach($str as $k){ 
+						// 循环过滤特殊符号
+							$strs = stristr($keyword, $k);
+		                    if($strs != NULL){
+		                    	$this->error('请输入有效的关键字');
+		                    }
+		                }
+		                $keywords = array_values(array_filter(explode('+', $keyword))); //得到最终搜索词
+		                foreach($keywords as $key){
+		                	$where['pcname']=array('like',"%{$key}%");
+						    $where['pname']=array('like',"%{$key}%");
+						    $where['price']=array('like',"%{$key}%");
+						    $where['publishtime']=array('like',"%{$key}%");
+						    $where['pnum']=array('like',"%{$key}%");
+						    $where['_logic']='OR';
+		                }
+		                $Page=new\Think\Page($count,5);
+						$Page->setConfig('prev','上一页');
+						$Page->setConfig('next','下一页');
+						$show=$Page->show();		
+						$map['_complex'] = $where;
+						$map['productstab.sid']=$sid;	
+						$list=$goodsModel->join('product_category on productstab.pcid=product_category.pcid')->where($map)->select();
+						if(!$list){
+							$this->error("未查到结果！");
+						}
+						$this->assign('productstab',$list);
+						$this->assign('pages',$show);
+
+				}
+				else
+				{
+					//分类筛选
+					$count=$goodsModel->join('product_category on productstab.pcid=product_category.pcid')->where("productstab.sid=$sid and productstab.pcid=$pcid")->count();
+					$Page=new\Think\Page($count,5);
+					$Page->setConfig('prev','上一页');
+					$Page->setConfig('next','下一页');
+					$show=$Page->show();
+					$list=$goodsModel->join('product_category on productstab.pcid=product_category.pcid')->where("productstab.sid=$sid and productstab.pcid=$pcid")->order("pid")->limit($Page->firstRow.','.$Page->listRows)->select();
+					$this->assign('productstab',$list);
+					$this->assign('pages',$show);
+				}
+				
+				$categoryModel=M("product_category");
+				$pcdata=$categoryModel->where("sid=$sid")->select();
+				$this->assign('product_category',$pcdata);
+				$this->display();
+
+			}
+			else
+			{
 			$susername=$_SESSION['susername'];
 			$sellerModel=M("sellertab");
 			$sellerdata=$sellerModel->query("select sid from sellertab where susername='$susername'");
@@ -23,7 +90,7 @@
 			$Page->setConfig('prev','上一页');
 			$Page->setConfig('next','下一页');
 			$show=$Page->show();
-			$list=$goodsModel->join('product_category on productstab.pcid=product_category.pcid')->where("productstab.sid=$sid")->order("pid")->page($_GET['p'].',5')->select();
+			$list=$goodsModel->join('product_category on productstab.pcid=product_category.pcid')->where("productstab.sid=$sid")->order("pid")->limit($Page->firstRow.','.$Page->listRows)->select();
 			$this->assign('productstab',$list);
 			$this->assign('pages',$show);
 			//$data=$goodsModel->join('product_category on productstab.pcid=product_category.pcid')->where("productstab.sid=$sid")->order("pid")->select();
@@ -34,6 +101,7 @@
 			$pcdata=$categoryModel->where("sid=$sid")->select();
 			$this->assign('product_category',$pcdata);
 			$this->display();
+			}
 		}
 		public function goods_edit()
 		{
@@ -180,6 +248,11 @@
 			{
 				$this->error('删除失败!');
 			}
+		}
+		public function select()
+		{
+			$pcid=$_POST['myselect'];
+			
 		}
 		
 

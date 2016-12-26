@@ -1,8 +1,9 @@
+<layout name="layout"/>
     <!--/sidebar-->
     <div class="main-wrap">
 
         <div class="crumb-wrap">
-            <div class="crumb-list"><i class="icon-font"></i><a href="index.html">首页</a><span class="crumb-step">&gt;</span><span class="crumb-name">商品管理</span><span class="crumb-step">&gt;</span><span>所有商品</span></div>
+            <div class="crumb-list"><i class="icon-font"></i><a href="__MODULE__/Index/index">首页</a><span class="crumb-step">&gt;</span><span class="crumb-name">商品管理</span><span class="crumb-step">&gt;</span><span>所有商品</span></div>
         </div>
         <div class="search-wrap">
             <div class="search-content">
@@ -11,8 +12,8 @@
                         <tr>
                             <th width="120">选择分类:</th>
                             <td>
-                                <select name="search-sort" id="">
-                                    <option selected>全部</option>
+                                <select id="pcid" name="myselect" onchange="submit()">
+                                    <option selected value="全部">全部</option>
                                     <volist name="product_category" id="pc">
                                         <option name="pcid"value="{$pc.pcid}">{$pc.pcname}</option>
                                     </volist>
@@ -55,7 +56,7 @@
                                     <td>{$g.price}</td>
                                     <td>{$g.publishtime}</td>
                                     <td>{$g.pnum}</td>
-                                    <td><a href="goods_edit/id/{$g.pid}">修改</a>&nbsp;&nbsp;<a href="delete/id/{$g.pid}">删除</a></td>
+                                    <td><a href="{:U('Admin/Goods/goods_edit')}/id/{$g.pid}">修改</a>&nbsp;&nbsp;<a href="{:U('Admin/Goods/delete')}/id/{$g.pid}">删除</a></td>
                                 </tr>
                             </volist>
                     </table>
@@ -73,15 +74,19 @@
     </div>
     <!--/main-->
 <script type="text/javascript">
+//分类筛选
+function submit(){
+    document.myselect.submit();
+}
 // 全选
 $("#SelectAll").click(function()
 {
     if($(this).is(':checked'))
     {
-        $(':checkbox').attr('checked','checked');
+        $(':checkbox').attr('checked',true);
     }else
     {
-        $(':checkbox').removeAttr('checked');
+        $(':checkbox').attr('checked',false);
     }
 });
 $("#batchDel").click(function(){

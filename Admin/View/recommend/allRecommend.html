@@ -1,9 +1,9 @@
-
+<layout name="layout"/>
     <!--/sidebar-->
     <div class="main-wrap">
 
         <div class="crumb-wrap">
-            <div class="crumb-list"><i class="icon-font"></i><a href="index.html">首页</a><span class="crumb-step">&gt;</span><span class="crumb-name">动态管理</span><span class="crumb-step">&gt;</span><span class="crumb-name">所有动态</span></div>
+            <div class="crumb-list"><i class="icon-font"></i><a href="__MODULE__/Index/index.html">首页</a><span class="crumb-step">&gt;</span><span class="crumb-name">动态管理</span><span class="crumb-step">&gt;</span><span class="crumb-name">所有动态</span></div>
         </div>
         <div class="search-wrap">
             <div class="search-content">
@@ -15,7 +15,7 @@
             <form name="myform" id="myform" method="post" action="{:U('Admin/Recommend/destoryBatch')}">
                 <div class="result-title">
                     <div class="result-list">
-                        <a href="addRoom.html"><i class="icon-font"></i>新增动态</a>
+                        <a href="__MODULE__/Recommend/addRecommend"><i class="icon-font"></i>新增动态</a>
                         <a id="batchDel" href="javascript:void(0)" ><i class="icon-font"></i>批量删除</a>
                     </div>
                 </div>
@@ -30,7 +30,7 @@
                         <volist name="recommendtab_food" id="nt">
                         <tr>
                             <td class="tc"><input name="rid[]" value="{$nt.rid}" type="checkbox"></td>
-                            <td>{$nt.title}</td>
+                            <td><a href="view/id/{$nt.rid}">{$nt.title}</a></td>
                             <td>{$nt.time}</td>
                             <td>
                                 <a class="link-update" href="view/id/{$nt.rid}">查看</a>&nbsp;&nbsp;

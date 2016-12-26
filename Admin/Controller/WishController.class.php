@@ -23,8 +23,12 @@
 			}
 			else
 			{
+				$busername=$wdata['busername'];
+				$buserModel=M("buyertab");
+				$data=$buserModel->where("busername='$busername'")->find();
+				$buserModel->score=$data['score']+5;
 				$wishModel->wish_type='已采纳';
-				if($wishModel->where("susername='$susername'and wid='$wid'")->save())
+				if($wishModel->where("susername='$susername'and wid='$wid'")->save()&&$buserModel->where("busername='$busername'")->save())
 				{
 					$this->success("成功采纳",U("allWish"));
 				}
@@ -40,7 +44,7 @@
 			$Page->setConfig('next','下一页');
 			$show=$Page->show();
 
-			$data=$wishModel->where("susername='$susername'")->page($_GET['p'].',5')->select();
+			$data=$wishModel->where("susername='$susername'")->limit($Page->firstRow.','.$Page->listRows)->select();
 			$this->assign("wishtab",$data);
 			$this->assign('pages',$show);
 			$this->display();
@@ -55,7 +59,7 @@
 			$Page->setConfig('prev','上一页');
 			$Page->setConfig('next','下一页');
 			$show=$Page->show();
-			$data=$wishModel->where("susername='$susername'and wish_type='已采纳'")->page($_GET['p'].',5')->select();
+			$data=$wishModel->where("susername='$susername'and wish_type='已采纳'")->limit($Page->firstRow.','.$Page->listRows)->select();
 			$this->assign("adopt_wish",$data);
 			$this->assign('pages',$show);
 			$this->display();
@@ -69,7 +73,7 @@
 			$Page->setConfig('prev','上一页');
 			$Page->setConfig('next','下一页');
 			$show=$Page->show();
-			$data=$wishCommentModel->join("wishtab on wishtab.wid=wishtab_comment.wid")->where("susername='$susername'")->page($_GET['p'].',5')->select();
+			$data=$wishCommentModel->join("wishtab on wishtab.wid=wishtab_comment.wid")->where("susername='$susername'")->limit($Page->firstRow.','.$Page->listRows)->select();
 			$this->assign("wish_comment",$data);
 			$this->assign('pages',$show);
 			$this->display();

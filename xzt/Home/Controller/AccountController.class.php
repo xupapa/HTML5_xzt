@@ -66,7 +66,9 @@ class AccountController extends Controller {
 
     }
     public function me(){
-       
+       if (!isLogin()) { 
+            $this->error("请登录",U("Home/Account/login"));
+        }
         $data['busername']=$_SESSION['user']['busername'];
         $data['bid']=$_SESSION['user']['bid'];
         $data['score']=$_SESSION['user']['score'];
@@ -76,29 +78,38 @@ class AccountController extends Controller {
         $this->display();
     }
     public function addSave_shop(){//添加店铺收藏
+        if (!isLogin()) { 
+            $this->error("请登录",U("Home/Account/login"));
+        }
         $Model=M('collecttab');
         // $images=I('img');
         // print_r($images);exit;
         $recommendModel=M('recommendtab_food');
         $data['busername']=$_SESSION['user']['busername'];
-        $data['susername']=I('susername');
+        $data['susername']=I('post.susername');
         // print_r($data['susername']);exit;
         $susername=$data['susername'];
-        $data['title']=I('title');
+        $data['title']=I('post.title');
         $title=$data['title'];
-        
-        $data['time']=date("Y-m-d  h:i:sa");
+        $data['images']=I('post.images');
+        $data['time']=date("Y-m-d  h:i:s");
         //查询发布时间
         $time=$recommendModel->where("susername='$susername' AND title='$title'")->field('time')->select();
         $time=$time[0][time];
         // print_r($time);exit;
         $result=$Model->field('sendTime')->select();
+        $name=$Model->field('busername')->select();
+        $na=$_SESSION['user']['busername'];
+        // print_r($na);exit;
+        // print_r($name);exit;
         // $result=$result[0];
         foreach ($result as $key => $value) {
             // print_r($result[$key][sendtime]);
-            $newtime['time']=$result[$key][sendtime];
-            // print_r($newtime);
-            if ($newtime['time']==$time) {
+            $newtime['time']=$result[$key]['sendtime'];
+            $busername['busername']=$name[$key]['busername'];
+            // print_r($busername['busername']);
+             // print_r($newtime);
+            if ($newtime['time']==$time&&$busername['busername']==$na) {
                 // $this->error("请勿重复收藏");
                 $this->error('请勿重复收藏','',1);
             }
@@ -122,16 +133,20 @@ class AccountController extends Controller {
 
     }
        public function addSave_good(){//添加商品收藏
+        if (!isLogin()) { 
+            $this->error("请登录",U("Home/Account/login"));
+        }
         $Model=M('collecttab');
         $recommendModel=M('recommendtab_share');
         // $data['busername']=$_SESSION['user']['busername'];
-        $data['busername']=I('busername');
+        $data['susername']=I('post.busername');///////////////////////////////////////$data['busername']
+        $data['busername']=$_SESSION['user']['busername'];
         //print_r($data['busername']);exit;
-        $busername=$data['busername'];
-        $data['title']=I('title');
+        $busername=$data['susername'];
+        $data['title']=I('post.title');
         $title=$data['title'];
-        $data['images']=I('images');
-        $data['time']=date("Y-m-d  h:i:sa");
+        $data['images']=I('post.images');
+        $data['time']=date("Y-m-d  h:i:s");
         //查询发布时间
         $time=$recommendModel->where("busername='$busername' AND title='$title'")->field('time')->select();
          $time=$time[0][time];
@@ -169,10 +184,10 @@ class AccountController extends Controller {
     public function mySave(){
         $mySaveModel=M('collecttab');
         $busername=$_SESSION['user']['busername'];
-        $susername=$mySaveModel->where("busername='$busername' AND title='$title'")->field('susername')->select();
+        // $susername=$mySaveModel->where("busername='$busername' AND title='$title'")->field('susername')->select();
         $mySave_good=$mySaveModel->where("'$busername'=busername AND type='商品'")->select();
         $mySave_shop=$mySaveModel->where("'$busername'=busername AND type='动态'")->select();
-          // print_r($mySave_shop);exit;
+           // print_r($mySave_good);exit;
         //动态发布时间来确定图片
         foreach ($mySave_shop as $key => $value) {
             $sendTime[$key]['time']=$mySave_shop[$key][sendtime];
@@ -203,7 +218,9 @@ class AccountController extends Controller {
          } 
          // print_r($images);exit;
          // print_r($mySave_shop);exit;
-        $this->assign('images',$images);
+        // $this->assign('images',$images);
+         // print_r($mySave_good);exit;
+
         $this->assign('collecttab_shop',$mySave_shop);
         $this->assign('collecttab_good',$mySave_good);       
         $this->display();
@@ -225,7 +242,9 @@ class AccountController extends Controller {
         $this->display();
     }
     public function submit_wish(){
-        
+        if (!isLogin()) { 
+            $this->error("请登录",U("Home/Account/login"));
+        }
         
             $Model=M('sellertab');
         $wishModel=M('wishtab');
@@ -243,7 +262,7 @@ class AccountController extends Controller {
         $data['wish_title']=I('post.title');
         // $data['images']=I('images');
 
-        $data['wtime']=date("Y-m-d h:i:sa");
+        $data['wtime']=date("Y-m-d h:i:s");
         $data['wish_type']="未采纳";
         // $data['wid']=4;
 
@@ -278,7 +297,74 @@ class AccountController extends Controller {
        
 }
     public function myYHQ(){
-        $Model=M('');
+       
+        $couponModel=M('coupon');//买家优惠券表
+        $Model=M('sellertab');
+        $busername=$_SESSION['user']['busername'];
+        $coupon=$couponModel->where("'$busername'=busername")->field("start_time,end_time,price,subtraction")->select();
+        //print_r($coupon);exit;
+        // print_r($_POST['e']);exit;
+        $susername=$couponModel->where("'$busername'=busername")->field('susername')->select();
+        
+        foreach ($susername as $key => $value) {
+            $susername[$key]=$susername[$key]['susername'];
+        }
+        // print_r($susername);exit;
+        foreach ($susername as $key => $value) {
+             $name[$key]=$Model->where("'$susername[$key]'=susername")->field("shopname")->select();
+        }
+        foreach ($name as $key => $value) {
+           $name[$key]=$name[$key][0];
+        }
+        // print_r($name);exit;
+        foreach ($coupon as $key => $value) {
+            $coupon[$key]['shopname']=$name[$key]['shopname'];
+        }
+        // print_r($coupon);exit;
+        $this->assign('coupon',$coupon);
         $this->display();
+    }
+    public function YHQ(){
+         // echo $_POST['id'];
+        // $data=$_POST['coupon'];
+        // print_r($_POST);exit;
+        $i=0;
+        $data=$_POST['coupon'];
+        // print_r($_POST['coupon']);exit;
+        $Model=M('coupontab');//卖家优惠券表
+        $buyerModel=M('coupon');
+        $coupon=$Model->where("'$data'=coupon_num")->field('coupon_num')->select();
+        // print_r($coupon);exit;
+        foreach ($coupon as $key => $value) {
+            if ($coupon[$key]['coupon_num']==$data) {//查找是否存在这个兑换码
+                $i++;
+                $num=$data;
+            }
+        }
+        if ($i>0) {
+            $busername=$_SESSION['user']['busername'];
+            $da['busername']=$busername;
+            $da1=$Model->where("'$num'=coupon_num")->field('subtraction')->select();
+            $da['subtraction']=$da1[0]['subtraction'];
+            // print_r($da['subtraction']);exit;
+            $da2=$Model->where("'$num'=coupon_num")->field('start_time')->select();
+            $da['start_time']=$da2[0]['start_time'];
+            // print_r($da['start_time']);exit;
+            $da3=$Model->where("'$num'=coupon_num")->field('end_time')->select();
+            $da['end_time']=$da3[0]['end_time'];
+            $da4=$Model->where("'$num'=coupon_num")->field('price')->select();
+            $da['price']=$da4[0]['price'];
+            $da5=$Model->where("'$num'=coupon_num")->field('susername')->select();
+            $da['susername']=$da5[0]['susername'];
+            // print_r($da);exit;
+            if ($buyerModel->add($da)) {
+            $this->success('兑换成功',U('Account/myYHQ'));
+            }
+        }
+        else{
+            $this->error('兑换失败');
+        }
+        
+
     }
 }

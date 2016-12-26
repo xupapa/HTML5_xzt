@@ -19,7 +19,7 @@
 			$Page->setConfig('prev','上一页');
 			$Page->setConfig('next','下一页');
 			$show=$Page->show();
-			$data=$couponModel->where("susername='$susername'")->page($_GET['p'].',5')->select();
+			$data=$couponModel->where("susername='$susername'")->limit($Page->firstRow.','.$Page->listRows)->select();
 			$this->assign("coupontab",$data);
 			$this->assign('pages',$show);
 			$this->display();
@@ -82,7 +82,7 @@
 			$count=$couponModel->where("susername='$susername'and busername is not null")->count();
 			$Page=new\Think\Page($count,5);
 			$show=$Page->show();
-			$data=$couponModel->where("susername='$susername'and busername is not null")->page($_GET['p'].',5')->select();
+			$data=$couponModel->where("susername='$susername'and busername is not null")->limit($Page->firstRow.','.$Page->listRows)->select();
 			$this->assign("coupon",$data);
 			$this->assign('pages',$show);
 			$this->display();
@@ -114,7 +114,7 @@
 			$conditon['id']=array('in',$getid);
 			if($couponModel->where($conditon)->delete())
 			{
-				$this->success("成功删除!",U("Admin/Coupon/allCoupon/p/1"));
+				$this->success("成功删除!",U("Admin/Coupon/allCoupon"));
 			}else
 			{
 				$this->error('删除失败!');

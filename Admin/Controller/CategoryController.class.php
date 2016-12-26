@@ -22,7 +22,7 @@
 			$Page->setConfig('prev','上一页');
 			$Page->setConfig('next','下一页');
 			$show=$Page->show();
-			$data=$categoryModel->where("sid=$sid")->page($_GET['p'].',5')->select();
+			$data=$categoryModel->where("sid=$sid")->limit($Page->firstRow.','.$Page->listRows)->select();
 			$this->assign('pages',$show);
 			$this->assign("category",$data);
 
@@ -31,12 +31,22 @@
 		}
 		public function category_edit()
 		{
-			$pcname=I("pcname");
-			dump($pcname);
-			/*$id=I("id");
+			$susername=$_SESSION['susername'];
+			$sellerModel=M("sellertab");
+			$sellerdata=$sellerModel->query("select sid from sellertab where susername='$susername'");
+			$sid=$sellerdata[0]['sid'];
+			$pcid=I("pcid");
 			$categoryModel=M("product_category");
-			$data=$categoryModel->find($id);
-			$this->assign("category",$data);*/
+			$data=$categoryModel->create();
+			$data['sid']=$sid;
+			if($categoryModel->where("pcid ='$pcid'")->save($data))
+			{
+				$this->success("修改成功",U("allCategory"));
+			}
+			else
+			{
+				$this->error("修改失败");
+			}
 		}
 		public function delete()
 		{
@@ -65,10 +75,28 @@
 			$conditon['pcid']=array('in',$getid);
 			if($categoryModel->where($conditon)->delete())
 			{
-				$this->success("成功删除!",U("Admin/Category/allCategory/p/1"));
+				$this->success("成功删除!",U("Admin/Category/allCategory"));
 			}else
 			{
 				$this->error('删除失败!');
+			}
+		}
+		public function category_add()
+		{
+			$susername=$_SESSION['susername'];
+			$sellerModel=M("sellertab");
+			$sellerdata=$sellerModel->query("select sid from sellertab where susername='$susername'");
+			$sid=$sellerdata[0]['sid'];
+			$categoryModel=M("product_category");
+			$data=$categoryModel->create();
+			$data['sid']=$sid;
+			if($categoryModel->add($data))
+			{
+				$this->success("成功添加!",U("Admin/Category/allCategory"));
+			}
+			else
+			{
+				$this->error('添加失败!');
 			}
 		}
 	}

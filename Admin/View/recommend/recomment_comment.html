@@ -1,25 +1,12 @@
-
+<layout name="layout"/>
     <!--/sidebar-->
     <div class="main-wrap">
 
         <div class="crumb-wrap">
-            <div class="crumb-list"><i class="icon-font"></i><a href="index.html">首页</a><span class="crumb-step">&gt;</span><span class="crumb-name">动态管理</span><span class="crumb-step">&gt;</span><span>动态评论</span></div>
-        </div>
-        <div class="search-wrap">
-            <div class="search-content">
-                <form action="/jscss/admin/design/index" method="post">
-                </form>
-            </div>
+            <div class="crumb-list"><i class="icon-font"></i><a href="__MODULE__/Index/index.html">首页</a><span class="crumb-step">&gt;</span><span class="crumb-name">动态管理</span><span class="crumb-step">&gt;</span><span>动态评论</span></div>
         </div>
         <div class="result-wrap">
             <form name="myform" id="myform" method="post">
-                <table class="search-tab">
-                    <tr>
-                        <th width="70">关键字:</th>
-                        <td><input class="common-text" placeholder="关键字" name="keywords" value="" id="" type="text"></td>
-                        <td><input class="btn btn-primary btn2" name="sub" value="查询" type="submit"></td>
-                    </tr>
-                </table>
                 <div class="result-content">
                     <table class="result-tab" width="100%">
                         <tr>
@@ -35,7 +22,7 @@
                         <volist name="news_comment" id="nc">
                             <tr>
                                 <td>{$nc.busername}</td>
-                                <td>{$nc.title}</td>
+                                <td><a class="link-reply" href="comment_view/id/{$nc.rfcid}">{$nc.title}</a></td>
                                 <td>{$nc.user_content}</td>
                                 <td>{$nc.good_num}</td>
                                 <td>{$nc.bad_num}</td>

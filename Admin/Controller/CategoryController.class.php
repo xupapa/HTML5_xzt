@@ -7,7 +7,8 @@
 			parent::__construct();
 			if(!isLogin())
 			{
-				$this->error("请先登录",U("Admin/login"));
+				$url=U("Admin/Admin/login");
+           		echo "<script> alert('请先登录！');parent.location.href='$url'; </script>";
 			}
 		}
 		public function allCategory()
@@ -39,14 +40,34 @@
 			$categoryModel=M("product_category");
 			$data=$categoryModel->create();
 			$data['sid']=$sid;
-			if($categoryModel->where("pcid ='$pcid'")->save($data))
+			if($data['pcname']==NULL)
 			{
-				$this->success("修改成功",U("allCategory"));
+				echo <<<STR
+			                <script>
+			                alert("请输入类型！");
+			                window.history.go(-1);
+			                </script>
+STR;
+
 			}
 			else
 			{
-				$this->error("修改失败");
+				if($categoryModel->where("pcid ='$pcid'")->save($data))
+				{
+					$url=U("Admin/Category/allCategory");
+		           	echo "<script> alert('修改成功！');parent.location.href='$url'; </script>";
+				}
+				else
+				{
+					echo <<<STR
+				                <script>
+				                alert("修改失败！");
+				                window.history.go(-1);
+				                </script>
+STR;
+				}
 			}
+			
 		}
 		public function delete()
 		{
@@ -54,12 +75,19 @@
 			$categoryModel=M("product_category");
 			if($categoryModel->where("pcid=$id")->delete())
 			{
-				$this->success("删除成功");
+				$url=U("Admin/Category/allCategory");
+	           	echo "<script> alert('删除成功！');parent.location.href='$url'; </script>";
 			}
 			else
 			{
-				$this->error("删除失败");
+				echo <<<STR
+			                <script>
+			                alert("删除失败！");
+			                window.history.go(-1);
+			                </script>
+STR;
 			}
+
 		}
 		public function destoryBatch()
 		{
@@ -75,10 +103,16 @@
 			$conditon['pcid']=array('in',$getid);
 			if($categoryModel->where($conditon)->delete())
 			{
-				$this->success("成功删除!",U("Admin/Category/allCategory"));
+				$url=U("Admin/Category/allCategory");
+	           	echo "<script> alert('删除成功！');parent.location.href='$url'; </script>";
 			}else
 			{
-				$this->error('删除失败!');
+				echo <<<STR
+			                <script>
+			                alert("删除失败！");
+			                window.history.go(-1);
+			                </script>
+STR;
 			}
 		}
 		public function category_add()
@@ -90,14 +124,34 @@
 			$categoryModel=M("product_category");
 			$data=$categoryModel->create();
 			$data['sid']=$sid;
-			if($categoryModel->add($data))
+			if($data['pcname']==NULL)
 			{
-				$this->success("成功添加!",U("Admin/Category/allCategory"));
+				echo <<<STR
+			                <script>
+			                alert("请输入类型！");
+			                window.history.go(-1);
+			                </script>
+STR;
+
 			}
 			else
 			{
-				$this->error('添加失败!');
+				if($categoryModel->add($data))
+				{
+					$url=U("Admin/Category/allCategory");
+	           		echo "<script> alert('数据添加成功！');parent.location.href='$url'; </script>";
+				}
+				else
+				{
+					echo <<<STR
+			                <script>
+			                alert("数据添加失败！");
+			                window.history.go(-1);
+			                </script>
+STR;
+				}
 			}
+			
 		}
 	}
 ?>

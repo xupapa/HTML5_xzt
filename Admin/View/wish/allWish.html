@@ -19,12 +19,12 @@
                         <volist name="wishtab" id="w">
                             <tr>
                                 <td>{$w.busername}</td>
-                                <td><a class="link-update" href="wish_view/id/{$w.wid}">{$w.wish_title}</a></td>
+                                <td><a class="link-update" href="{:U('Admin/Wish/wish_view')}/id/{$w.wid}">{$w.wish_title}</a></td>
                                 <td>{$w.wish_content}</td>
                                 <td>{$w.wish_type}</td>
                                 <td>
-                                    <a class="link-update" href="adopt/id/{$w.wid}">采纳</a>&nbsp;
-                                    <a class="link-update" href="wish_view/id/{$w.wid}">查看</a>
+                                    <a class="link-update" href="{:U('Admin/Wish/adopt')}/id/{$w.wid}">采纳</a>&nbsp;
+                                    <a class="link-update" href="{:U('Admin/Wish/wish_view')}/id/{$w.wid}">查看</a>
                                 </td>
                                     
                             </tr>

@@ -7,7 +7,8 @@
 			parent::__construct();
 			if(!isLogin())
 			{
-				$this->error("请先登录",U("Admin/login"));
+				$url=U("Admin/Admin/login");
+           		echo "<script> alert('请先登录！');parent.location.href='$url'; </script>";
 			}
 		}
 		public function shopComment()

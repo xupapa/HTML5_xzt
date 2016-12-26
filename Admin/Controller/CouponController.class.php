@@ -7,7 +7,8 @@
 			parent::__construct();
 			if(!isLogin())
 			{
-				$this->error("请先登录",U("Admin/login"));
+				$url=U("Admin/Admin/login");
+           		echo "<script> alert('请先登录！');parent.location.href='$url'; </script>";
 			}
 		}
 		public function allCoupon()
@@ -30,16 +31,83 @@
 			{
 				$id=I("id");
 				$couponModel=M("coupontab");
+
 				if($couponModel->create())
 				{
-					if($couponModel->where("id='$id'")->save())
+					$data=$couponModel->create();
+
+					if($data['coupon_num']==null)
 					{
-						$this->success("修改成功！",U("allCoupon"));
+						echo <<<STR
+			                <script>
+			                alert("请输入编号");
+			                window.history.go(-1);
+			                </script>
+STR;
 					}
-					else
+					else if($data['price']==null)
 					{
-						$this->error("修改失败！");
+						echo <<<STR
+			                <script>
+			                alert("请输入使用条件");
+			                window.history.go(-1);
+			                </script>
+STR;
 					}
+					else if($data['subtraction']==null)
+					{
+						echo <<<STR
+			                <script>
+			                alert("请输入减少金额");
+			                window.history.go(-1);
+			                </script>
+STR;
+					}
+					else if($data['start_time']==null)
+					{
+						echo <<<STR
+			                <script>
+			                alert("请输入开始时间");
+			                window.history.go(-1);
+			                </script>
+STR;
+					}
+					else if($data['end_time']==null)
+					{
+						echo <<<STR
+			                <script>
+			                alert("请输入终止时间");
+			                window.history.go(-1);
+			                </script>
+STR;
+					}
+					else if($data['num']==null)
+					{
+						echo <<<STR
+			                <script>
+			                alert("请输入优惠券数量");
+			                window.history.go(-1);
+			                </script>
+STR;
+					}
+					else{
+						if($couponModel->where("id='$id'")->save())
+						{
+							$url=U("allCoupon");
+		           			echo "<script> alert('修改成功！');parent.location.href='$url'; </script>";
+						}
+						else
+						{
+							echo <<<STR
+				                <script>
+				                alert("修改失败！");
+				                window.history.go(-1);
+				                </script>
+STR;
+						}
+					}
+					
+					
 				}
 			}
 			else
@@ -59,15 +127,81 @@
 				$couponModel=M("coupontab");
 				$susername=$_SESSION['susername'];
 				$data=$couponModel->create();
-				$data['susername']=$susername;
-				if($couponModel->add($data))
-				{
-					$this->success("添加成功",U("allCoupon"));
-				}
+				
+				if($data['coupon_num']==null)
+					{
+						echo <<<STR
+			                <script>
+			                alert("请输入编号");
+			                window.history.go(-1);
+			                </script>
+STR;
+					}
+					else if($data['price']==null)
+					{
+						echo <<<STR
+			                <script>
+			                alert("请输入使用条件");
+			                window.history.go(-1);
+			                </script>
+STR;
+					}
+					else if($data['subtraction']==null)
+					{
+						echo <<<STR
+			                <script>
+			                alert("请输入减少金额");
+			                window.history.go(-1);
+			                </script>
+STR;
+					}
+					else if($data['start_time']==null)
+					{
+						echo <<<STR
+			                <script>
+			                alert("请输入开始时间");
+			                window.history.go(-1);
+			                </script>
+STR;
+					}
+					else if($data['end_time']==null)
+					{
+						echo <<<STR
+			                <script>
+			                alert("请输入终止时间");
+			                window.history.go(-1);
+			                </script>
+STR;
+					}
+					else if($data['num']==null)
+					{
+						echo <<<STR
+			                <script>
+			                alert("请输入优惠券数量");
+			                window.history.go(-1);
+			                </script>
+STR;
+					}
 				else
 				{
-					$this->error("添加失败");
+					$data['susername']=$susername;
+					if($couponModel->add($data))
+					{
+						$url=U("allCoupon");
+	           			echo "<script> alert('添加成功！');parent.location.href='$url'; </script>";
+						
+					}
+					else
+					{
+						echo <<<STR
+			                <script>
+			                alert("添加失败！");
+			                window.history.go(-1);
+			                </script>
+STR;
+					}
 				}
+				
 			}
 			else
 			{
@@ -93,11 +227,17 @@
 			$couponModel=M("coupontab");
 			if($couponModel->where("id='$id'")->delete())
 			{
-				$this->success("删除成功");
+				$url=U("allCoupon");
+	           	echo "<script> alert('删除成功！');parent.location.href='$url'; </script>";
 			}
 			else
 			{
-				$this->error("删除失败");
+				echo <<<STR
+			                <script>
+			                alert("删除失败！");
+			                window.history.go(-1);
+			                </script>
+STR;
 			}
 		}
 		public function destoryBatch()
@@ -114,10 +254,16 @@
 			$conditon['id']=array('in',$getid);
 			if($couponModel->where($conditon)->delete())
 			{
-				$this->success("成功删除!",U("Admin/Coupon/allCoupon"));
+				$url=U("allCoupon");
+	           	echo "<script> alert('删除成功！');parent.location.href='$url'; </script>";
 			}else
 			{
-				$this->error('删除失败!');
+				echo <<<STR
+			                <script>
+			                alert("删除失败！");
+			                window.history.go(-1);
+			                </script>
+STR;
 			}
 		}
 

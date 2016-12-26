@@ -7,7 +7,8 @@
 			parent::__construct();
 			if(!isLogin())
 			{
-				$this->error("请先登录",U("Admin/login"));
+				$url=U("Admin/Admin/login");
+           		echo "<script> alert('请先登录！');parent.location.href='$url'; </script>";
 			}
 		}
 		public function shop_news()
@@ -32,20 +33,47 @@
 
 			$shopModel=M("sellertab");
 			$data=$shopModel->create();
-
+			$susername=$_SESSION['susername'];
 			if($info!=false)
 			{
 				$data['simage']=$info['simage']['savename'];
 			}
-			$susername=$_SESSION['susername'];
-			if($shopModel->where("susername='$susername'")->save($data))
+			if($data['shopname']==null)
 			{
-				$this->success("修改成功！",U("shop_news"));
+				echo <<<STR
+			                <script>
+			                alert("店铺名不得为空");
+			                window.history.go(-1);
+			                </script>
+STR;
+			}
+			else if($data['introduce']==null)
+			{
+				echo <<<STR
+			                <script>
+			                alert("店铺介绍不得为空");
+			                window.history.go(-1);
+			                </script>
+STR;
 			}
 			else
 			{
-				$this->error("未修改！");
+				if($shopModel->where("susername='$susername'")->save($data))
+				{
+					$url=U("shop_news");
+	           		echo "<script> alert('修改成功！');parent.location.href='$url'; </script>";
+				}
+				else
+				{
+					echo <<<STR
+			                <script>
+			                alert("未修改！");
+			                window.history.go(-1);
+			                </script>
+STR;
+				}
 			}
+			
 		}
 	}
 ?>

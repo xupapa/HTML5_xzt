@@ -15,7 +15,7 @@
             <form name="myform" id="myform" method="post" action="{:U('Admin/Coupon/destoryBatch')}">
                 <div class="result-title">
                     <div class="result-list">
-                        <a href="__MOUDLE__/Coupon/addCoupon.html"><i class="icon-font"></i>新增优惠券</a>
+                        <a href="__MODULE__/Coupon/addCoupon.html"><i class="icon-font"></i>新增优惠券</a>
                         <a id="batchDel" href="javascript:void(0)" ><i class="icon-font"></i>批量删除</a>
                     </div>
                 </div>
@@ -41,8 +41,8 @@
                             <td>{$c.end_time}</td>
                             <td>{$c.num}</td>
                             <td>
-                                <a class="link-update" href="coupon_edit/id/{$c.id}">修改</a>&nbsp;&nbsp;
-                                <a class="link-del" href="delete/id/{$c.id}">删除</a>
+                                <a class="link-update" href="{:U('Admin/Coupon/coupon_edit')}/id/{$c.id}">修改</a>&nbsp;&nbsp;
+                                <a class="link-del" href="{:U('Admin/Coupon/delete')}/id/{$c.id}">删除</a>
                             </td>
                         </tr>
                     </volist>

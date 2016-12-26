@@ -7,7 +7,8 @@
 			parent::__construct();
 			if(!isLogin())
 			{
-				$this->error("请先登录",U("Admin/login"));
+				$url=U("Admin/Admin/login");
+           		echo "<script> alert('请先登录！');parent.location.href='$url'; </script>";
 			}
 		}
 		public function adopt()
@@ -30,7 +31,8 @@
 				$wishModel->wish_type='已采纳';
 				if($wishModel->where("susername='$susername'and wid='$wid'")->save()&&$buserModel->where("busername='$busername'")->save())
 				{
-					$this->success("成功采纳",U("allWish"));
+					$url=U("allWish");
+	           		echo "<script> alert('成功采纳！');parent.location.href='$url'; </script>";
 				}
 			}
 		}

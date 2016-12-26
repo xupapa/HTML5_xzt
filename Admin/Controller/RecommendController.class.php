@@ -7,7 +7,8 @@
 			parent::__construct();
 			if(!isLogin())
 			{
-				$this->error("请先登录",U("Admin/login"));
+				$url=U("Admin/Admin/login");
+           		echo "<script> alert('请先登录！');parent.location.href='$url'; </script>";
 			}
 		}
 		public function allRecommend()
@@ -56,14 +57,42 @@
 				$susername=$_SESSION['susername'];
 				$data['susername']=$susername;
 				$rid=I("rid");
-				if($newsModel->where("rid='$rid'")->save($data))
+				if($data['title']==null)
 				{
-					$this->success("修改成功！",U("allRecommend"));
+					echo <<<STR
+			                <script>
+			                alert("标题不得为空");
+			                window.history.go(-1);
+			                </script>
+STR;
+				}
+				else if($data['content']==null)
+				{
+					echo <<<STR
+			                <script>
+			                alert("内容不得为空");
+			                window.history.go(-1);
+			                </script>
+STR;
 				}
 				else
 				{
-					$this->error('更新失败');
+					if($newsModel->where("rid='$rid'")->save($data))
+					{
+						$url=U("allRecommend");
+	           			echo "<script> alert('修改成功！');parent.location.href='$url'; </script>";
+					}
+					else
+					{
+						echo <<<STR
+			                <script>
+			                alert("更新失败！");
+			                window.history.go(-1);
+			                </script>
+STR;
+					}
 				}
+				
 
  			}
  			else
@@ -80,6 +109,15 @@
 		{
 			if(IS_POST)
 			{
+				$newsModel=M("recommendtab_food");
+				$data=$newsModel->create();
+				$data['time']=date('Y-m-d h:i:s',time());
+				$data['small_img']=$info['small']['savename'];
+				$data['images']=$info['images']['savename'];
+
+				$susername=$_SESSION['susername'];
+				$data['susername']=$susername;
+
 				$upload = new \Think\Upload();
 				$upload->maxSize=3145728 ;
 				$upload->exts=array('jpg', 'gif', 'png', 'jpeg');
@@ -90,28 +128,58 @@
 				$info=$upload->upload();
 				if($info['small_img']==NULL)
 				{
-					$this->error("缩略图不得为空");
+					echo <<<STR
+			                <script>
+			                alert("缩略图不得为空");
+			                window.history.go(-1);
+			                </script>
+STR;
 				}
-				if($info['images']==NULL)
+				else if($info['images']==NULL)
 				{
-					$this->error("高清图不得为空");
+					echo <<<STR
+			                <script>
+			                alert("高清图不得为空");
+			                window.history.go(-1);
+			                </script>
+STR;
 				}
-				$newsModel=M("recommendtab_food");
-				$data=$newsModel->create();
-				$data['time']=date('Y-m-d h:i:s',time());
-				$data['small_img']=$info['small']['savename'];
-				$data['images']=$info['images']['savename'];
-
-				$susername=$_SESSION['susername'];
-				$data['susername']=$susername;
-				if($newsModel->add($data))
+				else if($data['title']==null)
 				{
-					$this->success('数据添加成功',U("allRecommend"));
+					echo <<<STR
+			                <script>
+			                alert("标题不得为空");
+			                window.history.go(-1);
+			                </script>
+STR;
+				}
+				else if($data['content']==null)
+				{
+					echo <<<STR
+			                <script>
+			                alert("内容不得为空");
+			                window.history.go(-1);
+			                </script>
+STR;
 				}
 				else
 				{
-					$this->error('添加失败');
+					if($newsModel->add($data))
+				{
+					$url=U("allRecommend");
+	           		echo "<script> alert('数据添加成功！');parent.location.href='$url'; </script>";
 				}
+				else
+				{
+					echo <<<STR
+			                <script>
+			                alert("添加失败！");
+			                window.history.go(-1);
+			                </script>
+STR;
+				}
+				}
+				
 
 			}	
 			else
@@ -140,11 +208,13 @@
 			$newsModel=M("recommendtab_food");
 			if($newsModel->where("rid=$rid")->delete())
 			{
-				$this->success("删除成功");
+				$url=U("allRecommend");
+           		echo "<script> alert('删除成功！');parent.location.href='$url'; </script>";
 			}
 			else
 			{
-				$this->error("删除失败");
+				$url=U("allRecommend");
+           		echo "<script> alert('删除失败！');parent.location.href='$url'; </script>";
 			}
 
 		}
@@ -178,10 +248,12 @@
 			$conditon['rid']=array('in',$getrid);
 			if($newsModel->where($conditon)->delete())
 			{
-				$this->success("成功删除!",U("Admin/Recommend/allRecommend"));
+				$url=U("Admin/Recommend/allRecommend");
+           		echo "<script> alert('成功删除！');parent.location.href='$url'; </script>";
 			}else
 			{
-				$this->error('删除失败!');
+				$url=U("allRecommend");
+           		echo "<script> alert('删除失败！');parent.location.href='$url'; </script>";
 			}
 		}
 	}

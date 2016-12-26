@@ -7,7 +7,8 @@
 			parent::__construct();
 			if(!isLogin())
 			{
-				$this->error("请先登录",U("Admin/login"));
+				$url=U("Admin/Admin/login");
+           		echo "<script> alert('请先登录！');parent.location.href='$url'; </script>";
 			}
 		}
 		public function allGoods()
@@ -131,22 +132,83 @@
 					{
 						$data['images']=$info['images']['savename'];
 					}
-					
 				}
-				
-				
+			if($data['pname']==NULL)
+			{
+				echo <<<STR
+			                <script>
+			                alert("商品名称不得为空");
+			                window.history.go(-1);
+			                </script>
+STR;
+			}
+			else if($data['pcid']==NULL)
+			{
+				echo <<<STR
+			                <script>
+			                alert("请选择商品分类");
+			                window.history.go(-1);
+			                </script>
+STR;
+			}
+			else if($data['price']==NULL)
+			{
+				echo <<<STR
+			                <script>
+			                alert("请输入价格");
+			                window.history.go(-1);
+			                </script>
+STR;
+			}
+			else if($data['pnum']==NULL)
+			{
+				echo <<<STR
+			                <script>
+			                alert("请输入商品数量");
+			                window.history.go(-1);
+			                </script>
+STR;
+			}
+			else if($data['pintroduce']==NULL)
+			{
+				echo <<<STR
+			                <script>
+			                alert("请输入商品简介");
+			                window.history.go(-1);
+			                </script>
+STR;
+			}
+			else if($data['introduce']==NUll)
+			{
+				echo <<<STR
+			                <script>
+			                alert("请输入商品介绍");
+			                window.history.go(-1);
+			                </script>
+STR;
+			}
+			else
+			{
 				$data['sid']=$sid;
 				$data['publishtime']=date('Y-m-d h:i:s',time());
 				$pid=I("pid");
 				if($goodsModel->where("pid=$pid")->save($data))
 				{
 					
-					$this->success("修改成功！",U("allGoods"));
+					$url=U("allGoods");
+	           		echo "<script> alert('修改成功！');parent.location.href='$url'; </script>";
 				}
 				else
 				{
-					$this->error('更新失败');
+					echo <<<STR
+			                <script>
+			                alert("更新失败！");
+			                window.history.go(-1);
+			                </script>
+STR;
 				}
+			}
+				
 			}
 			else
 			{
@@ -168,11 +230,18 @@
 			$goodsModel=D("productstab");
 			if($goodsModel->where("pid=$pid")->delete())
 			{
-				$this->success("删除成功");
+				$url=U("allGoods");
+	           	echo "<script> alert('删除成功！');parent.location.href='$url'; </script>";
+				//$this->success("删除成功");
 			}
 			else
 			{
-				$this->error("删除失败");
+				echo <<<STR
+			                <script>
+			                alert("数据添加失败！");
+			                window.history.go(-1);
+			                </script>
+STR;
 			}
 
 		}
@@ -192,6 +261,13 @@
 		}
 		public function store()
 		{
+			$susername=$_SESSION['susername'];
+			$sellerModel=M("sellertab");
+			$sellerdata=$sellerModel->query("select sid from sellertab where susername='$susername'");
+			$sid=$sellerdata[0]['sid'];
+			$goodsModel=M("productstab");
+			$data=$goodsModel->create();
+
 			$upload = new \Think\Upload();
 			$upload->maxSize=3145728 ;
 			$upload->exts=array('jpg', 'gif', 'png', 'jpeg');
@@ -202,31 +278,102 @@
 			$info=$upload->upload();
 			if($info['pimage']==NULL)
 			{
-				$this->error("缩略图不得为空");
+				echo <<<STR
+			                <script>
+			                alert("缩略图不得为空");
+			                window.history.go(-1);
+			                </script>
+STR;
 			}
-			if($info['images']==NULL)
+			else if($info['images']==NULL)
 			{
-				$this->error("高清图不得为空");
+				echo <<<STR
+			                <script>
+			                alert("高清图不得为空");
+			                window.history.go(-1);
+			                </script>
+STR;
 			}
-			$susername=$_SESSION['susername'];
-			$sellerModel=M("sellertab");
-			$sellerdata=$sellerModel->query("select sid from sellertab where susername='$susername'");
-			$sid=$sellerdata[0]['sid'];
+			
+			else if($data['pname']==NULL)
+			{
+				echo <<<STR
+			                <script>
+			                alert("商品名称不得为空");
+			                window.history.go(-1);
+			                </script>
+STR;
+			}
+			else if($data['pcid']==NULL)
+			{
+				echo <<<STR
+			                <script>
+			                alert("请选择商品分类");
+			                window.history.go(-1);
+			                </script>
+STR;
+			}
+			else if($data['price']==NULL)
+			{
+				echo <<<STR
+			                <script>
+			                alert("请输入价格");
+			                window.history.go(-1);
+			                </script>
+STR;
+			}
+			else if($data['pnum']==NULL)
+			{
+				echo <<<STR
+			                <script>
+			                alert("请输入商品数量");
+			                window.history.go(-1);
+			                </script>
+STR;
+			}
+			else if($data['pintroduce']==NULL)
+			{
+				echo <<<STR
+			                <script>
+			                alert("请输入商品简介");
+			                window.history.go(-1);
+			                </script>
+STR;
+			}
+			else if($data['introduce']==NUll)
+			{
+				echo <<<STR
+			                <script>
+			                alert("请输入商品介绍");
+			                window.history.go(-1);
+			                </script>
+STR;
+			}
 
-			$goodsModel=M("productstab");
-			$data=$goodsModel->create();
-			$data['sid']=$sid;
-			$data['publishtime']=date('Y-m-d h:i:s',time());
-			$data['pimage']=$info['pimage']['savename'];
-			$data['images']=$info['images']['savename'];
-			if($goodsModel->add($data))
-			{
-				$this->success('数据添加成功',U("allGoods"));
-			}
 			else
 			{
-				$this->error('添加失败');
+				$data['sid']=$sid;
+				$data['publishtime']=date('Y-m-d h:i:s',time());
+				$data['pimage']=$info['pimage']['savename'];
+				$data['images']=$info['images']['savename'];
+				if($goodsModel->add($data))
+				{
+					$url=U("allGoods");
+	           		echo "<script> alert('数据添加成功！');parent.location.href='$url'; </script>";
+					
+				}
+				else
+				{
+
+					echo <<<STR
+			                <script>
+			                alert("数据添加失败！");
+			                window.history.go(-1);
+			                </script>
+STR;
+				}
 			}
+			
 			
 		}
 		public function destoryBatch()
@@ -243,16 +390,17 @@
 			$conditon['pid']=array('in',$getpid);
 			if($goodsModel->where($conditon)->delete())
 			{
-				$this->success("成功删除!",U("Admin/Goods/allGoods/p/1"));
+				$url=U("allGoods");
+	           	echo "<script> alert('删除成功！');parent.location.href='$url'; </script>";
 			}else
 			{
-				$this->error('删除失败!');
+				echo <<<STR
+			                <script>
+			                alert("数据添加失败！");
+			                window.history.go(-1);
+			                </script>
+STR;
 			}
-		}
-		public function select()
-		{
-			$pcid=$_POST['myselect'];
-			
 		}
 		
 

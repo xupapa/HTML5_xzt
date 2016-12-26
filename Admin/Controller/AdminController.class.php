@@ -23,11 +23,17 @@ class AdminController extends Controller{
 						$shopname=$data['shopname'];
 						session("shopname",$shopname);
 						session("susername",I("post.username"));
-						$this->success("登录成功！",U("Index/index"));
+						$url=U("Admin/Index/index");
+		           		echo "<script> alert('登录成功！');parent.location.href='$url'; </script>";
 					}
 					else
 					{
-						$this->error("用户名或密码不正确");
+						echo <<<STR
+				                <script>
+				                alert("用户名或密码不正确！");
+				                window.history.go(-1);
+				                </script>
+STR;
 					}
 				}
 				else if($astype==2)
@@ -41,17 +47,28 @@ class AdminController extends Controller{
 					if($result>0)
 					{
 						session("aname",I("post.username"));
-						$this->success("登录成功！",U("SuperIndex/superIndex"));
+						$url=U("Admin/SuperIndex/superIndex");
+		           		echo "<script> alert('登录成功！');parent.location.href='$url'; </script>";
 					}
 					else
 					{
-						$this->error("用户名或密码不正确");
+						echo <<<STR
+				                <script>
+				                alert("用户名或密码不正确！");
+				                window.history.go(-1);
+				                </script>
+STR;
 					}
 				}
 			}
 			else
 			{
-				$this->error("用户类型未选择");
+				echo <<<STR
+				                <script>
+				                alert("用户类型未选择！");
+				                window.history.go(-1);
+				                </script>
+STR;
 			}
 			
 		}
@@ -66,7 +83,8 @@ class AdminController extends Controller{
 	{
 		if(session_destroy())
 		{
-			$this->success("退出成功！",U("Admin/login"));
+			$url=U("Admin/Admin/login");
+       		echo "<script> alert('退出成功！');parent.location.href='$url'; </script>";
 		}
 
 	}
@@ -83,13 +101,19 @@ class AdminController extends Controller{
 					$sid=I("sid");
 					if($adminModel->where("sid=$sid")->save())
 					{
-						$this->success("修改成功!",U("Admin/Index/index"));
+						$url=U("Admin/Index/index");
+       					echo "<script> alert('修改成功！');parent.location.href='$url'; </script>";
 					}
 				}
 			}
 			else
 			{
-				$this->error("密码与确认密码不一致");
+				echo <<<STR
+				                <script>
+				                alert("密码与确认密码不一致！");
+				                window.history.go(-1);
+				                </script>
+STR;
 			}
 		}
 		else

@@ -22,12 +22,12 @@
                         <volist name="news_comment" id="nc">
                             <tr>
                                 <td>{$nc.busername}</td>
-                                <td><a class="link-reply" href="comment_view/id/{$nc.rfcid}">{$nc.title}</a></td>
+                                <td><a class="link-reply" href="{:U('Admin/Recomment/comment_view')}/id/{$nc.rfcid}">{$nc.title}</a></td>
                                 <td>{$nc.user_content}</td>
                                 <td>{$nc.good_num}</td>
                                 <td>{$nc.bad_num}</td>
                                 <td>{$nc.user_time}</td>
-                                <td><a class="link-reply" href="comment_view/id/{$nc.rfcid}">查看</a></td>
+                                <td><a class="link-reply" href="{:U('Admin/Recomment/comment_view')}/id/{$nc.rfcid}">查看</a></td>
                             </tr>
                         </volist>
                         </table>

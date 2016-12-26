@@ -33,9 +33,9 @@
                             <td><a href="view/id/{$nt.rid}">{$nt.title}</a></td>
                             <td>{$nt.time}</td>
                             <td>
-                                <a class="link-update" href="view/id/{$nt.rid}">查看</a>&nbsp;&nbsp;
-                                <a class="link-update" href="recommend_edit/id/{$nt.rid}">修改</a>&nbsp;&nbsp;
-                                <a class="link-del" href="delete/id/{$nt.rid}">删除</a>
+                                <a class="link-update" href="{:U('Admin/Recommend/view')}/id/{$nt.rid}">查看</a>&nbsp;&nbsp;
+                                <a class="link-update" href="{:U('Admin/Recommend/recommend_edit')}/id/{$nt.rid}">修改</a>&nbsp;&nbsp;
+                                <a class="link-del" href="{:U('Admin/Recommend/delete')}/id/{$nt.rid}">删除</a>
                             </td>
                         </tr>
                     </volist>

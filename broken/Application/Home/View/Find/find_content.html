@@ -54,9 +54,9 @@
         </article>
         <div class="am-topbar am-topbar-fixed-bottom" id="nav">
         <ul class="am-nav am-nav-pills am-nav-justify">
-          <li><a href="find_index.html"><i class="am-icon am-icon-diamond am-icon-md"></i><br>发现</a></li>
-          <li><a href="find_news.html"><i class="am-icon am-icon-comments-o am-icon-md"></i><br>消息</a></li>
-          <li><a href="{:U('Home/Account/me')}"><i class="am-icon am-icon-github-alt am-icon-md"></i><br>我</a></li>
+          <li rel="find_index.html"><a href="find_index.html"><i class="am-icon am-icon-diamond am-icon-md"></i><br>发现</a></li>
+          <li rel="find_news.html"><a href="find_news.html"><i class="am-icon am-icon-comments-o am-icon-md"></i><br>消息</a></li>
+          <li rel="{:U('Home/Account/me')}"><a href="{:U('Home/Account/me')}"><i class="am-icon am-icon-github-alt am-icon-md"></i><br>我</a></li>
         </ul>
         </div>
         <nav class="scrollspy-nav" data-am-scrollspynav="{offsetTop: 45}" data-am-sticky id="f_con_nav">
@@ -96,8 +96,8 @@
            </div>
            <footer class="am-comment-footer">
                <div class="am-comment-actions">
-                   <a class="am-btn am-round"><i class="am-icon-thumbs-up"><span class="am-badge am-round">11</span></i></a>
-                   <a class="am-btn am-round"><i class="am-icon-thumbs-down"><span class="am-badge am-round">5</span></i></a>
+                   <a data="{$vl.wcid}" href="javascript:void(0);" class="am-btn am-round good"><i class="am-icon-thumbs-up"><span class="am-badge am-round">{$vl[good_num]}</span></i></a>
+                   <a data="{$vl.wcid}" href="javascript:void(0);" class="am-btn am-round bad"><i class="am-icon-thumbs-down"><span class="am-badge am-round">{$vl[bad_num]}</span></i></a>
                    <a class="am-btn am-round"><i class="am-icon-share"></i></a>
                </div>
            </footer>
@@ -109,3 +109,67 @@
     </div>
 </body>
 </html>
+
+<script>
+  $(".good").on('click',function(){
+        //if($("#ids").val()!=''){
+        var Oa=$(this);
+        var id=Oa.attr('data');//获取id属性
+        var vl=Oa.find("span").text();
+            vl=parseInt(vl)+1;
+        $.post('__CONTROLLER__/zans_hits',{data:id},function(data){
+          if(data.status==1){ 
+                alert('感谢您的选择！');
+                Oa.find("span").text(vl);//页面元素加1
+            }else{
+                alert('失败');
+            }
+        },'json'
+            //alert(data);
+       ); 
+      //}else{
+       // window.location.href="__MODULE__/Admin/login";
+      //}
+    })
+
+  $(".bad").on('click',function(){
+        //if($("#ids").val()!=''){
+        var Oa=$(this);
+        var id=Oa.attr('data');//获取id属性
+        var vl=Oa.find("span").text();
+            vl=parseInt(vl)+1;
+        $.post('__CONTROLLER__/nozans_hits',{data:id},function(data){
+          if(data.status==1){ 
+                alert('感谢您的选择！');
+                Oa.find("span").text(vl);//页面元素加1
+            }else{
+                alert('失败');
+            }
+        },'json'
+            //alert(data);
+       ); 
+      //}else{
+      //  window.location.href="__MODULE__/Admin/login";
+      //}
+    })
+</script>
+
+<script>
+ $(function() {
+   var urlstr = location.href;
+   var urlstatus=false;
+   $('#nav li').each(function(){
+    if ((urlstr).indexOf($(this).attr('rel')) > -1&&$(this).attr('rel')!='') {
+      $(this).addClass('am-active'); 
+      urlstatus = true;
+    } 
+    else {
+      $(this).removeClass('am-active');
+    }
+    });
+    //保持状态
+    if (!urlstatus) {
+      $("#nav li").eq(0).addClass('am-active'); 
+    }
+  });
+ </script>

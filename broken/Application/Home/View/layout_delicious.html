@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="viewport"
+		  content="width=device-width, initial-scale=1">
+	
+
+	<!-- Set render engine for 360 browser -->
+	<meta name="renderer" content="webkit">
+
+	<!-- No Baidu Siteapp-->
+	<meta http-equiv="Cache-Control" content="no-siteapp"/>
+
+	<!-- Add to homescreen for Chrome on Android -->
+	<meta name="mobile-web-app-capable" content="yes">
+
+	<!-- Add to homescreen for Safari on iOS -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-title" content="Amaze UI"/>
+
+	<!-- Tile icon for Win8 (144x144 + tile color) -->
+	<meta name="msapplication-TileColor" content="#0e90d2">
+
+	<link rel="stylesheet" href="__PUBLIC__/home/css/amazeui.min.css">
+	<link rel="stylesheet" href="__PUBLIC__/home/css/app.css">
+	<link rel="stylesheet" href="__PUBLIC__/home/css/bottom.css"/>
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/home/css/food.css">
+	<script src="__PUBLIC__/home/js/jquery.min.js"></script>
+	<script src="__PUBLIC__/home/js/amazeui.min.js"></script>
+	<link rel="stylesheet" href="__PUBLIC__/home/css/nav.css"/>
+	<link rel="stylesheet" href="__PUBLIC__/home/css/delicious.css"/>
+</head>
+<body>
+<header class="am-topbar am-topbar-fixed-top">
+	<div>
+		<div class="am-g">
+			<div class="am-u-sm-2" id="sm2">
+				<a href="{:U('Home/Index/index')}" class="am-btn am-btn-lg">
+					<i class="am-icon-home am-icon-sm" id="icon"></i>
+				</a>
+			</div>
+			<div class="am-u-sm-7" id="sm7">
+				<a href="index.html" class="am-text-ir">logo</a>
+			</div>
+			<div class="am-u-sm-1" id="sm1"></div>
+			<div class="am-u-sm-2" id="smu2">
+				<a href="{:U('Home/Index/shop_search')}" class="am-btn am-btn-lg" >
+					<i class="am-icon-search am-icon-sm" id="icon"></i>
+				</a>
+			</div>
+		</div>
+	</div>
+</header>
+{__CONTENT__}
+<!--底部导航条-->
+<div class="am-topbar am-topbar-fixed-bottom" id="nav">
+	<ul class="am-nav am-nav-pills am-nav-justify">
+		<li rel="snacks.html"><a href="snacks.html"><i class="am-icon am-icon-paw am-icon-md"></i><br>小吃</a></li>
+		<li rel="drink.html"><a href="drink.html"><i class="am-icon am-icon-beer am-icon-md"></i><br>饮品</a></li>
+		<li rel="dessert.html"><a href="dessert.html"><i class="am-icon am-icon-bell-o am-icon-md"></i><br>甜品</a></li>
+		<li rel="fastfood.html"><a href="fastfood.html"><i class="am-icon am-icon-anchor am-icon-md"></i><br>快餐</a></li>
+	</ul>
+</div>
+
+<script>
+	$(function() {
+		var $slider = $('#demo-slider-0');
+		var counter = 0;
+		var getSlide = function() {
+			counter++;
+			return '<li><img src="http://s.amazeui.org/media/i/demos/bing-' +
+					(Math.floor(Math.random() * 4) + 1) + '.jpg" />' +
+					'<div class="am-slider-desc">动态插入的 slide ' + counter + '</div></li>';
+		};
+
+		$('.js-demo-slider-btn').on('click', function() {
+			var action = this.getAttribute('data-action');
+			if (action === 'add') {
+				$slider.flexslider('addSlide', getSlide());
+			} else {
+				var count = $slider.flexslider('count');
+				count > 1 && $slider.flexslider('removeSlide', $slider.flexslider('count') - 1);
+			}
+		});
+
+	});
+</script>
+
+<script>
+ $(function() {
+   var urlstr = location.href;
+   var urlstatus=false;
+   $('#nav li').each(function(){
+    if ((urlstr).indexOf($(this).attr('rel')) > -1&&$(this).attr('rel')!='') {
+      $(this).addClass('am-active'); 
+      urlstatus = true;
+    } 
+    else {
+      $(this).removeClass('am-active');
+    }
+    });
+    //保持状态
+    if (!urlstatus) {
+      $("#nav li").eq(0).addClass('am-active'); 
+    }
+  });
+ </script>
+</body>
+</html>

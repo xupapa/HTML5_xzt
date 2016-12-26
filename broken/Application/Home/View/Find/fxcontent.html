@@ -39,13 +39,21 @@
 							</div>
 							<div class="am-u-sm-8">
 							<form method="post" action="{:U('Home/Account/addSave_shop')}">
-								<input name="ids[]" value="{$recommendtab_food.rid}" type="hidden">
-								<a href="{:U('Home/Account/addSave_shop',array('susername'=>$recommendtab_food[susername],'title'=>$recommendtab_food[title]))}" class="am-btn am-btn-sm" id="save">
-									<i class="am-icon-heart"></i>收藏
-								</a>
-								<a href="{:U('Home/Find/find_comment')}/id/{$recommendtab_food[rid]}" class="am-btn am-btn-sm" id="comment">
-									<i class="am-icon-comments-o"></i>评论
-								</a>
+							<div class="am-g">
+									<div class="am-u-sm-4">
+										<input name="title" value="{$recommendtab_food.title}" type="hidden">
+										<input type="hidden" name="images" value="{$recommendtab_food.images}">
+										<small><input type="hidden" name="susername" value="{$recommendtab_food.susername}"></small>
+									</div>
+									<div class="am-u-sm=8">
+										<button type="submit" class="am-btn am-btn-sm" id="save" name="submit">
+											<i class="am-icon-heart"></i>收藏
+										</button>
+										<a href="{:U('Home/Find/find_comment')}/id/{$recommendtab_food[rid]}" class="am-btn am-btn-sm" id="comment">
+											<i class="am-icon-comments-o"></i>评论
+										</a>	
+									</div>	
+								</div>
 							</form>	
 							</div>
 						</div>
@@ -70,10 +78,29 @@
 
 		<div class="am-topbar am-topbar-fixed-bottom" id="nav" >
         <ul class="am-nav am-nav-pills am-nav-justify">
-          <li><a href="{:U('Home/Find/find_index')}"><i class="am-icon am-icon-diamond am-icon-md"></i><br>发现</a></li>
-          <li><a href="{:U('Home/Find/find_news')}"><i class="am-icon am-icon-shopping-cart am-icon-md"></i><br>购买</a></li>
-          <li><a href="{:U('Home/Account/me')}"><i class="am-icon am-icon-github-alt am-icon-md"></i><br>我</a></li>
+          <li rel="{:U('Home/Find/find_index')}"><a href="{:U('Home/Find/find_index')}"><i class="am-icon am-icon-diamond am-icon-md"></i><br>发现</a></li>
+          <li rel="{:U('Home/Find/find_news')}"><a href="{:U('Home/Find/find_news')}"><i class="am-icon am-icon-shopping-cart am-icon-md"></i><br>购买</a></li>
+          <li rel="{:U('Home/Account/me')}"><a href="{:U('Home/Account/me')}"><i class="am-icon am-icon-github-alt am-icon-md"></i><br>我</a></li>
         </ul>
     </div>
 </body>
 </html>
+<script>
+ $(function() {
+   var urlstr = location.href;
+   var urlstatus=false;
+   $('#nav li').each(function(){
+    if ((urlstr).indexOf($(this).attr('rel')) > -1&&$(this).attr('rel')!='') {
+      $(this).addClass('am-active'); 
+      urlstatus = true;
+    } 
+    else {
+      $(this).removeClass('am-active');
+    }
+    });
+    //保持状态
+    if (!urlstatus) {
+      $("#nav li").eq(0).addClass('am-active'); 
+    }
+  });
+ </script>

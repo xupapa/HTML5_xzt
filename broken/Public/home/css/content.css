@@ -10,7 +10,7 @@
 		}
 		#active1 img{
 			width:111%;
-			height: 120%;
+			height:120%;
 		}
 		#active2{
 			padding-left:0;
@@ -47,6 +47,9 @@
 			padding-top:4px;
 		}
 /*列表*/
+		#list{
+			margin-top:0%;
+		}
 		#list a{
 			color:black;
 			padding-top:0;
@@ -99,10 +102,9 @@
 			margin-top:-10px;
 		}
 		.am-panel-bd #badge{
-			float:left;
-			margin:6px 10px;
-			text-align:center;
-			padding:5px 10px;
+			margin-left:23px;
+			margin-top:2px;
+			margin-bottom:13px;
 		}
 		.clear{
 			clear:both;
@@ -130,5 +132,11 @@
 		}
 		#panel .am-u-sm-9 .am-progress{
 			 margin-bottom:0;
+		}
+		#progress-bar-1{
+			 background-color:#3CB371;
+		}
+		#progress-bar-2{
+			background-color:#FF82AB;
 		}
 		

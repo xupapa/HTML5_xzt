@@ -23,7 +23,7 @@
   <header class="am-topbar am-topbar-fixed-top">
     <div class="am-g">
       <div class="am-u-sm-2" id="sm2">
-        <a href="find_news.html" class="am-btn am-btn-lg">
+        <a href="{:U('Home/Account/me')}" class="am-btn am-btn-lg">
           <i class="am-icon-chevron-left" style="margin-top:3px;"></i>
         </a>
       </div>
@@ -38,70 +38,50 @@
   </header>
   <!-- 切换标签 -->
   <div data-am-widget="tabs" class="am-tabs am-tabs-d2" id="con_tab">
-      <!-- <ul class="am-tabs-nav am-cf">
+      <ul class="am-tabs-nav am-cf">
           <li class="am-active"><a href="[data-tab-panel-0]">商品评价</a></li>
-          <li class=""><a href="[data-tab-panel-1]">影评</a></li>
-      </ul> -->
+          <li class=""><a href="[data-tab-panel-1]">动态评论</a></li>
+      </ul>
       <div class="am-tabs-bd">
+        
           <div data-tab-panel-0 class="am-tab-panel am-active">
           <!-- 商品评价 -->
-            <div class="am-g" id="body">
-              <div class="am-u-sm-2" id="date">
-                <h3>13</h3>
-                <small>十一月</small>
-              </div>
-              <div class="am-u-sm-10" id="content_list">
-                <h4> 前尘往事成云烟</h4>
-                <p>消散在彼此眼前，就连说过了再见，也看不见你有些哀怨...</p>
-                <img src="__PUBLIC__/home/images/find_index/banner1.jpg" style="width:80%;height:80%;">
-               
-              </div>
+          <volist name="good" id="v">
+            <div class="am-g" id="body">   
+              <!-- <div class="am-u-sm-2" id="date">
+                <h3>{$v.pcomment_time}</h3>
+                
+              </div> -->
+              <div class="am-u-sm-12" id="content_list">
+                <a href="{:U('Home/Delicious/storelist')}/id/{$v.susername}">
+                <h4>商品名称：{$v[pname]}</h4>
+                <p>评价内容：{$v[pcomment_content]}</p>
+                <small>{$v.usertime}</small>
+                </a>
+              </div>  
             </div>
-
+            </volist>
           </div>
-        <!-- 影评 -->
-        <!-- <div data-tab-panel-1 class="am-tab-panel ">
-          <div class="am-g" id="body">
-              <div class="am-u-sm-2" id="date">
-                <h3>13</h3>
-                <small>十一月</small>
-              </div>
-              <div class="am-u-sm-10" id="content_list">
-                <h4> 前尘往事成云烟</h4>
-                <p>消散在彼此眼前，就连说过了再见，也看不见你有些哀怨...</p>
-                <img src="__PUBLIC__/home/images/find_comment/1.jpg">
-                <img src="__PUBLIC__/home/images/find_comment/2.jpg">
-                <img src="__PUBLIC__/home/images/find_comment/3.jpg">
-              </div>
+         
+      
+        <!-- 动态评论 -->
+        <div data-tab-panel-1 class="am-tab-panel ">
+         <volist name="find" id="vl">
+            <div class="am-g" id="body">   
+              <!-- <div class="am-u-sm-2" id="date">
+                <h3>{$v.pcomment_time}</h3>
+                
+              </div> -->
+              <div class="am-u-sm-12" id="content_list">
+               <!--  <a href="{:U('Home/Delicious/storelist')}/id/{$vl[susername]}"> -->
+                <h4>标题名称：{$vl[title]} {$vl[susername]}</h4>
+                <p>评价内容：{$vl[content]}</p>
+                <small>{$vl.user_time}</small>
+                <!-- </a> -->
+              </div>  
             </div>
-            
-            <div class="am-g" id="body">
-              <div class="am-u-sm-2" id="date">
-                <h3>11</h3>
-                <small>十月</small>
-              </div>
-              <div class="am-u-sm-10" id="content_list">
-                <h4> 前尘往事成云烟</h4>
-                <p>消散在彼此眼前，就连说过了再见，也看不见你有些哀怨...</p>
-                <img src="__PUBLIC__/home/images/find_comment/1.jpg">
-                <img src="__PUBLIC__/home/images/find_comment/2.jpg">
-                <img src="__PUBLIC__/home/images/find_comment/3.jpg">
-              </div>
-            </div>
-            <div class="am-g" id="body">
-              <div class="am-u-sm-2" id="date">
-                <h3>13</h3>
-                <small>九月</small>
-              </div>
-              <div class="am-u-sm-10" id="content_list">
-                <h4> 前尘往事成云烟</h4>
-                <p>消散在彼此眼前，就连说过了再见，也看不见你有些哀怨...</p>
-                <img src="__PUBLIC__/home/images/find_comment/1.jpg">
-                <img src="__PUBLIC__/home/images/find_comment/2.jpg">
-                <img src="__PUBLIC__/home/images/find_comment/3.jpg">
-              </div>
-            </div>
-        </div> -->
+            </volist>
+        </div>
       </div>
   </div>
 </body>

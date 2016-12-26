@@ -40,10 +40,10 @@
            <input name="id" value="{$vl.rid}" type="hidden">
             <div class="am-g">
                <div class="am-u-sm-9">
-                   <input type="text" class="am-form-field am-round" name="content" placeholder="请输入...">
+                   <input type="text" class="am-form-field am-round" name="content" placeholder="请输入..." id="name">
                </div>
                <div class="am-u-sm-3">
-                   <input class="am-btn am-round am-btn-default" type="submit" value="发送">
+                   <input class="am-btn am-round am-btn-default" type="submit" value="发送" onclick="winclose()">
                </div>
              </div>
            </form>
@@ -52,7 +52,7 @@
         <div id="nav">
           <ul class="am-nav am-nav-pills am-nav-justify">
             <li><a href="{:U('Home/Find/find_index')}">发现</a></li>
-          <li><a href="{:U('Home/Find/find_news')}">消息</a></li>
+          <li><a href="{:U('Home/Find/find_news')}">购买</a></li>
           <li><a href="{:U('Home/Account/me')}">我</a></li>
           </ul>
         </div>
@@ -79,8 +79,8 @@
            </div>
            <footer class="am-comment-footer">
                <div class="am-comment-actions">
-                   <a class="am-btn am-round"><i class="am-icon-thumbs-up"><span class="am-badge am-round">{$vl.good_num}</span></i></a>
-                   <a class="am-btn am-round"><i class="am-icon-thumbs-down"><span class="am-badge am-round">{$vl.bad_num}</span></i></a>
+                   <a data="{$vl.rfcid}" href="javascript:void(0);"class="am-btn am-round good"><i class="am-icon-thumbs-up"><span class="am-badge am-round">{$vl.good_num}</span></i></a>
+                   <a data="{$vl.rfcid}" href="javascript:void(0);" class="am-btn am-round bad"><i class="am-icon-thumbs-down"><span class="am-badge am-round">{$vl.bad_num}</span></i></a>
                    <a class="am-btn am-round"><i class="am-icon-share"></i></a>
                </div>
            </footer>
@@ -91,6 +91,75 @@
     </ul>
     </div>
     <div class="am-g"><p></p></div>
-     </volist>  
+    </volist>
+    <input id="ids" type="hidden" value="{$_SESSION['user']['busername']}">  
 </body>
 </html>
+<script>
+  $(".good").on('click',function(){
+        if($("#ids").val()!=''){
+        var Oa=$(this);
+        var id=Oa.attr('data');//获取id属性
+        var vl=Oa.find("span").text();
+            vl=parseInt(vl)+1;
+        $.post('__CONTROLLER__/zan_hits',{data:id},function(data){
+          if(data.status==1){ 
+                alert('感谢您的选择！');
+                Oa.find("span").text(vl);//页面元素加1
+            }else{
+                alert('失败');
+            }
+        },'json'
+            //alert(data);
+       ); 
+      }else{
+        window.location.href="__MODULE__/Admin/login";
+      }
+    })
+
+  $(".bad").on('click',function(){
+        if($("#ids").val()!=''){
+        var Oa=$(this);
+        var id=Oa.attr('data');//获取id属性
+        var vl=Oa.find("span").text();
+            vl=parseInt(vl)+1;
+        $.post('__CONTROLLER__/nozan_hits',{data:id},function(data){
+          if(data.status==1){ 
+                alert('感谢您的选择！');
+                Oa.find("span").text(vl);//页面元素加1
+            }else{
+                alert('失败');
+            }
+        },'json'
+            //alert(data);
+       ); 
+      }else{
+        window.location.href="__MODULE__/Admin/login";
+      }
+    })
+
+</script>
+<script>
+function winclose() { 
+  $.ajax({
+        type: "POST",
+        url: "__CONTROLLER__submit",
+        data: $("#myform").serialize(),
+        success: function(returnValue) { //returnValue就是你的返回结果
+            try {
+                if(returnValue == 1){
+                    alert("保存成功");
+                } else {
+                    alert("数据出错，请核查！");
+                }
+            } catch (e) {}
+        },
+        error: function () {
+            alert("删除失败，请重试！");
+        }
+    });
+//此处填写要处理的逻辑代码
+//window.location.reload();//刷新 
+}
+</script>
+ 
